@@ -82,13 +82,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_244A4AAD8F3192D2B950A4C15C908618"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A17988EF79444C8E840FAA867384A916"
+        "OwnerKey" = "8:_60FBEA5806486BFC02425101B086B8F7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +94,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_60FBEA5806486BFC02425101B086B8F7"
+        "OwnerKey" = "8:_A17988EF79444C8E840FAA867384A916"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_244A4AAD8F3192D2B950A4C15C908618"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -266,11 +266,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_60FBEA5806486BFC02425101B086B8F7"
-                    {
-                    "Name" = "8:Microsoft.ReportViewer.Common.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.ReportViewer.Common.dll"
             "TargetName" = "8:"
@@ -317,11 +312,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B6F4CC191BE5266A104A080007F9493C"
-                    {
-                    "Name" = "8:Microsoft.ReportViewer.WinForms.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.ReportViewer.WinForms.dll"
             "TargetName" = "8:"
@@ -450,15 +440,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Infanteria de Marina"
-        "ProductCode" = "8:{0FCCDB4E-CFF5-4F9C-8E41-95C0C8DEF31C}"
-        "PackageCode" = "8:{B255DF80-C838-47FB-8341-593130C3AC03}"
+        "ProductCode" = "8:{ED697AF1-E62D-41C8-9F6B-084B402C4CBF}"
+        "PackageCode" = "8:{88F78680-87A2-47E4-96FC-F4594FB8B369}"
         "UpgradeCode" = "8:{18DC69EB-ED05-49BA-A040-65A7E9370D19}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:ADSIAR"
         "ARPHELPTELEPHONE" = "8:3112224833"
         "ARPHELPLINK" = "8:"

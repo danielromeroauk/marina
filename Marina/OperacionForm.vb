@@ -255,22 +255,22 @@ Public Class OperacionForm
         FirmasGroupBox.Visible = False
     End Sub
 
-    Private Sub Operaciones1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones1ToolStripMenuItem.Click
+    Private Sub Operaciones1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones1ToolStripMenuItem.Click, Operaciones1LinkLabel.Click
         ocultarGrupos()
         Operaciones1GroupBox.Visible = True
     End Sub
 
-    Private Sub Operaciones2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones2ToolStripMenuItem.Click
+    Private Sub Operaciones2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones2ToolStripMenuItem.Click, Operaciones2LinkLabel.Click, LinkLabel1.Click
         ocultarGrupos()
         Operaciones2GroupBox.Visible = True
     End Sub
 
-    Private Sub TOEToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TOEToolStripMenuItem.Click
+    Private Sub TOEToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TOEToolStripMenuItem.Click, toeLinkLabel.Click, LinkLabel3.Click
         ocultarGrupos()
         ToeGroupBox.Visible = True
     End Sub
 
-    Private Sub CoordenadasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CoordenadasToolStripMenuItem.Click
+    Private Sub CoordenadasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CoordenadasToolStripMenuItem.Click, LinkLabel2.Click, LinkLabel5.Click
         ocultarGrupos()
         CoordenadasGroupBox.Visible = True
     End Sub
@@ -307,32 +307,32 @@ Public Class OperacionForm
         End If
     End Function
 
-    Private Sub Ejecucion1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion1ToolStripMenuItem.Click
+    Private Sub Ejecucion1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion1ToolStripMenuItem.Click, LinkLabel4.Click, LinkLabel7.Click
         ocultarGrupos()
         Ejecucion1GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion2ToolStripMenuItem.Click
+    Private Sub Ejecucion2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion2ToolStripMenuItem.Click, LinkLabel9.Click, LinkLabel6.Click
         ocultarGrupos()
         Ejecucion2GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion3ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion3ToolStripMenuItem.Click
+    Private Sub Ejecucion3ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion3ToolStripMenuItem.Click, LinkLabel8.Click, LinkLabel11.Click
         ocultarGrupos()
         Ejecucion3GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion4ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion4ToolStripMenuItem.Click
+    Private Sub Ejecucion4ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion4ToolStripMenuItem.Click, LinkLabel13.Click, LinkLabel10.Click
         ocultarGrupos()
         Ejecucion4GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion5ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion5ToolStripMenuItem.Click
+    Private Sub Ejecucion5ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion5ToolStripMenuItem.Click, LinkLabel15.Click, LinkLabel12.Click
         ocultarGrupos()
         Ejecucion5GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion6ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion6ToolStripMenuItem.Click
+    Private Sub Ejecucion6ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion6ToolStripMenuItem.Click, LinkLabel17.Click, LinkLabel14.Click
         ocultarGrupos()
         Ejecucion6GroupBox.Visible = True
     End Sub
@@ -468,17 +468,17 @@ Public Class OperacionForm
         End If
     End Sub
 
-    Private Sub AbastecimientosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AbastecimientosToolStripMenuItem.Click
+    Private Sub AbastecimientosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AbastecimientosToolStripMenuItem.Click, LinkLabel19.Click, LinkLabel16.Click
         ocultarGrupos()
         AbastecimientosGroupBox.Visible = True
     End Sub
 
-    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click
+    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click, LinkLabel21.Click, LinkLabel18.Click
         ocultarGrupos()
         ComunicacionesGroupBox.Visible = True
     End Sub
 
-    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click
+    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, LinkLabel23.Click, LinkLabel20.Click
         ocultarGrupos()
         ArmamentoGroupBox.Visible = True
     End Sub
@@ -569,12 +569,12 @@ Public Class OperacionForm
         Next
     End Sub
 
-    Private Sub AnexosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnexosToolStripMenuItem.Click
+    Private Sub AnexosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnexosToolStripMenuItem.Click, LinkLabel25.Click, LinkLabel22.Click
         ocultarGrupos()
         AnexosGroupBox.Visible = True
     End Sub
 
-    Private Sub FirmasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FirmasToolStripMenuItem.Click
+    Private Sub FirmasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FirmasToolStripMenuItem.Click, LinkLabel24.Click
         ocultarGrupos()
         FirmasGroupBox.Visible = True
     End Sub

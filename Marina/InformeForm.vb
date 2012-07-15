@@ -53,14 +53,14 @@ Public Class InformeForm
             Me.toeTableAdapter.FillByOperacion(Me.bdmarinaDataSet.toe, _codOperacion)
             Me.inteligenciasTableAdapter.FillByOperacion(Me.bdmarinaDataSet.inteligencias, _codOperacion)
 
-            Me.ReportViewer1.Visible = True
-            Me.ReportViewer1.SetDisplayMode(DisplayMode.PrintLayout)
-            Me.ReportViewer1.RefreshReport()
-            Me.ReportViewer1.ZoomMode = ZoomMode.Percent
-            Me.ReportViewer1.ZoomPercent = 100
+            'Me.ReportViewer1.Visible = True
+            'Me.ReportViewer1.SetDisplayMode(DisplayMode.PrintLayout)
+            'Me.ReportViewer1.RefreshReport()
+            'Me.ReportViewer1.ZoomMode = ZoomMode.Percent
+            'Me.ReportViewer1.ZoomPercent = 100
 
             crearDocumentoWordOrdenFragmentaria()
-
+            TituloLabel.Text = "La Orden Fragmentaria fue generada con éxito en Microsoft Office Word"
         Catch ex As Exception
             MsgBox(ex.Message)
             Me.Close()
@@ -333,5 +333,9 @@ Public Class InformeForm
             anexos &= vbCr & anex("nombre")
         Next
         oDoc.Bookmarks.Item("anexos").Range.Text = anexos
+    End Sub
+
+    Private Sub CerrarOrdenfragmentariaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CerrarOrdenfragmentariaToolStripMenuItem.Click
+        Me.Close()
     End Sub
 End Class

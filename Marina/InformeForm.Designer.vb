@@ -70,6 +70,8 @@ Partial Class InformeForm
         Me.operacionesTableAdapter = New Marina.bdmarinaDataSetTableAdapters.operacionesTableAdapter()
         Me.toeTableAdapter = New Marina.bdmarinaDataSetTableAdapters.toeTableAdapter()
         Me.morterosTableAdapter = New Marina.bdmarinaDataSetTableAdapters.morterosTableAdapter()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.CerrarOrdenfragmentariaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.abastecimientosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bdmarinaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,16 +89,20 @@ Partial Class InformeForm
         CType(Me.operacionesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.toeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.morterosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TituloLabel
         '
+        Me.TituloLabel.Location = New System.Drawing.Point(13, 35)
         Me.TituloLabel.Text = "Orden Fragmentaria"
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.ReportViewer1)
         Me.Panel1.ForeColor = System.Drawing.Color.Black
+        Me.Panel1.Location = New System.Drawing.Point(12, 76)
+        Me.Panel1.Size = New System.Drawing.Size(272, 226)
         '
         'abastecimientosBindingSource
         '
@@ -229,7 +235,7 @@ Partial Class InformeForm
         Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Marina.OrdenFragmentaria.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.Size = New System.Drawing.Size(272, 219)
+        Me.ReportViewer1.Size = New System.Drawing.Size(272, 226)
         Me.ReportViewer1.TabIndex = 0
         Me.ReportViewer1.Visible = False
         '
@@ -293,13 +299,33 @@ Partial Class InformeForm
         '
         Me.morterosTableAdapter.ClearBeforeFill = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CerrarOrdenfragmentariaToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(296, 24)
+        Me.MenuStrip1.TabIndex = 2
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'CerrarOrdenfragmentariaToolStripMenuItem
+        '
+        Me.CerrarOrdenfragmentariaToolStripMenuItem.Name = "CerrarOrdenfragmentariaToolStripMenuItem"
+        Me.CerrarOrdenfragmentariaToolStripMenuItem.Size = New System.Drawing.Size(156, 20)
+        Me.CerrarOrdenfragmentariaToolStripMenuItem.Text = "Cerrar orden &fragmentaria"
+        '
         'InformeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 270)
+        Me.ClientSize = New System.Drawing.Size(296, 314)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "InformeForm"
         Me.Text = "InformeForm"
+        Me.Controls.SetChildIndex(Me.MenuStrip1, 0)
+        Me.Controls.SetChildIndex(Me.TituloLabel, 0)
+        Me.Controls.SetChildIndex(Me.Panel1, 0)
         Me.Panel1.ResumeLayout(False)
         CType(Me.abastecimientosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.bdmarinaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -317,7 +343,10 @@ Partial Class InformeForm
         CType(Me.operacionesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.toeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.morterosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
@@ -352,4 +381,6 @@ Partial Class InformeForm
     Friend WithEvents toeTableAdapter As Marina.bdmarinaDataSetTableAdapters.toeTableAdapter
     Friend WithEvents morterosBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents morterosTableAdapter As Marina.bdmarinaDataSetTableAdapters.morterosTableAdapter
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents CerrarOrdenfragmentariaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

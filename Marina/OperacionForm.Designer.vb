@@ -38,9 +38,9 @@ Partial Class OperacionForm
         Dim AutenticaLabel As System.Windows.Forms.Label
         Dim RecibeLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OperacionForm))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OperacionTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_operacionTextBox = New System.Windows.Forms.TextBox()
@@ -71,6 +71,8 @@ Partial Class OperacionForm
         Me.CancelarTodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.Operaciones1GroupBox = New System.Windows.Forms.GroupBox()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Operaciones2LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.ProcedimientoTextBox = New System.Windows.Forms.TextBox()
         Me.Fecha_operacionDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.Comandante_operacionTextBox = New System.Windows.Forms.TextBox()
@@ -272,9 +274,47 @@ Partial Class OperacionForm
         Me.QuitarButton = New System.Windows.Forms.Button()
         Me.AgregarAnexoButton = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.SiguienteLinkLabel = New System.Windows.Forms.LinkLabel()
-        Me.AtrasLinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Operaciones1LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.toeLinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel7 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel9 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel11 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel14 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel12 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel15 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel16 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel17 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel18 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel14 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel19 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel20 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel15 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel21 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel22 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel16 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel23 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel24 = New System.Windows.Forms.LinkLabel()
+        Me.TableLayoutPanel17 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LinkLabel25 = New System.Windows.Forms.LinkLabel()
         OperacionLabel = New System.Windows.Forms.Label()
         Nombre_operacionLabel = New System.Windows.Forms.Label()
         ProcedimientoLabel = New System.Windows.Forms.Label()
@@ -297,6 +337,7 @@ Partial Class OperacionForm
         Me.MenuStrip1.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Operaciones1GroupBox.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
         Me.ToeGroupBox.SuspendLayout()
         CType(Me.CivilesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imrNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -370,7 +411,20 @@ Partial Class OperacionForm
         Me.FirmasGroupBox.SuspendLayout()
         Me.AnexosGroupBox.SuspendLayout()
         CType(Me.AnexosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel3.SuspendLayout()
+        Me.TableLayoutPanel4.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
+        Me.TableLayoutPanel6.SuspendLayout()
+        Me.TableLayoutPanel7.SuspendLayout()
+        Me.TableLayoutPanel8.SuspendLayout()
+        Me.TableLayoutPanel9.SuspendLayout()
+        Me.TableLayoutPanel10.SuspendLayout()
+        Me.TableLayoutPanel11.SuspendLayout()
+        Me.TableLayoutPanel12.SuspendLayout()
+        Me.TableLayoutPanel13.SuspendLayout()
+        Me.TableLayoutPanel14.SuspendLayout()
+        Me.TableLayoutPanel15.SuspendLayout()
+        Me.TableLayoutPanel16.SuspendLayout()
+        Me.TableLayoutPanel17.SuspendLayout()
         Me.SuspendLayout()
         '
         'TituloLabel
@@ -381,13 +435,11 @@ Partial Class OperacionForm
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Operaciones1GroupBox)
-        Me.Panel1.Controls.Add(Me.AbastecimientosGroupBox)
+        Me.Panel1.Controls.Add(Me.FirmasGroupBox)
+        Me.Panel1.Controls.Add(Me.AnexosGroupBox)
         Me.Panel1.Controls.Add(Me.ArmamentoGroupBox)
         Me.Panel1.Controls.Add(Me.ComunicacionesGroupBox)
-        Me.Panel1.Controls.Add(Me.AnexosGroupBox)
-        Me.Panel1.Controls.Add(Me.FirmasGroupBox)
-        Me.Panel1.Controls.Add(Me.Operaciones2GroupBox)
+        Me.Panel1.Controls.Add(Me.AbastecimientosGroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion6GroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion5GroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion4GroupBox)
@@ -396,6 +448,8 @@ Partial Class OperacionForm
         Me.Panel1.Controls.Add(Me.Ejecucion1GroupBox)
         Me.Panel1.Controls.Add(Me.CoordenadasGroupBox)
         Me.Panel1.Controls.Add(Me.ToeGroupBox)
+        Me.Panel1.Controls.Add(Me.Operaciones2GroupBox)
+        Me.Panel1.Controls.Add(Me.Operaciones1GroupBox)
         Me.Panel1.Location = New System.Drawing.Point(12, 69)
         Me.Panel1.Size = New System.Drawing.Size(1160, 500)
         '
@@ -764,6 +818,33 @@ Partial Class OperacionForm
         Me.Operaciones1GroupBox.TabIndex = 1
         Me.Operaciones1GroupBox.TabStop = False
         '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel3.ColumnCount = 1
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.Operaciones2LinkLabel, 0, 0)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1050, 24)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel3.TabIndex = 19
+        '
+        'Operaciones2LinkLabel
+        '
+        Me.Operaciones2LinkLabel.AutoSize = True
+        Me.Operaciones2LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.Operaciones2LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.Operaciones2LinkLabel.Location = New System.Drawing.Point(3, 0)
+        Me.Operaciones2LinkLabel.Name = "Operaciones2LinkLabel"
+        Me.Operaciones2LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.Operaciones2LinkLabel.TabIndex = 1
+        Me.Operaciones2LinkLabel.TabStop = True
+        Me.Operaciones2LinkLabel.Text = "Siguiente"
+        Me.Operaciones2LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'ProcedimientoTextBox
         '
         Me.ProcedimientoTextBox.Location = New System.Drawing.Point(176, 80)
@@ -822,6 +903,7 @@ Partial Class OperacionForm
         Me.ToeGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ToeGroupBox.Controls.Add(Me.TableLayoutPanel5)
         Me.ToeGroupBox.Controls.Add(Me.AgregacionesRichTextBox)
         Me.ToeGroupBox.Controls.Add(Me.AgregacionesLabel)
         Me.ToeGroupBox.Controls.Add(Me.CivilesNumericUpDown)
@@ -951,6 +1033,7 @@ Partial Class OperacionForm
         Me.CoordenadasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CoordenadasGroupBox.Controls.Add(Me.TableLayoutPanel6)
         Me.CoordenadasGroupBox.Controls.Add(Me.Punto3Label)
         Me.CoordenadasGroupBox.Controls.Add(Me.TableLayoutPanel2)
         Me.CoordenadasGroupBox.Controls.Add(Me.Punto1Label)
@@ -1226,6 +1309,7 @@ Partial Class OperacionForm
         Me.Ejecucion1GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.TableLayoutPanel7)
         Me.Ejecucion1GroupBox.Controls.Add(Me.ConceptoRichTextBox)
         Me.Ejecucion1GroupBox.Controls.Add(Me.Label1)
         Me.Ejecucion1GroupBox.Controls.Add(Me.IntencionComandanteRichTextBox)
@@ -1281,6 +1365,7 @@ Partial Class OperacionForm
         Me.Ejecucion2GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.TableLayoutPanel8)
         Me.Ejecucion2GroupBox.Controls.Add(Me.FuegosRichTextBox)
         Me.Ejecucion2GroupBox.Controls.Add(Me.FuegosLabel)
         Me.Ejecucion2GroupBox.Controls.Add(Me.ManiobraRichTextBox)
@@ -1336,6 +1421,7 @@ Partial Class OperacionForm
         Me.Ejecucion3GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion3GroupBox.Controls.Add(Me.TableLayoutPanel9)
         Me.Ejecucion3GroupBox.Controls.Add(Me.TareasCombateRichTextBox)
         Me.Ejecucion3GroupBox.Controls.Add(Me.TareasCombateLabel)
         Me.Ejecucion3GroupBox.Controls.Add(Me.TareasManiobraRichTextBox)
@@ -1391,6 +1477,7 @@ Partial Class OperacionForm
         Me.Ejecucion4GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion4GroupBox.Controls.Add(Me.TableLayoutPanel10)
         Me.Ejecucion4GroupBox.Controls.Add(Me.NivelHostilidadRichTextBox)
         Me.Ejecucion4GroupBox.Controls.Add(Me.NivelHostilidadLabel)
         Me.Ejecucion4GroupBox.Controls.Add(Me.InstruccionesCoordinacionRichTextBox)
@@ -1446,6 +1533,7 @@ Partial Class OperacionForm
         Me.Ejecucion5GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion5GroupBox.Controls.Add(Me.TableLayoutPanel11)
         Me.Ejecucion5GroupBox.Controls.Add(Me.PrincipiosRichTextBox)
         Me.Ejecucion5GroupBox.Controls.Add(Me.PrincipiosLabel)
         Me.Ejecucion5GroupBox.Controls.Add(Me.MarcoJuridicoRichTextBox)
@@ -1501,6 +1589,7 @@ Partial Class OperacionForm
         Me.Ejecucion6GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Ejecucion6GroupBox.Controls.Add(Me.TableLayoutPanel12)
         Me.Ejecucion6GroupBox.Controls.Add(Me.TarjetaAzulRadioButton)
         Me.Ejecucion6GroupBox.Controls.Add(Me.TarjetaRojaRadioButton)
         Me.Ejecucion6GroupBox.Controls.Add(Me.InstruccionesEspecialesRichTextBox)
@@ -1580,6 +1669,7 @@ Partial Class OperacionForm
         Me.AbastecimientosGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AbastecimientosGroupBox.Controls.Add(Me.TableLayoutPanel13)
         Me.AbastecimientosGroupBox.Controls.Add(Me.EvacuacionesMedicasRichTextBox)
         Me.AbastecimientosGroupBox.Controls.Add(Me.EvacuacionesMedicasLabel)
         Me.AbastecimientosGroupBox.Controls.Add(Me.Clase6RichTextBox)
@@ -1728,6 +1818,7 @@ Partial Class OperacionForm
         Me.ComunicacionesGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComunicacionesGroupBox.Controls.Add(Me.TableLayoutPanel14)
         Me.ComunicacionesGroupBox.Controls.Add(Me.ComplementosTextBox)
         Me.ComunicacionesGroupBox.Controls.Add(Me.ComplementosLabel)
         Me.ComunicacionesGroupBox.Controls.Add(Me.OtrosComGroupBox)
@@ -2073,6 +2164,7 @@ Partial Class OperacionForm
         Me.ArmamentoGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ArmamentoGroupBox.Controls.Add(Me.TableLayoutPanel15)
         Me.ArmamentoGroupBox.Controls.Add(Me.MorterosGroupBox)
         Me.ArmamentoGroupBox.Controls.Add(Me.LanzagranadasGroupBox)
         Me.ArmamentoGroupBox.Controls.Add(Me.GranadasGroupBox)
@@ -2728,6 +2820,7 @@ Partial Class OperacionForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Operaciones2GroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.Operaciones2GroupBox.Controls.Add(Me.TableLayoutPanel4)
         Me.Operaciones2GroupBox.Controls.Add(Propias_tropasRichTextBoxLabel)
         Me.Operaciones2GroupBox.Controls.Add(Me.Propias_tropasRichTextBox)
         Me.Operaciones2GroupBox.Controls.Add(MisionLabel)
@@ -2755,7 +2848,7 @@ Partial Class OperacionForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MisionRichTextBox.Location = New System.Drawing.Point(577, 41)
         Me.MisionRichTextBox.Name = "MisionRichTextBox"
-        Me.MisionRichTextBox.Size = New System.Drawing.Size(540, 413)
+        Me.MisionRichTextBox.Size = New System.Drawing.Size(490, 413)
         Me.MisionRichTextBox.TabIndex = 21
         Me.MisionRichTextBox.Text = ""
         '
@@ -2765,6 +2858,7 @@ Partial Class OperacionForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FirmasGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.FirmasGroupBox.Controls.Add(Me.TableLayoutPanel17)
         Me.FirmasGroupBox.Controls.Add(Me.RecibeRichTextBox)
         Me.FirmasGroupBox.Controls.Add(RecibeLabel)
         Me.FirmasGroupBox.Controls.Add(Me.AutenticaRichTextBox)
@@ -2815,6 +2909,7 @@ Partial Class OperacionForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.AnexosGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.AnexosGroupBox.Controls.Add(Me.TableLayoutPanel16)
         Me.AnexosGroupBox.Controls.Add(Me.AnexosDataGridView)
         Me.AnexosGroupBox.Controls.Add(Me.QuitarButton)
         Me.AnexosGroupBox.Controls.Add(Me.AgregarAnexoButton)
@@ -2829,9 +2924,9 @@ Partial Class OperacionForm
         'AnexosDataGridView
         '
         Me.AnexosDataGridView.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        Me.AnexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.AnexosDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -2844,18 +2939,18 @@ Partial Class OperacionForm
         Me.AnexosDataGridView.Location = New System.Drawing.Point(19, 71)
         Me.AnexosDataGridView.Name = "AnexosDataGridView"
         Me.AnexosDataGridView.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AnexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AnexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
+        Me.AnexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.AnexosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.AnexosDataGridView.Size = New System.Drawing.Size(1110, 383)
         Me.AnexosDataGridView.TabIndex = 22
@@ -2900,42 +2995,551 @@ Partial Class OperacionForm
         Me.OpenFileDialog1.ReadOnlyChecked = True
         Me.OpenFileDialog1.Title = "Seleccionar anexo"
         '
-        'TableLayoutPanel3
+        'TableLayoutPanel4
         '
-        Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.AtrasLinkLabel, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.SiguienteLinkLabel, 0, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1046, 18)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(74, 47)
-        Me.TableLayoutPanel3.TabIndex = 19
+        Me.TableLayoutPanel4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel4.ColumnCount = 1
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.Controls.Add(Me.Operaciones1LinkLabel, 0, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.toeLinkLabel, 0, 0)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(1073, 21)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 2
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel4.TabIndex = 22
         '
-        'SiguienteLinkLabel
+        'Operaciones1LinkLabel
         '
-        Me.SiguienteLinkLabel.AutoSize = True
-        Me.SiguienteLinkLabel.ForeColor = System.Drawing.Color.Yellow
-        Me.SiguienteLinkLabel.LinkColor = System.Drawing.Color.Yellow
-        Me.SiguienteLinkLabel.Location = New System.Drawing.Point(3, 0)
-        Me.SiguienteLinkLabel.Name = "SiguienteLinkLabel"
-        Me.SiguienteLinkLabel.Size = New System.Drawing.Size(64, 16)
-        Me.SiguienteLinkLabel.TabIndex = 1
-        Me.SiguienteLinkLabel.TabStop = True
-        Me.SiguienteLinkLabel.Text = "Siguiente"
+        Me.Operaciones1LinkLabel.AutoSize = True
+        Me.Operaciones1LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.Operaciones1LinkLabel.Location = New System.Drawing.Point(3, 22)
+        Me.Operaciones1LinkLabel.Name = "Operaciones1LinkLabel"
+        Me.Operaciones1LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.Operaciones1LinkLabel.TabIndex = 2
+        Me.Operaciones1LinkLabel.TabStop = True
+        Me.Operaciones1LinkLabel.Text = "Atrás"
+        Me.Operaciones1LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'AtrasLinkLabel
+        'toeLinkLabel
         '
-        Me.AtrasLinkLabel.AutoSize = True
-        Me.AtrasLinkLabel.LinkColor = System.Drawing.Color.Yellow
-        Me.AtrasLinkLabel.Location = New System.Drawing.Point(3, 23)
-        Me.AtrasLinkLabel.Name = "AtrasLinkLabel"
-        Me.AtrasLinkLabel.Size = New System.Drawing.Size(39, 16)
-        Me.AtrasLinkLabel.TabIndex = 2
-        Me.AtrasLinkLabel.TabStop = True
-        Me.AtrasLinkLabel.Text = "Atrás"
+        Me.toeLinkLabel.AutoSize = True
+        Me.toeLinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.toeLinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.toeLinkLabel.Location = New System.Drawing.Point(3, 0)
+        Me.toeLinkLabel.Name = "toeLinkLabel"
+        Me.toeLinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.toeLinkLabel.TabIndex = 1
+        Me.toeLinkLabel.TabStop = True
+        Me.toeLinkLabel.Text = "Siguiente"
+        Me.toeLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.LinkLabel1, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.LinkLabel2, 0, 0)
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(1058, 27)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 2
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel5.TabIndex = 23
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel1.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel1.TabIndex = 2
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Atrás"
+        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel2.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel2.TabIndex = 1
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Siguiente"
+        Me.LinkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel6
+        '
+        Me.TableLayoutPanel6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel6.ColumnCount = 1
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.Controls.Add(Me.LinkLabel3, 0, 1)
+        Me.TableLayoutPanel6.Controls.Add(Me.LinkLabel4, 0, 0)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(1006, 45)
+        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
+        Me.TableLayoutPanel6.RowCount = 2
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel6.TabIndex = 24
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel3.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel3.TabIndex = 2
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Atrás"
+        Me.LinkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel4.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel4.TabIndex = 1
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Siguiente"
+        Me.LinkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel7
+        '
+        Me.TableLayoutPanel7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel7.ColumnCount = 1
+        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel7.Controls.Add(Me.LinkLabel5, 0, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.LinkLabel6, 0, 0)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(1054, 29)
+        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
+        Me.TableLayoutPanel7.RowCount = 2
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel7.TabIndex = 24
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel5.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel5.TabIndex = 2
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "Atrás"
+        Me.LinkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel6
+        '
+        Me.LinkLabel6.AutoSize = True
+        Me.LinkLabel6.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel6.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel6.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel6.Name = "LinkLabel6"
+        Me.LinkLabel6.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel6.TabIndex = 1
+        Me.LinkLabel6.TabStop = True
+        Me.LinkLabel6.Text = "Siguiente"
+        Me.LinkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel8
+        '
+        Me.TableLayoutPanel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel8.ColumnCount = 1
+        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel8.Controls.Add(Me.LinkLabel7, 0, 1)
+        Me.TableLayoutPanel8.Controls.Add(Me.LinkLabel8, 0, 0)
+        Me.TableLayoutPanel8.Location = New System.Drawing.Point(1064, 38)
+        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
+        Me.TableLayoutPanel8.RowCount = 2
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel8.TabIndex = 24
+        '
+        'LinkLabel7
+        '
+        Me.LinkLabel7.AutoSize = True
+        Me.LinkLabel7.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel7.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel7.Name = "LinkLabel7"
+        Me.LinkLabel7.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel7.TabIndex = 2
+        Me.LinkLabel7.TabStop = True
+        Me.LinkLabel7.Text = "Atrás"
+        Me.LinkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel8
+        '
+        Me.LinkLabel8.AutoSize = True
+        Me.LinkLabel8.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel8.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel8.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel8.Name = "LinkLabel8"
+        Me.LinkLabel8.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel8.TabIndex = 1
+        Me.LinkLabel8.TabStop = True
+        Me.LinkLabel8.Text = "Siguiente"
+        Me.LinkLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel9
+        '
+        Me.TableLayoutPanel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel9.ColumnCount = 1
+        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Controls.Add(Me.LinkLabel9, 0, 1)
+        Me.TableLayoutPanel9.Controls.Add(Me.LinkLabel10, 0, 0)
+        Me.TableLayoutPanel9.Location = New System.Drawing.Point(1069, 32)
+        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
+        Me.TableLayoutPanel9.RowCount = 2
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel9.TabIndex = 24
+        '
+        'LinkLabel9
+        '
+        Me.LinkLabel9.AutoSize = True
+        Me.LinkLabel9.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel9.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel9.Name = "LinkLabel9"
+        Me.LinkLabel9.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel9.TabIndex = 2
+        Me.LinkLabel9.TabStop = True
+        Me.LinkLabel9.Text = "Atrás"
+        Me.LinkLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel10
+        '
+        Me.LinkLabel10.AutoSize = True
+        Me.LinkLabel10.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel10.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel10.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel10.Name = "LinkLabel10"
+        Me.LinkLabel10.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel10.TabIndex = 1
+        Me.LinkLabel10.TabStop = True
+        Me.LinkLabel10.Text = "Siguiente"
+        Me.LinkLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel10
+        '
+        Me.TableLayoutPanel10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel10.ColumnCount = 1
+        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel10.Controls.Add(Me.LinkLabel11, 0, 1)
+        Me.TableLayoutPanel10.Controls.Add(Me.LinkLabel12, 0, 0)
+        Me.TableLayoutPanel10.Location = New System.Drawing.Point(1060, 32)
+        Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
+        Me.TableLayoutPanel10.RowCount = 2
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel10.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel10.TabIndex = 24
+        '
+        'LinkLabel11
+        '
+        Me.LinkLabel11.AutoSize = True
+        Me.LinkLabel11.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel11.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel11.Name = "LinkLabel11"
+        Me.LinkLabel11.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel11.TabIndex = 2
+        Me.LinkLabel11.TabStop = True
+        Me.LinkLabel11.Text = "Atrás"
+        Me.LinkLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel12
+        '
+        Me.LinkLabel12.AutoSize = True
+        Me.LinkLabel12.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel12.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel12.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel12.Name = "LinkLabel12"
+        Me.LinkLabel12.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel12.TabIndex = 1
+        Me.LinkLabel12.TabStop = True
+        Me.LinkLabel12.Text = "Siguiente"
+        Me.LinkLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel11
+        '
+        Me.TableLayoutPanel11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel11.ColumnCount = 1
+        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel11.Controls.Add(Me.LinkLabel13, 0, 1)
+        Me.TableLayoutPanel11.Controls.Add(Me.LinkLabel14, 0, 0)
+        Me.TableLayoutPanel11.Location = New System.Drawing.Point(1054, 44)
+        Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
+        Me.TableLayoutPanel11.RowCount = 2
+        Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel11.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel11.TabIndex = 24
+        '
+        'LinkLabel13
+        '
+        Me.LinkLabel13.AutoSize = True
+        Me.LinkLabel13.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel13.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel13.Name = "LinkLabel13"
+        Me.LinkLabel13.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel13.TabIndex = 2
+        Me.LinkLabel13.TabStop = True
+        Me.LinkLabel13.Text = "Atrás"
+        Me.LinkLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel14
+        '
+        Me.LinkLabel14.AutoSize = True
+        Me.LinkLabel14.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel14.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel14.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel14.Name = "LinkLabel14"
+        Me.LinkLabel14.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel14.TabIndex = 1
+        Me.LinkLabel14.TabStop = True
+        Me.LinkLabel14.Text = "Siguiente"
+        Me.LinkLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel12
+        '
+        Me.TableLayoutPanel12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel12.ColumnCount = 1
+        Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel12.Controls.Add(Me.LinkLabel15, 0, 1)
+        Me.TableLayoutPanel12.Controls.Add(Me.LinkLabel16, 0, 0)
+        Me.TableLayoutPanel12.Location = New System.Drawing.Point(1056, 38)
+        Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
+        Me.TableLayoutPanel12.RowCount = 2
+        Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel12.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel12.TabIndex = 24
+        '
+        'LinkLabel15
+        '
+        Me.LinkLabel15.AutoSize = True
+        Me.LinkLabel15.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel15.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel15.Name = "LinkLabel15"
+        Me.LinkLabel15.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel15.TabIndex = 2
+        Me.LinkLabel15.TabStop = True
+        Me.LinkLabel15.Text = "Atrás"
+        Me.LinkLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel16
+        '
+        Me.LinkLabel16.AutoSize = True
+        Me.LinkLabel16.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel16.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel16.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel16.Name = "LinkLabel16"
+        Me.LinkLabel16.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel16.TabIndex = 1
+        Me.LinkLabel16.TabStop = True
+        Me.LinkLabel16.Text = "Siguiente"
+        Me.LinkLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel13
+        '
+        Me.TableLayoutPanel13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel13.ColumnCount = 1
+        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel13.Controls.Add(Me.LinkLabel17, 0, 1)
+        Me.TableLayoutPanel13.Controls.Add(Me.LinkLabel18, 0, 0)
+        Me.TableLayoutPanel13.Location = New System.Drawing.Point(1040, 38)
+        Me.TableLayoutPanel13.Name = "TableLayoutPanel13"
+        Me.TableLayoutPanel13.RowCount = 2
+        Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel13.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel13.TabIndex = 24
+        '
+        'LinkLabel17
+        '
+        Me.LinkLabel17.AutoSize = True
+        Me.LinkLabel17.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel17.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel17.Name = "LinkLabel17"
+        Me.LinkLabel17.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel17.TabIndex = 2
+        Me.LinkLabel17.TabStop = True
+        Me.LinkLabel17.Text = "Atrás"
+        Me.LinkLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel18
+        '
+        Me.LinkLabel18.AutoSize = True
+        Me.LinkLabel18.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel18.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel18.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel18.Name = "LinkLabel18"
+        Me.LinkLabel18.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel18.TabIndex = 1
+        Me.LinkLabel18.TabStop = True
+        Me.LinkLabel18.Text = "Siguiente"
+        Me.LinkLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel14
+        '
+        Me.TableLayoutPanel14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel14.ColumnCount = 1
+        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel14.Controls.Add(Me.LinkLabel19, 0, 1)
+        Me.TableLayoutPanel14.Controls.Add(Me.LinkLabel20, 0, 0)
+        Me.TableLayoutPanel14.Location = New System.Drawing.Point(1058, 44)
+        Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
+        Me.TableLayoutPanel14.RowCount = 2
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel14.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel14.TabIndex = 24
+        '
+        'LinkLabel19
+        '
+        Me.LinkLabel19.AutoSize = True
+        Me.LinkLabel19.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel19.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel19.Name = "LinkLabel19"
+        Me.LinkLabel19.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel19.TabIndex = 2
+        Me.LinkLabel19.TabStop = True
+        Me.LinkLabel19.Text = "Atrás"
+        Me.LinkLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel20
+        '
+        Me.LinkLabel20.AutoSize = True
+        Me.LinkLabel20.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel20.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel20.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel20.Name = "LinkLabel20"
+        Me.LinkLabel20.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel20.TabIndex = 1
+        Me.LinkLabel20.TabStop = True
+        Me.LinkLabel20.Text = "Siguiente"
+        Me.LinkLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel15
+        '
+        Me.TableLayoutPanel15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel15.ColumnCount = 1
+        Me.TableLayoutPanel15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel15.Controls.Add(Me.LinkLabel21, 0, 1)
+        Me.TableLayoutPanel15.Controls.Add(Me.LinkLabel22, 0, 0)
+        Me.TableLayoutPanel15.Location = New System.Drawing.Point(1066, 24)
+        Me.TableLayoutPanel15.Name = "TableLayoutPanel15"
+        Me.TableLayoutPanel15.RowCount = 2
+        Me.TableLayoutPanel15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel15.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel15.TabIndex = 24
+        '
+        'LinkLabel21
+        '
+        Me.LinkLabel21.AutoSize = True
+        Me.LinkLabel21.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel21.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel21.Name = "LinkLabel21"
+        Me.LinkLabel21.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel21.TabIndex = 2
+        Me.LinkLabel21.TabStop = True
+        Me.LinkLabel21.Text = "Atrás"
+        Me.LinkLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel22
+        '
+        Me.LinkLabel22.AutoSize = True
+        Me.LinkLabel22.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel22.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel22.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel22.Name = "LinkLabel22"
+        Me.LinkLabel22.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel22.TabIndex = 1
+        Me.LinkLabel22.TabStop = True
+        Me.LinkLabel22.Text = "Siguiente"
+        Me.LinkLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel16
+        '
+        Me.TableLayoutPanel16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel16.ColumnCount = 1
+        Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel16.Controls.Add(Me.LinkLabel23, 0, 1)
+        Me.TableLayoutPanel16.Controls.Add(Me.LinkLabel24, 0, 0)
+        Me.TableLayoutPanel16.Location = New System.Drawing.Point(1056, 17)
+        Me.TableLayoutPanel16.Name = "TableLayoutPanel16"
+        Me.TableLayoutPanel16.RowCount = 2
+        Me.TableLayoutPanel16.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel16.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel16.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel16.TabIndex = 24
+        '
+        'LinkLabel23
+        '
+        Me.LinkLabel23.AutoSize = True
+        Me.LinkLabel23.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel23.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel23.Name = "LinkLabel23"
+        Me.LinkLabel23.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel23.TabIndex = 2
+        Me.LinkLabel23.TabStop = True
+        Me.LinkLabel23.Text = "Atrás"
+        Me.LinkLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LinkLabel24
+        '
+        Me.LinkLabel24.AutoSize = True
+        Me.LinkLabel24.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel24.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel24.Location = New System.Drawing.Point(3, 0)
+        Me.LinkLabel24.Name = "LinkLabel24"
+        Me.LinkLabel24.Size = New System.Drawing.Size(64, 16)
+        Me.LinkLabel24.TabIndex = 1
+        Me.LinkLabel24.TabStop = True
+        Me.LinkLabel24.Text = "Siguiente"
+        Me.LinkLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TableLayoutPanel17
+        '
+        Me.TableLayoutPanel17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel17.ColumnCount = 1
+        Me.TableLayoutPanel17.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel17.Controls.Add(Me.LinkLabel25, 0, 1)
+        Me.TableLayoutPanel17.Location = New System.Drawing.Point(1073, 21)
+        Me.TableLayoutPanel17.Name = "TableLayoutPanel17"
+        Me.TableLayoutPanel17.RowCount = 2
+        Me.TableLayoutPanel17.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel17.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel17.Size = New System.Drawing.Size(71, 44)
+        Me.TableLayoutPanel17.TabIndex = 24
+        '
+        'LinkLabel25
+        '
+        Me.LinkLabel25.AutoSize = True
+        Me.LinkLabel25.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel25.Location = New System.Drawing.Point(3, 22)
+        Me.LinkLabel25.Name = "LinkLabel25"
+        Me.LinkLabel25.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel25.TabIndex = 2
+        Me.LinkLabel25.TabStop = True
+        Me.LinkLabel25.Text = "Atrás"
+        Me.LinkLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'OperacionForm
         '
@@ -2960,6 +3564,8 @@ Partial Class OperacionForm
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Operaciones1GroupBox.ResumeLayout(False)
         Me.Operaciones1GroupBox.PerformLayout()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
         Me.ToeGroupBox.ResumeLayout(False)
         Me.ToeGroupBox.PerformLayout()
         CType(Me.CivilesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3057,8 +3663,34 @@ Partial Class OperacionForm
         Me.FirmasGroupBox.PerformLayout()
         Me.AnexosGroupBox.ResumeLayout(False)
         CType(Me.AnexosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.TableLayoutPanel3.PerformLayout()
+        Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.TableLayoutPanel4.PerformLayout()
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.TableLayoutPanel5.PerformLayout()
+        Me.TableLayoutPanel6.ResumeLayout(False)
+        Me.TableLayoutPanel6.PerformLayout()
+        Me.TableLayoutPanel7.ResumeLayout(False)
+        Me.TableLayoutPanel7.PerformLayout()
+        Me.TableLayoutPanel8.ResumeLayout(False)
+        Me.TableLayoutPanel8.PerformLayout()
+        Me.TableLayoutPanel9.ResumeLayout(False)
+        Me.TableLayoutPanel9.PerformLayout()
+        Me.TableLayoutPanel10.ResumeLayout(False)
+        Me.TableLayoutPanel10.PerformLayout()
+        Me.TableLayoutPanel11.ResumeLayout(False)
+        Me.TableLayoutPanel11.PerformLayout()
+        Me.TableLayoutPanel12.ResumeLayout(False)
+        Me.TableLayoutPanel12.PerformLayout()
+        Me.TableLayoutPanel13.ResumeLayout(False)
+        Me.TableLayoutPanel13.PerformLayout()
+        Me.TableLayoutPanel14.ResumeLayout(False)
+        Me.TableLayoutPanel14.PerformLayout()
+        Me.TableLayoutPanel15.ResumeLayout(False)
+        Me.TableLayoutPanel15.PerformLayout()
+        Me.TableLayoutPanel16.ResumeLayout(False)
+        Me.TableLayoutPanel16.PerformLayout()
+        Me.TableLayoutPanel17.ResumeLayout(False)
+        Me.TableLayoutPanel17.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3295,6 +3927,46 @@ Partial Class OperacionForm
     Friend WithEvents mc_fms_60mmNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents mc_fms_60mmLabel As System.Windows.Forms.Label
     Friend WithEvents TableLayoutPanel3 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents AtrasLinkLabel As System.Windows.Forms.LinkLabel
-    Friend WithEvents SiguienteLinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents Operaciones2LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel4 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents Operaciones1LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents toeLinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel6 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel5 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel17 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel25 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel16 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel23 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel24 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel15 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel21 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel22 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel14 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel19 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel20 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel13 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel17 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel18 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel12 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel15 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel16 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel11 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel13 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel14 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel10 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel11 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel12 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel9 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel9 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel10 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel8 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel7 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel8 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TableLayoutPanel7 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel6 As System.Windows.Forms.LinkLabel
 End Class
