@@ -314,11 +314,13 @@ Partial Class InteligenciaForm
         '
         'ActividadesGroupBox
         '
+        Me.ActividadesGroupBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ActividadesGroupBox.Controls.Add(Me.ActividadesCheckedListBox)
         Me.ActividadesGroupBox.ForeColor = System.Drawing.Color.White
         Me.ActividadesGroupBox.Location = New System.Drawing.Point(342, 48)
         Me.ActividadesGroupBox.Name = "ActividadesGroupBox"
-        Me.ActividadesGroupBox.Size = New System.Drawing.Size(263, 246)
+        Me.ActividadesGroupBox.Size = New System.Drawing.Size(263, 362)
         Me.ActividadesGroupBox.TabIndex = 9
         Me.ActividadesGroupBox.TabStop = False
         Me.ActividadesGroupBox.Text = "Actividades"
@@ -331,20 +333,19 @@ Partial Class InteligenciaForm
         Me.ActividadesCheckedListBox.BackColor = System.Drawing.Color.Black
         Me.ActividadesCheckedListBox.ForeColor = System.Drawing.Color.White
         Me.ActividadesCheckedListBox.FormattingEnabled = True
-        Me.ActividadesCheckedListBox.Items.AddRange(New Object() {"COMBATE", "CAMPO MINADO", "EXTORSIÓN", "SECUESTRO", "ABIGEATO", "ROBO", "PRESENCIA", "CAMPAMENTO", "NARCOTRÁFICO", "CONTRABANDO", "CULTIVO ILÍCITO", "RETÉN ILEGAL"})
+        Me.ActividadesCheckedListBox.Items.AddRange(New Object() {"Abastecimiento", "Abigeato", "Artefacto explosivo", "Asesinato", "Baja enemigo", "Caleta", "Campamento", "Campo minado", "Captura", "Contacto armado", "Desplazamiento forzado", "Emboscada", "Entrega terrorista", "Extorsión", "Hostigamiento", "Indicio enemigo", "Información de inteligencia", "Inteligencia externa", "Laboratorio", "Liberación secuestrado", "Material decomizado", "Narcotráfico", "Presencia de bandoleros", "Reclutamiento forzoso", "Retén ilegal", "Secuestro", "Terrorismo"})
         Me.ActividadesCheckedListBox.Location = New System.Drawing.Point(6, 26)
         Me.ActividadesCheckedListBox.Name = "ActividadesCheckedListBox"
-        Me.ActividadesCheckedListBox.Size = New System.Drawing.Size(251, 208)
+        Me.ActividadesCheckedListBox.Size = New System.Drawing.Size(251, 310)
         Me.ActividadesCheckedListBox.TabIndex = 0
         '
         'AnotacionesRichTextBox
         '
-        Me.AnotacionesRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.AnotacionesRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnotacionesRichTextBox.Location = New System.Drawing.Point(41, 332)
         Me.AnotacionesRichTextBox.Name = "AnotacionesRichTextBox"
-        Me.AnotacionesRichTextBox.Size = New System.Drawing.Size(564, 78)
+        Me.AnotacionesRichTextBox.Size = New System.Drawing.Size(281, 78)
         Me.AnotacionesRichTextBox.TabIndex = 11
         Me.AnotacionesRichTextBox.Text = ""
         '
