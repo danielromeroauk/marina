@@ -270,7 +270,7 @@ Public Class InformeForm
         oDoc.Bookmarks.Item("lacrimogena").Range.Text = _
             Me._DS.granadas(0)("lacrimogena")
 
-        oDoc.Bookmarks.Item("total").Range.Text = ( _
+        oDoc.Bookmarks.Item("total_granadas").Range.Text = ( _
             Me._DS.granadas(0)("mano") + _
             Me._DS.granadas(0)("humo") + _
              Me._DS.granadas(0)("lacrimogena"))
@@ -368,7 +368,7 @@ Public Class InformeForm
             Me._DS.comunicaciones(0)("hf_6020_frec")
 
         oDoc.Bookmarks.Item("hf_escaner").Range.Text = _
-            Me._DS.comunicaciones(0)("hf_6020_escaner")
+            Me._DS.comunicaciones(0)("hf_escaner")
 
         oDoc.Bookmarks.Item("uhf_xts4250").Range.Text = _
             Me._DS.comunicaciones(0)("uhf_xts4250_cant")

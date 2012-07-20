@@ -305,7 +305,7 @@ Public Class OperacionForm
         End If
     End Sub
 
-    Private Sub ServiciosCombateToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles serviciosCombateToolStripMenuItem.Click, siguiente7LinkLabel.Click, DatosToolStripMenuItem.Click
+    Private Sub ServiciosCombateToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles serviciosCombateToolStripMenuItem.Click, siguiente7LinkLabel.Click, atras5LinkLabel.Click
         ocultarGrupos()
         serviciosCombateGroupBox.Visible = True
     End Sub

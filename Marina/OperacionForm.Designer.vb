@@ -41,9 +41,9 @@ Partial Class OperacionForm
         Dim segregacionesSituacionLabel As System.Windows.Forms.Label
         Dim agregacionesSituacionLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OperacionForm))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.operacionTextBox = New System.Windows.Forms.TextBox()
         Me.nombre_operacionTextBox = New System.Windows.Forms.TextBox()
@@ -431,6 +431,8 @@ Partial Class OperacionForm
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.personalGroupBox)
+        Me.Panel1.Controls.Add(Me.comunicacionesGroupBox)
         Me.Panel1.Controls.Add(Me.operacionGroupBox)
         Me.Panel1.Controls.Add(Me.situacionGroupBox)
         Me.Panel1.Controls.Add(Me.misionGroupBox)
@@ -439,9 +441,7 @@ Partial Class OperacionForm
         Me.Panel1.Controls.Add(Me.Ejecucion2GroupBox)
         Me.Panel1.Controls.Add(Me.juridicasGroupBox)
         Me.Panel1.Controls.Add(Me.serviciosCombateGroupBox)
-        Me.Panel1.Controls.Add(Me.comunicacionesGroupBox)
         Me.Panel1.Controls.Add(Me.armamentoGroupBox)
-        Me.Panel1.Controls.Add(Me.personalGroupBox)
         Me.Panel1.Controls.Add(Me.anexosGroupBox)
         Me.Panel1.Controls.Add(Me.firmasGroupBox)
         Me.Panel1.Location = New System.Drawing.Point(12, 69)
@@ -3391,9 +3391,9 @@ Partial Class OperacionForm
         'anexosDataGridView
         '
         Me.anexosDataGridView.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
-        Me.anexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
         Me.anexosDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -3406,18 +3406,18 @@ Partial Class OperacionForm
         Me.anexosDataGridView.Location = New System.Drawing.Point(19, 71)
         Me.anexosDataGridView.Name = "anexosDataGridView"
         Me.anexosDataGridView.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.anexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
-        Me.anexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.anexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.anexosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.anexosDataGridView.Size = New System.Drawing.Size(1110, 404)
         Me.anexosDataGridView.TabIndex = 22
@@ -3470,7 +3470,7 @@ Partial Class OperacionForm
         Me.personalGroupBox.ForeColor = System.Drawing.Color.White
         Me.personalGroupBox.Location = New System.Drawing.Point(5, 12)
         Me.personalGroupBox.Name = "personalGroupBox"
-        Me.personalGroupBox.Size = New System.Drawing.Size(1150, 476)
+        Me.personalGroupBox.Size = New System.Drawing.Size(1150, 497)
         Me.personalGroupBox.TabIndex = 19
         Me.personalGroupBox.TabStop = False
         Me.personalGroupBox.Text = "Personal"
@@ -3510,7 +3510,7 @@ Partial Class OperacionForm
         Me.personalTextBox.Location = New System.Drawing.Point(7, 25)
         Me.personalTextBox.Multiline = True
         Me.personalTextBox.Name = "personalTextBox"
-        Me.personalTextBox.Size = New System.Drawing.Size(936, 443)
+        Me.personalTextBox.Size = New System.Drawing.Size(936, 464)
         Me.personalTextBox.TabIndex = 0
         '
         'OperacionForm

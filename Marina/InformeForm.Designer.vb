@@ -40,6 +40,7 @@ Partial Class InformeForm
         '
         'okButton
         '
+        Me.okButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.okButton.ForeColor = System.Drawing.Color.DarkOliveGreen
         Me.okButton.Location = New System.Drawing.Point(99, 16)
         Me.okButton.Name = "okButton"

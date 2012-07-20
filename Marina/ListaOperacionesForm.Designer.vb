@@ -25,26 +25,21 @@ Partial Class ListaOperacionesForm
         Me.components = New System.ComponentModel.Container()
         Me.OperacionesDataGridView = New System.Windows.Forms.DataGridView()
         Me.OperacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreoperacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ProcedimientoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaoperacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AutorizadeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ComandanteoperacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IndicativoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ReferenciasDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SituacionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PropiastropasDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MisionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AccDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OperacionesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BdmarinaDataSet = New Marina.bdinfanteriaDataSet()
-        Me.OperacionesTableAdapter = New Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter()
+        Me.BdinfanteriaDataSet = New Marina.bdinfanteriaDataSet()
         Me.FiltroTextBox = New System.Windows.Forms.TextBox()
         Me.FiltrarButton = New System.Windows.Forms.Button()
         Me.CancelarButton = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OperacionesTableAdapter = New Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter()
         Me.Panel1.SuspendLayout()
         CType(Me.OperacionesDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OperacionesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BdmarinaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BdinfanteriaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TituloLabel
@@ -54,6 +49,7 @@ Partial Class ListaOperacionesForm
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.CancelarButton)
         Me.Panel1.Controls.Add(Me.FiltrarButton)
         Me.Panel1.Controls.Add(Me.FiltroTextBox)
@@ -72,14 +68,14 @@ Partial Class ListaOperacionesForm
         Me.OperacionesDataGridView.AutoGenerateColumns = False
         Me.OperacionesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.OperacionesDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.OperacionesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OperacionDataGridViewTextBoxColumn, Me.NombreoperacionDataGridViewTextBoxColumn, Me.ProcedimientoDataGridViewTextBoxColumn, Me.FechaoperacionDataGridViewTextBoxColumn, Me.AutorizadeDataGridViewTextBoxColumn, Me.ComandanteoperacionDataGridViewTextBoxColumn, Me.IndicativoDataGridViewTextBoxColumn, Me.ReferenciasDataGridViewTextBoxColumn, Me.SituacionDataGridViewTextBoxColumn, Me.PropiastropasDataGridViewTextBoxColumn, Me.MisionDataGridViewTextBoxColumn})
+        Me.OperacionesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.OperacionDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.FechaDataGridViewTextBoxColumn, Me.DeDataGridViewTextBoxColumn, Me.AccDataGridViewTextBoxColumn})
         Me.OperacionesDataGridView.DataSource = Me.OperacionesBindingSource
-        Me.OperacionesDataGridView.Location = New System.Drawing.Point(0, 76)
+        Me.OperacionesDataGridView.Location = New System.Drawing.Point(0, 58)
         Me.OperacionesDataGridView.MultiSelect = False
         Me.OperacionesDataGridView.Name = "OperacionesDataGridView"
         Me.OperacionesDataGridView.ReadOnly = True
         Me.OperacionesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.OperacionesDataGridView.Size = New System.Drawing.Size(656, 295)
+        Me.OperacionesDataGridView.Size = New System.Drawing.Size(656, 313)
         Me.OperacionesDataGridView.TabIndex = 0
         '
         'OperacionDataGridViewTextBoxColumn
@@ -90,105 +86,47 @@ Partial Class ListaOperacionesForm
         Me.OperacionDataGridViewTextBoxColumn.ReadOnly = True
         Me.OperacionDataGridViewTextBoxColumn.Width = 107
         '
-        'NombreoperacionDataGridViewTextBoxColumn
+        'NombreDataGridViewTextBoxColumn
         '
-        Me.NombreoperacionDataGridViewTextBoxColumn.DataPropertyName = "nombre_operacion"
-        Me.NombreoperacionDataGridViewTextBoxColumn.HeaderText = "Nombre Operacion"
-        Me.NombreoperacionDataGridViewTextBoxColumn.Name = "NombreoperacionDataGridViewTextBoxColumn"
-        Me.NombreoperacionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.NombreoperacionDataGridViewTextBoxColumn.Width = 148
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre operación"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.ReadOnly = True
+        Me.NombreDataGridViewTextBoxColumn.Width = 146
         '
-        'ProcedimientoDataGridViewTextBoxColumn
+        'FechaDataGridViewTextBoxColumn
         '
-        Me.ProcedimientoDataGridViewTextBoxColumn.DataPropertyName = "procedimiento"
-        Me.ProcedimientoDataGridViewTextBoxColumn.HeaderText = "procedimiento"
-        Me.ProcedimientoDataGridViewTextBoxColumn.Name = "ProcedimientoDataGridViewTextBoxColumn"
-        Me.ProcedimientoDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ProcedimientoDataGridViewTextBoxColumn.Visible = False
-        Me.ProcedimientoDataGridViewTextBoxColumn.Width = 119
+        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "fecha"
+        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
+        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
+        Me.FechaDataGridViewTextBoxColumn.ReadOnly = True
+        Me.FechaDataGridViewTextBoxColumn.Width = 71
         '
-        'FechaoperacionDataGridViewTextBoxColumn
+        'DeDataGridViewTextBoxColumn
         '
-        Me.FechaoperacionDataGridViewTextBoxColumn.DataPropertyName = "fecha_operacion"
-        Me.FechaoperacionDataGridViewTextBoxColumn.HeaderText = "Fecha Operacion"
-        Me.FechaoperacionDataGridViewTextBoxColumn.Name = "FechaoperacionDataGridViewTextBoxColumn"
-        Me.FechaoperacionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.FechaoperacionDataGridViewTextBoxColumn.Width = 137
+        Me.DeDataGridViewTextBoxColumn.DataPropertyName = "de"
+        Me.DeDataGridViewTextBoxColumn.HeaderText = "De"
+        Me.DeDataGridViewTextBoxColumn.Name = "DeDataGridViewTextBoxColumn"
+        Me.DeDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DeDataGridViewTextBoxColumn.Width = 51
         '
-        'AutorizadeDataGridViewTextBoxColumn
+        'AccDataGridViewTextBoxColumn
         '
-        Me.AutorizadeDataGridViewTextBoxColumn.DataPropertyName = "autoriza_de"
-        Me.AutorizadeDataGridViewTextBoxColumn.HeaderText = "autoriza_de"
-        Me.AutorizadeDataGridViewTextBoxColumn.Name = "AutorizadeDataGridViewTextBoxColumn"
-        Me.AutorizadeDataGridViewTextBoxColumn.ReadOnly = True
-        Me.AutorizadeDataGridViewTextBoxColumn.Visible = False
-        Me.AutorizadeDataGridViewTextBoxColumn.Width = 103
-        '
-        'ComandanteoperacionDataGridViewTextBoxColumn
-        '
-        Me.ComandanteoperacionDataGridViewTextBoxColumn.DataPropertyName = "comandante_operacion"
-        Me.ComandanteoperacionDataGridViewTextBoxColumn.HeaderText = "Comandante Operacion"
-        Me.ComandanteoperacionDataGridViewTextBoxColumn.Name = "ComandanteoperacionDataGridViewTextBoxColumn"
-        Me.ComandanteoperacionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ComandanteoperacionDataGridViewTextBoxColumn.Width = 176
-        '
-        'IndicativoDataGridViewTextBoxColumn
-        '
-        Me.IndicativoDataGridViewTextBoxColumn.DataPropertyName = "indicativo"
-        Me.IndicativoDataGridViewTextBoxColumn.HeaderText = "indicativo"
-        Me.IndicativoDataGridViewTextBoxColumn.Name = "IndicativoDataGridViewTextBoxColumn"
-        Me.IndicativoDataGridViewTextBoxColumn.ReadOnly = True
-        Me.IndicativoDataGridViewTextBoxColumn.Visible = False
-        Me.IndicativoDataGridViewTextBoxColumn.Width = 90
-        '
-        'ReferenciasDataGridViewTextBoxColumn
-        '
-        Me.ReferenciasDataGridViewTextBoxColumn.DataPropertyName = "referencias"
-        Me.ReferenciasDataGridViewTextBoxColumn.HeaderText = "referencias"
-        Me.ReferenciasDataGridViewTextBoxColumn.Name = "ReferenciasDataGridViewTextBoxColumn"
-        Me.ReferenciasDataGridViewTextBoxColumn.ReadOnly = True
-        Me.ReferenciasDataGridViewTextBoxColumn.Visible = False
-        '
-        'SituacionDataGridViewTextBoxColumn
-        '
-        Me.SituacionDataGridViewTextBoxColumn.DataPropertyName = "situacion"
-        Me.SituacionDataGridViewTextBoxColumn.HeaderText = "situacion"
-        Me.SituacionDataGridViewTextBoxColumn.Name = "SituacionDataGridViewTextBoxColumn"
-        Me.SituacionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.SituacionDataGridViewTextBoxColumn.Visible = False
-        Me.SituacionDataGridViewTextBoxColumn.Width = 86
-        '
-        'PropiastropasDataGridViewTextBoxColumn
-        '
-        Me.PropiastropasDataGridViewTextBoxColumn.DataPropertyName = "propias_tropas"
-        Me.PropiastropasDataGridViewTextBoxColumn.HeaderText = "propias_tropas"
-        Me.PropiastropasDataGridViewTextBoxColumn.Name = "PropiastropasDataGridViewTextBoxColumn"
-        Me.PropiastropasDataGridViewTextBoxColumn.ReadOnly = True
-        Me.PropiastropasDataGridViewTextBoxColumn.Visible = False
-        Me.PropiastropasDataGridViewTextBoxColumn.Width = 124
-        '
-        'MisionDataGridViewTextBoxColumn
-        '
-        Me.MisionDataGridViewTextBoxColumn.DataPropertyName = "mision"
-        Me.MisionDataGridViewTextBoxColumn.HeaderText = "mision"
-        Me.MisionDataGridViewTextBoxColumn.Name = "MisionDataGridViewTextBoxColumn"
-        Me.MisionDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MisionDataGridViewTextBoxColumn.Visible = False
-        Me.MisionDataGridViewTextBoxColumn.Width = 72
+        Me.AccDataGridViewTextBoxColumn.DataPropertyName = "acc"
+        Me.AccDataGridViewTextBoxColumn.HeaderText = "ACC"
+        Me.AccDataGridViewTextBoxColumn.Name = "AccDataGridViewTextBoxColumn"
+        Me.AccDataGridViewTextBoxColumn.ReadOnly = True
+        Me.AccDataGridViewTextBoxColumn.Width = 60
         '
         'OperacionesBindingSource
         '
         Me.OperacionesBindingSource.DataMember = "operaciones"
-        Me.OperacionesBindingSource.DataSource = Me.BdmarinaDataSet
+        Me.OperacionesBindingSource.DataSource = Me.BdinfanteriaDataSet
         '
-        'BdmarinaDataSet
+        'BdinfanteriaDataSet
         '
-        Me.BdmarinaDataSet.DataSetName = "bdmarinaDataSet"
-        Me.BdmarinaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'OperacionesTableAdapter
-        '
-        Me.OperacionesTableAdapter.ClearBeforeFill = True
+        Me.BdinfanteriaDataSet.DataSetName = "bdinfanteriaDataSet"
+        Me.BdinfanteriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'FiltroTextBox
         '
@@ -196,14 +134,14 @@ Partial Class ListaOperacionesForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FiltroTextBox.Location = New System.Drawing.Point(7, 16)
         Me.FiltroTextBox.Name = "FiltroTextBox"
-        Me.FiltroTextBox.Size = New System.Drawing.Size(483, 22)
+        Me.FiltroTextBox.Size = New System.Drawing.Size(369, 22)
         Me.FiltroTextBox.TabIndex = 1
         '
         'FiltrarButton
         '
         Me.FiltrarButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FiltrarButton.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.FiltrarButton.Location = New System.Drawing.Point(496, 15)
+        Me.FiltrarButton.Location = New System.Drawing.Point(382, 16)
         Me.FiltrarButton.Name = "FiltrarButton"
         Me.FiltrarButton.Size = New System.Drawing.Size(75, 25)
         Me.FiltrarButton.TabIndex = 2
@@ -222,6 +160,21 @@ Partial Class ListaOperacionesForm
         Me.CancelarButton.Text = "Cancelar"
         Me.CancelarButton.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.Button1.Location = New System.Drawing.Point(463, 16)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(108, 25)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Ver selección"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'OperacionesTableAdapter
+        '
+        Me.OperacionesTableAdapter.ClearBeforeFill = True
+        '
         'ListaOperacionesForm
         '
         Me.AcceptButton = Me.FiltrarButton
@@ -235,26 +188,28 @@ Partial Class ListaOperacionesForm
         Me.Panel1.PerformLayout()
         CType(Me.OperacionesDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OperacionesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BdmarinaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BdinfanteriaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents OperacionesDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents BdmarinaDataSet As Marina.bdinfanteriaDataSet
-    Friend WithEvents OperacionesBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents OperacionesTableAdapter As Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter
     Friend WithEvents FiltrarButton As System.Windows.Forms.Button
     Friend WithEvents FiltroTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CancelarButton As System.Windows.Forms.Button
-    Friend WithEvents OperacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents NombreoperacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ProcedimientoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FechaoperacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AutorizadeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ComandanteoperacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents IndicativoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ReferenciasDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SituacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PropiastropasDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents MisionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents BdinfanteriaDataSet As Marina.bdinfanteriaDataSet
+    Friend WithEvents OperacionesBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents OperacionesTableAdapter As Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter
+    Friend WithEvents OperacionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NombreDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FechaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents AccDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

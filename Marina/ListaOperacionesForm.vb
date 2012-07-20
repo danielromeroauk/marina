@@ -3,11 +3,13 @@
     Private _getCodOperacion As Boolean = False
 
     Private Sub ListaOperacionesForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'BdinfanteriaDataSet.operaciones' Puede moverla o quitarla según sea necesario.
+        Me.OperacionesTableAdapter.Fill(Me.BdinfanteriaDataSet.operaciones)
     End Sub
 
     Private Sub FiltrarButton_Click(sender As System.Object, e As System.EventArgs) Handles FiltrarButton.Click
         Try
-            Me.OperacionesTableAdapter.FillByCodONombre(Me.BdmarinaDataSet.operaciones, "%" & FiltroTextBox.Text & "%", "%" & FiltroTextBox.Text & "%")
+            Me.OperacionesTableAdapter.FillByCodONombre(Me.BdinfanteriaDataSet.operaciones, "%" & FiltroTextBox.Text & "%", "%" & FiltroTextBox.Text & "%")
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -39,6 +41,10 @@
 
     Private Sub CancelarButton_Click(sender As System.Object, e As System.EventArgs) Handles CancelarButton.Click
         Me._getCodOperacion = False
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Me.Close()
     End Sub
 End Class
