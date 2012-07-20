@@ -33,15 +33,15 @@ Public Class OperacionForm
                     TASituacion.Insert( _
                         operacion:=operacionTextBox.Text, _
                         detalle:=detalleSituacionRichTextBox.Text, _
-                        enemigo:=enemigoTextBox.Text, _
-                        propias_tropas:=propiasTropasTextBox.Text, _
-                        agregaciones:=agregacionesSituacionTextBox.Text, _
-                        segregaciones:=segregacionesSituacionTextBox.Text)
+                        enemigo:=enemigoRichTextBox.Text, _
+                        propias_tropas:=propiasTropasRichTextBox.Text, _
+                        agregaciones:=agregacionesSituacionRichTextBox.Text, _
+                        segregaciones:=segregacionesSituacionRichTextBox.Text)
 
                     Dim TAMision As New bdinfanteriaDataSetTableAdapters.misionTableAdapter
                     TAMision.Insert( _
                         operacion:=operacionTextBox.Text, _
-                        detalle:=misionTextBox.Text)
+                        detalle:=misionRichTextBox.Text)
 
                     Dim TAToe As New bdinfanteriaDataSetTableAdapters.toeTableAdapter
                     TAToe.Insert( _
@@ -57,13 +57,13 @@ Public Class OperacionForm
                     Dim TAEjecucion As New bdinfanteriaDataSetTableAdapters.ejecucionTableAdapter
                     TAEjecucion.Insert( _
                         operacion:=operacionTextBox.Text, _
-                        intencion_comandante:=intencionComandanteTextBox.Text, _
-                        concepto_operacion:=conceptoOperacionTextBox.Text, _
-                        maniobra:=maniobraTextBox.Text, _
-                        fuegos:=fuegosTextBox.Text, _
-                        tareas_maniobra:=tareasManiobraTextBox.Text, _
-                        tareas_combate:=tareasCombateTextBox.Text, _
-                        instrucciones_coordinacion:=instruccionesCoordinacionTextBox.Text, _
+                        intencion_comandante:=intencionComandanteRichTextBox.Text, _
+                        concepto_operacion:=conceptoOperacionRichTextBox.Text, _
+                        maniobra:=maniobraRichTextBox.Text, _
+                        fuegos:=fuegosRichTextBox.Text, _
+                        tareas_maniobra:=tareasManiobraRichTextBox.Text, _
+                        tareas_combate:=tareasCombateRichTextBox.Text, _
+                        instrucciones_coordinacion:=instruccionesCoordinacionRichTextBox.Text, _
                         instrucciones_juridicas:=instruccionesJuridicasRichTextBox.Text, _
                         uso_fuerza_autorizada:=usoFuerzaRichTextBox.Text)
 
@@ -102,7 +102,7 @@ Public Class OperacionForm
                         celular:=CelularTextBox.Text, _
                         satelital:=satelitalTextBox.Text, _
                         clave:=ClaveComTextBox.Text, _
-                        indicativos:=indicativosTextBox.Text)
+                        indicativos:=indicativosRichTextBox.Text)
 
                     Dim TAAmetralladoras As New bdinfanteriaDataSetTableAdapters.ametralladorasTableAdapter
                     TAAmetralladoras.Insert( _
@@ -162,7 +162,7 @@ Public Class OperacionForm
                     Dim TAPersonal As New bdinfanteriaDataSetTableAdapters.personalTableAdapter
                     TAPersonal.Insert( _
                         operacion:=operacionTextBox.Text, _
-                        detalle:=personalTextBox.Text)
+                        detalle:=personalRichTextBox.Text)
 
                     Dim TACoordenadas As New bdinfanteriaDataSetTableAdapters.coordenadasTableAdapter
                     TACoordenadas.Insert( _
@@ -178,7 +178,7 @@ Public Class OperacionForm
                         autoriza:=autorizaTextBox.Text, _
                         autentica:=autenticaTextBox.Text, _
                         recibe:=recibeTextBox.Text, _
-                        distribucion:=distribucionTextBox.Text)
+                        distribucion:=distribucionRichTextBox.Text)
 
                     CopiarYRegistrarAnexos()
 
