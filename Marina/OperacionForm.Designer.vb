@@ -23,133 +23,141 @@ Partial Class OperacionForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim OperacionLabel As System.Windows.Forms.Label
-        Dim Nombre_operacionLabel As System.Windows.Forms.Label
-        Dim ProcedimientoLabel As System.Windows.Forms.Label
-        Dim Fecha_operacionLabel As System.Windows.Forms.Label
+        Dim operacionLabel As System.Windows.Forms.Label
+        Dim nombre_operacionLabel As System.Windows.Forms.Label
+        Dim procedimientoLabel As System.Windows.Forms.Label
+        Dim fecha_operacionLabel As System.Windows.Forms.Label
         Dim Autoriza_deLabel As System.Windows.Forms.Label
         Dim Comandante_operacionLabel As System.Windows.Forms.Label
         Dim IndicativoLabel As System.Windows.Forms.Label
-        Dim ReferenciasLabel As System.Windows.Forms.Label
-        Dim SituacionLabel As System.Windows.Forms.Label
-        Dim Propias_tropasRichTextBoxLabel As System.Windows.Forms.Label
-        Dim MisionLabel As System.Windows.Forms.Label
-        Dim AutorizaLabel As System.Windows.Forms.Label
-        Dim AutenticaLabel As System.Windows.Forms.Label
-        Dim RecibeLabel As System.Windows.Forms.Label
+        Dim referenciasLabel As System.Windows.Forms.Label
+        Dim detalleSituacionLabel As System.Windows.Forms.Label
+        Dim enemigoLabel As System.Windows.Forms.Label
+        Dim autorizaLabel As System.Windows.Forms.Label
+        Dim autenticaLabel As System.Windows.Forms.Label
+        Dim recibeLabel As System.Windows.Forms.Label
+        Dim lugarLabel As System.Windows.Forms.Label
+        Dim propiasTropasLabel As System.Windows.Forms.Label
+        Dim segregacionesSituacionLabel As System.Windows.Forms.Label
+        Dim agregacionesSituacionLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OperacionForm))
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.OperacionTextBox = New System.Windows.Forms.TextBox()
-        Me.Nombre_operacionTextBox = New System.Windows.Forms.TextBox()
-        Me.Autoriza_deTextBox = New System.Windows.Forms.TextBox()
-        Me.SegundosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SegundosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SegundosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SegundosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.operacionTextBox = New System.Windows.Forms.TextBox()
+        Me.nombre_operacionTextBox = New System.Windows.Forms.TextBox()
+        Me.deTextBox = New System.Windows.Forms.TextBox()
+        Me.segundosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.segundosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.segundosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.segundosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DatosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Operaciones1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Operaciones2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TOEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OperacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.situacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.misionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CoordenadasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EjecucionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Ejecucion1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Ejecucion2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Ejecucion3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Ejecucion4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Ejecucion5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Ejecucion6ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AbastecimientosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.juridicasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.serviciosCombateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComunicacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ArmamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PersonalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnexosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FirmasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GuardarTodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CancelarTodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Operaciones1GroupBox = New System.Windows.Forms.GroupBox()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Operaciones2LinkLabel = New System.Windows.Forms.LinkLabel()
-        Me.ProcedimientoTextBox = New System.Windows.Forms.TextBox()
-        Me.Fecha_operacionDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.Comandante_operacionTextBox = New System.Windows.Forms.TextBox()
+        Me.operacionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.siguiente1LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.lugarTextBox = New System.Windows.Forms.TextBox()
+        Me.procedimientoComboBox = New System.Windows.Forms.ComboBox()
+        Me.fecha_operacionDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.accTextBox = New System.Windows.Forms.TextBox()
         Me.IndicativoTextBox = New System.Windows.Forms.TextBox()
-        Me.ReferenciasRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.SituacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.ToeGroupBox = New System.Windows.Forms.GroupBox()
-        Me.AgregacionesRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.AgregacionesLabel = New System.Windows.Forms.Label()
+        Me.referenciasRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.misionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras10LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.misionTextBox = New System.Windows.Forms.TextBox()
+        Me.siguiente3LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.misionLabel = New System.Windows.Forms.Label()
+        Me.toeGroupBox = New System.Windows.Forms.GroupBox()
+        Me.segregacionesToeTextBox = New System.Windows.Forms.TextBox()
+        Me.segregacionesToeLabel = New System.Windows.Forms.Label()
+        Me.agregacionesToeTextBox = New System.Windows.Forms.TextBox()
+        Me.agregacionesToeLabel = New System.Windows.Forms.Label()
+        Me.oficialesNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.oficialesLabel = New System.Windows.Forms.Label()
         Me.CivilesNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.SuboficialesLabel = New System.Windows.Forms.Label()
         Me.CivilesLabel = New System.Windows.Forms.Label()
+        Me.SuboficialesNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.imrNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.impLabel = New System.Windows.Forms.Label()
         Me.imrLabel = New System.Windows.Forms.Label()
         Me.impNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.impLabel = New System.Windows.Forms.Label()
-        Me.SuboficialesNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.SuboficialesLabel = New System.Windows.Forms.Label()
-        Me.OficialesNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.OficialesLabel = New System.Windows.Forms.Label()
-        Me.CoordenadasGroupBox = New System.Windows.Forms.GroupBox()
-        Me.Punto3Label = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.MinutosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.GradosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Latitud3Label = New System.Windows.Forms.Label()
-        Me.GradosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Grados3Label = New System.Windows.Forms.Label()
-        Me.Minutos3Label = New System.Windows.Forms.Label()
-        Me.Segundos3Label = New System.Windows.Forms.Label()
-        Me.MinutosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Longitud3Label = New System.Windows.Forms.Label()
-        Me.Punto1Label = New System.Windows.Forms.Label()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.MinutosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.GradosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Latitud1Label = New System.Windows.Forms.Label()
-        Me.GradosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Grados1Label = New System.Windows.Forms.Label()
-        Me.Minutos1Label = New System.Windows.Forms.Label()
-        Me.Segundos1Label = New System.Windows.Forms.Label()
-        Me.MinutosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Longitud1Label = New System.Windows.Forms.Label()
+        Me.coordenadasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras9LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente4LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.punto3Label = New System.Windows.Forms.Label()
+        Me.punto3TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.minutosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.gradosLng3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.latitud3Label = New System.Windows.Forms.Label()
+        Me.gradosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.grados3Label = New System.Windows.Forms.Label()
+        Me.minutos3Label = New System.Windows.Forms.Label()
+        Me.segundos3Label = New System.Windows.Forms.Label()
+        Me.minutosLat3NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.longitud3Label = New System.Windows.Forms.Label()
+        Me.punto1Label = New System.Windows.Forms.Label()
+        Me.punto1TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.minutosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.gradosLgn1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.latitud1Label = New System.Windows.Forms.Label()
+        Me.gradosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.grados1Label = New System.Windows.Forms.Label()
+        Me.minutos1Label = New System.Windows.Forms.Label()
+        Me.segundos1Label = New System.Windows.Forms.Label()
+        Me.minutosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.longitud1Label = New System.Windows.Forms.Label()
         Me.Ejecucion1GroupBox = New System.Windows.Forms.GroupBox()
-        Me.ConceptoRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.IntencionComandanteRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.IntencionComandanteLabel = New System.Windows.Forms.Label()
-        Me.Ejecucion2GroupBox = New System.Windows.Forms.GroupBox()
-        Me.FuegosRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.FuegosLabel = New System.Windows.Forms.Label()
-        Me.ManiobraRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.atras8LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente5LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.conceptoOperacionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.fuegosTextBox = New System.Windows.Forms.TextBox()
+        Me.fuegosLabel = New System.Windows.Forms.Label()
+        Me.maniobraTextBox = New System.Windows.Forms.TextBox()
         Me.maniobraLabel = New System.Windows.Forms.Label()
-        Me.Ejecucion3GroupBox = New System.Windows.Forms.GroupBox()
-        Me.TareasCombateRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.TareasCombateLabel = New System.Windows.Forms.Label()
-        Me.TareasManiobraRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.TareasManiobraLabel = New System.Windows.Forms.Label()
-        Me.Ejecucion4GroupBox = New System.Windows.Forms.GroupBox()
-        Me.NivelHostilidadRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.NivelHostilidadLabel = New System.Windows.Forms.Label()
-        Me.InstruccionesCoordinacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.InstruccionesCoordinacionLabel = New System.Windows.Forms.Label()
-        Me.Ejecucion5GroupBox = New System.Windows.Forms.GroupBox()
-        Me.PrincipiosRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.PrincipiosLabel = New System.Windows.Forms.Label()
-        Me.MarcoJuridicoRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.MarcoJuridicoLabel = New System.Windows.Forms.Label()
-        Me.Ejecucion6GroupBox = New System.Windows.Forms.GroupBox()
+        Me.conceptoOperacionTextBox = New System.Windows.Forms.TextBox()
+        Me.intencionComandanteTextBox = New System.Windows.Forms.TextBox()
+        Me.intencionComandanteLabel = New System.Windows.Forms.Label()
+        Me.Ejecucion2GroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras7LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente6LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.instruccionesCoordinacionTextBox = New System.Windows.Forms.TextBox()
+        Me.instruccionesCoordinacionLabel = New System.Windows.Forms.Label()
+        Me.tareasCombateTextBox = New System.Windows.Forms.TextBox()
+        Me.tareasCombateLabel = New System.Windows.Forms.Label()
+        Me.tareasManiobraTextBox = New System.Windows.Forms.TextBox()
+        Me.tareasManiobraLabel = New System.Windows.Forms.Label()
+        Me.juridicasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.siguiente7LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.TarjetaAzulRadioButton = New System.Windows.Forms.RadioButton()
         Me.TarjetaRojaRadioButton = New System.Windows.Forms.RadioButton()
-        Me.InstruccionesEspecialesRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.InstruccionesEspecialesLabel = New System.Windows.Forms.Label()
-        Me.UsoFuerzaRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.instruccionesJuridicasRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.instruccionesJuridicasLabel = New System.Windows.Forms.Label()
+        Me.usoFuerzaRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.UsoFuerzaLabel = New System.Windows.Forms.Label()
-        Me.AbastecimientosGroupBox = New System.Windows.Forms.GroupBox()
-        Me.EvacuacionesMedicasRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.EvacuacionesMedicasLabel = New System.Windows.Forms.Label()
+        Me.serviciosCombateGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras6LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente8LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.evacuacionesMedicasRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.evacuacionesMedicasLabel = New System.Windows.Forms.Label()
         Me.Clase6RichTextBox = New System.Windows.Forms.RichTextBox()
         Me.Clase6Label = New System.Windows.Forms.Label()
         Me.Clase5RichTextBox = New System.Windows.Forms.RichTextBox()
@@ -162,31 +170,46 @@ Partial Class OperacionForm
         Me.Clase2Label = New System.Windows.Forms.Label()
         Me.Clase1RichTextBox = New System.Windows.Forms.RichTextBox()
         Me.Clase1Label = New System.Windows.Forms.Label()
-        Me.ComunicacionesGroupBox = New System.Windows.Forms.GroupBox()
-        Me.ComplementosTextBox = New System.Windows.Forms.TextBox()
-        Me.ComplementosLabel = New System.Windows.Forms.Label()
-        Me.OtrosComGroupBox = New System.Windows.Forms.GroupBox()
+        Me.comunicacionesGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras5LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente9LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.indicativosGroupBox = New System.Windows.Forms.GroupBox()
+        Me.indicativosTextBox = New System.Windows.Forms.TextBox()
+        Me.otrosComGroupBox = New System.Windows.Forms.GroupBox()
         Me.ClaveComTextBox = New System.Windows.Forms.TextBox()
-        Me.SatelitalTextBox = New System.Windows.Forms.TextBox()
+        Me.satelitalTextBox = New System.Windows.Forms.TextBox()
         Me.CelularTextBox = New System.Windows.Forms.TextBox()
         Me.AvantelTextBox = New System.Windows.Forms.TextBox()
         Me.ClaveLabel = New System.Windows.Forms.Label()
-        Me.SatelitalLabel = New System.Windows.Forms.Label()
+        Me.satelitalLabel = New System.Windows.Forms.Label()
         Me.CelularLabel = New System.Windows.Forms.Label()
         Me.AvantelLabel = New System.Windows.Forms.Label()
         Me.UHFGroupBox = New System.Windows.Forms.GroupBox()
+        Me.uhfCantidadLabel = New System.Windows.Forms.Label()
+        Me.uhfXTR3000TextBox = New System.Windows.Forms.TextBox()
+        Me.uhfFrecuenciaLabel = New System.Windows.Forms.Label()
+        Me.uhfXTS4250TextBox = New System.Windows.Forms.TextBox()
         Me.uhfEscanerNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.uhfEscanerLabel = New System.Windows.Forms.Label()
         Me.uhfXTR3000NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.uhfXTR3000Label = New System.Windows.Forms.Label()
         Me.uhfXTS4250NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.xts4250Label = New System.Windows.Forms.Label()
-        Me.HFGroupBox = New System.Windows.Forms.GroupBox()
+        Me.uhfXTS4250Label = New System.Windows.Forms.Label()
+        Me.hfGroupBox = New System.Windows.Forms.GroupBox()
+        Me.hfCantidadLabel = New System.Windows.Forms.Label()
+        Me.hfFrecuenciaLabel = New System.Windows.Forms.Label()
+        Me.hf6020TextBox = New System.Windows.Forms.TextBox()
         Me.hfEscanerNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.hfEscanerLabel = New System.Windows.Forms.Label()
         Me.hf6020NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.hf6020Label = New System.Windows.Forms.Label()
         Me.VHFGroupBox = New System.Windows.Forms.GroupBox()
+        Me.vhfCantidadLabel = New System.Windows.Forms.Label()
+        Me.vhfAereoTextBox = New System.Windows.Forms.TextBox()
+        Me.vhf930TextBox = New System.Windows.Forms.TextBox()
+        Me.vhf710TextBox = New System.Windows.Forms.TextBox()
+        Me.vhfFrecuenciaLabel = New System.Windows.Forms.Label()
+        Me.vhf7330TextBox = New System.Windows.Forms.TextBox()
         Me.vhfEscanerNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.vhfEscanerLabel = New System.Windows.Forms.Label()
         Me.vhfAereoNumericUpDown = New System.Windows.Forms.NumericUpDown()
@@ -197,61 +220,69 @@ Partial Class OperacionForm
         Me.vhf710Label = New System.Windows.Forms.Label()
         Me.vhf7330NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.vhf7330Label = New System.Windows.Forms.Label()
-        Me.ArmamentoGroupBox = New System.Windows.Forms.GroupBox()
-        Me.MorterosGroupBox = New System.Windows.Forms.GroupBox()
+        Me.armamentoGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras4LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente10LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.morterosGroupBox = New System.Windows.Forms.GroupBox()
         Me.m_brandt_60mmNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.m_brandt_60mmLabel = New System.Windows.Forms.Label()
         Me.mc_fms_60mmNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.mc_fms_60mmLabel = New System.Windows.Forms.Label()
-        Me.OtrosMorterosTextBox = New System.Windows.Forms.TextBox()
-        Me.OtrosMorterosLabel = New System.Windows.Forms.Label()
+        Me.otrosMorterosTextBox = New System.Windows.Forms.TextBox()
+        Me.otrosMorterosLabel = New System.Windows.Forms.Label()
         Me.mc_c575_60mmNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.mc_c575_60mmLabel = New System.Windows.Forms.Label()
         Me.mc_c370_60mmNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.mc_c370_60mmLabel = New System.Windows.Forms.Label()
-        Me.LanzagranadasGroupBox = New System.Windows.Forms.GroupBox()
-        Me.M203NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.M203Label = New System.Windows.Forms.Label()
-        Me.M79NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.M79Label = New System.Windows.Forms.Label()
-        Me.MKNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.MKLabel = New System.Windows.Forms.Label()
-        Me.MGLNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.MGLLabel = New System.Windows.Forms.Label()
-        Me.GranadasGroupBox = New System.Windows.Forms.GroupBox()
-        Me.OtrasGranadasTextBox = New System.Windows.Forms.TextBox()
-        Me.OtrasGranadasLabel = New System.Windows.Forms.Label()
-        Me.LacrimogenoNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.LacrimogenoLabel = New System.Windows.Forms.Label()
-        Me.HumoNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.HumoLabel = New System.Windows.Forms.Label()
-        Me.ManoNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.ManoLabel = New System.Windows.Forms.Label()
-        Me.FusilesGroupBox = New System.Windows.Forms.GroupBox()
-        Me.OtrosFusilesTextBox = New System.Windows.Forms.TextBox()
-        Me.OtrosFusilesLabel = New System.Windows.Forms.Label()
-        Me.m16NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.m16Label = New System.Windows.Forms.Label()
-        Me.GalilNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.GalilLabel = New System.Windows.Forms.Label()
-        Me.EquiposEspecialesGroupBox = New System.Windows.Forms.GroupBox()
-        Me.OtrosEquiposTextBox = New System.Windows.Forms.TextBox()
-        Me.OtrosEquiposLabel = New System.Windows.Forms.Label()
-        Me.KitOrientacionNocturnoNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.KitOrientacionNocturnoLabel = New System.Windows.Forms.Label()
-        Me.FlasmersNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.FlasmersLabel = New System.Windows.Forms.Label()
-        Me.CamaraTermicaNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.CamaraTermicaLabel = New System.Windows.Forms.Label()
-        Me.BinocularesNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.BinocularesLabel = New System.Windows.Forms.Label()
-        Me.VisorNocturnoNumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.VisorNocturnoLabel = New System.Windows.Forms.Label()
-        Me.AmetralladorasGroupBox = New System.Windows.Forms.GroupBox()
-        Me.OtrasAmetralladorasTextBox = New System.Windows.Forms.TextBox()
-        Me.OtrassAmetralladorasLabel = New System.Windows.Forms.Label()
-        Me.Punto50NumericUpDown = New System.Windows.Forms.NumericUpDown()
-        Me.Punto50Label = New System.Windows.Forms.Label()
+        Me.lanzagranadasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.otrosLanzagranadasTextBox = New System.Windows.Forms.TextBox()
+        Me.otrosLanzagranadasLabel = New System.Windows.Forms.Label()
+        Me.m79NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.m79Label = New System.Windows.Forms.Label()
+        Me.mkNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.mkLabel = New System.Windows.Forms.Label()
+        Me.mglNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.mglLabel = New System.Windows.Forms.Label()
+        Me.granadasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.otrasGranadasTextBox = New System.Windows.Forms.TextBox()
+        Me.otrasGranadasLabel = New System.Windows.Forms.Label()
+        Me.lacrimogenaNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.lacrimogenaLabel = New System.Windows.Forms.Label()
+        Me.humoNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.humoLabel = New System.Windows.Forms.Label()
+        Me.manoNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.manoLabel = New System.Windows.Forms.Label()
+        Me.fusilesGroupBox = New System.Windows.Forms.GroupBox()
+        Me.m16_a203Label = New System.Windows.Forms.Label()
+        Me.m16_m4Label = New System.Windows.Forms.Label()
+        Me.m16_a2Label = New System.Windows.Forms.Label()
+        Me.m16_a203NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.m16_m4NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.m16_a2NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.otrosFusilesTextBox = New System.Windows.Forms.TextBox()
+        Me.otrosFusilesLabel = New System.Windows.Forms.Label()
+        Me.galil_iceNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.galil_iceLabel = New System.Windows.Forms.Label()
+        Me.galil_arNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.galil_arLabel = New System.Windows.Forms.Label()
+        Me.equiposEspecialesGroupBox = New System.Windows.Forms.GroupBox()
+        Me.otrosEquiposTextBox = New System.Windows.Forms.TextBox()
+        Me.otrosEquiposLabel = New System.Windows.Forms.Label()
+        Me.kitOrientacionNocturnoNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.kitOrientacionNocturnoLabel = New System.Windows.Forms.Label()
+        Me.flasmersNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.flasmersLabel = New System.Windows.Forms.Label()
+        Me.camaraTermicaNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.camaraTermicaLabel = New System.Windows.Forms.Label()
+        Me.binocularesNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.binocularesLabel = New System.Windows.Forms.Label()
+        Me.visorNocturnoNumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.visorNocturnoLabel = New System.Windows.Forms.Label()
+        Me.ametralladorasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.otrasAmetralladorasTextBox = New System.Windows.Forms.TextBox()
+        Me.otrasAmetralladorasLabel = New System.Windows.Forms.Label()
+        Me.punto50NumericUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.punto50Label = New System.Windows.Forms.Label()
         Me.ss77NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.ss77Label = New System.Windows.Forms.Label()
         Me.M249NumericUpDown = New System.Windows.Forms.NumericUpDown()
@@ -260,115 +291,90 @@ Partial Class OperacionForm
         Me.m60E4Label = New System.Windows.Forms.Label()
         Me.m60EstandarNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.m60EstandarLabel = New System.Windows.Forms.Label()
-        Me.Operaciones2GroupBox = New System.Windows.Forms.GroupBox()
-        Me.Propias_tropasRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.MisionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.FirmasGroupBox = New System.Windows.Forms.GroupBox()
-        Me.RecibeRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.AutenticaRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.AutorizaRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.AnexosGroupBox = New System.Windows.Forms.GroupBox()
-        Me.AnexosDataGridView = New System.Windows.Forms.DataGridView()
+        Me.situacionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras11LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente2LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.segregacionesSituacionTextBox = New System.Windows.Forms.TextBox()
+        Me.agregacionesSituacionTextBox = New System.Windows.Forms.TextBox()
+        Me.propiasTropasTextBox = New System.Windows.Forms.TextBox()
+        Me.enemigoTextBox = New System.Windows.Forms.TextBox()
+        Me.detalleSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.firmasGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras1LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.distribucionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.distribucionTextBox = New System.Windows.Forms.TextBox()
+        Me.recibeTextBox = New System.Windows.Forms.TextBox()
+        Me.autenticaTextBox = New System.Windows.Forms.TextBox()
+        Me.autorizaTextBox = New System.Windows.Forms.TextBox()
+        Me.anexosGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras2LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente12LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.anexosDataGridView = New System.Windows.Forms.DataGridView()
         Me.nombreArchivo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ruta = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.QuitarButton = New System.Windows.Forms.Button()
-        Me.AgregarAnexoButton = New System.Windows.Forms.Button()
+        Me.quitarButton = New System.Windows.Forms.Button()
+        Me.agregarAnexoButton = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Operaciones1LinkLabel = New System.Windows.Forms.LinkLabel()
-        Me.toeLinkLabel = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel7 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel9 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel11 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel14 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel12 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel15 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel16 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel17 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel18 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel14 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel19 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel20 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel15 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel21 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel22 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel16 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel23 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel24 = New System.Windows.Forms.LinkLabel()
-        Me.TableLayoutPanel17 = New System.Windows.Forms.TableLayoutPanel()
-        Me.LinkLabel25 = New System.Windows.Forms.LinkLabel()
-        OperacionLabel = New System.Windows.Forms.Label()
-        Nombre_operacionLabel = New System.Windows.Forms.Label()
-        ProcedimientoLabel = New System.Windows.Forms.Label()
-        Fecha_operacionLabel = New System.Windows.Forms.Label()
+        Me.personalGroupBox = New System.Windows.Forms.GroupBox()
+        Me.atras3LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.siguiente11LinkLabel = New System.Windows.Forms.LinkLabel()
+        Me.personalTextBox = New System.Windows.Forms.TextBox()
+        operacionLabel = New System.Windows.Forms.Label()
+        nombre_operacionLabel = New System.Windows.Forms.Label()
+        procedimientoLabel = New System.Windows.Forms.Label()
+        fecha_operacionLabel = New System.Windows.Forms.Label()
         Autoriza_deLabel = New System.Windows.Forms.Label()
         Comandante_operacionLabel = New System.Windows.Forms.Label()
         IndicativoLabel = New System.Windows.Forms.Label()
-        ReferenciasLabel = New System.Windows.Forms.Label()
-        SituacionLabel = New System.Windows.Forms.Label()
-        Propias_tropasRichTextBoxLabel = New System.Windows.Forms.Label()
-        MisionLabel = New System.Windows.Forms.Label()
-        AutorizaLabel = New System.Windows.Forms.Label()
-        AutenticaLabel = New System.Windows.Forms.Label()
-        RecibeLabel = New System.Windows.Forms.Label()
+        referenciasLabel = New System.Windows.Forms.Label()
+        detalleSituacionLabel = New System.Windows.Forms.Label()
+        enemigoLabel = New System.Windows.Forms.Label()
+        autorizaLabel = New System.Windows.Forms.Label()
+        autenticaLabel = New System.Windows.Forms.Label()
+        recibeLabel = New System.Windows.Forms.Label()
+        lugarLabel = New System.Windows.Forms.Label()
+        propiasTropasLabel = New System.Windows.Forms.Label()
+        segregacionesSituacionLabel = New System.Windows.Forms.Label()
+        agregacionesSituacionLabel = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        CType(Me.SegundosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SegundosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SegundosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SegundosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.segundosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.segundosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.segundosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.segundosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Operaciones1GroupBox.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
-        Me.ToeGroupBox.SuspendLayout()
+        Me.operacionGroupBox.SuspendLayout()
+        Me.misionGroupBox.SuspendLayout()
+        Me.toeGroupBox.SuspendLayout()
+        CType(Me.oficialesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CivilesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SuboficialesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imrNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.impNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SuboficialesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.OficialesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.CoordenadasGroupBox.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
-        CType(Me.MinutosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GradosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GradosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MinutosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.MinutosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GradosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GradosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MinutosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.coordenadasGroupBox.SuspendLayout()
+        Me.punto3TableLayoutPanel.SuspendLayout()
+        CType(Me.minutosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gradosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gradosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.minutosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.punto1TableLayoutPanel.SuspendLayout()
+        CType(Me.minutosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gradosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gradosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.minutosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Ejecucion1GroupBox.SuspendLayout()
+        Me.conceptoOperacionGroupBox.SuspendLayout()
         Me.Ejecucion2GroupBox.SuspendLayout()
-        Me.Ejecucion3GroupBox.SuspendLayout()
-        Me.Ejecucion4GroupBox.SuspendLayout()
-        Me.Ejecucion5GroupBox.SuspendLayout()
-        Me.Ejecucion6GroupBox.SuspendLayout()
-        Me.AbastecimientosGroupBox.SuspendLayout()
-        Me.ComunicacionesGroupBox.SuspendLayout()
-        Me.OtrosComGroupBox.SuspendLayout()
+        Me.juridicasGroupBox.SuspendLayout()
+        Me.serviciosCombateGroupBox.SuspendLayout()
+        Me.comunicacionesGroupBox.SuspendLayout()
+        Me.indicativosGroupBox.SuspendLayout()
+        Me.otrosComGroupBox.SuspendLayout()
         Me.UHFGroupBox.SuspendLayout()
         CType(Me.uhfEscanerNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uhfXTR3000NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uhfXTS4250NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.HFGroupBox.SuspendLayout()
+        Me.hfGroupBox.SuspendLayout()
         CType(Me.hfEscanerNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.hf6020NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.VHFGroupBox.SuspendLayout()
@@ -377,54 +383,44 @@ Partial Class OperacionForm
         CType(Me.vhf930NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.vhf710NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.vhf7330NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ArmamentoGroupBox.SuspendLayout()
-        Me.MorterosGroupBox.SuspendLayout()
+        Me.armamentoGroupBox.SuspendLayout()
+        Me.morterosGroupBox.SuspendLayout()
         CType(Me.m_brandt_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mc_fms_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mc_c575_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mc_c370_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LanzagranadasGroupBox.SuspendLayout()
-        CType(Me.M203NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.M79NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MKNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MGLNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GranadasGroupBox.SuspendLayout()
-        CType(Me.LacrimogenoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HumoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ManoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FusilesGroupBox.SuspendLayout()
-        CType(Me.m16NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GalilNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.EquiposEspecialesGroupBox.SuspendLayout()
-        CType(Me.KitOrientacionNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.FlasmersNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CamaraTermicaNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BinocularesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VisorNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.AmetralladorasGroupBox.SuspendLayout()
-        CType(Me.Punto50NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lanzagranadasGroupBox.SuspendLayout()
+        CType(Me.m79NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mkNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mglNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.granadasGroupBox.SuspendLayout()
+        CType(Me.lacrimogenaNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.humoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.manoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.fusilesGroupBox.SuspendLayout()
+        CType(Me.m16_a203NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.m16_m4NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.m16_a2NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.galil_iceNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.galil_arNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.equiposEspecialesGroupBox.SuspendLayout()
+        CType(Me.kitOrientacionNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.flasmersNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.camaraTermicaNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.binocularesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.visorNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ametralladorasGroupBox.SuspendLayout()
+        CType(Me.punto50NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ss77NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.M249NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.m60E4NumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.m60EstandarNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Operaciones2GroupBox.SuspendLayout()
-        Me.FirmasGroupBox.SuspendLayout()
-        Me.AnexosGroupBox.SuspendLayout()
-        CType(Me.AnexosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel4.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
-        Me.TableLayoutPanel6.SuspendLayout()
-        Me.TableLayoutPanel7.SuspendLayout()
-        Me.TableLayoutPanel8.SuspendLayout()
-        Me.TableLayoutPanel9.SuspendLayout()
-        Me.TableLayoutPanel10.SuspendLayout()
-        Me.TableLayoutPanel11.SuspendLayout()
-        Me.TableLayoutPanel12.SuspendLayout()
-        Me.TableLayoutPanel13.SuspendLayout()
-        Me.TableLayoutPanel14.SuspendLayout()
-        Me.TableLayoutPanel15.SuspendLayout()
-        Me.TableLayoutPanel16.SuspendLayout()
-        Me.TableLayoutPanel17.SuspendLayout()
+        Me.situacionGroupBox.SuspendLayout()
+        Me.firmasGroupBox.SuspendLayout()
+        Me.distribucionGroupBox.SuspendLayout()
+        Me.anexosGroupBox.SuspendLayout()
+        CType(Me.anexosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.personalGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'TituloLabel
@@ -435,59 +431,57 @@ Partial Class OperacionForm
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.FirmasGroupBox)
-        Me.Panel1.Controls.Add(Me.AnexosGroupBox)
-        Me.Panel1.Controls.Add(Me.ArmamentoGroupBox)
-        Me.Panel1.Controls.Add(Me.ComunicacionesGroupBox)
-        Me.Panel1.Controls.Add(Me.AbastecimientosGroupBox)
-        Me.Panel1.Controls.Add(Me.Ejecucion6GroupBox)
-        Me.Panel1.Controls.Add(Me.Ejecucion5GroupBox)
-        Me.Panel1.Controls.Add(Me.Ejecucion4GroupBox)
-        Me.Panel1.Controls.Add(Me.Ejecucion3GroupBox)
-        Me.Panel1.Controls.Add(Me.Ejecucion2GroupBox)
+        Me.Panel1.Controls.Add(Me.operacionGroupBox)
+        Me.Panel1.Controls.Add(Me.situacionGroupBox)
+        Me.Panel1.Controls.Add(Me.misionGroupBox)
+        Me.Panel1.Controls.Add(Me.coordenadasGroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion1GroupBox)
-        Me.Panel1.Controls.Add(Me.CoordenadasGroupBox)
-        Me.Panel1.Controls.Add(Me.ToeGroupBox)
-        Me.Panel1.Controls.Add(Me.Operaciones2GroupBox)
-        Me.Panel1.Controls.Add(Me.Operaciones1GroupBox)
+        Me.Panel1.Controls.Add(Me.Ejecucion2GroupBox)
+        Me.Panel1.Controls.Add(Me.juridicasGroupBox)
+        Me.Panel1.Controls.Add(Me.serviciosCombateGroupBox)
+        Me.Panel1.Controls.Add(Me.comunicacionesGroupBox)
+        Me.Panel1.Controls.Add(Me.armamentoGroupBox)
+        Me.Panel1.Controls.Add(Me.personalGroupBox)
+        Me.Panel1.Controls.Add(Me.anexosGroupBox)
+        Me.Panel1.Controls.Add(Me.firmasGroupBox)
         Me.Panel1.Location = New System.Drawing.Point(12, 69)
-        Me.Panel1.Size = New System.Drawing.Size(1160, 500)
+        Me.Panel1.Size = New System.Drawing.Size(1160, 521)
         '
-        'OperacionLabel
+        'operacionLabel
         '
-        OperacionLabel.AutoSize = True
-        OperacionLabel.Location = New System.Drawing.Point(19, 27)
-        OperacionLabel.Name = "OperacionLabel"
-        OperacionLabel.Size = New System.Drawing.Size(149, 16)
-        OperacionLabel.TabIndex = 0
-        OperacionLabel.Text = "Consecutivo operación:"
+        operacionLabel.AutoSize = True
+        operacionLabel.Location = New System.Drawing.Point(19, 27)
+        operacionLabel.Name = "operacionLabel"
+        operacionLabel.Size = New System.Drawing.Size(149, 16)
+        operacionLabel.TabIndex = 0
+        operacionLabel.Text = "Consecutivo operación:"
         '
-        'Nombre_operacionLabel
+        'nombre_operacionLabel
         '
-        Nombre_operacionLabel.AutoSize = True
-        Nombre_operacionLabel.Location = New System.Drawing.Point(49, 55)
-        Nombre_operacionLabel.Name = "Nombre_operacionLabel"
-        Nombre_operacionLabel.Size = New System.Drawing.Size(124, 16)
-        Nombre_operacionLabel.TabIndex = 2
-        Nombre_operacionLabel.Text = "Nombre operación:"
+        nombre_operacionLabel.AutoSize = True
+        nombre_operacionLabel.Location = New System.Drawing.Point(49, 55)
+        nombre_operacionLabel.Name = "nombre_operacionLabel"
+        nombre_operacionLabel.Size = New System.Drawing.Size(124, 16)
+        nombre_operacionLabel.TabIndex = 2
+        nombre_operacionLabel.Text = "Nombre operación:"
         '
-        'ProcedimientoLabel
+        'procedimientoLabel
         '
-        ProcedimientoLabel.AutoSize = True
-        ProcedimientoLabel.Location = New System.Drawing.Point(73, 83)
-        ProcedimientoLabel.Name = "ProcedimientoLabel"
-        ProcedimientoLabel.Size = New System.Drawing.Size(98, 16)
-        ProcedimientoLabel.TabIndex = 4
-        ProcedimientoLabel.Text = "Procedimiento:"
+        procedimientoLabel.AutoSize = True
+        procedimientoLabel.Location = New System.Drawing.Point(73, 83)
+        procedimientoLabel.Name = "procedimientoLabel"
+        procedimientoLabel.Size = New System.Drawing.Size(98, 16)
+        procedimientoLabel.TabIndex = 4
+        procedimientoLabel.Text = "Procedimiento:"
         '
-        'Fecha_operacionLabel
+        'fecha_operacionLabel
         '
-        Fecha_operacionLabel.AutoSize = True
-        Fecha_operacionLabel.Location = New System.Drawing.Point(62, 112)
-        Fecha_operacionLabel.Name = "Fecha_operacionLabel"
-        Fecha_operacionLabel.Size = New System.Drawing.Size(113, 16)
-        Fecha_operacionLabel.TabIndex = 6
-        Fecha_operacionLabel.Text = "Fecha operación:"
+        fecha_operacionLabel.AutoSize = True
+        fecha_operacionLabel.Location = New System.Drawing.Point(62, 112)
+        fecha_operacionLabel.Name = "fecha_operacionLabel"
+        fecha_operacionLabel.Size = New System.Drawing.Size(113, 16)
+        fecha_operacionLabel.TabIndex = 6
+        fecha_operacionLabel.Text = "Fecha operación:"
         '
         'Autoriza_deLabel
         '
@@ -516,68 +510,95 @@ Partial Class OperacionForm
         IndicativoLabel.TabIndex = 12
         IndicativoLabel.Text = "Indicativo:"
         '
-        'ReferenciasLabel
+        'referenciasLabel
         '
-        ReferenciasLabel.AutoSize = True
-        ReferenciasLabel.Location = New System.Drawing.Point(16, 149)
-        ReferenciasLabel.Name = "ReferenciasLabel"
-        ReferenciasLabel.Size = New System.Drawing.Size(84, 16)
-        ReferenciasLabel.TabIndex = 14
-        ReferenciasLabel.Text = "Referencias:"
+        referenciasLabel.AutoSize = True
+        referenciasLabel.Location = New System.Drawing.Point(16, 149)
+        referenciasLabel.Name = "referenciasLabel"
+        referenciasLabel.Size = New System.Drawing.Size(84, 16)
+        referenciasLabel.TabIndex = 14
+        referenciasLabel.Text = "Referencias:"
         '
-        'SituacionLabel
+        'detalleSituacionLabel
         '
-        SituacionLabel.AutoSize = True
-        SituacionLabel.Location = New System.Drawing.Point(556, 149)
-        SituacionLabel.Name = "SituacionLabel"
-        SituacionLabel.Size = New System.Drawing.Size(66, 16)
-        SituacionLabel.TabIndex = 16
-        SituacionLabel.Text = "Situación:"
+        detalleSituacionLabel.AutoSize = True
+        detalleSituacionLabel.Location = New System.Drawing.Point(19, 21)
+        detalleSituacionLabel.Name = "detalleSituacionLabel"
+        detalleSituacionLabel.Size = New System.Drawing.Size(54, 16)
+        detalleSituacionLabel.TabIndex = 0
+        detalleSituacionLabel.Text = "Detalle:"
         '
-        'Propias_tropasRichTextBoxLabel
+        'enemigoLabel
         '
-        Propias_tropasRichTextBoxLabel.AutoSize = True
-        Propias_tropasRichTextBoxLabel.Location = New System.Drawing.Point(19, 21)
-        Propias_tropasRichTextBoxLabel.Name = "Propias_tropasRichTextBoxLabel"
-        Propias_tropasRichTextBoxLabel.Size = New System.Drawing.Size(99, 16)
-        Propias_tropasRichTextBoxLabel.TabIndex = 18
-        Propias_tropasRichTextBoxLabel.Text = "Propias tropas:"
+        enemigoLabel.AutoSize = True
+        enemigoLabel.Location = New System.Drawing.Point(590, 21)
+        enemigoLabel.Name = "enemigoLabel"
+        enemigoLabel.Size = New System.Drawing.Size(79, 16)
+        enemigoLabel.TabIndex = 2
+        enemigoLabel.Text = "a. Enemigo:"
         '
-        'MisionLabel
+        'autorizaLabel
         '
-        MisionLabel.AutoSize = True
-        MisionLabel.Location = New System.Drawing.Point(574, 21)
-        MisionLabel.Name = "MisionLabel"
-        MisionLabel.Size = New System.Drawing.Size(50, 16)
-        MisionLabel.TabIndex = 20
-        MisionLabel.Text = "Misión:"
+        autorizaLabel.AutoSize = True
+        autorizaLabel.Location = New System.Drawing.Point(14, 116)
+        autorizaLabel.Name = "autorizaLabel"
+        autorizaLabel.Size = New System.Drawing.Size(59, 16)
+        autorizaLabel.TabIndex = 18
+        autorizaLabel.Text = "Autoriza:"
         '
-        'AutorizaLabel
+        'autenticaLabel
         '
-        AutorizaLabel.AutoSize = True
-        AutorizaLabel.Location = New System.Drawing.Point(17, 32)
-        AutorizaLabel.Name = "AutorizaLabel"
-        AutorizaLabel.Size = New System.Drawing.Size(59, 16)
-        AutorizaLabel.TabIndex = 18
-        AutorizaLabel.Text = "Autoriza:"
+        autenticaLabel.AutoSize = True
+        autenticaLabel.Location = New System.Drawing.Point(7, 184)
+        autenticaLabel.Name = "autenticaLabel"
+        autenticaLabel.Size = New System.Drawing.Size(66, 16)
+        autenticaLabel.TabIndex = 20
+        autenticaLabel.Text = "Autentica:"
         '
-        'AutenticaLabel
+        'recibeLabel
         '
-        AutenticaLabel.AutoSize = True
-        AutenticaLabel.Location = New System.Drawing.Point(10, 135)
-        AutenticaLabel.Name = "AutenticaLabel"
-        AutenticaLabel.Size = New System.Drawing.Size(66, 16)
-        AutenticaLabel.TabIndex = 20
-        AutenticaLabel.Text = "Autentica:"
+        recibeLabel.AutoSize = True
+        recibeLabel.Location = New System.Drawing.Point(18, 252)
+        recibeLabel.Name = "recibeLabel"
+        recibeLabel.Size = New System.Drawing.Size(55, 16)
+        recibeLabel.TabIndex = 22
+        recibeLabel.Text = "Recibe:"
         '
-        'RecibeLabel
+        'lugarLabel
         '
-        RecibeLabel.AutoSize = True
-        RecibeLabel.Location = New System.Drawing.Point(21, 238)
-        RecibeLabel.Name = "RecibeLabel"
-        RecibeLabel.Size = New System.Drawing.Size(55, 16)
-        RecibeLabel.TabIndex = 22
-        RecibeLabel.Text = "Recibe:"
+        lugarLabel.AutoSize = True
+        lugarLabel.Location = New System.Drawing.Point(619, 108)
+        lugarLabel.Name = "lugarLabel"
+        lugarLabel.Size = New System.Drawing.Size(45, 16)
+        lugarLabel.TabIndex = 20
+        lugarLabel.Text = "Lugar:"
+        '
+        'propiasTropasLabel
+        '
+        propiasTropasLabel.AutoSize = True
+        propiasTropasLabel.Location = New System.Drawing.Point(590, 135)
+        propiasTropasLabel.Name = "propiasTropasLabel"
+        propiasTropasLabel.Size = New System.Drawing.Size(113, 16)
+        propiasTropasLabel.TabIndex = 4
+        propiasTropasLabel.Text = "b. Propias tropas:"
+        '
+        'segregacionesSituacionLabel
+        '
+        segregacionesSituacionLabel.AutoSize = True
+        segregacionesSituacionLabel.Location = New System.Drawing.Point(590, 375)
+        segregacionesSituacionLabel.Name = "segregacionesSituacionLabel"
+        segregacionesSituacionLabel.Size = New System.Drawing.Size(118, 16)
+        segregacionesSituacionLabel.TabIndex = 8
+        segregacionesSituacionLabel.Text = "d. Segregaciones:"
+        '
+        'agregacionesSituacionLabel
+        '
+        agregacionesSituacionLabel.AutoSize = True
+        agregacionesSituacionLabel.Location = New System.Drawing.Point(590, 261)
+        agregacionesSituacionLabel.Name = "agregacionesSituacionLabel"
+        agregacionesSituacionLabel.Size = New System.Drawing.Size(109, 16)
+        agregacionesSituacionLabel.TabIndex = 6
+        agregacionesSituacionLabel.Text = "c. Agregaciones:"
         '
         'ToolTip1
         '
@@ -588,72 +609,73 @@ Partial Class OperacionForm
         Me.ToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.ToolTip1.ToolTipTitle = "Ayuda"
         '
-        'OperacionTextBox
+        'operacionTextBox
         '
-        Me.OperacionTextBox.Location = New System.Drawing.Point(176, 24)
-        Me.OperacionTextBox.MaxLength = 20
-        Me.OperacionTextBox.Name = "OperacionTextBox"
-        Me.OperacionTextBox.Size = New System.Drawing.Size(250, 22)
-        Me.OperacionTextBox.TabIndex = 1
-        Me.ToolTip1.SetToolTip(Me.OperacionTextBox, "Consecutivo de la operación, puede ser alfanumérico " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "de máximo 20 caracteres.")
+        Me.operacionTextBox.Location = New System.Drawing.Point(176, 24)
+        Me.operacionTextBox.MaxLength = 20
+        Me.operacionTextBox.Name = "operacionTextBox"
+        Me.operacionTextBox.Size = New System.Drawing.Size(250, 22)
+        Me.operacionTextBox.TabIndex = 1
+        Me.ToolTip1.SetToolTip(Me.operacionTextBox, "Consecutivo de la operación, puede ser alfanumérico " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "de máximo 20 caracteres.")
         '
-        'Nombre_operacionTextBox
+        'nombre_operacionTextBox
         '
-        Me.Nombre_operacionTextBox.Location = New System.Drawing.Point(176, 52)
-        Me.Nombre_operacionTextBox.MaxLength = 300
-        Me.Nombre_operacionTextBox.Name = "Nombre_operacionTextBox"
-        Me.Nombre_operacionTextBox.Size = New System.Drawing.Size(250, 22)
-        Me.Nombre_operacionTextBox.TabIndex = 3
-        Me.ToolTip1.SetToolTip(Me.Nombre_operacionTextBox, "Máximo 300 caracteres.")
+        Me.nombre_operacionTextBox.Location = New System.Drawing.Point(176, 52)
+        Me.nombre_operacionTextBox.MaxLength = 300
+        Me.nombre_operacionTextBox.Name = "nombre_operacionTextBox"
+        Me.nombre_operacionTextBox.Size = New System.Drawing.Size(250, 22)
+        Me.nombre_operacionTextBox.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.nombre_operacionTextBox, "Máximo 300 caracteres.")
         '
-        'Autoriza_deTextBox
+        'deTextBox
         '
-        Me.Autoriza_deTextBox.Location = New System.Drawing.Point(670, 21)
-        Me.Autoriza_deTextBox.MaxLength = 300
-        Me.Autoriza_deTextBox.Name = "Autoriza_deTextBox"
-        Me.Autoriza_deTextBox.Size = New System.Drawing.Size(250, 22)
-        Me.Autoriza_deTextBox.TabIndex = 9
-        Me.ToolTip1.SetToolTip(Me.Autoriza_deTextBox, "Texto del campo ""De""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Que aparecerá en la página 1 de la orden fragmentaria.")
+        Me.deTextBox.Location = New System.Drawing.Point(670, 21)
+        Me.deTextBox.MaxLength = 300
+        Me.deTextBox.Name = "deTextBox"
+        Me.deTextBox.Size = New System.Drawing.Size(250, 22)
+        Me.deTextBox.TabIndex = 9
+        Me.deTextBox.Text = "CBFIM52"
+        Me.ToolTip1.SetToolTip(Me.deTextBox, "Texto del campo ""De""" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Que aparecerá en la página 1 de la orden fragmentaria.")
         '
-        'SegundosLgn1NumericUpDown
+        'segundosLgn1NumericUpDown
         '
-        Me.SegundosLgn1NumericUpDown.DecimalPlaces = 2
-        Me.SegundosLgn1NumericUpDown.Location = New System.Drawing.Point(190, 47)
-        Me.SegundosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.SegundosLgn1NumericUpDown.Name = "SegundosLgn1NumericUpDown"
-        Me.SegundosLgn1NumericUpDown.Size = New System.Drawing.Size(67, 22)
-        Me.SegundosLgn1NumericUpDown.TabIndex = 10
-        Me.ToolTip1.SetToolTip(Me.SegundosLgn1NumericUpDown, "El separador decimal es la coma.")
+        Me.segundosLgn1NumericUpDown.DecimalPlaces = 2
+        Me.segundosLgn1NumericUpDown.Location = New System.Drawing.Point(190, 47)
+        Me.segundosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.segundosLgn1NumericUpDown.Name = "segundosLgn1NumericUpDown"
+        Me.segundosLgn1NumericUpDown.Size = New System.Drawing.Size(67, 22)
+        Me.segundosLgn1NumericUpDown.TabIndex = 10
+        Me.ToolTip1.SetToolTip(Me.segundosLgn1NumericUpDown, "El separador decimal es la coma.")
         '
-        'SegundosLat1NumericUpDown
+        'segundosLat1NumericUpDown
         '
-        Me.SegundosLat1NumericUpDown.DecimalPlaces = 2
-        Me.SegundosLat1NumericUpDown.Location = New System.Drawing.Point(190, 19)
-        Me.SegundosLat1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.SegundosLat1NumericUpDown.Name = "SegundosLat1NumericUpDown"
-        Me.SegundosLat1NumericUpDown.Size = New System.Drawing.Size(67, 22)
-        Me.SegundosLat1NumericUpDown.TabIndex = 6
-        Me.ToolTip1.SetToolTip(Me.SegundosLat1NumericUpDown, "El separador decimal es la coma.")
+        Me.segundosLat1NumericUpDown.DecimalPlaces = 2
+        Me.segundosLat1NumericUpDown.Location = New System.Drawing.Point(190, 19)
+        Me.segundosLat1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.segundosLat1NumericUpDown.Name = "segundosLat1NumericUpDown"
+        Me.segundosLat1NumericUpDown.Size = New System.Drawing.Size(67, 22)
+        Me.segundosLat1NumericUpDown.TabIndex = 6
+        Me.ToolTip1.SetToolTip(Me.segundosLat1NumericUpDown, "El separador decimal es la coma.")
         '
-        'SegundosLng3NumericUpDown
+        'segundosLng3NumericUpDown
         '
-        Me.SegundosLng3NumericUpDown.DecimalPlaces = 2
-        Me.SegundosLng3NumericUpDown.Location = New System.Drawing.Point(190, 47)
-        Me.SegundosLng3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.SegundosLng3NumericUpDown.Name = "SegundosLng3NumericUpDown"
-        Me.SegundosLng3NumericUpDown.Size = New System.Drawing.Size(67, 22)
-        Me.SegundosLng3NumericUpDown.TabIndex = 10
-        Me.ToolTip1.SetToolTip(Me.SegundosLng3NumericUpDown, "El separador decimal es la coma.")
+        Me.segundosLng3NumericUpDown.DecimalPlaces = 2
+        Me.segundosLng3NumericUpDown.Location = New System.Drawing.Point(190, 47)
+        Me.segundosLng3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.segundosLng3NumericUpDown.Name = "segundosLng3NumericUpDown"
+        Me.segundosLng3NumericUpDown.Size = New System.Drawing.Size(67, 22)
+        Me.segundosLng3NumericUpDown.TabIndex = 10
+        Me.ToolTip1.SetToolTip(Me.segundosLng3NumericUpDown, "El separador decimal es la coma.")
         '
-        'SegundosLat3NumericUpDown
+        'segundosLat3NumericUpDown
         '
-        Me.SegundosLat3NumericUpDown.DecimalPlaces = 2
-        Me.SegundosLat3NumericUpDown.Location = New System.Drawing.Point(190, 19)
-        Me.SegundosLat3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.SegundosLat3NumericUpDown.Name = "SegundosLat3NumericUpDown"
-        Me.SegundosLat3NumericUpDown.Size = New System.Drawing.Size(67, 22)
-        Me.SegundosLat3NumericUpDown.TabIndex = 6
-        Me.ToolTip1.SetToolTip(Me.SegundosLat3NumericUpDown, "El separador decimal es la coma.")
+        Me.segundosLat3NumericUpDown.DecimalPlaces = 2
+        Me.segundosLat3NumericUpDown.Location = New System.Drawing.Point(190, 19)
+        Me.segundosLat3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.segundosLat3NumericUpDown.Name = "segundosLat3NumericUpDown"
+        Me.segundosLat3NumericUpDown.Size = New System.Drawing.Size(67, 22)
+        Me.segundosLat3NumericUpDown.TabIndex = 6
+        Me.ToolTip1.SetToolTip(Me.segundosLat3NumericUpDown, "El separador decimal es la coma.")
         '
         'MenuStrip1
         '
@@ -666,108 +688,96 @@ Partial Class OperacionForm
         '
         'DatosToolStripMenuItem
         '
-        Me.DatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Operaciones1ToolStripMenuItem, Me.Operaciones2ToolStripMenuItem, Me.TOEToolStripMenuItem, Me.CoordenadasToolStripMenuItem, Me.EjecucionToolStripMenuItem, Me.AbastecimientosToolStripMenuItem, Me.ComunicacionesToolStripMenuItem, Me.ArmamentoToolStripMenuItem, Me.AnexosToolStripMenuItem, Me.FirmasToolStripMenuItem})
+        Me.DatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OperacionesToolStripMenuItem, Me.situacionToolStripMenuItem, Me.misionToolStripMenuItem, Me.CoordenadasToolStripMenuItem, Me.EjecucionToolStripMenuItem, Me.juridicasToolStripMenuItem, Me.serviciosCombateToolStripMenuItem, Me.ComunicacionesToolStripMenuItem, Me.ArmamentoToolStripMenuItem, Me.PersonalToolStripMenuItem, Me.AnexosToolStripMenuItem, Me.FirmasToolStripMenuItem})
         Me.DatosToolStripMenuItem.Name = "DatosToolStripMenuItem"
         Me.DatosToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
         Me.DatosToolStripMenuItem.Text = "&Datos"
         '
-        'Operaciones1ToolStripMenuItem
+        'OperacionesToolStripMenuItem
         '
-        Me.Operaciones1ToolStripMenuItem.Name = "Operaciones1ToolStripMenuItem"
-        Me.Operaciones1ToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.Operaciones1ToolStripMenuItem.Text = "&Básicos"
+        Me.OperacionesToolStripMenuItem.Name = "OperacionesToolStripMenuItem"
+        Me.OperacionesToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.OperacionesToolStripMenuItem.Text = "&Básicos"
         '
-        'Operaciones2ToolStripMenuItem
+        'situacionToolStripMenuItem
         '
-        Me.Operaciones2ToolStripMenuItem.Name = "Operaciones2ToolStripMenuItem"
-        Me.Operaciones2ToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.Operaciones2ToolStripMenuItem.Text = "Propias tropas | Misio&n"
+        Me.situacionToolStripMenuItem.Name = "situacionToolStripMenuItem"
+        Me.situacionToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.situacionToolStripMenuItem.Text = "&Situación"
         '
-        'TOEToolStripMenuItem
+        'misionToolStripMenuItem
         '
-        Me.TOEToolStripMenuItem.Name = "TOEToolStripMenuItem"
-        Me.TOEToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.TOEToolStripMenuItem.Text = "&TOE"
+        Me.misionToolStripMenuItem.Name = "misionToolStripMenuItem"
+        Me.misionToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.misionToolStripMenuItem.Text = "&Misión | TOE"
         '
         'CoordenadasToolStripMenuItem
         '
         Me.CoordenadasToolStripMenuItem.Name = "CoordenadasToolStripMenuItem"
-        Me.CoordenadasToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.CoordenadasToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
         Me.CoordenadasToolStripMenuItem.Text = "&Coordenadas"
         '
         'EjecucionToolStripMenuItem
         '
-        Me.EjecucionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Ejecucion1ToolStripMenuItem, Me.Ejecucion2ToolStripMenuItem, Me.Ejecucion3ToolStripMenuItem, Me.Ejecucion4ToolStripMenuItem, Me.Ejecucion5ToolStripMenuItem, Me.Ejecucion6ToolStripMenuItem})
+        Me.EjecucionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Ejecucion1ToolStripMenuItem, Me.Ejecucion2ToolStripMenuItem})
         Me.EjecucionToolStripMenuItem.Name = "EjecucionToolStripMenuItem"
-        Me.EjecucionToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.EjecucionToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
         Me.EjecucionToolStripMenuItem.Text = "&Ejecución"
         '
         'Ejecucion1ToolStripMenuItem
         '
         Me.Ejecucion1ToolStripMenuItem.Name = "Ejecucion1ToolStripMenuItem"
-        Me.Ejecucion1ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
+        Me.Ejecucion1ToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
         Me.Ejecucion1ToolStripMenuItem.Text = "Intención co&mandante | Concepto"
         '
         'Ejecucion2ToolStripMenuItem
         '
         Me.Ejecucion2ToolStripMenuItem.Name = "Ejecucion2ToolStripMenuItem"
-        Me.Ejecucion2ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.Ejecucion2ToolStripMenuItem.Text = "Maniobra | Fuegos"
+        Me.Ejecucion2ToolStripMenuItem.Size = New System.Drawing.Size(255, 22)
+        Me.Ejecucion2ToolStripMenuItem.Text = "Instrucciones"
         '
-        'Ejecucion3ToolStripMenuItem
+        'juridicasToolStripMenuItem
         '
-        Me.Ejecucion3ToolStripMenuItem.Name = "Ejecucion3ToolStripMenuItem"
-        Me.Ejecucion3ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.Ejecucion3ToolStripMenuItem.Text = "Tareas: Maniobra | Combate"
+        Me.juridicasToolStripMenuItem.Name = "juridicasToolStripMenuItem"
+        Me.juridicasToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.juridicasToolStripMenuItem.Text = "Uso de fuerza | Instrucciones juridicas"
         '
-        'Ejecucion4ToolStripMenuItem
+        'serviciosCombateToolStripMenuItem
         '
-        Me.Ejecucion4ToolStripMenuItem.Name = "Ejecucion4ToolStripMenuItem"
-        Me.Ejecucion4ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.Ejecucion4ToolStripMenuItem.Text = "Instrucciones coordinación | Nivel de hostilidad"
-        '
-        'Ejecucion5ToolStripMenuItem
-        '
-        Me.Ejecucion5ToolStripMenuItem.Name = "Ejecucion5ToolStripMenuItem"
-        Me.Ejecucion5ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.Ejecucion5ToolStripMenuItem.Text = "Marco jurídico | Principios"
-        '
-        'Ejecucion6ToolStripMenuItem
-        '
-        Me.Ejecucion6ToolStripMenuItem.Name = "Ejecucion6ToolStripMenuItem"
-        Me.Ejecucion6ToolStripMenuItem.Size = New System.Drawing.Size(324, 22)
-        Me.Ejecucion6ToolStripMenuItem.Text = "Uso de fuerza | Instrucciones especiales"
-        '
-        'AbastecimientosToolStripMenuItem
-        '
-        Me.AbastecimientosToolStripMenuItem.Name = "AbastecimientosToolStripMenuItem"
-        Me.AbastecimientosToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.AbastecimientosToolStripMenuItem.Text = "&Abastecimientos"
+        Me.serviciosCombateToolStripMenuItem.Name = "serviciosCombateToolStripMenuItem"
+        Me.serviciosCombateToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.serviciosCombateToolStripMenuItem.Text = "&Apoyo de servicios para el combate"
         '
         'ComunicacionesToolStripMenuItem
         '
         Me.ComunicacionesToolStripMenuItem.Name = "ComunicacionesToolStripMenuItem"
-        Me.ComunicacionesToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.ComunicacionesToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
         Me.ComunicacionesToolStripMenuItem.Text = "Co&municaciones"
         '
         'ArmamentoToolStripMenuItem
         '
         Me.ArmamentoToolStripMenuItem.Name = "ArmamentoToolStripMenuItem"
-        Me.ArmamentoToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.ArmamentoToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
         Me.ArmamentoToolStripMenuItem.Text = "A&rmamento"
+        '
+        'PersonalToolStripMenuItem
+        '
+        Me.PersonalToolStripMenuItem.Name = "PersonalToolStripMenuItem"
+        Me.PersonalToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.PersonalToolStripMenuItem.Text = "&Personal"
         '
         'AnexosToolStripMenuItem
         '
         Me.AnexosToolStripMenuItem.Name = "AnexosToolStripMenuItem"
-        Me.AnexosToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
+        Me.AnexosToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
         Me.AnexosToolStripMenuItem.Text = "Ane&xos"
         '
         'FirmasToolStripMenuItem
         '
         Me.FirmasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FirmasToolStripMenuItem.Name = "FirmasToolStripMenuItem"
-        Me.FirmasToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
-        Me.FirmasToolStripMenuItem.Text = "&Firmas"
+        Me.FirmasToolStripMenuItem.Size = New System.Drawing.Size(271, 22)
+        Me.FirmasToolStripMenuItem.Text = "&Firmas | Distribución"
         '
         'GuardarTodoToolStripMenuItem
         '
@@ -787,87 +797,85 @@ Partial Class OperacionForm
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
-        'Operaciones1GroupBox
+        'operacionGroupBox
         '
-        Me.Operaciones1GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.operacionGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Operaciones1GroupBox.BackColor = System.Drawing.Color.Transparent
-        Me.Operaciones1GroupBox.Controls.Add(Me.TableLayoutPanel3)
-        Me.Operaciones1GroupBox.Controls.Add(OperacionLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.OperacionTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(Nombre_operacionLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.Nombre_operacionTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(ProcedimientoLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.ProcedimientoTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(Fecha_operacionLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.Fecha_operacionDateTimePicker)
-        Me.Operaciones1GroupBox.Controls.Add(Autoriza_deLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.Autoriza_deTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(Comandante_operacionLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.Comandante_operacionTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(IndicativoLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.IndicativoTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(ReferenciasLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.ReferenciasRichTextBox)
-        Me.Operaciones1GroupBox.Controls.Add(SituacionLabel)
-        Me.Operaciones1GroupBox.Controls.Add(Me.SituacionRichTextBox)
-        Me.Operaciones1GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Operaciones1GroupBox.Name = "Operaciones1GroupBox"
-        Me.Operaciones1GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Operaciones1GroupBox.TabIndex = 1
-        Me.Operaciones1GroupBox.TabStop = False
+        Me.operacionGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.operacionGroupBox.Controls.Add(Me.siguiente1LinkLabel)
+        Me.operacionGroupBox.Controls.Add(lugarLabel)
+        Me.operacionGroupBox.Controls.Add(Me.lugarTextBox)
+        Me.operacionGroupBox.Controls.Add(Me.procedimientoComboBox)
+        Me.operacionGroupBox.Controls.Add(operacionLabel)
+        Me.operacionGroupBox.Controls.Add(Me.operacionTextBox)
+        Me.operacionGroupBox.Controls.Add(nombre_operacionLabel)
+        Me.operacionGroupBox.Controls.Add(Me.nombre_operacionTextBox)
+        Me.operacionGroupBox.Controls.Add(procedimientoLabel)
+        Me.operacionGroupBox.Controls.Add(fecha_operacionLabel)
+        Me.operacionGroupBox.Controls.Add(Me.fecha_operacionDateTimePicker)
+        Me.operacionGroupBox.Controls.Add(Autoriza_deLabel)
+        Me.operacionGroupBox.Controls.Add(Me.deTextBox)
+        Me.operacionGroupBox.Controls.Add(Comandante_operacionLabel)
+        Me.operacionGroupBox.Controls.Add(Me.accTextBox)
+        Me.operacionGroupBox.Controls.Add(IndicativoLabel)
+        Me.operacionGroupBox.Controls.Add(Me.IndicativoTextBox)
+        Me.operacionGroupBox.Controls.Add(referenciasLabel)
+        Me.operacionGroupBox.Controls.Add(Me.referenciasRichTextBox)
+        Me.operacionGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.operacionGroupBox.Name = "operacionGroupBox"
+        Me.operacionGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.operacionGroupBox.TabIndex = 1
+        Me.operacionGroupBox.TabStop = False
         '
-        'TableLayoutPanel3
+        'siguiente1LinkLabel
         '
-        Me.TableLayoutPanel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel3.ColumnCount = 1
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.Operaciones2LinkLabel, 0, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(1050, 24)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel3.TabIndex = 19
+        Me.siguiente1LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente1LinkLabel.AutoSize = True
+        Me.siguiente1LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente1LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente1LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente1LinkLabel.Name = "siguiente1LinkLabel"
+        Me.siguiente1LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente1LinkLabel.TabIndex = 1
+        Me.siguiente1LinkLabel.TabStop = True
+        Me.siguiente1LinkLabel.Text = "Siguiente"
+        Me.siguiente1LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Operaciones2LinkLabel
+        'lugarTextBox
         '
-        Me.Operaciones2LinkLabel.AutoSize = True
-        Me.Operaciones2LinkLabel.ForeColor = System.Drawing.Color.Yellow
-        Me.Operaciones2LinkLabel.LinkColor = System.Drawing.Color.Yellow
-        Me.Operaciones2LinkLabel.Location = New System.Drawing.Point(3, 0)
-        Me.Operaciones2LinkLabel.Name = "Operaciones2LinkLabel"
-        Me.Operaciones2LinkLabel.Size = New System.Drawing.Size(64, 16)
-        Me.Operaciones2LinkLabel.TabIndex = 1
-        Me.Operaciones2LinkLabel.TabStop = True
-        Me.Operaciones2LinkLabel.Text = "Siguiente"
-        Me.Operaciones2LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lugarTextBox.Location = New System.Drawing.Point(670, 105)
+        Me.lugarTextBox.MaxLength = 300
+        Me.lugarTextBox.Name = "lugarTextBox"
+        Me.lugarTextBox.Size = New System.Drawing.Size(250, 22)
+        Me.lugarTextBox.TabIndex = 21
+        Me.lugarTextBox.Text = "Arauca, Arauca"
         '
-        'ProcedimientoTextBox
+        'procedimientoComboBox
         '
-        Me.ProcedimientoTextBox.Location = New System.Drawing.Point(176, 80)
-        Me.ProcedimientoTextBox.MaxLength = 300
-        Me.ProcedimientoTextBox.Name = "ProcedimientoTextBox"
-        Me.ProcedimientoTextBox.Size = New System.Drawing.Size(250, 22)
-        Me.ProcedimientoTextBox.TabIndex = 5
+        Me.procedimientoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.procedimientoComboBox.FormattingEnabled = True
+        Me.procedimientoComboBox.Items.AddRange(New Object() {"OPERACIÓN FLUVIAL", "OPERACIÓN TERRESTRE"})
+        Me.procedimientoComboBox.Location = New System.Drawing.Point(176, 80)
+        Me.procedimientoComboBox.Name = "procedimientoComboBox"
+        Me.procedimientoComboBox.Size = New System.Drawing.Size(250, 24)
+        Me.procedimientoComboBox.TabIndex = 5
         '
-        'Fecha_operacionDateTimePicker
+        'fecha_operacionDateTimePicker
         '
-        Me.Fecha_operacionDateTimePicker.Location = New System.Drawing.Point(176, 108)
-        Me.Fecha_operacionDateTimePicker.Name = "Fecha_operacionDateTimePicker"
-        Me.Fecha_operacionDateTimePicker.Size = New System.Drawing.Size(250, 22)
-        Me.Fecha_operacionDateTimePicker.TabIndex = 7
-        Me.Fecha_operacionDateTimePicker.Value = New Date(2012, 6, 23, 0, 0, 0, 0)
+        Me.fecha_operacionDateTimePicker.Location = New System.Drawing.Point(176, 108)
+        Me.fecha_operacionDateTimePicker.Name = "fecha_operacionDateTimePicker"
+        Me.fecha_operacionDateTimePicker.Size = New System.Drawing.Size(250, 22)
+        Me.fecha_operacionDateTimePicker.TabIndex = 7
+        Me.fecha_operacionDateTimePicker.Value = New Date(2012, 6, 23, 0, 0, 0, 0)
         '
-        'Comandante_operacionTextBox
+        'accTextBox
         '
-        Me.Comandante_operacionTextBox.Location = New System.Drawing.Point(670, 49)
-        Me.Comandante_operacionTextBox.MaxLength = 300
-        Me.Comandante_operacionTextBox.Name = "Comandante_operacionTextBox"
-        Me.Comandante_operacionTextBox.Size = New System.Drawing.Size(250, 22)
-        Me.Comandante_operacionTextBox.TabIndex = 11
+        Me.accTextBox.Location = New System.Drawing.Point(670, 49)
+        Me.accTextBox.MaxLength = 300
+        Me.accTextBox.Name = "accTextBox"
+        Me.accTextBox.Size = New System.Drawing.Size(250, 22)
+        Me.accTextBox.TabIndex = 11
         '
         'IndicativoTextBox
         '
@@ -877,101 +885,208 @@ Partial Class OperacionForm
         Me.IndicativoTextBox.Size = New System.Drawing.Size(250, 22)
         Me.IndicativoTextBox.TabIndex = 13
         '
-        'ReferenciasRichTextBox
+        'referenciasRichTextBox
         '
-        Me.ReferenciasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.referenciasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.ReferenciasRichTextBox.Location = New System.Drawing.Point(19, 168)
-        Me.ReferenciasRichTextBox.Name = "ReferenciasRichTextBox"
-        Me.ReferenciasRichTextBox.Size = New System.Drawing.Size(501, 286)
-        Me.ReferenciasRichTextBox.TabIndex = 15
-        Me.ReferenciasRichTextBox.Text = resources.GetString("ReferenciasRichTextBox.Text")
+        Me.referenciasRichTextBox.Location = New System.Drawing.Point(19, 168)
+        Me.referenciasRichTextBox.Name = "referenciasRichTextBox"
+        Me.referenciasRichTextBox.Size = New System.Drawing.Size(903, 307)
+        Me.referenciasRichTextBox.TabIndex = 15
+        Me.referenciasRichTextBox.Text = resources.GetString("referenciasRichTextBox.Text")
         '
-        'SituacionRichTextBox
+        'misionGroupBox
         '
-        Me.SituacionRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.misionGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SituacionRichTextBox.Location = New System.Drawing.Point(556, 168)
-        Me.SituacionRichTextBox.Name = "SituacionRichTextBox"
-        Me.SituacionRichTextBox.Size = New System.Drawing.Size(564, 286)
-        Me.SituacionRichTextBox.TabIndex = 17
-        Me.SituacionRichTextBox.Text = ""
+        Me.misionGroupBox.Controls.Add(Me.atras10LinkLabel)
+        Me.misionGroupBox.Controls.Add(Me.misionTextBox)
+        Me.misionGroupBox.Controls.Add(Me.siguiente3LinkLabel)
+        Me.misionGroupBox.Controls.Add(Me.misionLabel)
+        Me.misionGroupBox.Controls.Add(Me.toeGroupBox)
+        Me.misionGroupBox.ForeColor = System.Drawing.Color.White
+        Me.misionGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.misionGroupBox.Name = "misionGroupBox"
+        Me.misionGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.misionGroupBox.TabIndex = 3
+        Me.misionGroupBox.TabStop = False
         '
-        'ToeGroupBox
+        'atras10LinkLabel
         '
-        Me.ToeGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ToeGroupBox.Controls.Add(Me.TableLayoutPanel5)
-        Me.ToeGroupBox.Controls.Add(Me.AgregacionesRichTextBox)
-        Me.ToeGroupBox.Controls.Add(Me.AgregacionesLabel)
-        Me.ToeGroupBox.Controls.Add(Me.CivilesNumericUpDown)
-        Me.ToeGroupBox.Controls.Add(Me.CivilesLabel)
-        Me.ToeGroupBox.Controls.Add(Me.imrNumericUpDown)
-        Me.ToeGroupBox.Controls.Add(Me.imrLabel)
-        Me.ToeGroupBox.Controls.Add(Me.impNumericUpDown)
-        Me.ToeGroupBox.Controls.Add(Me.impLabel)
-        Me.ToeGroupBox.Controls.Add(Me.SuboficialesNumericUpDown)
-        Me.ToeGroupBox.Controls.Add(Me.SuboficialesLabel)
-        Me.ToeGroupBox.Controls.Add(Me.OficialesNumericUpDown)
-        Me.ToeGroupBox.Controls.Add(Me.OficialesLabel)
-        Me.ToeGroupBox.ForeColor = System.Drawing.Color.White
-        Me.ToeGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.ToeGroupBox.Name = "ToeGroupBox"
-        Me.ToeGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.ToeGroupBox.TabIndex = 3
-        Me.ToeGroupBox.TabStop = False
-        Me.ToeGroupBox.Text = "TOE"
+        Me.atras10LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras10LinkLabel.AutoSize = True
+        Me.atras10LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras10LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras10LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras10LinkLabel.Name = "atras10LinkLabel"
+        Me.atras10LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras10LinkLabel.TabIndex = 25
+        Me.atras10LinkLabel.TabStop = True
+        Me.atras10LinkLabel.Text = "Atrás"
+        Me.atras10LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'AgregacionesRichTextBox
+        'misionTextBox
         '
-        Me.AgregacionesRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AgregacionesRichTextBox.Location = New System.Drawing.Point(371, 60)
-        Me.AgregacionesRichTextBox.Name = "AgregacionesRichTextBox"
-        Me.AgregacionesRichTextBox.Size = New System.Drawing.Size(567, 115)
-        Me.AgregacionesRichTextBox.TabIndex = 11
-        Me.AgregacionesRichTextBox.Text = ""
+        Me.misionTextBox.Location = New System.Drawing.Point(40, 50)
+        Me.misionTextBox.Multiline = True
+        Me.misionTextBox.Name = "misionTextBox"
+        Me.misionTextBox.Size = New System.Drawing.Size(596, 384)
+        Me.misionTextBox.TabIndex = 1
         '
-        'AgregacionesLabel
+        'siguiente3LinkLabel
         '
-        Me.AgregacionesLabel.AutoSize = True
-        Me.AgregacionesLabel.Location = New System.Drawing.Point(368, 41)
-        Me.AgregacionesLabel.Name = "AgregacionesLabel"
-        Me.AgregacionesLabel.Size = New System.Drawing.Size(96, 16)
-        Me.AgregacionesLabel.TabIndex = 10
-        Me.AgregacionesLabel.Text = "Agregaciones:"
+        Me.siguiente3LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente3LinkLabel.AutoSize = True
+        Me.siguiente3LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente3LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente3LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente3LinkLabel.Name = "siguiente3LinkLabel"
+        Me.siguiente3LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente3LinkLabel.TabIndex = 0
+        Me.siguiente3LinkLabel.TabStop = True
+        Me.siguiente3LinkLabel.Text = "Siguiente"
+        Me.siguiente3LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'misionLabel
+        '
+        Me.misionLabel.AutoSize = True
+        Me.misionLabel.Location = New System.Drawing.Point(40, 27)
+        Me.misionLabel.Name = "misionLabel"
+        Me.misionLabel.Size = New System.Drawing.Size(57, 16)
+        Me.misionLabel.TabIndex = 0
+        Me.misionLabel.Text = "MISIÓN:"
+        '
+        'toeGroupBox
+        '
+        Me.toeGroupBox.Controls.Add(Me.segregacionesToeTextBox)
+        Me.toeGroupBox.Controls.Add(Me.segregacionesToeLabel)
+        Me.toeGroupBox.Controls.Add(Me.agregacionesToeTextBox)
+        Me.toeGroupBox.Controls.Add(Me.agregacionesToeLabel)
+        Me.toeGroupBox.Controls.Add(Me.oficialesNumericUpDown)
+        Me.toeGroupBox.Controls.Add(Me.oficialesLabel)
+        Me.toeGroupBox.Controls.Add(Me.CivilesNumericUpDown)
+        Me.toeGroupBox.Controls.Add(Me.SuboficialesLabel)
+        Me.toeGroupBox.Controls.Add(Me.CivilesLabel)
+        Me.toeGroupBox.Controls.Add(Me.SuboficialesNumericUpDown)
+        Me.toeGroupBox.Controls.Add(Me.imrNumericUpDown)
+        Me.toeGroupBox.Controls.Add(Me.impLabel)
+        Me.toeGroupBox.Controls.Add(Me.imrLabel)
+        Me.toeGroupBox.Controls.Add(Me.impNumericUpDown)
+        Me.toeGroupBox.ForeColor = System.Drawing.Color.White
+        Me.toeGroupBox.Location = New System.Drawing.Point(747, 27)
+        Me.toeGroupBox.Name = "toeGroupBox"
+        Me.toeGroupBox.Size = New System.Drawing.Size(261, 413)
+        Me.toeGroupBox.TabIndex = 2
+        Me.toeGroupBox.TabStop = False
+        Me.toeGroupBox.Text = "TOE"
+        '
+        'segregacionesToeTextBox
+        '
+        Me.segregacionesToeTextBox.Location = New System.Drawing.Point(35, 320)
+        Me.segregacionesToeTextBox.Multiline = True
+        Me.segregacionesToeTextBox.Name = "segregacionesToeTextBox"
+        Me.segregacionesToeTextBox.Size = New System.Drawing.Size(205, 75)
+        Me.segregacionesToeTextBox.TabIndex = 13
+        '
+        'segregacionesToeLabel
+        '
+        Me.segregacionesToeLabel.AutoSize = True
+        Me.segregacionesToeLabel.Location = New System.Drawing.Point(35, 300)
+        Me.segregacionesToeLabel.Name = "segregacionesToeLabel"
+        Me.segregacionesToeLabel.Size = New System.Drawing.Size(104, 16)
+        Me.segregacionesToeLabel.TabIndex = 12
+        Me.segregacionesToeLabel.Text = "Segregaciones:"
+        '
+        'agregacionesToeTextBox
+        '
+        Me.agregacionesToeTextBox.Location = New System.Drawing.Point(35, 209)
+        Me.agregacionesToeTextBox.Multiline = True
+        Me.agregacionesToeTextBox.Name = "agregacionesToeTextBox"
+        Me.agregacionesToeTextBox.Size = New System.Drawing.Size(205, 75)
+        Me.agregacionesToeTextBox.TabIndex = 11
+        '
+        'agregacionesToeLabel
+        '
+        Me.agregacionesToeLabel.AutoSize = True
+        Me.agregacionesToeLabel.Location = New System.Drawing.Point(35, 189)
+        Me.agregacionesToeLabel.Name = "agregacionesToeLabel"
+        Me.agregacionesToeLabel.Size = New System.Drawing.Size(96, 16)
+        Me.agregacionesToeLabel.TabIndex = 10
+        Me.agregacionesToeLabel.Text = "Agregaciones:"
+        '
+        'oficialesNumericUpDown
+        '
+        Me.oficialesNumericUpDown.Location = New System.Drawing.Point(120, 28)
+        Me.oficialesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.oficialesNumericUpDown.Name = "oficialesNumericUpDown"
+        Me.oficialesNumericUpDown.Size = New System.Drawing.Size(120, 22)
+        Me.oficialesNumericUpDown.TabIndex = 1
+        '
+        'oficialesLabel
+        '
+        Me.oficialesLabel.AutoSize = True
+        Me.oficialesLabel.Location = New System.Drawing.Point(50, 30)
+        Me.oficialesLabel.Name = "oficialesLabel"
+        Me.oficialesLabel.Size = New System.Drawing.Size(63, 16)
+        Me.oficialesLabel.TabIndex = 0
+        Me.oficialesLabel.Text = "Oficiales:"
         '
         'CivilesNumericUpDown
         '
-        Me.CivilesNumericUpDown.Location = New System.Drawing.Point(163, 153)
+        Me.CivilesNumericUpDown.Location = New System.Drawing.Point(120, 140)
         Me.CivilesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.CivilesNumericUpDown.Name = "CivilesNumericUpDown"
         Me.CivilesNumericUpDown.Size = New System.Drawing.Size(120, 22)
         Me.CivilesNumericUpDown.TabIndex = 9
         '
+        'SuboficialesLabel
+        '
+        Me.SuboficialesLabel.AutoSize = True
+        Me.SuboficialesLabel.Location = New System.Drawing.Point(28, 58)
+        Me.SuboficialesLabel.Name = "SuboficialesLabel"
+        Me.SuboficialesLabel.Size = New System.Drawing.Size(85, 16)
+        Me.SuboficialesLabel.TabIndex = 2
+        Me.SuboficialesLabel.Text = "Suboficiales:"
+        '
         'CivilesLabel
         '
         Me.CivilesLabel.AutoSize = True
-        Me.CivilesLabel.Location = New System.Drawing.Point(105, 157)
+        Me.CivilesLabel.Location = New System.Drawing.Point(62, 144)
         Me.CivilesLabel.Name = "CivilesLabel"
         Me.CivilesLabel.Size = New System.Drawing.Size(51, 16)
         Me.CivilesLabel.TabIndex = 8
         Me.CivilesLabel.Text = "Civiles:"
         '
+        'SuboficialesNumericUpDown
+        '
+        Me.SuboficialesNumericUpDown.Location = New System.Drawing.Point(120, 56)
+        Me.SuboficialesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.SuboficialesNumericUpDown.Name = "SuboficialesNumericUpDown"
+        Me.SuboficialesNumericUpDown.Size = New System.Drawing.Size(120, 22)
+        Me.SuboficialesNumericUpDown.TabIndex = 3
+        '
         'imrNumericUpDown
         '
-        Me.imrNumericUpDown.Location = New System.Drawing.Point(163, 125)
+        Me.imrNumericUpDown.Location = New System.Drawing.Point(120, 112)
         Me.imrNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.imrNumericUpDown.Name = "imrNumericUpDown"
         Me.imrNumericUpDown.Size = New System.Drawing.Size(120, 22)
         Me.imrNumericUpDown.TabIndex = 7
         '
+        'impLabel
+        '
+        Me.impLabel.AutoSize = True
+        Me.impLabel.Location = New System.Drawing.Point(79, 86)
+        Me.impLabel.Name = "impLabel"
+        Me.impLabel.Size = New System.Drawing.Size(34, 16)
+        Me.impLabel.TabIndex = 4
+        Me.impLabel.Text = "IMP:"
+        '
         'imrLabel
         '
         Me.imrLabel.AutoSize = True
-        Me.imrLabel.Location = New System.Drawing.Point(122, 127)
+        Me.imrLabel.Location = New System.Drawing.Point(79, 114)
         Me.imrLabel.Name = "imrLabel"
         Me.imrLabel.Size = New System.Drawing.Size(35, 16)
         Me.imrLabel.TabIndex = 6
@@ -979,630 +1094,590 @@ Partial Class OperacionForm
         '
         'impNumericUpDown
         '
-        Me.impNumericUpDown.Location = New System.Drawing.Point(163, 97)
+        Me.impNumericUpDown.Location = New System.Drawing.Point(120, 84)
         Me.impNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.impNumericUpDown.Name = "impNumericUpDown"
         Me.impNumericUpDown.Size = New System.Drawing.Size(120, 22)
         Me.impNumericUpDown.TabIndex = 5
         '
-        'impLabel
+        'coordenadasGroupBox
         '
-        Me.impLabel.AutoSize = True
-        Me.impLabel.Location = New System.Drawing.Point(122, 99)
-        Me.impLabel.Name = "impLabel"
-        Me.impLabel.Size = New System.Drawing.Size(34, 16)
-        Me.impLabel.TabIndex = 4
-        Me.impLabel.Text = "IMP:"
-        '
-        'SuboficialesNumericUpDown
-        '
-        Me.SuboficialesNumericUpDown.Location = New System.Drawing.Point(163, 69)
-        Me.SuboficialesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.SuboficialesNumericUpDown.Name = "SuboficialesNumericUpDown"
-        Me.SuboficialesNumericUpDown.Size = New System.Drawing.Size(120, 22)
-        Me.SuboficialesNumericUpDown.TabIndex = 3
-        '
-        'SuboficialesLabel
-        '
-        Me.SuboficialesLabel.AutoSize = True
-        Me.SuboficialesLabel.Location = New System.Drawing.Point(71, 71)
-        Me.SuboficialesLabel.Name = "SuboficialesLabel"
-        Me.SuboficialesLabel.Size = New System.Drawing.Size(85, 16)
-        Me.SuboficialesLabel.TabIndex = 2
-        Me.SuboficialesLabel.Text = "Suboficiales:"
-        '
-        'OficialesNumericUpDown
-        '
-        Me.OficialesNumericUpDown.Location = New System.Drawing.Point(163, 41)
-        Me.OficialesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.OficialesNumericUpDown.Name = "OficialesNumericUpDown"
-        Me.OficialesNumericUpDown.Size = New System.Drawing.Size(120, 22)
-        Me.OficialesNumericUpDown.TabIndex = 1
-        '
-        'OficialesLabel
-        '
-        Me.OficialesLabel.AutoSize = True
-        Me.OficialesLabel.Location = New System.Drawing.Point(93, 43)
-        Me.OficialesLabel.Name = "OficialesLabel"
-        Me.OficialesLabel.Size = New System.Drawing.Size(63, 16)
-        Me.OficialesLabel.TabIndex = 0
-        Me.OficialesLabel.Text = "Oficiales:"
-        '
-        'CoordenadasGroupBox
-        '
-        Me.CoordenadasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.coordenadasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CoordenadasGroupBox.Controls.Add(Me.TableLayoutPanel6)
-        Me.CoordenadasGroupBox.Controls.Add(Me.Punto3Label)
-        Me.CoordenadasGroupBox.Controls.Add(Me.TableLayoutPanel2)
-        Me.CoordenadasGroupBox.Controls.Add(Me.Punto1Label)
-        Me.CoordenadasGroupBox.Controls.Add(Me.TableLayoutPanel1)
-        Me.CoordenadasGroupBox.ForeColor = System.Drawing.Color.White
-        Me.CoordenadasGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.CoordenadasGroupBox.Name = "CoordenadasGroupBox"
-        Me.CoordenadasGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.CoordenadasGroupBox.TabIndex = 4
-        Me.CoordenadasGroupBox.TabStop = False
-        Me.CoordenadasGroupBox.Text = "Coordenadas"
+        Me.coordenadasGroupBox.Controls.Add(Me.atras9LinkLabel)
+        Me.coordenadasGroupBox.Controls.Add(Me.siguiente4LinkLabel)
+        Me.coordenadasGroupBox.Controls.Add(Me.punto3Label)
+        Me.coordenadasGroupBox.Controls.Add(Me.punto3TableLayoutPanel)
+        Me.coordenadasGroupBox.Controls.Add(Me.punto1Label)
+        Me.coordenadasGroupBox.Controls.Add(Me.punto1TableLayoutPanel)
+        Me.coordenadasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.coordenadasGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.coordenadasGroupBox.Name = "coordenadasGroupBox"
+        Me.coordenadasGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.coordenadasGroupBox.TabIndex = 4
+        Me.coordenadasGroupBox.TabStop = False
+        Me.coordenadasGroupBox.Text = "Coordenadas"
         '
-        'Punto3Label
+        'atras9LinkLabel
         '
-        Me.Punto3Label.AutoSize = True
-        Me.Punto3Label.Location = New System.Drawing.Point(470, 39)
-        Me.Punto3Label.Name = "Punto3Label"
-        Me.Punto3Label.Size = New System.Drawing.Size(268, 16)
-        Me.Punto3Label.TabIndex = 6
-        Me.Punto3Label.Text = "Punto inferior derecho del área o cuadrante."
+        Me.atras9LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras9LinkLabel.AutoSize = True
+        Me.atras9LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras9LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras9LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras9LinkLabel.Name = "atras9LinkLabel"
+        Me.atras9LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras9LinkLabel.TabIndex = 25
+        Me.atras9LinkLabel.TabStop = True
+        Me.atras9LinkLabel.Text = "Atrás"
+        Me.atras9LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TableLayoutPanel2
+        'siguiente4LinkLabel
         '
-        Me.TableLayoutPanel2.AutoSize = True
-        Me.TableLayoutPanel2.ColumnCount = 4
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.Controls.Add(Me.SegundosLng3NumericUpDown, 3, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.MinutosLng3NumericUpDown, 2, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.GradosLng3NumericUpDown, 1, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Latitud3Label, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.GradosLat3NumericUpDown, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Grados3Label, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Minutos3Label, 2, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Segundos3Label, 3, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.MinutosLat3NumericUpDown, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.SegundosLat3NumericUpDown, 3, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Longitud3Label, 0, 2)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(476, 69)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 3
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(263, 72)
-        Me.TableLayoutPanel2.TabIndex = 5
+        Me.siguiente4LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente4LinkLabel.AutoSize = True
+        Me.siguiente4LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente4LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente4LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente4LinkLabel.Name = "siguiente4LinkLabel"
+        Me.siguiente4LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente4LinkLabel.TabIndex = 7
+        Me.siguiente4LinkLabel.TabStop = True
+        Me.siguiente4LinkLabel.Text = "Siguiente"
+        Me.siguiente4LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'MinutosLng3NumericUpDown
+        'punto3Label
         '
-        Me.MinutosLng3NumericUpDown.Location = New System.Drawing.Point(130, 47)
-        Me.MinutosLng3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.MinutosLng3NumericUpDown.Name = "MinutosLng3NumericUpDown"
-        Me.MinutosLng3NumericUpDown.Size = New System.Drawing.Size(52, 22)
-        Me.MinutosLng3NumericUpDown.TabIndex = 9
+        Me.punto3Label.AutoSize = True
+        Me.punto3Label.Location = New System.Drawing.Point(470, 39)
+        Me.punto3Label.Name = "punto3Label"
+        Me.punto3Label.Size = New System.Drawing.Size(268, 16)
+        Me.punto3Label.TabIndex = 6
+        Me.punto3Label.Text = "Punto inferior derecho del área o cuadrante."
         '
-        'GradosLng3NumericUpDown
+        'punto3TableLayoutPanel
         '
-        Me.GradosLng3NumericUpDown.Location = New System.Drawing.Point(71, 47)
-        Me.GradosLng3NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
-        Me.GradosLng3NumericUpDown.Name = "GradosLng3NumericUpDown"
-        Me.GradosLng3NumericUpDown.Size = New System.Drawing.Size(53, 22)
-        Me.GradosLng3NumericUpDown.TabIndex = 8
+        Me.punto3TableLayoutPanel.AutoSize = True
+        Me.punto3TableLayoutPanel.ColumnCount = 4
+        Me.punto3TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto3TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto3TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto3TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto3TableLayoutPanel.Controls.Add(Me.segundosLng3NumericUpDown, 3, 2)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.minutosLng3NumericUpDown, 2, 2)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.gradosLng3NumericUpDown, 1, 2)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.latitud3Label, 0, 1)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.gradosLat3NumericUpDown, 1, 1)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.grados3Label, 1, 0)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.minutos3Label, 2, 0)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.segundos3Label, 3, 0)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.minutosLat3NumericUpDown, 2, 1)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.segundosLat3NumericUpDown, 3, 1)
+        Me.punto3TableLayoutPanel.Controls.Add(Me.longitud3Label, 0, 2)
+        Me.punto3TableLayoutPanel.Location = New System.Drawing.Point(476, 69)
+        Me.punto3TableLayoutPanel.Name = "punto3TableLayoutPanel"
+        Me.punto3TableLayoutPanel.RowCount = 3
+        Me.punto3TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto3TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto3TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto3TableLayoutPanel.Size = New System.Drawing.Size(263, 72)
+        Me.punto3TableLayoutPanel.TabIndex = 5
         '
-        'Latitud3Label
+        'minutosLng3NumericUpDown
         '
-        Me.Latitud3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.minutosLng3NumericUpDown.Location = New System.Drawing.Point(130, 47)
+        Me.minutosLng3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.minutosLng3NumericUpDown.Name = "minutosLng3NumericUpDown"
+        Me.minutosLng3NumericUpDown.Size = New System.Drawing.Size(52, 22)
+        Me.minutosLng3NumericUpDown.TabIndex = 9
+        '
+        'gradosLng3NumericUpDown
+        '
+        Me.gradosLng3NumericUpDown.Location = New System.Drawing.Point(71, 47)
+        Me.gradosLng3NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
+        Me.gradosLng3NumericUpDown.Name = "gradosLng3NumericUpDown"
+        Me.gradosLng3NumericUpDown.Size = New System.Drawing.Size(53, 22)
+        Me.gradosLng3NumericUpDown.TabIndex = 8
+        '
+        'latitud3Label
+        '
+        Me.latitud3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Latitud3Label.AutoSize = True
-        Me.Latitud3Label.Location = New System.Drawing.Point(15, 16)
-        Me.Latitud3Label.Name = "Latitud3Label"
-        Me.Latitud3Label.Size = New System.Drawing.Size(50, 28)
-        Me.Latitud3Label.TabIndex = 3
-        Me.Latitud3Label.Text = "Latitud:"
-        Me.Latitud3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.latitud3Label.AutoSize = True
+        Me.latitud3Label.Location = New System.Drawing.Point(15, 16)
+        Me.latitud3Label.Name = "latitud3Label"
+        Me.latitud3Label.Size = New System.Drawing.Size(50, 28)
+        Me.latitud3Label.TabIndex = 3
+        Me.latitud3Label.Text = "Latitud:"
+        Me.latitud3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'GradosLat3NumericUpDown
+        'gradosLat3NumericUpDown
         '
-        Me.GradosLat3NumericUpDown.Location = New System.Drawing.Point(71, 19)
-        Me.GradosLat3NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
-        Me.GradosLat3NumericUpDown.Name = "GradosLat3NumericUpDown"
-        Me.GradosLat3NumericUpDown.Size = New System.Drawing.Size(53, 22)
-        Me.GradosLat3NumericUpDown.TabIndex = 4
+        Me.gradosLat3NumericUpDown.Location = New System.Drawing.Point(71, 19)
+        Me.gradosLat3NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
+        Me.gradosLat3NumericUpDown.Name = "gradosLat3NumericUpDown"
+        Me.gradosLat3NumericUpDown.Size = New System.Drawing.Size(53, 22)
+        Me.gradosLat3NumericUpDown.TabIndex = 4
         '
-        'Grados3Label
+        'grados3Label
         '
-        Me.Grados3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grados3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Grados3Label.AutoSize = True
-        Me.Grados3Label.Location = New System.Drawing.Point(71, 0)
-        Me.Grados3Label.Name = "Grados3Label"
-        Me.Grados3Label.Size = New System.Drawing.Size(53, 16)
-        Me.Grados3Label.TabIndex = 0
-        Me.Grados3Label.Text = "Grados"
-        Me.Grados3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.grados3Label.AutoSize = True
+        Me.grados3Label.Location = New System.Drawing.Point(71, 0)
+        Me.grados3Label.Name = "grados3Label"
+        Me.grados3Label.Size = New System.Drawing.Size(53, 16)
+        Me.grados3Label.TabIndex = 0
+        Me.grados3Label.Text = "Grados"
+        Me.grados3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Minutos3Label
+        'minutos3Label
         '
-        Me.Minutos3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.minutos3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Minutos3Label.AutoSize = True
-        Me.Minutos3Label.Location = New System.Drawing.Point(130, 0)
-        Me.Minutos3Label.Name = "Minutos3Label"
-        Me.Minutos3Label.Size = New System.Drawing.Size(54, 16)
-        Me.Minutos3Label.TabIndex = 1
-        Me.Minutos3Label.Text = "Minutos"
-        Me.Minutos3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.minutos3Label.AutoSize = True
+        Me.minutos3Label.Location = New System.Drawing.Point(130, 0)
+        Me.minutos3Label.Name = "minutos3Label"
+        Me.minutos3Label.Size = New System.Drawing.Size(54, 16)
+        Me.minutos3Label.TabIndex = 1
+        Me.minutos3Label.Text = "Minutos"
+        Me.minutos3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Segundos3Label
+        'segundos3Label
         '
-        Me.Segundos3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.segundos3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Segundos3Label.AutoSize = True
-        Me.Segundos3Label.Location = New System.Drawing.Point(190, 0)
-        Me.Segundos3Label.Name = "Segundos3Label"
-        Me.Segundos3Label.Size = New System.Drawing.Size(70, 16)
-        Me.Segundos3Label.TabIndex = 2
-        Me.Segundos3Label.Text = "Segundos"
-        Me.Segundos3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.segundos3Label.AutoSize = True
+        Me.segundos3Label.Location = New System.Drawing.Point(190, 0)
+        Me.segundos3Label.Name = "segundos3Label"
+        Me.segundos3Label.Size = New System.Drawing.Size(70, 16)
+        Me.segundos3Label.TabIndex = 2
+        Me.segundos3Label.Text = "Segundos"
+        Me.segundos3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'MinutosLat3NumericUpDown
+        'minutosLat3NumericUpDown
         '
-        Me.MinutosLat3NumericUpDown.Location = New System.Drawing.Point(130, 19)
-        Me.MinutosLat3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.MinutosLat3NumericUpDown.Name = "MinutosLat3NumericUpDown"
-        Me.MinutosLat3NumericUpDown.Size = New System.Drawing.Size(52, 22)
-        Me.MinutosLat3NumericUpDown.TabIndex = 5
+        Me.minutosLat3NumericUpDown.Location = New System.Drawing.Point(130, 19)
+        Me.minutosLat3NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.minutosLat3NumericUpDown.Name = "minutosLat3NumericUpDown"
+        Me.minutosLat3NumericUpDown.Size = New System.Drawing.Size(52, 22)
+        Me.minutosLat3NumericUpDown.TabIndex = 5
         '
-        'Longitud3Label
+        'longitud3Label
         '
-        Me.Longitud3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.longitud3Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Longitud3Label.AutoSize = True
-        Me.Longitud3Label.Location = New System.Drawing.Point(3, 44)
-        Me.Longitud3Label.Name = "Longitud3Label"
-        Me.Longitud3Label.Size = New System.Drawing.Size(62, 28)
-        Me.Longitud3Label.TabIndex = 7
-        Me.Longitud3Label.Text = "Longitud:"
-        Me.Longitud3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.longitud3Label.AutoSize = True
+        Me.longitud3Label.Location = New System.Drawing.Point(3, 44)
+        Me.longitud3Label.Name = "longitud3Label"
+        Me.longitud3Label.Size = New System.Drawing.Size(62, 28)
+        Me.longitud3Label.TabIndex = 7
+        Me.longitud3Label.Text = "Longitud:"
+        Me.longitud3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Punto1Label
+        'punto1Label
         '
-        Me.Punto1Label.AutoSize = True
-        Me.Punto1Label.Location = New System.Drawing.Point(68, 39)
-        Me.Punto1Label.Name = "Punto1Label"
-        Me.Punto1Label.Size = New System.Drawing.Size(282, 16)
-        Me.Punto1Label.TabIndex = 4
-        Me.Punto1Label.Text = "Punto superior izquierdo del área o cuadrante."
+        Me.punto1Label.AutoSize = True
+        Me.punto1Label.Location = New System.Drawing.Point(68, 39)
+        Me.punto1Label.Name = "punto1Label"
+        Me.punto1Label.Size = New System.Drawing.Size(282, 16)
+        Me.punto1Label.TabIndex = 4
+        Me.punto1Label.Text = "Punto superior izquierdo del área o cuadrante."
         '
-        'TableLayoutPanel1
+        'punto1TableLayoutPanel
         '
-        Me.TableLayoutPanel1.AutoSize = True
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel1.Controls.Add(Me.SegundosLgn1NumericUpDown, 3, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.MinutosLgn1NumericUpDown, 2, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.GradosLgn1NumericUpDown, 1, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.Latitud1Label, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.GradosLat1NumericUpDown, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Grados1Label, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Minutos1Label, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Segundos1Label, 3, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.MinutosLat1NumericUpDown, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.SegundosLat1NumericUpDown, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Longitud1Label, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(74, 69)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(263, 72)
-        Me.TableLayoutPanel1.TabIndex = 3
+        Me.punto1TableLayoutPanel.AutoSize = True
+        Me.punto1TableLayoutPanel.ColumnCount = 4
+        Me.punto1TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto1TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto1TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto1TableLayoutPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.punto1TableLayoutPanel.Controls.Add(Me.segundosLgn1NumericUpDown, 3, 2)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.minutosLgn1NumericUpDown, 2, 2)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.gradosLgn1NumericUpDown, 1, 2)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.latitud1Label, 0, 1)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.gradosLat1NumericUpDown, 1, 1)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.grados1Label, 1, 0)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.minutos1Label, 2, 0)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.segundos1Label, 3, 0)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.minutosLat1NumericUpDown, 2, 1)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.segundosLat1NumericUpDown, 3, 1)
+        Me.punto1TableLayoutPanel.Controls.Add(Me.longitud1Label, 0, 2)
+        Me.punto1TableLayoutPanel.Location = New System.Drawing.Point(74, 69)
+        Me.punto1TableLayoutPanel.Name = "punto1TableLayoutPanel"
+        Me.punto1TableLayoutPanel.RowCount = 3
+        Me.punto1TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto1TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto1TableLayoutPanel.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.punto1TableLayoutPanel.Size = New System.Drawing.Size(263, 72)
+        Me.punto1TableLayoutPanel.TabIndex = 3
         '
-        'MinutosLgn1NumericUpDown
+        'minutosLgn1NumericUpDown
         '
-        Me.MinutosLgn1NumericUpDown.Location = New System.Drawing.Point(130, 47)
-        Me.MinutosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.MinutosLgn1NumericUpDown.Name = "MinutosLgn1NumericUpDown"
-        Me.MinutosLgn1NumericUpDown.Size = New System.Drawing.Size(52, 22)
-        Me.MinutosLgn1NumericUpDown.TabIndex = 9
+        Me.minutosLgn1NumericUpDown.Location = New System.Drawing.Point(130, 47)
+        Me.minutosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.minutosLgn1NumericUpDown.Name = "minutosLgn1NumericUpDown"
+        Me.minutosLgn1NumericUpDown.Size = New System.Drawing.Size(52, 22)
+        Me.minutosLgn1NumericUpDown.TabIndex = 9
         '
-        'GradosLgn1NumericUpDown
+        'gradosLgn1NumericUpDown
         '
-        Me.GradosLgn1NumericUpDown.Location = New System.Drawing.Point(71, 47)
-        Me.GradosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
-        Me.GradosLgn1NumericUpDown.Name = "GradosLgn1NumericUpDown"
-        Me.GradosLgn1NumericUpDown.Size = New System.Drawing.Size(53, 22)
-        Me.GradosLgn1NumericUpDown.TabIndex = 8
+        Me.gradosLgn1NumericUpDown.Location = New System.Drawing.Point(71, 47)
+        Me.gradosLgn1NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
+        Me.gradosLgn1NumericUpDown.Name = "gradosLgn1NumericUpDown"
+        Me.gradosLgn1NumericUpDown.Size = New System.Drawing.Size(53, 22)
+        Me.gradosLgn1NumericUpDown.TabIndex = 8
         '
-        'Latitud1Label
+        'latitud1Label
         '
-        Me.Latitud1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.latitud1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Latitud1Label.AutoSize = True
-        Me.Latitud1Label.Location = New System.Drawing.Point(15, 16)
-        Me.Latitud1Label.Name = "Latitud1Label"
-        Me.Latitud1Label.Size = New System.Drawing.Size(50, 28)
-        Me.Latitud1Label.TabIndex = 3
-        Me.Latitud1Label.Text = "Latitud:"
-        Me.Latitud1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.latitud1Label.AutoSize = True
+        Me.latitud1Label.Location = New System.Drawing.Point(15, 16)
+        Me.latitud1Label.Name = "latitud1Label"
+        Me.latitud1Label.Size = New System.Drawing.Size(50, 28)
+        Me.latitud1Label.TabIndex = 3
+        Me.latitud1Label.Text = "Latitud:"
+        Me.latitud1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'GradosLat1NumericUpDown
+        'gradosLat1NumericUpDown
         '
-        Me.GradosLat1NumericUpDown.Location = New System.Drawing.Point(71, 19)
-        Me.GradosLat1NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
-        Me.GradosLat1NumericUpDown.Name = "GradosLat1NumericUpDown"
-        Me.GradosLat1NumericUpDown.Size = New System.Drawing.Size(53, 22)
-        Me.GradosLat1NumericUpDown.TabIndex = 4
+        Me.gradosLat1NumericUpDown.Location = New System.Drawing.Point(71, 19)
+        Me.gradosLat1NumericUpDown.Maximum = New Decimal(New Integer() {360, 0, 0, 0})
+        Me.gradosLat1NumericUpDown.Name = "gradosLat1NumericUpDown"
+        Me.gradosLat1NumericUpDown.Size = New System.Drawing.Size(53, 22)
+        Me.gradosLat1NumericUpDown.TabIndex = 4
         '
-        'Grados1Label
+        'grados1Label
         '
-        Me.Grados1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.grados1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Grados1Label.AutoSize = True
-        Me.Grados1Label.Location = New System.Drawing.Point(71, 0)
-        Me.Grados1Label.Name = "Grados1Label"
-        Me.Grados1Label.Size = New System.Drawing.Size(53, 16)
-        Me.Grados1Label.TabIndex = 0
-        Me.Grados1Label.Text = "Grados"
-        Me.Grados1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.grados1Label.AutoSize = True
+        Me.grados1Label.Location = New System.Drawing.Point(71, 0)
+        Me.grados1Label.Name = "grados1Label"
+        Me.grados1Label.Size = New System.Drawing.Size(53, 16)
+        Me.grados1Label.TabIndex = 0
+        Me.grados1Label.Text = "Grados"
+        Me.grados1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Minutos1Label
+        'minutos1Label
         '
-        Me.Minutos1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.minutos1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Minutos1Label.AutoSize = True
-        Me.Minutos1Label.Location = New System.Drawing.Point(130, 0)
-        Me.Minutos1Label.Name = "Minutos1Label"
-        Me.Minutos1Label.Size = New System.Drawing.Size(54, 16)
-        Me.Minutos1Label.TabIndex = 1
-        Me.Minutos1Label.Text = "Minutos"
-        Me.Minutos1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.minutos1Label.AutoSize = True
+        Me.minutos1Label.Location = New System.Drawing.Point(130, 0)
+        Me.minutos1Label.Name = "minutos1Label"
+        Me.minutos1Label.Size = New System.Drawing.Size(54, 16)
+        Me.minutos1Label.TabIndex = 1
+        Me.minutos1Label.Text = "Minutos"
+        Me.minutos1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Segundos1Label
+        'segundos1Label
         '
-        Me.Segundos1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.segundos1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Segundos1Label.AutoSize = True
-        Me.Segundos1Label.Location = New System.Drawing.Point(190, 0)
-        Me.Segundos1Label.Name = "Segundos1Label"
-        Me.Segundos1Label.Size = New System.Drawing.Size(70, 16)
-        Me.Segundos1Label.TabIndex = 2
-        Me.Segundos1Label.Text = "Segundos"
-        Me.Segundos1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.segundos1Label.AutoSize = True
+        Me.segundos1Label.Location = New System.Drawing.Point(190, 0)
+        Me.segundos1Label.Name = "segundos1Label"
+        Me.segundos1Label.Size = New System.Drawing.Size(70, 16)
+        Me.segundos1Label.TabIndex = 2
+        Me.segundos1Label.Text = "Segundos"
+        Me.segundos1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'MinutosLat1NumericUpDown
+        'minutosLat1NumericUpDown
         '
-        Me.MinutosLat1NumericUpDown.Location = New System.Drawing.Point(130, 19)
-        Me.MinutosLat1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
-        Me.MinutosLat1NumericUpDown.Name = "MinutosLat1NumericUpDown"
-        Me.MinutosLat1NumericUpDown.Size = New System.Drawing.Size(52, 22)
-        Me.MinutosLat1NumericUpDown.TabIndex = 5
+        Me.minutosLat1NumericUpDown.Location = New System.Drawing.Point(130, 19)
+        Me.minutosLat1NumericUpDown.Maximum = New Decimal(New Integer() {60, 0, 0, 0})
+        Me.minutosLat1NumericUpDown.Name = "minutosLat1NumericUpDown"
+        Me.minutosLat1NumericUpDown.Size = New System.Drawing.Size(52, 22)
+        Me.minutosLat1NumericUpDown.TabIndex = 5
         '
-        'Longitud1Label
+        'longitud1Label
         '
-        Me.Longitud1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.longitud1Label.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Longitud1Label.AutoSize = True
-        Me.Longitud1Label.Location = New System.Drawing.Point(3, 44)
-        Me.Longitud1Label.Name = "Longitud1Label"
-        Me.Longitud1Label.Size = New System.Drawing.Size(62, 28)
-        Me.Longitud1Label.TabIndex = 7
-        Me.Longitud1Label.Text = "Longitud:"
-        Me.Longitud1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.longitud1Label.AutoSize = True
+        Me.longitud1Label.Location = New System.Drawing.Point(3, 44)
+        Me.longitud1Label.Name = "longitud1Label"
+        Me.longitud1Label.Size = New System.Drawing.Size(62, 28)
+        Me.longitud1Label.TabIndex = 7
+        Me.longitud1Label.Text = "Longitud:"
+        Me.longitud1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Ejecucion1GroupBox
         '
         Me.Ejecucion1GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion1GroupBox.Controls.Add(Me.TableLayoutPanel7)
-        Me.Ejecucion1GroupBox.Controls.Add(Me.ConceptoRichTextBox)
-        Me.Ejecucion1GroupBox.Controls.Add(Me.Label1)
-        Me.Ejecucion1GroupBox.Controls.Add(Me.IntencionComandanteRichTextBox)
-        Me.Ejecucion1GroupBox.Controls.Add(Me.IntencionComandanteLabel)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.atras8LinkLabel)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.siguiente5LinkLabel)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.conceptoOperacionGroupBox)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.intencionComandanteTextBox)
+        Me.Ejecucion1GroupBox.Controls.Add(Me.intencionComandanteLabel)
         Me.Ejecucion1GroupBox.ForeColor = System.Drawing.Color.White
         Me.Ejecucion1GroupBox.Location = New System.Drawing.Point(5, 12)
         Me.Ejecucion1GroupBox.Name = "Ejecucion1GroupBox"
-        Me.Ejecucion1GroupBox.Size = New System.Drawing.Size(1150, 476)
+        Me.Ejecucion1GroupBox.Size = New System.Drawing.Size(1150, 497)
         Me.Ejecucion1GroupBox.TabIndex = 7
         Me.Ejecucion1GroupBox.TabStop = False
         Me.Ejecucion1GroupBox.Text = "Ejecución"
         '
-        'ConceptoRichTextBox
+        'atras8LinkLabel
         '
-        Me.ConceptoRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.ConceptoRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.ConceptoRichTextBox.Name = "ConceptoRichTextBox"
-        Me.ConceptoRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.ConceptoRichTextBox.TabIndex = 3
-        Me.ConceptoRichTextBox.Text = ""
+        Me.atras8LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras8LinkLabel.AutoSize = True
+        Me.atras8LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras8LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras8LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras8LinkLabel.Name = "atras8LinkLabel"
+        Me.atras8LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras8LinkLabel.TabIndex = 25
+        Me.atras8LinkLabel.TabStop = True
+        Me.atras8LinkLabel.Text = "Atrás"
+        Me.atras8LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'siguiente5LinkLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(514, 43)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 16)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Concepto:"
+        Me.siguiente5LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente5LinkLabel.AutoSize = True
+        Me.siguiente5LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente5LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente5LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente5LinkLabel.Name = "siguiente5LinkLabel"
+        Me.siguiente5LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente5LinkLabel.TabIndex = 8
+        Me.siguiente5LinkLabel.TabStop = True
+        Me.siguiente5LinkLabel.Text = "Siguiente"
+        Me.siguiente5LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'IntencionComandanteRichTextBox
+        'conceptoOperacionGroupBox
         '
-        Me.IntencionComandanteRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.IntencionComandanteRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.IntencionComandanteRichTextBox.Name = "IntencionComandanteRichTextBox"
-        Me.IntencionComandanteRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.IntencionComandanteRichTextBox.TabIndex = 1
-        Me.IntencionComandanteRichTextBox.Text = ""
+        Me.conceptoOperacionGroupBox.Controls.Add(Me.fuegosTextBox)
+        Me.conceptoOperacionGroupBox.Controls.Add(Me.fuegosLabel)
+        Me.conceptoOperacionGroupBox.Controls.Add(Me.maniobraTextBox)
+        Me.conceptoOperacionGroupBox.Controls.Add(Me.maniobraLabel)
+        Me.conceptoOperacionGroupBox.Controls.Add(Me.conceptoOperacionTextBox)
+        Me.conceptoOperacionGroupBox.ForeColor = System.Drawing.Color.White
+        Me.conceptoOperacionGroupBox.Location = New System.Drawing.Point(540, 38)
+        Me.conceptoOperacionGroupBox.Name = "conceptoOperacionGroupBox"
+        Me.conceptoOperacionGroupBox.Size = New System.Drawing.Size(504, 417)
+        Me.conceptoOperacionGroupBox.TabIndex = 2
+        Me.conceptoOperacionGroupBox.TabStop = False
+        Me.conceptoOperacionGroupBox.Text = "Concepto de la operación"
         '
-        'IntencionComandanteLabel
+        'fuegosTextBox
         '
-        Me.IntencionComandanteLabel.AutoSize = True
-        Me.IntencionComandanteLabel.Location = New System.Drawing.Point(52, 41)
-        Me.IntencionComandanteLabel.Name = "IntencionComandanteLabel"
-        Me.IntencionComandanteLabel.Size = New System.Drawing.Size(164, 16)
-        Me.IntencionComandanteLabel.TabIndex = 0
-        Me.IntencionComandanteLabel.Text = "Intención del comandante:"
+        Me.fuegosTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.fuegosTextBox.Location = New System.Drawing.Point(16, 295)
+        Me.fuegosTextBox.Multiline = True
+        Me.fuegosTextBox.Name = "fuegosTextBox"
+        Me.fuegosTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.fuegosTextBox.TabIndex = 4
+        '
+        'fuegosLabel
+        '
+        Me.fuegosLabel.AutoSize = True
+        Me.fuegosLabel.Location = New System.Drawing.Point(16, 277)
+        Me.fuegosLabel.Name = "fuegosLabel"
+        Me.fuegosLabel.Size = New System.Drawing.Size(57, 16)
+        Me.fuegosLabel.TabIndex = 3
+        Me.fuegosLabel.Text = "Fuegos:"
+        '
+        'maniobraTextBox
+        '
+        Me.maniobraTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.maniobraTextBox.Location = New System.Drawing.Point(16, 162)
+        Me.maniobraTextBox.Multiline = True
+        Me.maniobraTextBox.Name = "maniobraTextBox"
+        Me.maniobraTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.maniobraTextBox.TabIndex = 2
+        '
+        'maniobraLabel
+        '
+        Me.maniobraLabel.AutoSize = True
+        Me.maniobraLabel.Location = New System.Drawing.Point(16, 144)
+        Me.maniobraLabel.Name = "maniobraLabel"
+        Me.maniobraLabel.Size = New System.Drawing.Size(68, 16)
+        Me.maniobraLabel.TabIndex = 1
+        Me.maniobraLabel.Text = "Maniobra:"
+        '
+        'conceptoOperacionTextBox
+        '
+        Me.conceptoOperacionTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.conceptoOperacionTextBox.Location = New System.Drawing.Point(16, 20)
+        Me.conceptoOperacionTextBox.Multiline = True
+        Me.conceptoOperacionTextBox.Name = "conceptoOperacionTextBox"
+        Me.conceptoOperacionTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.conceptoOperacionTextBox.TabIndex = 0
+        '
+        'intencionComandanteTextBox
+        '
+        Me.intencionComandanteTextBox.Location = New System.Drawing.Point(37, 55)
+        Me.intencionComandanteTextBox.Multiline = True
+        Me.intencionComandanteTextBox.Name = "intencionComandanteTextBox"
+        Me.intencionComandanteTextBox.Size = New System.Drawing.Size(398, 400)
+        Me.intencionComandanteTextBox.TabIndex = 1
+        '
+        'intencionComandanteLabel
+        '
+        Me.intencionComandanteLabel.AutoSize = True
+        Me.intencionComandanteLabel.Location = New System.Drawing.Point(34, 35)
+        Me.intencionComandanteLabel.Name = "intencionComandanteLabel"
+        Me.intencionComandanteLabel.Size = New System.Drawing.Size(164, 16)
+        Me.intencionComandanteLabel.TabIndex = 0
+        Me.intencionComandanteLabel.Text = "Intención del comandante:"
         '
         'Ejecucion2GroupBox
         '
         Me.Ejecucion2GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion2GroupBox.Controls.Add(Me.TableLayoutPanel8)
-        Me.Ejecucion2GroupBox.Controls.Add(Me.FuegosRichTextBox)
-        Me.Ejecucion2GroupBox.Controls.Add(Me.FuegosLabel)
-        Me.Ejecucion2GroupBox.Controls.Add(Me.ManiobraRichTextBox)
-        Me.Ejecucion2GroupBox.Controls.Add(Me.maniobraLabel)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.atras7LinkLabel)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.siguiente6LinkLabel)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.instruccionesCoordinacionTextBox)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.instruccionesCoordinacionLabel)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.tareasCombateTextBox)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.tareasCombateLabel)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.tareasManiobraTextBox)
+        Me.Ejecucion2GroupBox.Controls.Add(Me.tareasManiobraLabel)
         Me.Ejecucion2GroupBox.ForeColor = System.Drawing.Color.White
         Me.Ejecucion2GroupBox.Location = New System.Drawing.Point(5, 12)
         Me.Ejecucion2GroupBox.Name = "Ejecucion2GroupBox"
-        Me.Ejecucion2GroupBox.Size = New System.Drawing.Size(1150, 476)
+        Me.Ejecucion2GroupBox.Size = New System.Drawing.Size(1150, 497)
         Me.Ejecucion2GroupBox.TabIndex = 8
         Me.Ejecucion2GroupBox.TabStop = False
         Me.Ejecucion2GroupBox.Text = "Ejecución"
         '
-        'FuegosRichTextBox
+        'atras7LinkLabel
         '
-        Me.FuegosRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.FuegosRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.FuegosRichTextBox.Name = "FuegosRichTextBox"
-        Me.FuegosRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.FuegosRichTextBox.TabIndex = 3
-        Me.FuegosRichTextBox.Text = ""
+        Me.atras7LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras7LinkLabel.AutoSize = True
+        Me.atras7LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras7LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras7LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras7LinkLabel.Name = "atras7LinkLabel"
+        Me.atras7LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras7LinkLabel.TabIndex = 25
+        Me.atras7LinkLabel.TabStop = True
+        Me.atras7LinkLabel.Text = "Atrás"
+        Me.atras7LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'FuegosLabel
+        'siguiente6LinkLabel
         '
-        Me.FuegosLabel.AutoSize = True
-        Me.FuegosLabel.Location = New System.Drawing.Point(514, 43)
-        Me.FuegosLabel.Name = "FuegosLabel"
-        Me.FuegosLabel.Size = New System.Drawing.Size(57, 16)
-        Me.FuegosLabel.TabIndex = 2
-        Me.FuegosLabel.Text = "Fuegos:"
+        Me.siguiente6LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente6LinkLabel.AutoSize = True
+        Me.siguiente6LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente6LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente6LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente6LinkLabel.Name = "siguiente6LinkLabel"
+        Me.siguiente6LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente6LinkLabel.TabIndex = 8
+        Me.siguiente6LinkLabel.TabStop = True
+        Me.siguiente6LinkLabel.Text = "Siguiente"
+        Me.siguiente6LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ManiobraRichTextBox
+        'instruccionesCoordinacionTextBox
         '
-        Me.ManiobraRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.ManiobraRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.ManiobraRichTextBox.Name = "ManiobraRichTextBox"
-        Me.ManiobraRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.ManiobraRichTextBox.TabIndex = 1
-        Me.ManiobraRichTextBox.Text = ""
+        Me.instruccionesCoordinacionTextBox.Location = New System.Drawing.Point(559, 57)
+        Me.instruccionesCoordinacionTextBox.Multiline = True
+        Me.instruccionesCoordinacionTextBox.Name = "instruccionesCoordinacionTextBox"
+        Me.instruccionesCoordinacionTextBox.Size = New System.Drawing.Size(489, 374)
+        Me.instruccionesCoordinacionTextBox.TabIndex = 5
         '
-        'maniobraLabel
+        'instruccionesCoordinacionLabel
         '
-        Me.maniobraLabel.AutoSize = True
-        Me.maniobraLabel.Location = New System.Drawing.Point(52, 41)
-        Me.maniobraLabel.Name = "maniobraLabel"
-        Me.maniobraLabel.Size = New System.Drawing.Size(68, 16)
-        Me.maniobraLabel.TabIndex = 0
-        Me.maniobraLabel.Text = "Maniobra:"
+        Me.instruccionesCoordinacionLabel.AutoSize = True
+        Me.instruccionesCoordinacionLabel.Location = New System.Drawing.Point(559, 39)
+        Me.instruccionesCoordinacionLabel.Name = "instruccionesCoordinacionLabel"
+        Me.instruccionesCoordinacionLabel.Size = New System.Drawing.Size(189, 16)
+        Me.instruccionesCoordinacionLabel.TabIndex = 4
+        Me.instruccionesCoordinacionLabel.Text = "Instrucciones de coordinación:"
         '
-        'Ejecucion3GroupBox
+        'tareasCombateTextBox
         '
-        Me.Ejecucion3GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.tareasCombateTextBox.Location = New System.Drawing.Point(19, 268)
+        Me.tareasCombateTextBox.Multiline = True
+        Me.tareasCombateTextBox.Name = "tareasCombateTextBox"
+        Me.tareasCombateTextBox.Size = New System.Drawing.Size(489, 163)
+        Me.tareasCombateTextBox.TabIndex = 3
+        '
+        'tareasCombateLabel
+        '
+        Me.tareasCombateLabel.AutoSize = True
+        Me.tareasCombateLabel.Location = New System.Drawing.Point(19, 250)
+        Me.tareasCombateLabel.Name = "tareasCombateLabel"
+        Me.tareasCombateLabel.Size = New System.Drawing.Size(261, 16)
+        Me.tareasCombateLabel.TabIndex = 2
+        Me.tareasCombateLabel.Text = "Tareas a unidades de apoyo de combate:"
+        '
+        'tareasManiobraTextBox
+        '
+        Me.tareasManiobraTextBox.Location = New System.Drawing.Point(19, 57)
+        Me.tareasManiobraTextBox.Multiline = True
+        Me.tareasManiobraTextBox.Name = "tareasManiobraTextBox"
+        Me.tareasManiobraTextBox.Size = New System.Drawing.Size(489, 163)
+        Me.tareasManiobraTextBox.TabIndex = 1
+        '
+        'tareasManiobraLabel
+        '
+        Me.tareasManiobraLabel.AutoSize = True
+        Me.tareasManiobraLabel.Location = New System.Drawing.Point(19, 39)
+        Me.tareasManiobraLabel.Name = "tareasManiobraLabel"
+        Me.tareasManiobraLabel.Size = New System.Drawing.Size(204, 16)
+        Me.tareasManiobraLabel.TabIndex = 0
+        Me.tareasManiobraLabel.Text = "Tareas a unidades de maniobra:"
+        '
+        'juridicasGroupBox
+        '
+        Me.juridicasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion3GroupBox.Controls.Add(Me.TableLayoutPanel9)
-        Me.Ejecucion3GroupBox.Controls.Add(Me.TareasCombateRichTextBox)
-        Me.Ejecucion3GroupBox.Controls.Add(Me.TareasCombateLabel)
-        Me.Ejecucion3GroupBox.Controls.Add(Me.TareasManiobraRichTextBox)
-        Me.Ejecucion3GroupBox.Controls.Add(Me.TareasManiobraLabel)
-        Me.Ejecucion3GroupBox.ForeColor = System.Drawing.Color.White
-        Me.Ejecucion3GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Ejecucion3GroupBox.Name = "Ejecucion3GroupBox"
-        Me.Ejecucion3GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Ejecucion3GroupBox.TabIndex = 9
-        Me.Ejecucion3GroupBox.TabStop = False
-        Me.Ejecucion3GroupBox.Text = "Ejecución"
+        Me.juridicasGroupBox.Controls.Add(Me.LinkLabel1)
+        Me.juridicasGroupBox.Controls.Add(Me.siguiente7LinkLabel)
+        Me.juridicasGroupBox.Controls.Add(Me.TarjetaAzulRadioButton)
+        Me.juridicasGroupBox.Controls.Add(Me.TarjetaRojaRadioButton)
+        Me.juridicasGroupBox.Controls.Add(Me.instruccionesJuridicasRichTextBox)
+        Me.juridicasGroupBox.Controls.Add(Me.instruccionesJuridicasLabel)
+        Me.juridicasGroupBox.Controls.Add(Me.usoFuerzaRichTextBox)
+        Me.juridicasGroupBox.Controls.Add(Me.UsoFuerzaLabel)
+        Me.juridicasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.juridicasGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.juridicasGroupBox.Name = "juridicasGroupBox"
+        Me.juridicasGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.juridicasGroupBox.TabIndex = 12
+        Me.juridicasGroupBox.TabStop = False
         '
-        'TareasCombateRichTextBox
+        'LinkLabel1
         '
-        Me.TareasCombateRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TareasCombateRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.TareasCombateRichTextBox.Name = "TareasCombateRichTextBox"
-        Me.TareasCombateRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.TareasCombateRichTextBox.TabIndex = 3
-        Me.TareasCombateRichTextBox.Text = ""
+        Me.LinkLabel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.ForeColor = System.Drawing.Color.Yellow
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
+        Me.LinkLabel1.Location = New System.Drawing.Point(1105, 45)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(39, 16)
+        Me.LinkLabel1.TabIndex = 25
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Atrás"
+        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TareasCombateLabel
+        'siguiente7LinkLabel
         '
-        Me.TareasCombateLabel.AutoSize = True
-        Me.TareasCombateLabel.Location = New System.Drawing.Point(514, 43)
-        Me.TareasCombateLabel.Name = "TareasCombateLabel"
-        Me.TareasCombateLabel.Size = New System.Drawing.Size(113, 16)
-        Me.TareasCombateLabel.TabIndex = 2
-        Me.TareasCombateLabel.Text = "Tareas Combate:"
-        '
-        'TareasManiobraRichTextBox
-        '
-        Me.TareasManiobraRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.TareasManiobraRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.TareasManiobraRichTextBox.Name = "TareasManiobraRichTextBox"
-        Me.TareasManiobraRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.TareasManiobraRichTextBox.TabIndex = 1
-        Me.TareasManiobraRichTextBox.Text = ""
-        '
-        'TareasManiobraLabel
-        '
-        Me.TareasManiobraLabel.AutoSize = True
-        Me.TareasManiobraLabel.Location = New System.Drawing.Point(52, 41)
-        Me.TareasManiobraLabel.Name = "TareasManiobraLabel"
-        Me.TareasManiobraLabel.Size = New System.Drawing.Size(115, 16)
-        Me.TareasManiobraLabel.TabIndex = 0
-        Me.TareasManiobraLabel.Text = "Tareas Maniobra:"
-        '
-        'Ejecucion4GroupBox
-        '
-        Me.Ejecucion4GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion4GroupBox.Controls.Add(Me.TableLayoutPanel10)
-        Me.Ejecucion4GroupBox.Controls.Add(Me.NivelHostilidadRichTextBox)
-        Me.Ejecucion4GroupBox.Controls.Add(Me.NivelHostilidadLabel)
-        Me.Ejecucion4GroupBox.Controls.Add(Me.InstruccionesCoordinacionRichTextBox)
-        Me.Ejecucion4GroupBox.Controls.Add(Me.InstruccionesCoordinacionLabel)
-        Me.Ejecucion4GroupBox.ForeColor = System.Drawing.Color.White
-        Me.Ejecucion4GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Ejecucion4GroupBox.Name = "Ejecucion4GroupBox"
-        Me.Ejecucion4GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Ejecucion4GroupBox.TabIndex = 10
-        Me.Ejecucion4GroupBox.TabStop = False
-        Me.Ejecucion4GroupBox.Text = "Ejecución"
-        '
-        'NivelHostilidadRichTextBox
-        '
-        Me.NivelHostilidadRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.NivelHostilidadRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.NivelHostilidadRichTextBox.Name = "NivelHostilidadRichTextBox"
-        Me.NivelHostilidadRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.NivelHostilidadRichTextBox.TabIndex = 3
-        Me.NivelHostilidadRichTextBox.Text = ""
-        '
-        'NivelHostilidadLabel
-        '
-        Me.NivelHostilidadLabel.AutoSize = True
-        Me.NivelHostilidadLabel.Location = New System.Drawing.Point(514, 43)
-        Me.NivelHostilidadLabel.Name = "NivelHostilidadLabel"
-        Me.NivelHostilidadLabel.Size = New System.Drawing.Size(122, 16)
-        Me.NivelHostilidadLabel.TabIndex = 2
-        Me.NivelHostilidadLabel.Text = "Nivel de hostilidad:"
-        '
-        'InstruccionesCoordinacionRichTextBox
-        '
-        Me.InstruccionesCoordinacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.InstruccionesCoordinacionRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.InstruccionesCoordinacionRichTextBox.Name = "InstruccionesCoordinacionRichTextBox"
-        Me.InstruccionesCoordinacionRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.InstruccionesCoordinacionRichTextBox.TabIndex = 1
-        Me.InstruccionesCoordinacionRichTextBox.Text = ""
-        '
-        'InstruccionesCoordinacionLabel
-        '
-        Me.InstruccionesCoordinacionLabel.AutoSize = True
-        Me.InstruccionesCoordinacionLabel.Location = New System.Drawing.Point(52, 41)
-        Me.InstruccionesCoordinacionLabel.Name = "InstruccionesCoordinacionLabel"
-        Me.InstruccionesCoordinacionLabel.Size = New System.Drawing.Size(170, 16)
-        Me.InstruccionesCoordinacionLabel.TabIndex = 0
-        Me.InstruccionesCoordinacionLabel.Text = "Instrucciones coordinación:"
-        '
-        'Ejecucion5GroupBox
-        '
-        Me.Ejecucion5GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion5GroupBox.Controls.Add(Me.TableLayoutPanel11)
-        Me.Ejecucion5GroupBox.Controls.Add(Me.PrincipiosRichTextBox)
-        Me.Ejecucion5GroupBox.Controls.Add(Me.PrincipiosLabel)
-        Me.Ejecucion5GroupBox.Controls.Add(Me.MarcoJuridicoRichTextBox)
-        Me.Ejecucion5GroupBox.Controls.Add(Me.MarcoJuridicoLabel)
-        Me.Ejecucion5GroupBox.ForeColor = System.Drawing.Color.White
-        Me.Ejecucion5GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Ejecucion5GroupBox.Name = "Ejecucion5GroupBox"
-        Me.Ejecucion5GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Ejecucion5GroupBox.TabIndex = 11
-        Me.Ejecucion5GroupBox.TabStop = False
-        Me.Ejecucion5GroupBox.Text = "Ejecución"
-        '
-        'PrincipiosRichTextBox
-        '
-        Me.PrincipiosRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.PrincipiosRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.PrincipiosRichTextBox.Name = "PrincipiosRichTextBox"
-        Me.PrincipiosRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.PrincipiosRichTextBox.TabIndex = 3
-        Me.PrincipiosRichTextBox.Text = ""
-        '
-        'PrincipiosLabel
-        '
-        Me.PrincipiosLabel.AutoSize = True
-        Me.PrincipiosLabel.Location = New System.Drawing.Point(514, 43)
-        Me.PrincipiosLabel.Name = "PrincipiosLabel"
-        Me.PrincipiosLabel.Size = New System.Drawing.Size(70, 16)
-        Me.PrincipiosLabel.TabIndex = 2
-        Me.PrincipiosLabel.Text = "Principios:"
-        '
-        'MarcoJuridicoRichTextBox
-        '
-        Me.MarcoJuridicoRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.MarcoJuridicoRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.MarcoJuridicoRichTextBox.Name = "MarcoJuridicoRichTextBox"
-        Me.MarcoJuridicoRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.MarcoJuridicoRichTextBox.TabIndex = 1
-        Me.MarcoJuridicoRichTextBox.Text = ""
-        '
-        'MarcoJuridicoLabel
-        '
-        Me.MarcoJuridicoLabel.AutoSize = True
-        Me.MarcoJuridicoLabel.Location = New System.Drawing.Point(52, 41)
-        Me.MarcoJuridicoLabel.Name = "MarcoJuridicoLabel"
-        Me.MarcoJuridicoLabel.Size = New System.Drawing.Size(99, 16)
-        Me.MarcoJuridicoLabel.TabIndex = 0
-        Me.MarcoJuridicoLabel.Text = "Marco Jurídico:"
-        '
-        'Ejecucion6GroupBox
-        '
-        Me.Ejecucion6GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.TableLayoutPanel12)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.TarjetaAzulRadioButton)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.TarjetaRojaRadioButton)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.InstruccionesEspecialesRichTextBox)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.InstruccionesEspecialesLabel)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.UsoFuerzaRichTextBox)
-        Me.Ejecucion6GroupBox.Controls.Add(Me.UsoFuerzaLabel)
-        Me.Ejecucion6GroupBox.ForeColor = System.Drawing.Color.White
-        Me.Ejecucion6GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Ejecucion6GroupBox.Name = "Ejecucion6GroupBox"
-        Me.Ejecucion6GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Ejecucion6GroupBox.TabIndex = 12
-        Me.Ejecucion6GroupBox.TabStop = False
-        Me.Ejecucion6GroupBox.Text = "Ejecución"
+        Me.siguiente7LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente7LinkLabel.AutoSize = True
+        Me.siguiente7LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente7LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente7LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente7LinkLabel.Name = "siguiente7LinkLabel"
+        Me.siguiente7LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente7LinkLabel.TabIndex = 8
+        Me.siguiente7LinkLabel.TabStop = True
+        Me.siguiente7LinkLabel.Text = "Siguiente"
+        Me.siguiente7LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TarjetaAzulRadioButton
         '
@@ -1610,8 +1685,8 @@ Partial Class OperacionForm
         Me.TarjetaAzulRadioButton.Checked = True
         Me.TarjetaAzulRadioButton.Location = New System.Drawing.Point(264, 39)
         Me.TarjetaAzulRadioButton.Name = "TarjetaAzulRadioButton"
-        Me.TarjetaAzulRadioButton.Size = New System.Drawing.Size(94, 20)
-        Me.TarjetaAzulRadioButton.TabIndex = 5
+        Me.TarjetaAzulRadioButton.Size = New System.Drawing.Size(78, 17)
+        Me.TarjetaAzulRadioButton.TabIndex = 2
         Me.TarjetaAzulRadioButton.TabStop = True
         Me.TarjetaAzulRadioButton.Text = "TarjetaAzul"
         Me.TarjetaAzulRadioButton.UseVisualStyleBackColor = True
@@ -1621,39 +1696,39 @@ Partial Class OperacionForm
         Me.TarjetaRojaRadioButton.AutoSize = True
         Me.TarjetaRojaRadioButton.Location = New System.Drawing.Point(152, 39)
         Me.TarjetaRojaRadioButton.Name = "TarjetaRojaRadioButton"
-        Me.TarjetaRojaRadioButton.Size = New System.Drawing.Size(98, 20)
-        Me.TarjetaRojaRadioButton.TabIndex = 4
+        Me.TarjetaRojaRadioButton.Size = New System.Drawing.Size(80, 17)
+        Me.TarjetaRojaRadioButton.TabIndex = 1
         Me.TarjetaRojaRadioButton.Text = "TarjetaRoja"
         Me.TarjetaRojaRadioButton.UseVisualStyleBackColor = True
         '
-        'InstruccionesEspecialesRichTextBox
+        'instruccionesJuridicasRichTextBox
         '
-        Me.InstruccionesEspecialesRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.instruccionesJuridicasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.InstruccionesEspecialesRichTextBox.Location = New System.Drawing.Point(517, 66)
-        Me.InstruccionesEspecialesRichTextBox.Name = "InstruccionesEspecialesRichTextBox"
-        Me.InstruccionesEspecialesRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.InstruccionesEspecialesRichTextBox.TabIndex = 3
-        Me.InstruccionesEspecialesRichTextBox.Text = ""
+        Me.instruccionesJuridicasRichTextBox.Location = New System.Drawing.Point(517, 66)
+        Me.instruccionesJuridicasRichTextBox.Name = "instruccionesJuridicasRichTextBox"
+        Me.instruccionesJuridicasRichTextBox.Size = New System.Drawing.Size(412, 405)
+        Me.instruccionesJuridicasRichTextBox.TabIndex = 5
+        Me.instruccionesJuridicasRichTextBox.Text = ""
         '
-        'InstruccionesEspecialesLabel
+        'instruccionesJuridicasLabel
         '
-        Me.InstruccionesEspecialesLabel.AutoSize = True
-        Me.InstruccionesEspecialesLabel.Location = New System.Drawing.Point(514, 43)
-        Me.InstruccionesEspecialesLabel.Name = "InstruccionesEspecialesLabel"
-        Me.InstruccionesEspecialesLabel.Size = New System.Drawing.Size(159, 16)
-        Me.InstruccionesEspecialesLabel.TabIndex = 2
-        Me.InstruccionesEspecialesLabel.Text = "Instrucciones especiales:"
+        Me.instruccionesJuridicasLabel.AutoSize = True
+        Me.instruccionesJuridicasLabel.Location = New System.Drawing.Point(514, 43)
+        Me.instruccionesJuridicasLabel.Name = "instruccionesJuridicasLabel"
+        Me.instruccionesJuridicasLabel.Size = New System.Drawing.Size(142, 16)
+        Me.instruccionesJuridicasLabel.TabIndex = 4
+        Me.instruccionesJuridicasLabel.Text = "Instrucciones jurídicas:"
         '
-        'UsoFuerzaRichTextBox
+        'usoFuerzaRichTextBox
         '
-        Me.UsoFuerzaRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.usoFuerzaRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.UsoFuerzaRichTextBox.Location = New System.Drawing.Point(52, 68)
-        Me.UsoFuerzaRichTextBox.Name = "UsoFuerzaRichTextBox"
-        Me.UsoFuerzaRichTextBox.Size = New System.Drawing.Size(412, 384)
-        Me.UsoFuerzaRichTextBox.TabIndex = 1
-        Me.UsoFuerzaRichTextBox.Text = resources.GetString("UsoFuerzaRichTextBox.Text")
+        Me.usoFuerzaRichTextBox.Location = New System.Drawing.Point(52, 68)
+        Me.usoFuerzaRichTextBox.Name = "usoFuerzaRichTextBox"
+        Me.usoFuerzaRichTextBox.Size = New System.Drawing.Size(412, 405)
+        Me.usoFuerzaRichTextBox.TabIndex = 3
+        Me.usoFuerzaRichTextBox.Text = resources.GetString("usoFuerzaRichTextBox.Text")
         '
         'UsoFuerzaLabel
         '
@@ -1664,50 +1739,79 @@ Partial Class OperacionForm
         Me.UsoFuerzaLabel.TabIndex = 0
         Me.UsoFuerzaLabel.Text = "Uso de fuerza:"
         '
-        'AbastecimientosGroupBox
+        'serviciosCombateGroupBox
         '
-        Me.AbastecimientosGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.serviciosCombateGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.TableLayoutPanel13)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.EvacuacionesMedicasRichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.EvacuacionesMedicasLabel)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase6RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase6Label)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase5RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase5Label)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase4RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase4Label)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase3RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase3Label)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase2RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase2Label)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase1RichTextBox)
-        Me.AbastecimientosGroupBox.Controls.Add(Me.Clase1Label)
-        Me.AbastecimientosGroupBox.ForeColor = System.Drawing.Color.White
-        Me.AbastecimientosGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.AbastecimientosGroupBox.Name = "AbastecimientosGroupBox"
-        Me.AbastecimientosGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.AbastecimientosGroupBox.TabIndex = 13
-        Me.AbastecimientosGroupBox.TabStop = False
-        Me.AbastecimientosGroupBox.Text = "Abastecimientos"
+        Me.serviciosCombateGroupBox.Controls.Add(Me.atras6LinkLabel)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.siguiente8LinkLabel)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.evacuacionesMedicasRichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.evacuacionesMedicasLabel)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase6RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase6Label)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase5RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase5Label)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase4RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase4Label)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase3RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase3Label)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase2RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase2Label)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase1RichTextBox)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.Clase1Label)
+        Me.serviciosCombateGroupBox.ForeColor = System.Drawing.Color.White
+        Me.serviciosCombateGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.serviciosCombateGroupBox.Name = "serviciosCombateGroupBox"
+        Me.serviciosCombateGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.serviciosCombateGroupBox.TabIndex = 13
+        Me.serviciosCombateGroupBox.TabStop = False
+        Me.serviciosCombateGroupBox.Text = "Apoyo de servicios para el combate"
         '
-        'EvacuacionesMedicasRichTextBox
+        'atras6LinkLabel
         '
-        Me.EvacuacionesMedicasRichTextBox.Location = New System.Drawing.Point(55, 328)
-        Me.EvacuacionesMedicasRichTextBox.Name = "EvacuacionesMedicasRichTextBox"
-        Me.EvacuacionesMedicasRichTextBox.Size = New System.Drawing.Size(868, 106)
-        Me.EvacuacionesMedicasRichTextBox.TabIndex = 13
-        Me.EvacuacionesMedicasRichTextBox.Text = ""
+        Me.atras6LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras6LinkLabel.AutoSize = True
+        Me.atras6LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras6LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras6LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras6LinkLabel.Name = "atras6LinkLabel"
+        Me.atras6LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras6LinkLabel.TabIndex = 25
+        Me.atras6LinkLabel.TabStop = True
+        Me.atras6LinkLabel.Text = "Atrás"
+        Me.atras6LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'EvacuacionesMedicasLabel
+        'siguiente8LinkLabel
         '
-        Me.EvacuacionesMedicasLabel.AutoSize = True
-        Me.EvacuacionesMedicasLabel.Location = New System.Drawing.Point(52, 306)
-        Me.EvacuacionesMedicasLabel.Name = "EvacuacionesMedicasLabel"
-        Me.EvacuacionesMedicasLabel.Size = New System.Drawing.Size(152, 16)
-        Me.EvacuacionesMedicasLabel.TabIndex = 12
-        Me.EvacuacionesMedicasLabel.Text = "Evacuaciones Médicas:"
+        Me.siguiente8LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente8LinkLabel.AutoSize = True
+        Me.siguiente8LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente8LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente8LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente8LinkLabel.Name = "siguiente8LinkLabel"
+        Me.siguiente8LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente8LinkLabel.TabIndex = 14
+        Me.siguiente8LinkLabel.TabStop = True
+        Me.siguiente8LinkLabel.Text = "Siguiente"
+        Me.siguiente8LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'evacuacionesMedicasRichTextBox
+        '
+        Me.evacuacionesMedicasRichTextBox.Location = New System.Drawing.Point(55, 328)
+        Me.evacuacionesMedicasRichTextBox.Name = "evacuacionesMedicasRichTextBox"
+        Me.evacuacionesMedicasRichTextBox.Size = New System.Drawing.Size(868, 106)
+        Me.evacuacionesMedicasRichTextBox.TabIndex = 13
+        Me.evacuacionesMedicasRichTextBox.Text = ""
+        '
+        'evacuacionesMedicasLabel
+        '
+        Me.evacuacionesMedicasLabel.AutoSize = True
+        Me.evacuacionesMedicasLabel.Location = New System.Drawing.Point(52, 306)
+        Me.evacuacionesMedicasLabel.Name = "evacuacionesMedicasLabel"
+        Me.evacuacionesMedicasLabel.Size = New System.Drawing.Size(152, 16)
+        Me.evacuacionesMedicasLabel.TabIndex = 12
+        Me.evacuacionesMedicasLabel.Text = "Evacuaciones Médicas:"
         '
         'Clase6RichTextBox
         '
@@ -1813,63 +1917,92 @@ Partial Class OperacionForm
         Me.Clase1Label.TabIndex = 0
         Me.Clase1Label.Text = "Clase 1:"
         '
-        'ComunicacionesGroupBox
+        'comunicacionesGroupBox
         '
-        Me.ComunicacionesGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.comunicacionesGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.TableLayoutPanel14)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.ComplementosTextBox)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.ComplementosLabel)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.OtrosComGroupBox)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.UHFGroupBox)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.HFGroupBox)
-        Me.ComunicacionesGroupBox.Controls.Add(Me.VHFGroupBox)
-        Me.ComunicacionesGroupBox.ForeColor = System.Drawing.Color.White
-        Me.ComunicacionesGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.ComunicacionesGroupBox.Name = "ComunicacionesGroupBox"
-        Me.ComunicacionesGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.ComunicacionesGroupBox.TabIndex = 14
-        Me.ComunicacionesGroupBox.TabStop = False
-        Me.ComunicacionesGroupBox.Text = "Comunicaciones"
+        Me.comunicacionesGroupBox.Controls.Add(Me.atras5LinkLabel)
+        Me.comunicacionesGroupBox.Controls.Add(Me.siguiente9LinkLabel)
+        Me.comunicacionesGroupBox.Controls.Add(Me.indicativosGroupBox)
+        Me.comunicacionesGroupBox.Controls.Add(Me.otrosComGroupBox)
+        Me.comunicacionesGroupBox.Controls.Add(Me.UHFGroupBox)
+        Me.comunicacionesGroupBox.Controls.Add(Me.hfGroupBox)
+        Me.comunicacionesGroupBox.Controls.Add(Me.VHFGroupBox)
+        Me.comunicacionesGroupBox.ForeColor = System.Drawing.Color.White
+        Me.comunicacionesGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.comunicacionesGroupBox.Name = "comunicacionesGroupBox"
+        Me.comunicacionesGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.comunicacionesGroupBox.TabIndex = 14
+        Me.comunicacionesGroupBox.TabStop = False
+        Me.comunicacionesGroupBox.Text = "Comunicaciones"
         '
-        'ComplementosTextBox
+        'atras5LinkLabel
         '
-        Me.ComplementosTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.atras5LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras5LinkLabel.AutoSize = True
+        Me.atras5LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras5LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras5LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras5LinkLabel.Name = "atras5LinkLabel"
+        Me.atras5LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras5LinkLabel.TabIndex = 25
+        Me.atras5LinkLabel.TabStop = True
+        Me.atras5LinkLabel.Text = "Atrás"
+        Me.atras5LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'siguiente9LinkLabel
+        '
+        Me.siguiente9LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente9LinkLabel.AutoSize = True
+        Me.siguiente9LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente9LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente9LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente9LinkLabel.Name = "siguiente9LinkLabel"
+        Me.siguiente9LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente9LinkLabel.TabIndex = 8
+        Me.siguiente9LinkLabel.TabStop = True
+        Me.siguiente9LinkLabel.Text = "Siguiente"
+        Me.siguiente9LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'indicativosGroupBox
+        '
+        Me.indicativosGroupBox.Controls.Add(Me.indicativosTextBox)
+        Me.indicativosGroupBox.ForeColor = System.Drawing.Color.White
+        Me.indicativosGroupBox.Location = New System.Drawing.Point(360, 279)
+        Me.indicativosGroupBox.Name = "indicativosGroupBox"
+        Me.indicativosGroupBox.Size = New System.Drawing.Size(358, 146)
+        Me.indicativosGroupBox.TabIndex = 4
+        Me.indicativosGroupBox.TabStop = False
+        Me.indicativosGroupBox.Text = "Indicativos"
+        '
+        'indicativosTextBox
+        '
+        Me.indicativosTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ComplementosTextBox.Location = New System.Drawing.Point(52, 306)
-        Me.ComplementosTextBox.Multiline = True
-        Me.ComplementosTextBox.Name = "ComplementosTextBox"
-        Me.ComplementosTextBox.Size = New System.Drawing.Size(1077, 128)
-        Me.ComplementosTextBox.TabIndex = 5
+        Me.indicativosTextBox.Location = New System.Drawing.Point(7, 25)
+        Me.indicativosTextBox.Multiline = True
+        Me.indicativosTextBox.Name = "indicativosTextBox"
+        Me.indicativosTextBox.Size = New System.Drawing.Size(344, 113)
+        Me.indicativosTextBox.TabIndex = 0
         '
-        'ComplementosLabel
+        'otrosComGroupBox
         '
-        Me.ComplementosLabel.AutoSize = True
-        Me.ComplementosLabel.Location = New System.Drawing.Point(49, 281)
-        Me.ComplementosLabel.Name = "ComplementosLabel"
-        Me.ComplementosLabel.Size = New System.Drawing.Size(102, 16)
-        Me.ComplementosLabel.TabIndex = 4
-        Me.ComplementosLabel.Text = "Complementos:"
-        '
-        'OtrosComGroupBox
-        '
-        Me.OtrosComGroupBox.Controls.Add(Me.ClaveComTextBox)
-        Me.OtrosComGroupBox.Controls.Add(Me.SatelitalTextBox)
-        Me.OtrosComGroupBox.Controls.Add(Me.CelularTextBox)
-        Me.OtrosComGroupBox.Controls.Add(Me.AvantelTextBox)
-        Me.OtrosComGroupBox.Controls.Add(Me.ClaveLabel)
-        Me.OtrosComGroupBox.Controls.Add(Me.SatelitalLabel)
-        Me.OtrosComGroupBox.Controls.Add(Me.CelularLabel)
-        Me.OtrosComGroupBox.Controls.Add(Me.AvantelLabel)
-        Me.OtrosComGroupBox.ForeColor = System.Drawing.Color.White
-        Me.OtrosComGroupBox.Location = New System.Drawing.Point(691, 68)
-        Me.OtrosComGroupBox.Name = "OtrosComGroupBox"
-        Me.OtrosComGroupBox.Size = New System.Drawing.Size(237, 146)
-        Me.OtrosComGroupBox.TabIndex = 3
-        Me.OtrosComGroupBox.TabStop = False
-        Me.OtrosComGroupBox.Text = "Otros"
+        Me.otrosComGroupBox.Controls.Add(Me.ClaveComTextBox)
+        Me.otrosComGroupBox.Controls.Add(Me.satelitalTextBox)
+        Me.otrosComGroupBox.Controls.Add(Me.CelularTextBox)
+        Me.otrosComGroupBox.Controls.Add(Me.AvantelTextBox)
+        Me.otrosComGroupBox.Controls.Add(Me.ClaveLabel)
+        Me.otrosComGroupBox.Controls.Add(Me.satelitalLabel)
+        Me.otrosComGroupBox.Controls.Add(Me.CelularLabel)
+        Me.otrosComGroupBox.Controls.Add(Me.AvantelLabel)
+        Me.otrosComGroupBox.ForeColor = System.Drawing.Color.White
+        Me.otrosComGroupBox.Location = New System.Drawing.Point(28, 279)
+        Me.otrosComGroupBox.Name = "otrosComGroupBox"
+        Me.otrosComGroupBox.Size = New System.Drawing.Size(237, 146)
+        Me.otrosComGroupBox.TabIndex = 3
+        Me.otrosComGroupBox.TabStop = False
         '
         'ClaveComTextBox
         '
@@ -1879,13 +2012,13 @@ Partial Class OperacionForm
         Me.ClaveComTextBox.Size = New System.Drawing.Size(118, 22)
         Me.ClaveComTextBox.TabIndex = 7
         '
-        'SatelitalTextBox
+        'satelitalTextBox
         '
-        Me.SatelitalTextBox.Location = New System.Drawing.Point(110, 79)
-        Me.SatelitalTextBox.MaxLength = 300
-        Me.SatelitalTextBox.Name = "SatelitalTextBox"
-        Me.SatelitalTextBox.Size = New System.Drawing.Size(118, 22)
-        Me.SatelitalTextBox.TabIndex = 5
+        Me.satelitalTextBox.Location = New System.Drawing.Point(110, 79)
+        Me.satelitalTextBox.MaxLength = 300
+        Me.satelitalTextBox.Name = "satelitalTextBox"
+        Me.satelitalTextBox.Size = New System.Drawing.Size(118, 22)
+        Me.satelitalTextBox.TabIndex = 5
         '
         'CelularTextBox
         '
@@ -1912,14 +2045,14 @@ Partial Class OperacionForm
         Me.ClaveLabel.TabIndex = 6
         Me.ClaveLabel.Text = "Santo y seña:"
         '
-        'SatelitalLabel
+        'satelitalLabel
         '
-        Me.SatelitalLabel.AutoSize = True
-        Me.SatelitalLabel.Location = New System.Drawing.Point(46, 81)
-        Me.SatelitalLabel.Name = "SatelitalLabel"
-        Me.SatelitalLabel.Size = New System.Drawing.Size(59, 16)
-        Me.SatelitalLabel.TabIndex = 4
-        Me.SatelitalLabel.Text = "Satelital:"
+        Me.satelitalLabel.AutoSize = True
+        Me.satelitalLabel.Location = New System.Drawing.Point(46, 81)
+        Me.satelitalLabel.Name = "satelitalLabel"
+        Me.satelitalLabel.Size = New System.Drawing.Size(59, 16)
+        Me.satelitalLabel.TabIndex = 4
+        Me.satelitalLabel.Text = "Satelital:"
         '
         'CelularLabel
         '
@@ -1941,121 +2074,194 @@ Partial Class OperacionForm
         '
         'UHFGroupBox
         '
+        Me.UHFGroupBox.Controls.Add(Me.uhfCantidadLabel)
+        Me.UHFGroupBox.Controls.Add(Me.uhfXTR3000TextBox)
+        Me.UHFGroupBox.Controls.Add(Me.uhfFrecuenciaLabel)
+        Me.UHFGroupBox.Controls.Add(Me.uhfXTS4250TextBox)
         Me.UHFGroupBox.Controls.Add(Me.uhfEscanerNumericUpDown)
         Me.UHFGroupBox.Controls.Add(Me.uhfEscanerLabel)
         Me.UHFGroupBox.Controls.Add(Me.uhfXTR3000NumericUpDown)
         Me.UHFGroupBox.Controls.Add(Me.uhfXTR3000Label)
         Me.UHFGroupBox.Controls.Add(Me.uhfXTS4250NumericUpDown)
-        Me.UHFGroupBox.Controls.Add(Me.xts4250Label)
+        Me.UHFGroupBox.Controls.Add(Me.uhfXTS4250Label)
         Me.UHFGroupBox.ForeColor = System.Drawing.Color.White
-        Me.UHFGroupBox.Location = New System.Drawing.Point(478, 71)
+        Me.UHFGroupBox.Location = New System.Drawing.Point(360, 38)
         Me.UHFGroupBox.Name = "UHFGroupBox"
-        Me.UHFGroupBox.Size = New System.Drawing.Size(170, 115)
-        Me.UHFGroupBox.TabIndex = 2
+        Me.UHFGroupBox.Size = New System.Drawing.Size(296, 142)
+        Me.UHFGroupBox.TabIndex = 1
         Me.UHFGroupBox.TabStop = False
         Me.UHFGroupBox.Text = "UHF"
         '
+        'uhfCantidadLabel
+        '
+        Me.uhfCantidadLabel.AutoSize = True
+        Me.uhfCantidadLabel.Location = New System.Drawing.Point(85, 25)
+        Me.uhfCantidadLabel.Name = "uhfCantidadLabel"
+        Me.uhfCantidadLabel.Size = New System.Drawing.Size(62, 16)
+        Me.uhfCantidadLabel.TabIndex = 0
+        Me.uhfCantidadLabel.Text = "Cantidad"
+        '
+        'uhfXTR3000TextBox
+        '
+        Me.uhfXTR3000TextBox.Location = New System.Drawing.Point(161, 75)
+        Me.uhfXTR3000TextBox.MaxLength = 300
+        Me.uhfXTR3000TextBox.Name = "uhfXTR3000TextBox"
+        Me.uhfXTR3000TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.uhfXTR3000TextBox.TabIndex = 7
+        '
+        'uhfFrecuenciaLabel
+        '
+        Me.uhfFrecuenciaLabel.AutoSize = True
+        Me.uhfFrecuenciaLabel.Location = New System.Drawing.Point(176, 25)
+        Me.uhfFrecuenciaLabel.Name = "uhfFrecuenciaLabel"
+        Me.uhfFrecuenciaLabel.Size = New System.Drawing.Size(75, 16)
+        Me.uhfFrecuenciaLabel.TabIndex = 1
+        Me.uhfFrecuenciaLabel.Text = "Frecuencia"
+        '
+        'uhfXTS4250TextBox
+        '
+        Me.uhfXTS4250TextBox.Location = New System.Drawing.Point(161, 48)
+        Me.uhfXTS4250TextBox.MaxLength = 300
+        Me.uhfXTS4250TextBox.Name = "uhfXTS4250TextBox"
+        Me.uhfXTS4250TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.uhfXTS4250TextBox.TabIndex = 4
+        '
         'uhfEscanerNumericUpDown
         '
-        Me.uhfEscanerNumericUpDown.Location = New System.Drawing.Point(80, 80)
+        Me.uhfEscanerNumericUpDown.Location = New System.Drawing.Point(82, 101)
         Me.uhfEscanerNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.uhfEscanerNumericUpDown.Name = "uhfEscanerNumericUpDown"
         Me.uhfEscanerNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.uhfEscanerNumericUpDown.TabIndex = 5
+        Me.uhfEscanerNumericUpDown.TabIndex = 9
         '
         'uhfEscanerLabel
         '
         Me.uhfEscanerLabel.AutoSize = True
-        Me.uhfEscanerLabel.Location = New System.Drawing.Point(13, 82)
+        Me.uhfEscanerLabel.Location = New System.Drawing.Point(15, 103)
         Me.uhfEscanerLabel.Name = "uhfEscanerLabel"
         Me.uhfEscanerLabel.Size = New System.Drawing.Size(61, 16)
-        Me.uhfEscanerLabel.TabIndex = 4
+        Me.uhfEscanerLabel.TabIndex = 8
         Me.uhfEscanerLabel.Text = "Escáner:"
         '
         'uhfXTR3000NumericUpDown
         '
-        Me.uhfXTR3000NumericUpDown.Location = New System.Drawing.Point(80, 54)
+        Me.uhfXTR3000NumericUpDown.Location = New System.Drawing.Point(82, 75)
         Me.uhfXTR3000NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.uhfXTR3000NumericUpDown.Name = "uhfXTR3000NumericUpDown"
         Me.uhfXTR3000NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.uhfXTR3000NumericUpDown.TabIndex = 3
+        Me.uhfXTR3000NumericUpDown.TabIndex = 6
         '
         'uhfXTR3000Label
         '
         Me.uhfXTR3000Label.AutoSize = True
-        Me.uhfXTR3000Label.Location = New System.Drawing.Point(8, 56)
+        Me.uhfXTR3000Label.Location = New System.Drawing.Point(10, 77)
         Me.uhfXTR3000Label.Name = "uhfXTR3000Label"
         Me.uhfXTR3000Label.Size = New System.Drawing.Size(66, 16)
-        Me.uhfXTR3000Label.TabIndex = 2
+        Me.uhfXTR3000Label.TabIndex = 5
         Me.uhfXTR3000Label.Text = "XTR3000:"
         '
         'uhfXTS4250NumericUpDown
         '
-        Me.uhfXTS4250NumericUpDown.Location = New System.Drawing.Point(80, 27)
+        Me.uhfXTS4250NumericUpDown.Location = New System.Drawing.Point(82, 48)
         Me.uhfXTS4250NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.uhfXTS4250NumericUpDown.Name = "uhfXTS4250NumericUpDown"
         Me.uhfXTS4250NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.uhfXTS4250NumericUpDown.TabIndex = 1
+        Me.uhfXTS4250NumericUpDown.TabIndex = 3
         '
-        'xts4250Label
+        'uhfXTS4250Label
         '
-        Me.xts4250Label.AutoSize = True
-        Me.xts4250Label.Location = New System.Drawing.Point(9, 32)
-        Me.xts4250Label.Name = "xts4250Label"
-        Me.xts4250Label.Size = New System.Drawing.Size(65, 16)
-        Me.xts4250Label.TabIndex = 0
-        Me.xts4250Label.Text = "XTS4250:"
+        Me.uhfXTS4250Label.AutoSize = True
+        Me.uhfXTS4250Label.Location = New System.Drawing.Point(11, 53)
+        Me.uhfXTS4250Label.Name = "uhfXTS4250Label"
+        Me.uhfXTS4250Label.Size = New System.Drawing.Size(65, 16)
+        Me.uhfXTS4250Label.TabIndex = 2
+        Me.uhfXTS4250Label.Text = "XTS4250:"
         '
-        'HFGroupBox
+        'hfGroupBox
         '
-        Me.HFGroupBox.Controls.Add(Me.hfEscanerNumericUpDown)
-        Me.HFGroupBox.Controls.Add(Me.hfEscanerLabel)
-        Me.HFGroupBox.Controls.Add(Me.hf6020NumericUpDown)
-        Me.HFGroupBox.Controls.Add(Me.hf6020Label)
-        Me.HFGroupBox.ForeColor = System.Drawing.Color.White
-        Me.HFGroupBox.Location = New System.Drawing.Point(265, 71)
-        Me.HFGroupBox.Name = "HFGroupBox"
-        Me.HFGroupBox.Size = New System.Drawing.Size(170, 94)
-        Me.HFGroupBox.TabIndex = 1
-        Me.HFGroupBox.TabStop = False
-        Me.HFGroupBox.Text = "HF"
+        Me.hfGroupBox.Controls.Add(Me.hfCantidadLabel)
+        Me.hfGroupBox.Controls.Add(Me.hfFrecuenciaLabel)
+        Me.hfGroupBox.Controls.Add(Me.hf6020TextBox)
+        Me.hfGroupBox.Controls.Add(Me.hfEscanerNumericUpDown)
+        Me.hfGroupBox.Controls.Add(Me.hfEscanerLabel)
+        Me.hfGroupBox.Controls.Add(Me.hf6020NumericUpDown)
+        Me.hfGroupBox.Controls.Add(Me.hf6020Label)
+        Me.hfGroupBox.ForeColor = System.Drawing.Color.White
+        Me.hfGroupBox.Location = New System.Drawing.Point(695, 38)
+        Me.hfGroupBox.Name = "hfGroupBox"
+        Me.hfGroupBox.Size = New System.Drawing.Size(292, 135)
+        Me.hfGroupBox.TabIndex = 2
+        Me.hfGroupBox.TabStop = False
+        Me.hfGroupBox.Text = "HF"
+        '
+        'hfCantidadLabel
+        '
+        Me.hfCantidadLabel.AutoSize = True
+        Me.hfCantidadLabel.Location = New System.Drawing.Point(83, 20)
+        Me.hfCantidadLabel.Name = "hfCantidadLabel"
+        Me.hfCantidadLabel.Size = New System.Drawing.Size(62, 16)
+        Me.hfCantidadLabel.TabIndex = 0
+        Me.hfCantidadLabel.Text = "Cantidad"
+        '
+        'hfFrecuenciaLabel
+        '
+        Me.hfFrecuenciaLabel.AutoSize = True
+        Me.hfFrecuenciaLabel.Location = New System.Drawing.Point(174, 20)
+        Me.hfFrecuenciaLabel.Name = "hfFrecuenciaLabel"
+        Me.hfFrecuenciaLabel.Size = New System.Drawing.Size(75, 16)
+        Me.hfFrecuenciaLabel.TabIndex = 1
+        Me.hfFrecuenciaLabel.Text = "Frecuencia"
+        '
+        'hf6020TextBox
+        '
+        Me.hf6020TextBox.Location = New System.Drawing.Point(159, 43)
+        Me.hf6020TextBox.MaxLength = 300
+        Me.hf6020TextBox.Name = "hf6020TextBox"
+        Me.hf6020TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.hf6020TextBox.TabIndex = 4
         '
         'hfEscanerNumericUpDown
         '
-        Me.hfEscanerNumericUpDown.Location = New System.Drawing.Point(80, 54)
+        Me.hfEscanerNumericUpDown.Location = New System.Drawing.Point(80, 70)
         Me.hfEscanerNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.hfEscanerNumericUpDown.Name = "hfEscanerNumericUpDown"
         Me.hfEscanerNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.hfEscanerNumericUpDown.TabIndex = 3
+        Me.hfEscanerNumericUpDown.TabIndex = 6
         '
         'hfEscanerLabel
         '
         Me.hfEscanerLabel.AutoSize = True
-        Me.hfEscanerLabel.Location = New System.Drawing.Point(13, 56)
+        Me.hfEscanerLabel.Location = New System.Drawing.Point(13, 72)
         Me.hfEscanerLabel.Name = "hfEscanerLabel"
         Me.hfEscanerLabel.Size = New System.Drawing.Size(61, 16)
-        Me.hfEscanerLabel.TabIndex = 2
+        Me.hfEscanerLabel.TabIndex = 5
         Me.hfEscanerLabel.Text = "Escáner:"
         '
         'hf6020NumericUpDown
         '
-        Me.hf6020NumericUpDown.Location = New System.Drawing.Point(80, 27)
+        Me.hf6020NumericUpDown.Location = New System.Drawing.Point(80, 43)
         Me.hf6020NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.hf6020NumericUpDown.Name = "hf6020NumericUpDown"
         Me.hf6020NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.hf6020NumericUpDown.TabIndex = 1
+        Me.hf6020NumericUpDown.TabIndex = 3
         '
         'hf6020Label
         '
         Me.hf6020Label.AutoSize = True
-        Me.hf6020Label.Location = New System.Drawing.Point(35, 29)
+        Me.hf6020Label.Location = New System.Drawing.Point(35, 45)
         Me.hf6020Label.Name = "hf6020Label"
         Me.hf6020Label.Size = New System.Drawing.Size(39, 16)
-        Me.hf6020Label.TabIndex = 0
+        Me.hf6020Label.TabIndex = 2
         Me.hf6020Label.Text = "6020:"
         '
         'VHFGroupBox
         '
+        Me.VHFGroupBox.Controls.Add(Me.vhfCantidadLabel)
+        Me.VHFGroupBox.Controls.Add(Me.vhfAereoTextBox)
+        Me.VHFGroupBox.Controls.Add(Me.vhf930TextBox)
+        Me.VHFGroupBox.Controls.Add(Me.vhf710TextBox)
+        Me.VHFGroupBox.Controls.Add(Me.vhfFrecuenciaLabel)
+        Me.VHFGroupBox.Controls.Add(Me.vhf7330TextBox)
         Me.VHFGroupBox.Controls.Add(Me.vhfEscanerNumericUpDown)
         Me.VHFGroupBox.Controls.Add(Me.vhfEscanerLabel)
         Me.VHFGroupBox.Controls.Add(Me.vhfAereoNumericUpDown)
@@ -2067,137 +2273,216 @@ Partial Class OperacionForm
         Me.VHFGroupBox.Controls.Add(Me.vhf7330NumericUpDown)
         Me.VHFGroupBox.Controls.Add(Me.vhf7330Label)
         Me.VHFGroupBox.ForeColor = System.Drawing.Color.White
-        Me.VHFGroupBox.Location = New System.Drawing.Point(52, 68)
+        Me.VHFGroupBox.Location = New System.Drawing.Point(24, 38)
         Me.VHFGroupBox.Name = "VHFGroupBox"
-        Me.VHFGroupBox.Size = New System.Drawing.Size(170, 173)
+        Me.VHFGroupBox.Size = New System.Drawing.Size(308, 199)
         Me.VHFGroupBox.TabIndex = 0
         Me.VHFGroupBox.TabStop = False
         Me.VHFGroupBox.Text = "VHF"
         '
+        'vhfCantidadLabel
+        '
+        Me.vhfCantidadLabel.AutoSize = True
+        Me.vhfCantidadLabel.Location = New System.Drawing.Point(85, 26)
+        Me.vhfCantidadLabel.Name = "vhfCantidadLabel"
+        Me.vhfCantidadLabel.Size = New System.Drawing.Size(62, 16)
+        Me.vhfCantidadLabel.TabIndex = 0
+        Me.vhfCantidadLabel.Text = "Cantidad"
+        '
+        'vhfAereoTextBox
+        '
+        Me.vhfAereoTextBox.Location = New System.Drawing.Point(161, 131)
+        Me.vhfAereoTextBox.MaxLength = 300
+        Me.vhfAereoTextBox.Name = "vhfAereoTextBox"
+        Me.vhfAereoTextBox.Size = New System.Drawing.Size(118, 22)
+        Me.vhfAereoTextBox.TabIndex = 13
+        '
+        'vhf930TextBox
+        '
+        Me.vhf930TextBox.Location = New System.Drawing.Point(161, 104)
+        Me.vhf930TextBox.MaxLength = 300
+        Me.vhf930TextBox.Name = "vhf930TextBox"
+        Me.vhf930TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.vhf930TextBox.TabIndex = 10
+        '
+        'vhf710TextBox
+        '
+        Me.vhf710TextBox.Location = New System.Drawing.Point(161, 77)
+        Me.vhf710TextBox.MaxLength = 300
+        Me.vhf710TextBox.Name = "vhf710TextBox"
+        Me.vhf710TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.vhf710TextBox.TabIndex = 7
+        '
+        'vhfFrecuenciaLabel
+        '
+        Me.vhfFrecuenciaLabel.AutoSize = True
+        Me.vhfFrecuenciaLabel.Location = New System.Drawing.Point(176, 26)
+        Me.vhfFrecuenciaLabel.Name = "vhfFrecuenciaLabel"
+        Me.vhfFrecuenciaLabel.Size = New System.Drawing.Size(75, 16)
+        Me.vhfFrecuenciaLabel.TabIndex = 1
+        Me.vhfFrecuenciaLabel.Text = "Frecuencia"
+        '
+        'vhf7330TextBox
+        '
+        Me.vhf7330TextBox.Location = New System.Drawing.Point(161, 50)
+        Me.vhf7330TextBox.MaxLength = 300
+        Me.vhf7330TextBox.Name = "vhf7330TextBox"
+        Me.vhf7330TextBox.Size = New System.Drawing.Size(118, 22)
+        Me.vhf7330TextBox.TabIndex = 4
+        '
         'vhfEscanerNumericUpDown
         '
-        Me.vhfEscanerNumericUpDown.Location = New System.Drawing.Point(80, 135)
+        Me.vhfEscanerNumericUpDown.Location = New System.Drawing.Point(80, 158)
         Me.vhfEscanerNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.vhfEscanerNumericUpDown.Name = "vhfEscanerNumericUpDown"
         Me.vhfEscanerNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.vhfEscanerNumericUpDown.TabIndex = 9
+        Me.vhfEscanerNumericUpDown.TabIndex = 15
         '
         'vhfEscanerLabel
         '
         Me.vhfEscanerLabel.AutoSize = True
-        Me.vhfEscanerLabel.Location = New System.Drawing.Point(13, 137)
+        Me.vhfEscanerLabel.Location = New System.Drawing.Point(13, 160)
         Me.vhfEscanerLabel.Name = "vhfEscanerLabel"
         Me.vhfEscanerLabel.Size = New System.Drawing.Size(61, 16)
-        Me.vhfEscanerLabel.TabIndex = 8
+        Me.vhfEscanerLabel.TabIndex = 14
         Me.vhfEscanerLabel.Text = "Escáner:"
         '
         'vhfAereoNumericUpDown
         '
-        Me.vhfAereoNumericUpDown.Location = New System.Drawing.Point(80, 108)
+        Me.vhfAereoNumericUpDown.Location = New System.Drawing.Point(80, 131)
         Me.vhfAereoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.vhfAereoNumericUpDown.Name = "vhfAereoNumericUpDown"
         Me.vhfAereoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.vhfAereoNumericUpDown.TabIndex = 7
+        Me.vhfAereoNumericUpDown.TabIndex = 12
         '
         'vfhAereoLabel
         '
         Me.vfhAereoLabel.AutoSize = True
-        Me.vfhAereoLabel.Location = New System.Drawing.Point(26, 109)
+        Me.vfhAereoLabel.Location = New System.Drawing.Point(26, 132)
         Me.vfhAereoLabel.Name = "vfhAereoLabel"
         Me.vfhAereoLabel.Size = New System.Drawing.Size(48, 16)
-        Me.vfhAereoLabel.TabIndex = 6
+        Me.vfhAereoLabel.TabIndex = 11
         Me.vfhAereoLabel.Text = "Aéreo:"
         '
         'vhf930NumericUpDown
         '
-        Me.vhf930NumericUpDown.Location = New System.Drawing.Point(80, 81)
+        Me.vhf930NumericUpDown.Location = New System.Drawing.Point(80, 104)
         Me.vhf930NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.vhf930NumericUpDown.Name = "vhf930NumericUpDown"
         Me.vhf930NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.vhf930NumericUpDown.TabIndex = 5
+        Me.vhf930NumericUpDown.TabIndex = 9
         '
         'vhf930Label
         '
         Me.vhf930Label.AutoSize = True
-        Me.vhf930Label.Location = New System.Drawing.Point(42, 81)
+        Me.vhf930Label.Location = New System.Drawing.Point(42, 104)
         Me.vhf930Label.Name = "vhf930Label"
         Me.vhf930Label.Size = New System.Drawing.Size(32, 16)
-        Me.vhf930Label.TabIndex = 4
+        Me.vhf930Label.TabIndex = 8
         Me.vhf930Label.Text = "930:"
         '
         'vhf710NumericUpDown
         '
-        Me.vhf710NumericUpDown.Location = New System.Drawing.Point(80, 54)
+        Me.vhf710NumericUpDown.Location = New System.Drawing.Point(80, 77)
         Me.vhf710NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.vhf710NumericUpDown.Name = "vhf710NumericUpDown"
         Me.vhf710NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.vhf710NumericUpDown.TabIndex = 3
+        Me.vhf710NumericUpDown.TabIndex = 6
         '
         'vhf710Label
         '
         Me.vhf710Label.AutoSize = True
-        Me.vhf710Label.Location = New System.Drawing.Point(42, 56)
+        Me.vhf710Label.Location = New System.Drawing.Point(42, 79)
         Me.vhf710Label.Name = "vhf710Label"
         Me.vhf710Label.Size = New System.Drawing.Size(32, 16)
-        Me.vhf710Label.TabIndex = 2
+        Me.vhf710Label.TabIndex = 5
         Me.vhf710Label.Text = "710:"
         '
         'vhf7330NumericUpDown
         '
-        Me.vhf7330NumericUpDown.Location = New System.Drawing.Point(80, 27)
+        Me.vhf7330NumericUpDown.Location = New System.Drawing.Point(80, 50)
         Me.vhf7330NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.vhf7330NumericUpDown.Name = "vhf7330NumericUpDown"
         Me.vhf7330NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.vhf7330NumericUpDown.TabIndex = 1
+        Me.vhf7330NumericUpDown.TabIndex = 3
         '
         'vhf7330Label
         '
         Me.vhf7330Label.AutoSize = True
-        Me.vhf7330Label.Location = New System.Drawing.Point(35, 29)
+        Me.vhf7330Label.Location = New System.Drawing.Point(35, 52)
         Me.vhf7330Label.Name = "vhf7330Label"
         Me.vhf7330Label.Size = New System.Drawing.Size(39, 16)
-        Me.vhf7330Label.TabIndex = 0
+        Me.vhf7330Label.TabIndex = 2
         Me.vhf7330Label.Text = "7330:"
         '
-        'ArmamentoGroupBox
+        'armamentoGroupBox
         '
-        Me.ArmamentoGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.armamentoGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ArmamentoGroupBox.Controls.Add(Me.TableLayoutPanel15)
-        Me.ArmamentoGroupBox.Controls.Add(Me.MorterosGroupBox)
-        Me.ArmamentoGroupBox.Controls.Add(Me.LanzagranadasGroupBox)
-        Me.ArmamentoGroupBox.Controls.Add(Me.GranadasGroupBox)
-        Me.ArmamentoGroupBox.Controls.Add(Me.FusilesGroupBox)
-        Me.ArmamentoGroupBox.Controls.Add(Me.EquiposEspecialesGroupBox)
-        Me.ArmamentoGroupBox.Controls.Add(Me.AmetralladorasGroupBox)
-        Me.ArmamentoGroupBox.ForeColor = System.Drawing.Color.White
-        Me.ArmamentoGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.ArmamentoGroupBox.Name = "ArmamentoGroupBox"
-        Me.ArmamentoGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.ArmamentoGroupBox.TabIndex = 15
-        Me.ArmamentoGroupBox.TabStop = False
-        Me.ArmamentoGroupBox.Text = "Armamento"
+        Me.armamentoGroupBox.Controls.Add(Me.atras4LinkLabel)
+        Me.armamentoGroupBox.Controls.Add(Me.siguiente10LinkLabel)
+        Me.armamentoGroupBox.Controls.Add(Me.morterosGroupBox)
+        Me.armamentoGroupBox.Controls.Add(Me.lanzagranadasGroupBox)
+        Me.armamentoGroupBox.Controls.Add(Me.granadasGroupBox)
+        Me.armamentoGroupBox.Controls.Add(Me.fusilesGroupBox)
+        Me.armamentoGroupBox.Controls.Add(Me.equiposEspecialesGroupBox)
+        Me.armamentoGroupBox.Controls.Add(Me.ametralladorasGroupBox)
+        Me.armamentoGroupBox.ForeColor = System.Drawing.Color.White
+        Me.armamentoGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.armamentoGroupBox.Name = "armamentoGroupBox"
+        Me.armamentoGroupBox.Size = New System.Drawing.Size(1150, 509)
+        Me.armamentoGroupBox.TabIndex = 15
+        Me.armamentoGroupBox.TabStop = False
+        Me.armamentoGroupBox.Text = "Armamento"
         '
-        'MorterosGroupBox
+        'atras4LinkLabel
         '
-        Me.MorterosGroupBox.Controls.Add(Me.m_brandt_60mmNumericUpDown)
-        Me.MorterosGroupBox.Controls.Add(Me.m_brandt_60mmLabel)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_fms_60mmNumericUpDown)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_fms_60mmLabel)
-        Me.MorterosGroupBox.Controls.Add(Me.OtrosMorterosTextBox)
-        Me.MorterosGroupBox.Controls.Add(Me.OtrosMorterosLabel)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_c575_60mmNumericUpDown)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_c575_60mmLabel)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_c370_60mmNumericUpDown)
-        Me.MorterosGroupBox.Controls.Add(Me.mc_c370_60mmLabel)
-        Me.MorterosGroupBox.ForeColor = System.Drawing.Color.White
-        Me.MorterosGroupBox.Location = New System.Drawing.Point(849, 68)
-        Me.MorterosGroupBox.Name = "MorterosGroupBox"
-        Me.MorterosGroupBox.Size = New System.Drawing.Size(244, 333)
-        Me.MorterosGroupBox.TabIndex = 6
-        Me.MorterosGroupBox.TabStop = False
-        Me.MorterosGroupBox.Text = "Morteros"
+        Me.atras4LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras4LinkLabel.AutoSize = True
+        Me.atras4LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras4LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras4LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras4LinkLabel.Name = "atras4LinkLabel"
+        Me.atras4LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras4LinkLabel.TabIndex = 25
+        Me.atras4LinkLabel.TabStop = True
+        Me.atras4LinkLabel.Text = "Atrás"
+        Me.atras4LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'siguiente10LinkLabel
+        '
+        Me.siguiente10LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente10LinkLabel.AutoSize = True
+        Me.siguiente10LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente10LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente10LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente10LinkLabel.Name = "siguiente10LinkLabel"
+        Me.siguiente10LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente10LinkLabel.TabIndex = 8
+        Me.siguiente10LinkLabel.TabStop = True
+        Me.siguiente10LinkLabel.Text = "Siguiente"
+        Me.siguiente10LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'morterosGroupBox
+        '
+        Me.morterosGroupBox.Controls.Add(Me.m_brandt_60mmNumericUpDown)
+        Me.morterosGroupBox.Controls.Add(Me.m_brandt_60mmLabel)
+        Me.morterosGroupBox.Controls.Add(Me.mc_fms_60mmNumericUpDown)
+        Me.morterosGroupBox.Controls.Add(Me.mc_fms_60mmLabel)
+        Me.morterosGroupBox.Controls.Add(Me.otrosMorterosTextBox)
+        Me.morterosGroupBox.Controls.Add(Me.otrosMorterosLabel)
+        Me.morterosGroupBox.Controls.Add(Me.mc_c575_60mmNumericUpDown)
+        Me.morterosGroupBox.Controls.Add(Me.mc_c575_60mmLabel)
+        Me.morterosGroupBox.Controls.Add(Me.mc_c370_60mmNumericUpDown)
+        Me.morterosGroupBox.Controls.Add(Me.mc_c370_60mmLabel)
+        Me.morterosGroupBox.ForeColor = System.Drawing.Color.White
+        Me.morterosGroupBox.Location = New System.Drawing.Point(503, 24)
+        Me.morterosGroupBox.Name = "morterosGroupBox"
+        Me.morterosGroupBox.Size = New System.Drawing.Size(244, 254)
+        Me.morterosGroupBox.TabIndex = 2
+        Me.morterosGroupBox.TabStop = False
+        Me.morterosGroupBox.Text = "Morteros"
         '
         'm_brandt_60mmNumericUpDown
         '
@@ -2206,15 +2491,15 @@ Partial Class OperacionForm
         Me.m_brandt_60mmNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.m_brandt_60mmNumericUpDown.Name = "m_brandt_60mmNumericUpDown"
         Me.m_brandt_60mmNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.m_brandt_60mmNumericUpDown.TabIndex = 9
+        Me.m_brandt_60mmNumericUpDown.TabIndex = 7
         '
         'm_brandt_60mmLabel
         '
         Me.m_brandt_60mmLabel.AutoSize = True
-        Me.m_brandt_60mmLabel.Location = New System.Drawing.Point(44, 109)
+        Me.m_brandt_60mmLabel.Location = New System.Drawing.Point(44, 112)
         Me.m_brandt_60mmLabel.Name = "m_brandt_60mmLabel"
         Me.m_brandt_60mmLabel.Size = New System.Drawing.Size(107, 16)
-        Me.m_brandt_60mmLabel.TabIndex = 8
+        Me.m_brandt_60mmLabel.TabIndex = 6
         Me.m_brandt_60mmLabel.Text = "BRANDT 60MM:"
         '
         'mc_fms_60mmNumericUpDown
@@ -2224,7 +2509,7 @@ Partial Class OperacionForm
         Me.mc_fms_60mmNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
         Me.mc_fms_60mmNumericUpDown.Name = "mc_fms_60mmNumericUpDown"
         Me.mc_fms_60mmNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.mc_fms_60mmNumericUpDown.TabIndex = 7
+        Me.mc_fms_60mmNumericUpDown.TabIndex = 5
         '
         'mc_fms_60mmLabel
         '
@@ -2232,28 +2517,28 @@ Partial Class OperacionForm
         Me.mc_fms_60mmLabel.Location = New System.Drawing.Point(11, 84)
         Me.mc_fms_60mmLabel.Name = "mc_fms_60mmLabel"
         Me.mc_fms_60mmLabel.Size = New System.Drawing.Size(140, 16)
-        Me.mc_fms_60mmLabel.TabIndex = 6
+        Me.mc_fms_60mmLabel.TabIndex = 4
         Me.mc_fms_60mmLabel.Text = "Comando FMS 60MM:"
         '
-        'OtrosMorterosTextBox
+        'otrosMorterosTextBox
         '
-        Me.OtrosMorterosTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.otrosMorterosTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.OtrosMorterosTextBox.Location = New System.Drawing.Point(9, 160)
-        Me.OtrosMorterosTextBox.Multiline = True
-        Me.OtrosMorterosTextBox.Name = "OtrosMorterosTextBox"
-        Me.OtrosMorterosTextBox.Size = New System.Drawing.Size(219, 156)
-        Me.OtrosMorterosTextBox.TabIndex = 5
+        Me.otrosMorterosTextBox.Location = New System.Drawing.Point(9, 197)
+        Me.otrosMorterosTextBox.Multiline = True
+        Me.otrosMorterosTextBox.Name = "otrosMorterosTextBox"
+        Me.otrosMorterosTextBox.Size = New System.Drawing.Size(219, 51)
+        Me.otrosMorterosTextBox.TabIndex = 9
         '
-        'OtrosMorterosLabel
+        'otrosMorterosLabel
         '
-        Me.OtrosMorterosLabel.AutoSize = True
-        Me.OtrosMorterosLabel.Location = New System.Drawing.Point(9, 141)
-        Me.OtrosMorterosLabel.Name = "OtrosMorterosLabel"
-        Me.OtrosMorterosLabel.Size = New System.Drawing.Size(99, 16)
-        Me.OtrosMorterosLabel.TabIndex = 4
-        Me.OtrosMorterosLabel.Text = "Otros morteros:"
+        Me.otrosMorterosLabel.AutoSize = True
+        Me.otrosMorterosLabel.Location = New System.Drawing.Point(9, 175)
+        Me.otrosMorterosLabel.Name = "otrosMorterosLabel"
+        Me.otrosMorterosLabel.Size = New System.Drawing.Size(99, 16)
+        Me.otrosMorterosLabel.TabIndex = 8
+        Me.otrosMorterosLabel.Text = "Otros morteros:"
         '
         'mc_c575_60mmNumericUpDown
         '
@@ -2267,7 +2552,7 @@ Partial Class OperacionForm
         'mc_c575_60mmLabel
         '
         Me.mc_c575_60mmLabel.AutoSize = True
-        Me.mc_c575_60mmLabel.Location = New System.Drawing.Point(9, 54)
+        Me.mc_c575_60mmLabel.Location = New System.Drawing.Point(9, 57)
         Me.mc_c575_60mmLabel.Name = "mc_c575_60mmLabel"
         Me.mc_c575_60mmLabel.Size = New System.Drawing.Size(142, 16)
         Me.mc_c575_60mmLabel.TabIndex = 2
@@ -2291,456 +2576,517 @@ Partial Class OperacionForm
         Me.mc_c370_60mmLabel.TabIndex = 0
         Me.mc_c370_60mmLabel.Text = "Comando C370 60MM:"
         '
-        'LanzagranadasGroupBox
+        'lanzagranadasGroupBox
         '
-        Me.LanzagranadasGroupBox.Controls.Add(Me.M203NumericUpDown)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.M203Label)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.M79NumericUpDown)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.M79Label)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.MKNumericUpDown)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.MKLabel)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.MGLNumericUpDown)
-        Me.LanzagranadasGroupBox.Controls.Add(Me.MGLLabel)
-        Me.LanzagranadasGroupBox.ForeColor = System.Drawing.Color.White
-        Me.LanzagranadasGroupBox.Location = New System.Drawing.Point(685, 69)
-        Me.LanzagranadasGroupBox.Name = "LanzagranadasGroupBox"
-        Me.LanzagranadasGroupBox.Size = New System.Drawing.Size(151, 145)
-        Me.LanzagranadasGroupBox.TabIndex = 4
-        Me.LanzagranadasGroupBox.TabStop = False
-        Me.LanzagranadasGroupBox.Text = "Lanzagranadas"
+        Me.lanzagranadasGroupBox.Controls.Add(Me.otrosLanzagranadasTextBox)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.otrosLanzagranadasLabel)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.m79NumericUpDown)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.m79Label)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.mkNumericUpDown)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.mkLabel)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.mglNumericUpDown)
+        Me.lanzagranadasGroupBox.Controls.Add(Me.mglLabel)
+        Me.lanzagranadasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.lanzagranadasGroupBox.Location = New System.Drawing.Point(263, 298)
+        Me.lanzagranadasGroupBox.Name = "lanzagranadasGroupBox"
+        Me.lanzagranadasGroupBox.Size = New System.Drawing.Size(200, 193)
+        Me.lanzagranadasGroupBox.TabIndex = 5
+        Me.lanzagranadasGroupBox.TabStop = False
+        Me.lanzagranadasGroupBox.Text = "Lanzagranadas"
         '
-        'M203NumericUpDown
+        'otrosLanzagranadasTextBox
         '
-        Me.M203NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.M203NumericUpDown.Location = New System.Drawing.Point(61, 108)
-        Me.M203NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.M203NumericUpDown.Name = "M203NumericUpDown"
-        Me.M203NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.M203NumericUpDown.TabIndex = 7
+        Me.otrosLanzagranadasTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.otrosLanzagranadasTextBox.Location = New System.Drawing.Point(12, 136)
+        Me.otrosLanzagranadasTextBox.Multiline = True
+        Me.otrosLanzagranadasTextBox.Name = "otrosLanzagranadasTextBox"
+        Me.otrosLanzagranadasTextBox.Size = New System.Drawing.Size(173, 51)
+        Me.otrosLanzagranadasTextBox.TabIndex = 7
         '
-        'M203Label
+        'otrosLanzagranadasLabel
         '
-        Me.M203Label.AutoSize = True
-        Me.M203Label.Location = New System.Drawing.Point(12, 110)
-        Me.M203Label.Name = "M203Label"
-        Me.M203Label.Size = New System.Drawing.Size(43, 16)
-        Me.M203Label.TabIndex = 6
-        Me.M203Label.Text = "M203:"
+        Me.otrosLanzagranadasLabel.AutoSize = True
+        Me.otrosLanzagranadasLabel.Location = New System.Drawing.Point(15, 113)
+        Me.otrosLanzagranadasLabel.Name = "otrosLanzagranadasLabel"
+        Me.otrosLanzagranadasLabel.Size = New System.Drawing.Size(122, 16)
+        Me.otrosLanzagranadasLabel.TabIndex = 6
+        Me.otrosLanzagranadasLabel.Text = "Otros langranadas:"
+        Me.otrosLanzagranadasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'M79NumericUpDown
+        'm79NumericUpDown
         '
-        Me.M79NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.M79NumericUpDown.Location = New System.Drawing.Point(61, 81)
-        Me.M79NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.M79NumericUpDown.Name = "M79NumericUpDown"
-        Me.M79NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.M79NumericUpDown.TabIndex = 5
+        Me.m79NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.m79NumericUpDown.Location = New System.Drawing.Point(110, 81)
+        Me.m79NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.m79NumericUpDown.Name = "m79NumericUpDown"
+        Me.m79NumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.m79NumericUpDown.TabIndex = 5
         '
-        'M79Label
+        'm79Label
         '
-        Me.M79Label.AutoSize = True
-        Me.M79Label.Location = New System.Drawing.Point(19, 83)
-        Me.M79Label.Name = "M79Label"
-        Me.M79Label.Size = New System.Drawing.Size(36, 16)
-        Me.M79Label.TabIndex = 4
-        Me.M79Label.Text = "M79:"
+        Me.m79Label.AutoSize = True
+        Me.m79Label.Location = New System.Drawing.Point(69, 84)
+        Me.m79Label.Name = "m79Label"
+        Me.m79Label.Size = New System.Drawing.Size(36, 16)
+        Me.m79Label.TabIndex = 4
+        Me.m79Label.Text = "M79:"
         '
-        'MKNumericUpDown
+        'mkNumericUpDown
         '
-        Me.MKNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MKNumericUpDown.Location = New System.Drawing.Point(61, 54)
-        Me.MKNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.MKNumericUpDown.Name = "MKNumericUpDown"
-        Me.MKNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.MKNumericUpDown.TabIndex = 3
+        Me.mkNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.mkNumericUpDown.Location = New System.Drawing.Point(110, 54)
+        Me.mkNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.mkNumericUpDown.Name = "mkNumericUpDown"
+        Me.mkNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.mkNumericUpDown.TabIndex = 3
         '
-        'MKLabel
+        'mkLabel
         '
-        Me.MKLabel.AutoSize = True
-        Me.MKLabel.Location = New System.Drawing.Point(25, 56)
-        Me.MKLabel.Name = "MKLabel"
-        Me.MKLabel.Size = New System.Drawing.Size(30, 16)
-        Me.MKLabel.TabIndex = 2
-        Me.MKLabel.Text = "MK:"
+        Me.mkLabel.AutoSize = True
+        Me.mkLabel.Location = New System.Drawing.Point(75, 57)
+        Me.mkLabel.Name = "mkLabel"
+        Me.mkLabel.Size = New System.Drawing.Size(30, 16)
+        Me.mkLabel.TabIndex = 2
+        Me.mkLabel.Text = "MK:"
         '
-        'MGLNumericUpDown
+        'mglNumericUpDown
         '
-        Me.MGLNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MGLNumericUpDown.Location = New System.Drawing.Point(61, 27)
-        Me.MGLNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.MGLNumericUpDown.Name = "MGLNumericUpDown"
-        Me.MGLNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.MGLNumericUpDown.TabIndex = 1
+        Me.mglNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.mglNumericUpDown.Location = New System.Drawing.Point(110, 27)
+        Me.mglNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.mglNumericUpDown.Name = "mglNumericUpDown"
+        Me.mglNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.mglNumericUpDown.TabIndex = 1
         '
-        'MGLLabel
+        'mglLabel
         '
-        Me.MGLLabel.AutoSize = True
-        Me.MGLLabel.Location = New System.Drawing.Point(16, 29)
-        Me.MGLLabel.Name = "MGLLabel"
-        Me.MGLLabel.Size = New System.Drawing.Size(39, 16)
-        Me.MGLLabel.TabIndex = 0
-        Me.MGLLabel.Text = "MGL:"
+        Me.mglLabel.AutoSize = True
+        Me.mglLabel.Location = New System.Drawing.Point(66, 31)
+        Me.mglLabel.Name = "mglLabel"
+        Me.mglLabel.Size = New System.Drawing.Size(39, 16)
+        Me.mglLabel.TabIndex = 0
+        Me.mglLabel.Text = "MGL:"
         '
-        'GranadasGroupBox
+        'granadasGroupBox
         '
-        Me.GranadasGroupBox.Controls.Add(Me.OtrasGranadasTextBox)
-        Me.GranadasGroupBox.Controls.Add(Me.OtrasGranadasLabel)
-        Me.GranadasGroupBox.Controls.Add(Me.LacrimogenoNumericUpDown)
-        Me.GranadasGroupBox.Controls.Add(Me.LacrimogenoLabel)
-        Me.GranadasGroupBox.Controls.Add(Me.HumoNumericUpDown)
-        Me.GranadasGroupBox.Controls.Add(Me.HumoLabel)
-        Me.GranadasGroupBox.Controls.Add(Me.ManoNumericUpDown)
-        Me.GranadasGroupBox.Controls.Add(Me.ManoLabel)
-        Me.GranadasGroupBox.ForeColor = System.Drawing.Color.White
-        Me.GranadasGroupBox.Location = New System.Drawing.Point(465, 69)
-        Me.GranadasGroupBox.Name = "GranadasGroupBox"
-        Me.GranadasGroupBox.Size = New System.Drawing.Size(208, 332)
-        Me.GranadasGroupBox.TabIndex = 3
-        Me.GranadasGroupBox.TabStop = False
-        Me.GranadasGroupBox.Text = "Granadas"
+        Me.granadasGroupBox.Controls.Add(Me.otrasGranadasTextBox)
+        Me.granadasGroupBox.Controls.Add(Me.otrasGranadasLabel)
+        Me.granadasGroupBox.Controls.Add(Me.lacrimogenaNumericUpDown)
+        Me.granadasGroupBox.Controls.Add(Me.lacrimogenaLabel)
+        Me.granadasGroupBox.Controls.Add(Me.humoNumericUpDown)
+        Me.granadasGroupBox.Controls.Add(Me.humoLabel)
+        Me.granadasGroupBox.Controls.Add(Me.manoNumericUpDown)
+        Me.granadasGroupBox.Controls.Add(Me.manoLabel)
+        Me.granadasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.granadasGroupBox.Location = New System.Drawing.Point(23, 298)
+        Me.granadasGroupBox.Name = "granadasGroupBox"
+        Me.granadasGroupBox.Size = New System.Drawing.Size(200, 193)
+        Me.granadasGroupBox.TabIndex = 4
+        Me.granadasGroupBox.TabStop = False
+        Me.granadasGroupBox.Text = "Granadas"
         '
-        'OtrasGranadasTextBox
+        'otrasGranadasTextBox
         '
-        Me.OtrasGranadasTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.otrasGranadasTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.otrasGranadasTextBox.Location = New System.Drawing.Point(14, 136)
+        Me.otrasGranadasTextBox.Multiline = True
+        Me.otrasGranadasTextBox.Name = "otrasGranadasTextBox"
+        Me.otrasGranadasTextBox.Size = New System.Drawing.Size(173, 51)
+        Me.otrasGranadasTextBox.TabIndex = 7
+        '
+        'otrasGranadasLabel
+        '
+        Me.otrasGranadasLabel.AutoSize = True
+        Me.otrasGranadasLabel.Location = New System.Drawing.Point(17, 113)
+        Me.otrasGranadasLabel.Name = "otrasGranadasLabel"
+        Me.otrasGranadasLabel.Size = New System.Drawing.Size(104, 16)
+        Me.otrasGranadasLabel.TabIndex = 6
+        Me.otrasGranadasLabel.Text = "Otras granadas:"
+        Me.otrasGranadasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'lacrimogenaNumericUpDown
+        '
+        Me.lacrimogenaNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lacrimogenaNumericUpDown.Location = New System.Drawing.Point(113, 79)
+        Me.lacrimogenaNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.lacrimogenaNumericUpDown.Name = "lacrimogenaNumericUpDown"
+        Me.lacrimogenaNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.lacrimogenaNumericUpDown.TabIndex = 5
+        '
+        'lacrimogenaLabel
+        '
+        Me.lacrimogenaLabel.AutoSize = True
+        Me.lacrimogenaLabel.Location = New System.Drawing.Point(19, 81)
+        Me.lacrimogenaLabel.Name = "lacrimogenaLabel"
+        Me.lacrimogenaLabel.Size = New System.Drawing.Size(90, 16)
+        Me.lacrimogenaLabel.TabIndex = 4
+        Me.lacrimogenaLabel.Text = "Lacrimógena:"
+        Me.lacrimogenaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'humoNumericUpDown
+        '
+        Me.humoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.humoNumericUpDown.Location = New System.Drawing.Point(113, 54)
+        Me.humoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.humoNumericUpDown.Name = "humoNumericUpDown"
+        Me.humoNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.humoNumericUpDown.TabIndex = 3
+        '
+        'humoLabel
+        '
+        Me.humoLabel.AutoSize = True
+        Me.humoLabel.Location = New System.Drawing.Point(44, 56)
+        Me.humoLabel.Name = "humoLabel"
+        Me.humoLabel.Size = New System.Drawing.Size(65, 16)
+        Me.humoLabel.TabIndex = 2
+        Me.humoLabel.Text = "De humo:"
+        '
+        'manoNumericUpDown
+        '
+        Me.manoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.manoNumericUpDown.Location = New System.Drawing.Point(113, 29)
+        Me.manoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.manoNumericUpDown.Name = "manoNumericUpDown"
+        Me.manoNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.manoNumericUpDown.TabIndex = 1
+        '
+        'manoLabel
+        '
+        Me.manoLabel.AutoSize = True
+        Me.manoLabel.Location = New System.Drawing.Point(43, 31)
+        Me.manoLabel.Name = "manoLabel"
+        Me.manoLabel.Size = New System.Drawing.Size(66, 16)
+        Me.manoLabel.TabIndex = 0
+        Me.manoLabel.Text = "De mano:"
+        '
+        'fusilesGroupBox
+        '
+        Me.fusilesGroupBox.Controls.Add(Me.m16_a203Label)
+        Me.fusilesGroupBox.Controls.Add(Me.m16_m4Label)
+        Me.fusilesGroupBox.Controls.Add(Me.m16_a2Label)
+        Me.fusilesGroupBox.Controls.Add(Me.m16_a203NumericUpDown)
+        Me.fusilesGroupBox.Controls.Add(Me.m16_m4NumericUpDown)
+        Me.fusilesGroupBox.Controls.Add(Me.m16_a2NumericUpDown)
+        Me.fusilesGroupBox.Controls.Add(Me.otrosFusilesTextBox)
+        Me.fusilesGroupBox.Controls.Add(Me.otrosFusilesLabel)
+        Me.fusilesGroupBox.Controls.Add(Me.galil_iceNumericUpDown)
+        Me.fusilesGroupBox.Controls.Add(Me.galil_iceLabel)
+        Me.fusilesGroupBox.Controls.Add(Me.galil_arNumericUpDown)
+        Me.fusilesGroupBox.Controls.Add(Me.galil_arLabel)
+        Me.fusilesGroupBox.ForeColor = System.Drawing.Color.White
+        Me.fusilesGroupBox.Location = New System.Drawing.Point(263, 24)
+        Me.fusilesGroupBox.Name = "fusilesGroupBox"
+        Me.fusilesGroupBox.Size = New System.Drawing.Size(200, 254)
+        Me.fusilesGroupBox.TabIndex = 1
+        Me.fusilesGroupBox.TabStop = False
+        Me.fusilesGroupBox.Text = "Fusiles"
+        '
+        'm16_a203Label
+        '
+        Me.m16_a203Label.AutoSize = True
+        Me.m16_a203Label.Location = New System.Drawing.Point(41, 131)
+        Me.m16_a203Label.Name = "m16_a203Label"
+        Me.m16_a203Label.Size = New System.Drawing.Size(69, 16)
+        Me.m16_a203Label.TabIndex = 8
+        Me.m16_a203Label.Text = "M16 A203:"
+        '
+        'm16_m4Label
+        '
+        Me.m16_m4Label.AutoSize = True
+        Me.m16_m4Label.Location = New System.Drawing.Point(53, 106)
+        Me.m16_m4Label.Name = "m16_m4Label"
+        Me.m16_m4Label.Size = New System.Drawing.Size(57, 16)
+        Me.m16_m4Label.TabIndex = 6
+        Me.m16_m4Label.Text = "M16 M4:"
+        '
+        'm16_a2Label
+        '
+        Me.m16_a2Label.AutoSize = True
+        Me.m16_a2Label.Location = New System.Drawing.Point(55, 81)
+        Me.m16_a2Label.Name = "m16_a2Label"
+        Me.m16_a2Label.Size = New System.Drawing.Size(55, 16)
+        Me.m16_a2Label.TabIndex = 4
+        Me.m16_a2Label.Text = "M16 A2:"
+        '
+        'm16_a203NumericUpDown
+        '
+        Me.m16_a203NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.m16_a203NumericUpDown.Location = New System.Drawing.Point(113, 131)
+        Me.m16_a203NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.m16_a203NumericUpDown.Name = "m16_a203NumericUpDown"
+        Me.m16_a203NumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.m16_a203NumericUpDown.TabIndex = 9
+        '
+        'm16_m4NumericUpDown
+        '
+        Me.m16_m4NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.m16_m4NumericUpDown.Location = New System.Drawing.Point(113, 105)
+        Me.m16_m4NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.m16_m4NumericUpDown.Name = "m16_m4NumericUpDown"
+        Me.m16_m4NumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.m16_m4NumericUpDown.TabIndex = 7
+        '
+        'm16_a2NumericUpDown
+        '
+        Me.m16_a2NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.m16_a2NumericUpDown.Location = New System.Drawing.Point(113, 79)
+        Me.m16_a2NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.m16_a2NumericUpDown.Name = "m16_a2NumericUpDown"
+        Me.m16_a2NumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.m16_a2NumericUpDown.TabIndex = 5
+        '
+        'otrosFusilesTextBox
+        '
+        Me.otrosFusilesTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.OtrasGranadasTextBox.Location = New System.Drawing.Point(14, 134)
-        Me.OtrasGranadasTextBox.Multiline = True
-        Me.OtrasGranadasTextBox.Name = "OtrasGranadasTextBox"
-        Me.OtrasGranadasTextBox.Size = New System.Drawing.Size(181, 181)
-        Me.OtrasGranadasTextBox.TabIndex = 7
+        Me.otrosFusilesTextBox.Location = New System.Drawing.Point(9, 197)
+        Me.otrosFusilesTextBox.Multiline = True
+        Me.otrosFusilesTextBox.Name = "otrosFusilesTextBox"
+        Me.otrosFusilesTextBox.Size = New System.Drawing.Size(179, 51)
+        Me.otrosFusilesTextBox.TabIndex = 11
         '
-        'OtrasGranadasLabel
+        'otrosFusilesLabel
         '
-        Me.OtrasGranadasLabel.AutoSize = True
-        Me.OtrasGranadasLabel.Location = New System.Drawing.Point(17, 113)
-        Me.OtrasGranadasLabel.Name = "OtrasGranadasLabel"
-        Me.OtrasGranadasLabel.Size = New System.Drawing.Size(104, 16)
-        Me.OtrasGranadasLabel.TabIndex = 6
-        Me.OtrasGranadasLabel.Text = "Otras granadas:"
-        Me.OtrasGranadasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.otrosFusilesLabel.AutoSize = True
+        Me.otrosFusilesLabel.Location = New System.Drawing.Point(12, 176)
+        Me.otrosFusilesLabel.Name = "otrosFusilesLabel"
+        Me.otrosFusilesLabel.Size = New System.Drawing.Size(84, 16)
+        Me.otrosFusilesLabel.TabIndex = 10
+        Me.otrosFusilesLabel.Text = "Otros fusiles:"
         '
-        'LacrimogenoNumericUpDown
+        'galil_iceNumericUpDown
         '
-        Me.LacrimogenoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LacrimogenoNumericUpDown.Location = New System.Drawing.Point(121, 79)
-        Me.LacrimogenoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.LacrimogenoNumericUpDown.Name = "LacrimogenoNumericUpDown"
-        Me.LacrimogenoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.LacrimogenoNumericUpDown.TabIndex = 5
+        Me.galil_iceNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.galil_iceNumericUpDown.Location = New System.Drawing.Point(113, 53)
+        Me.galil_iceNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.galil_iceNumericUpDown.Name = "galil_iceNumericUpDown"
+        Me.galil_iceNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.galil_iceNumericUpDown.TabIndex = 3
         '
-        'LacrimogenoLabel
+        'galil_iceLabel
         '
-        Me.LacrimogenoLabel.AutoSize = True
-        Me.LacrimogenoLabel.Location = New System.Drawing.Point(25, 81)
-        Me.LacrimogenoLabel.Name = "LacrimogenoLabel"
-        Me.LacrimogenoLabel.Size = New System.Drawing.Size(90, 16)
-        Me.LacrimogenoLabel.TabIndex = 4
-        Me.LacrimogenoLabel.Text = "Lacrimógeno:"
-        Me.LacrimogenoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.galil_iceLabel.AutoSize = True
+        Me.galil_iceLabel.Location = New System.Drawing.Point(39, 56)
+        Me.galil_iceLabel.Name = "galil_iceLabel"
+        Me.galil_iceLabel.Size = New System.Drawing.Size(71, 16)
+        Me.galil_iceLabel.TabIndex = 2
+        Me.galil_iceLabel.Text = "GALIL ICE:"
         '
-        'HumoNumericUpDown
+        'galil_arNumericUpDown
         '
-        Me.HumoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.HumoNumericUpDown.Location = New System.Drawing.Point(121, 54)
-        Me.HumoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.HumoNumericUpDown.Name = "HumoNumericUpDown"
-        Me.HumoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.HumoNumericUpDown.TabIndex = 3
+        Me.galil_arNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.galil_arNumericUpDown.Location = New System.Drawing.Point(113, 27)
+        Me.galil_arNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.galil_arNumericUpDown.Name = "galil_arNumericUpDown"
+        Me.galil_arNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.galil_arNumericUpDown.TabIndex = 1
         '
-        'HumoLabel
+        'galil_arLabel
         '
-        Me.HumoLabel.AutoSize = True
-        Me.HumoLabel.Location = New System.Drawing.Point(50, 56)
-        Me.HumoLabel.Name = "HumoLabel"
-        Me.HumoLabel.Size = New System.Drawing.Size(65, 16)
-        Me.HumoLabel.TabIndex = 2
-        Me.HumoLabel.Text = "De humo:"
+        Me.galil_arLabel.AutoSize = True
+        Me.galil_arLabel.Location = New System.Drawing.Point(41, 31)
+        Me.galil_arLabel.Name = "galil_arLabel"
+        Me.galil_arLabel.Size = New System.Drawing.Size(69, 16)
+        Me.galil_arLabel.TabIndex = 0
+        Me.galil_arLabel.Text = "GALIL AR:"
         '
-        'ManoNumericUpDown
+        'equiposEspecialesGroupBox
         '
-        Me.ManoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ManoNumericUpDown.Location = New System.Drawing.Point(121, 29)
-        Me.ManoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.ManoNumericUpDown.Name = "ManoNumericUpDown"
-        Me.ManoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.ManoNumericUpDown.TabIndex = 1
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.otrosEquiposTextBox)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.otrosEquiposLabel)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.kitOrientacionNocturnoNumericUpDown)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.kitOrientacionNocturnoLabel)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.flasmersNumericUpDown)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.flasmersLabel)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.camaraTermicaNumericUpDown)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.camaraTermicaLabel)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.binocularesNumericUpDown)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.binocularesLabel)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.visorNocturnoNumericUpDown)
+        Me.equiposEspecialesGroupBox.Controls.Add(Me.visorNocturnoLabel)
+        Me.equiposEspecialesGroupBox.ForeColor = System.Drawing.Color.White
+        Me.equiposEspecialesGroupBox.Location = New System.Drawing.Point(787, 24)
+        Me.equiposEspecialesGroupBox.Name = "equiposEspecialesGroupBox"
+        Me.equiposEspecialesGroupBox.Size = New System.Drawing.Size(220, 254)
+        Me.equiposEspecialesGroupBox.TabIndex = 3
+        Me.equiposEspecialesGroupBox.TabStop = False
+        Me.equiposEspecialesGroupBox.Text = "Equipos especiales"
         '
-        'ManoLabel
+        'otrosEquiposTextBox
         '
-        Me.ManoLabel.AutoSize = True
-        Me.ManoLabel.Location = New System.Drawing.Point(49, 31)
-        Me.ManoLabel.Name = "ManoLabel"
-        Me.ManoLabel.Size = New System.Drawing.Size(66, 16)
-        Me.ManoLabel.TabIndex = 0
-        Me.ManoLabel.Text = "De mano:"
-        '
-        'FusilesGroupBox
-        '
-        Me.FusilesGroupBox.Controls.Add(Me.OtrosFusilesTextBox)
-        Me.FusilesGroupBox.Controls.Add(Me.OtrosFusilesLabel)
-        Me.FusilesGroupBox.Controls.Add(Me.m16NumericUpDown)
-        Me.FusilesGroupBox.Controls.Add(Me.m16Label)
-        Me.FusilesGroupBox.Controls.Add(Me.GalilNumericUpDown)
-        Me.FusilesGroupBox.Controls.Add(Me.GalilLabel)
-        Me.FusilesGroupBox.ForeColor = System.Drawing.Color.White
-        Me.FusilesGroupBox.Location = New System.Drawing.Point(686, 220)
-        Me.FusilesGroupBox.Name = "FusilesGroupBox"
-        Me.FusilesGroupBox.Size = New System.Drawing.Size(151, 181)
-        Me.FusilesGroupBox.TabIndex = 1
-        Me.FusilesGroupBox.TabStop = False
-        Me.FusilesGroupBox.Text = "Fusiles"
-        '
-        'OtrosFusilesTextBox
-        '
-        Me.OtrosFusilesTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.otrosEquiposTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.OtrosFusilesTextBox.Location = New System.Drawing.Point(9, 109)
-        Me.OtrosFusilesTextBox.Multiline = True
-        Me.OtrosFusilesTextBox.Name = "OtrosFusilesTextBox"
-        Me.OtrosFusilesTextBox.Size = New System.Drawing.Size(126, 55)
-        Me.OtrosFusilesTextBox.TabIndex = 5
+        Me.otrosEquiposTextBox.Location = New System.Drawing.Point(16, 197)
+        Me.otrosEquiposTextBox.Multiline = True
+        Me.otrosEquiposTextBox.Name = "otrosEquiposTextBox"
+        Me.otrosEquiposTextBox.Size = New System.Drawing.Size(188, 51)
+        Me.otrosEquiposTextBox.TabIndex = 11
         '
-        'OtrosFusilesLabel
+        'otrosEquiposLabel
         '
-        Me.OtrosFusilesLabel.AutoSize = True
-        Me.OtrosFusilesLabel.Location = New System.Drawing.Point(6, 89)
-        Me.OtrosFusilesLabel.Name = "OtrosFusilesLabel"
-        Me.OtrosFusilesLabel.Size = New System.Drawing.Size(84, 16)
-        Me.OtrosFusilesLabel.TabIndex = 4
-        Me.OtrosFusilesLabel.Text = "Otros fusiles:"
+        Me.otrosEquiposLabel.AutoSize = True
+        Me.otrosEquiposLabel.Location = New System.Drawing.Point(19, 175)
+        Me.otrosEquiposLabel.Name = "otrosEquiposLabel"
+        Me.otrosEquiposLabel.Size = New System.Drawing.Size(95, 16)
+        Me.otrosEquiposLabel.TabIndex = 10
+        Me.otrosEquiposLabel.Text = "Otros equipos:"
+        Me.otrosEquiposLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'm16NumericUpDown
+        'kitOrientacionNocturnoNumericUpDown
         '
-        Me.m16NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.m16NumericUpDown.Location = New System.Drawing.Point(61, 54)
-        Me.m16NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.m16NumericUpDown.Name = "m16NumericUpDown"
-        Me.m16NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.m16NumericUpDown.TabIndex = 3
+        Me.kitOrientacionNocturnoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.kitOrientacionNocturnoNumericUpDown.Location = New System.Drawing.Point(130, 127)
+        Me.kitOrientacionNocturnoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.kitOrientacionNocturnoNumericUpDown.Name = "kitOrientacionNocturnoNumericUpDown"
+        Me.kitOrientacionNocturnoNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.kitOrientacionNocturnoNumericUpDown.TabIndex = 9
         '
-        'm16Label
+        'kitOrientacionNocturnoLabel
         '
-        Me.m16Label.AutoSize = True
-        Me.m16Label.Location = New System.Drawing.Point(20, 57)
-        Me.m16Label.Name = "m16Label"
-        Me.m16Label.Size = New System.Drawing.Size(36, 16)
-        Me.m16Label.TabIndex = 2
-        Me.m16Label.Text = "M16:"
+        Me.kitOrientacionNocturnoLabel.AutoSize = True
+        Me.kitOrientacionNocturnoLabel.Location = New System.Drawing.Point(13, 129)
+        Me.kitOrientacionNocturnoLabel.Name = "kitOrientacionNocturnoLabel"
+        Me.kitOrientacionNocturnoLabel.Size = New System.Drawing.Size(113, 32)
+        Me.kitOrientacionNocturnoLabel.TabIndex = 8
+        Me.kitOrientacionNocturnoLabel.Text = "Kit de orientación " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "nocturno:"
+        Me.kitOrientacionNocturnoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'GalilNumericUpDown
+        'flasmersNumericUpDown
         '
-        Me.GalilNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GalilNumericUpDown.Location = New System.Drawing.Point(61, 27)
-        Me.GalilNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.GalilNumericUpDown.Name = "GalilNumericUpDown"
-        Me.GalilNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.GalilNumericUpDown.TabIndex = 1
+        Me.flasmersNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.flasmersNumericUpDown.Location = New System.Drawing.Point(130, 102)
+        Me.flasmersNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.flasmersNumericUpDown.Name = "flasmersNumericUpDown"
+        Me.flasmersNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.flasmersNumericUpDown.TabIndex = 7
         '
-        'GalilLabel
+        'flasmersLabel
         '
-        Me.GalilLabel.AutoSize = True
-        Me.GalilLabel.Location = New System.Drawing.Point(9, 31)
-        Me.GalilLabel.Name = "GalilLabel"
-        Me.GalilLabel.Size = New System.Drawing.Size(47, 16)
-        Me.GalilLabel.TabIndex = 0
-        Me.GalilLabel.Text = "GALIL:"
+        Me.flasmersLabel.AutoSize = True
+        Me.flasmersLabel.Location = New System.Drawing.Point(59, 104)
+        Me.flasmersLabel.Name = "flasmersLabel"
+        Me.flasmersLabel.Size = New System.Drawing.Size(67, 16)
+        Me.flasmersLabel.TabIndex = 6
+        Me.flasmersLabel.Text = "Flasmers:"
         '
-        'EquiposEspecialesGroupBox
+        'camaraTermicaNumericUpDown
         '
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.OtrosEquiposTextBox)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.OtrosEquiposLabel)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.KitOrientacionNocturnoNumericUpDown)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.KitOrientacionNocturnoLabel)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.FlasmersNumericUpDown)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.FlasmersLabel)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.CamaraTermicaNumericUpDown)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.CamaraTermicaLabel)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.BinocularesNumericUpDown)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.BinocularesLabel)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.VisorNocturnoNumericUpDown)
-        Me.EquiposEspecialesGroupBox.Controls.Add(Me.VisorNocturnoLabel)
-        Me.EquiposEspecialesGroupBox.ForeColor = System.Drawing.Color.White
-        Me.EquiposEspecialesGroupBox.Location = New System.Drawing.Point(234, 71)
-        Me.EquiposEspecialesGroupBox.Name = "EquiposEspecialesGroupBox"
-        Me.EquiposEspecialesGroupBox.Size = New System.Drawing.Size(220, 330)
-        Me.EquiposEspecialesGroupBox.TabIndex = 2
-        Me.EquiposEspecialesGroupBox.TabStop = False
-        Me.EquiposEspecialesGroupBox.Text = "Equipos especiales"
+        Me.camaraTermicaNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.camaraTermicaNumericUpDown.Location = New System.Drawing.Point(130, 77)
+        Me.camaraTermicaNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.camaraTermicaNumericUpDown.Name = "camaraTermicaNumericUpDown"
+        Me.camaraTermicaNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.camaraTermicaNumericUpDown.TabIndex = 5
         '
-        'OtrosEquiposTextBox
+        'camaraTermicaLabel
         '
-        Me.OtrosEquiposTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.camaraTermicaLabel.AutoSize = True
+        Me.camaraTermicaLabel.Location = New System.Drawing.Point(20, 79)
+        Me.camaraTermicaLabel.Name = "camaraTermicaLabel"
+        Me.camaraTermicaLabel.Size = New System.Drawing.Size(106, 16)
+        Me.camaraTermicaLabel.TabIndex = 4
+        Me.camaraTermicaLabel.Text = "Cámara térmica:"
+        '
+        'binocularesNumericUpDown
+        '
+        Me.binocularesNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.binocularesNumericUpDown.Location = New System.Drawing.Point(130, 52)
+        Me.binocularesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.binocularesNumericUpDown.Name = "binocularesNumericUpDown"
+        Me.binocularesNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.binocularesNumericUpDown.TabIndex = 3
+        '
+        'binocularesLabel
+        '
+        Me.binocularesLabel.AutoSize = True
+        Me.binocularesLabel.Location = New System.Drawing.Point(44, 54)
+        Me.binocularesLabel.Name = "binocularesLabel"
+        Me.binocularesLabel.Size = New System.Drawing.Size(82, 16)
+        Me.binocularesLabel.TabIndex = 2
+        Me.binocularesLabel.Text = "Binoculares:"
+        '
+        'visorNocturnoNumericUpDown
+        '
+        Me.visorNocturnoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.visorNocturnoNumericUpDown.Location = New System.Drawing.Point(130, 27)
+        Me.visorNocturnoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.visorNocturnoNumericUpDown.Name = "visorNocturnoNumericUpDown"
+        Me.visorNocturnoNumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.visorNocturnoNumericUpDown.TabIndex = 1
+        '
+        'visorNocturnoLabel
+        '
+        Me.visorNocturnoLabel.AutoSize = True
+        Me.visorNocturnoLabel.Location = New System.Drawing.Point(27, 29)
+        Me.visorNocturnoLabel.Name = "visorNocturnoLabel"
+        Me.visorNocturnoLabel.Size = New System.Drawing.Size(99, 16)
+        Me.visorNocturnoLabel.TabIndex = 0
+        Me.visorNocturnoLabel.Text = "Visor Nocturno:"
+        '
+        'ametralladorasGroupBox
+        '
+        Me.ametralladorasGroupBox.Controls.Add(Me.otrasAmetralladorasTextBox)
+        Me.ametralladorasGroupBox.Controls.Add(Me.otrasAmetralladorasLabel)
+        Me.ametralladorasGroupBox.Controls.Add(Me.punto50NumericUpDown)
+        Me.ametralladorasGroupBox.Controls.Add(Me.punto50Label)
+        Me.ametralladorasGroupBox.Controls.Add(Me.ss77NumericUpDown)
+        Me.ametralladorasGroupBox.Controls.Add(Me.ss77Label)
+        Me.ametralladorasGroupBox.Controls.Add(Me.M249NumericUpDown)
+        Me.ametralladorasGroupBox.Controls.Add(Me.M249Label)
+        Me.ametralladorasGroupBox.Controls.Add(Me.m60E4NumericUpDown)
+        Me.ametralladorasGroupBox.Controls.Add(Me.m60E4Label)
+        Me.ametralladorasGroupBox.Controls.Add(Me.m60EstandarNumericUpDown)
+        Me.ametralladorasGroupBox.Controls.Add(Me.m60EstandarLabel)
+        Me.ametralladorasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.ametralladorasGroupBox.Location = New System.Drawing.Point(23, 24)
+        Me.ametralladorasGroupBox.Name = "ametralladorasGroupBox"
+        Me.ametralladorasGroupBox.Size = New System.Drawing.Size(200, 257)
+        Me.ametralladorasGroupBox.TabIndex = 0
+        Me.ametralladorasGroupBox.TabStop = False
+        Me.ametralladorasGroupBox.Text = "Ametralladoras"
+        '
+        'otrasAmetralladorasTextBox
+        '
+        Me.otrasAmetralladorasTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.OtrosEquiposTextBox.Location = New System.Drawing.Point(16, 197)
-        Me.OtrosEquiposTextBox.Multiline = True
-        Me.OtrosEquiposTextBox.Name = "OtrosEquiposTextBox"
-        Me.OtrosEquiposTextBox.Size = New System.Drawing.Size(188, 116)
-        Me.OtrosEquiposTextBox.TabIndex = 11
+        Me.otrasAmetralladorasTextBox.Location = New System.Drawing.Point(6, 200)
+        Me.otrasAmetralladorasTextBox.Multiline = True
+        Me.otrasAmetralladorasTextBox.Name = "otrasAmetralladorasTextBox"
+        Me.otrasAmetralladorasTextBox.Size = New System.Drawing.Size(188, 51)
+        Me.otrasAmetralladorasTextBox.TabIndex = 11
         '
-        'OtrosEquiposLabel
+        'otrasAmetralladorasLabel
         '
-        Me.OtrosEquiposLabel.AutoSize = True
-        Me.OtrosEquiposLabel.Location = New System.Drawing.Point(19, 175)
-        Me.OtrosEquiposLabel.Name = "OtrosEquiposLabel"
-        Me.OtrosEquiposLabel.Size = New System.Drawing.Size(95, 16)
-        Me.OtrosEquiposLabel.TabIndex = 10
-        Me.OtrosEquiposLabel.Text = "Otros equipos:"
-        Me.OtrosEquiposLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.otrasAmetralladorasLabel.AutoSize = True
+        Me.otrasAmetralladorasLabel.Location = New System.Drawing.Point(7, 179)
+        Me.otrasAmetralladorasLabel.Name = "otrasAmetralladorasLabel"
+        Me.otrasAmetralladorasLabel.Size = New System.Drawing.Size(137, 16)
+        Me.otrasAmetralladorasLabel.TabIndex = 10
+        Me.otrasAmetralladorasLabel.Text = "Otras ametralladoras:"
+        Me.otrasAmetralladorasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'KitOrientacionNocturnoNumericUpDown
+        'punto50NumericUpDown
         '
-        Me.KitOrientacionNocturnoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.KitOrientacionNocturnoNumericUpDown.Location = New System.Drawing.Point(130, 127)
-        Me.KitOrientacionNocturnoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.KitOrientacionNocturnoNumericUpDown.Name = "KitOrientacionNocturnoNumericUpDown"
-        Me.KitOrientacionNocturnoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.KitOrientacionNocturnoNumericUpDown.TabIndex = 9
+        Me.punto50NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.punto50NumericUpDown.Location = New System.Drawing.Point(110, 135)
+        Me.punto50NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
+        Me.punto50NumericUpDown.Name = "punto50NumericUpDown"
+        Me.punto50NumericUpDown.Size = New System.Drawing.Size(75, 22)
+        Me.punto50NumericUpDown.TabIndex = 9
         '
-        'KitOrientacionNocturnoLabel
+        'punto50Label
         '
-        Me.KitOrientacionNocturnoLabel.AutoSize = True
-        Me.KitOrientacionNocturnoLabel.Location = New System.Drawing.Point(13, 129)
-        Me.KitOrientacionNocturnoLabel.Name = "KitOrientacionNocturnoLabel"
-        Me.KitOrientacionNocturnoLabel.Size = New System.Drawing.Size(113, 32)
-        Me.KitOrientacionNocturnoLabel.TabIndex = 8
-        Me.KitOrientacionNocturnoLabel.Text = "Kit de orientación " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "nocturno:"
-        Me.KitOrientacionNocturnoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'FlasmersNumericUpDown
-        '
-        Me.FlasmersNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.FlasmersNumericUpDown.Location = New System.Drawing.Point(130, 102)
-        Me.FlasmersNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.FlasmersNumericUpDown.Name = "FlasmersNumericUpDown"
-        Me.FlasmersNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.FlasmersNumericUpDown.TabIndex = 7
-        '
-        'FlasmersLabel
-        '
-        Me.FlasmersLabel.AutoSize = True
-        Me.FlasmersLabel.Location = New System.Drawing.Point(59, 104)
-        Me.FlasmersLabel.Name = "FlasmersLabel"
-        Me.FlasmersLabel.Size = New System.Drawing.Size(67, 16)
-        Me.FlasmersLabel.TabIndex = 6
-        Me.FlasmersLabel.Text = "Flasmers:"
-        '
-        'CamaraTermicaNumericUpDown
-        '
-        Me.CamaraTermicaNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CamaraTermicaNumericUpDown.Location = New System.Drawing.Point(130, 77)
-        Me.CamaraTermicaNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.CamaraTermicaNumericUpDown.Name = "CamaraTermicaNumericUpDown"
-        Me.CamaraTermicaNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.CamaraTermicaNumericUpDown.TabIndex = 5
-        '
-        'CamaraTermicaLabel
-        '
-        Me.CamaraTermicaLabel.AutoSize = True
-        Me.CamaraTermicaLabel.Location = New System.Drawing.Point(20, 79)
-        Me.CamaraTermicaLabel.Name = "CamaraTermicaLabel"
-        Me.CamaraTermicaLabel.Size = New System.Drawing.Size(106, 16)
-        Me.CamaraTermicaLabel.TabIndex = 4
-        Me.CamaraTermicaLabel.Text = "Cámara térmica:"
-        '
-        'BinocularesNumericUpDown
-        '
-        Me.BinocularesNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BinocularesNumericUpDown.Location = New System.Drawing.Point(130, 52)
-        Me.BinocularesNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.BinocularesNumericUpDown.Name = "BinocularesNumericUpDown"
-        Me.BinocularesNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.BinocularesNumericUpDown.TabIndex = 3
-        '
-        'BinocularesLabel
-        '
-        Me.BinocularesLabel.AutoSize = True
-        Me.BinocularesLabel.Location = New System.Drawing.Point(44, 54)
-        Me.BinocularesLabel.Name = "BinocularesLabel"
-        Me.BinocularesLabel.Size = New System.Drawing.Size(82, 16)
-        Me.BinocularesLabel.TabIndex = 2
-        Me.BinocularesLabel.Text = "Binoculares:"
-        '
-        'VisorNocturnoNumericUpDown
-        '
-        Me.VisorNocturnoNumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.VisorNocturnoNumericUpDown.Location = New System.Drawing.Point(130, 27)
-        Me.VisorNocturnoNumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.VisorNocturnoNumericUpDown.Name = "VisorNocturnoNumericUpDown"
-        Me.VisorNocturnoNumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.VisorNocturnoNumericUpDown.TabIndex = 1
-        '
-        'VisorNocturnoLabel
-        '
-        Me.VisorNocturnoLabel.AutoSize = True
-        Me.VisorNocturnoLabel.Location = New System.Drawing.Point(27, 29)
-        Me.VisorNocturnoLabel.Name = "VisorNocturnoLabel"
-        Me.VisorNocturnoLabel.Size = New System.Drawing.Size(99, 16)
-        Me.VisorNocturnoLabel.TabIndex = 0
-        Me.VisorNocturnoLabel.Text = "Visor Nocturno:"
-        '
-        'AmetralladorasGroupBox
-        '
-        Me.AmetralladorasGroupBox.Controls.Add(Me.OtrasAmetralladorasTextBox)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.OtrassAmetralladorasLabel)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.Punto50NumericUpDown)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.Punto50Label)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.ss77NumericUpDown)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.ss77Label)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.M249NumericUpDown)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.M249Label)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.m60E4NumericUpDown)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.m60E4Label)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.m60EstandarNumericUpDown)
-        Me.AmetralladorasGroupBox.Controls.Add(Me.m60EstandarLabel)
-        Me.AmetralladorasGroupBox.ForeColor = System.Drawing.Color.White
-        Me.AmetralladorasGroupBox.Location = New System.Drawing.Point(22, 68)
-        Me.AmetralladorasGroupBox.Name = "AmetralladorasGroupBox"
-        Me.AmetralladorasGroupBox.Size = New System.Drawing.Size(200, 333)
-        Me.AmetralladorasGroupBox.TabIndex = 0
-        Me.AmetralladorasGroupBox.TabStop = False
-        Me.AmetralladorasGroupBox.Text = "Ametralladoras"
-        '
-        'OtrasAmetralladorasTextBox
-        '
-        Me.OtrasAmetralladorasTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.OtrasAmetralladorasTextBox.Location = New System.Drawing.Point(6, 200)
-        Me.OtrasAmetralladorasTextBox.Multiline = True
-        Me.OtrasAmetralladorasTextBox.Name = "OtrasAmetralladorasTextBox"
-        Me.OtrasAmetralladorasTextBox.Size = New System.Drawing.Size(188, 116)
-        Me.OtrasAmetralladorasTextBox.TabIndex = 13
-        '
-        'OtrassAmetralladorasLabel
-        '
-        Me.OtrassAmetralladorasLabel.AutoSize = True
-        Me.OtrassAmetralladorasLabel.Location = New System.Drawing.Point(7, 179)
-        Me.OtrassAmetralladorasLabel.Name = "OtrassAmetralladorasLabel"
-        Me.OtrassAmetralladorasLabel.Size = New System.Drawing.Size(137, 16)
-        Me.OtrassAmetralladorasLabel.TabIndex = 12
-        Me.OtrassAmetralladorasLabel.Text = "Otras ametralladoras:"
-        Me.OtrassAmetralladorasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'Punto50NumericUpDown
-        '
-        Me.Punto50NumericUpDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Punto50NumericUpDown.Location = New System.Drawing.Point(110, 135)
-        Me.Punto50NumericUpDown.Maximum = New Decimal(New Integer() {999999999, 0, 0, 0})
-        Me.Punto50NumericUpDown.Name = "Punto50NumericUpDown"
-        Me.Punto50NumericUpDown.Size = New System.Drawing.Size(75, 22)
-        Me.Punto50NumericUpDown.TabIndex = 9
-        '
-        'Punto50Label
-        '
-        Me.Punto50Label.AutoSize = True
-        Me.Punto50Label.Location = New System.Drawing.Point(79, 137)
-        Me.Punto50Label.Name = "Punto50Label"
-        Me.Punto50Label.Size = New System.Drawing.Size(28, 16)
-        Me.Punto50Label.TabIndex = 8
-        Me.Punto50Label.Text = ".50:"
+        Me.punto50Label.AutoSize = True
+        Me.punto50Label.Location = New System.Drawing.Point(79, 137)
+        Me.punto50Label.Name = "punto50Label"
+        Me.punto50Label.Size = New System.Drawing.Size(28, 16)
+        Me.punto50Label.TabIndex = 8
+        Me.punto50Label.Text = ".50:"
         '
         'ss77NumericUpDown
         '
@@ -2754,7 +3100,7 @@ Partial Class OperacionForm
         'ss77Label
         '
         Me.ss77Label.AutoSize = True
-        Me.ss77Label.Location = New System.Drawing.Point(64, 109)
+        Me.ss77Label.Location = New System.Drawing.Point(64, 110)
         Me.ss77Label.Name = "ss77Label"
         Me.ss77Label.Size = New System.Drawing.Size(43, 16)
         Me.ss77Label.TabIndex = 6
@@ -2772,7 +3118,7 @@ Partial Class OperacionForm
         'M249Label
         '
         Me.M249Label.AutoSize = True
-        Me.M249Label.Location = New System.Drawing.Point(64, 81)
+        Me.M249Label.Location = New System.Drawing.Point(64, 82)
         Me.M249Label.Name = "M249Label"
         Me.M249Label.Size = New System.Drawing.Size(43, 16)
         Me.M249Label.TabIndex = 4
@@ -2814,146 +3160,267 @@ Partial Class OperacionForm
         Me.m60EstandarLabel.TabIndex = 0
         Me.m60EstandarLabel.Text = "M60 estándar:"
         '
-        'Operaciones2GroupBox
+        'situacionGroupBox
         '
-        Me.Operaciones2GroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.situacionGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Operaciones2GroupBox.BackColor = System.Drawing.Color.Transparent
-        Me.Operaciones2GroupBox.Controls.Add(Me.TableLayoutPanel4)
-        Me.Operaciones2GroupBox.Controls.Add(Propias_tropasRichTextBoxLabel)
-        Me.Operaciones2GroupBox.Controls.Add(Me.Propias_tropasRichTextBox)
-        Me.Operaciones2GroupBox.Controls.Add(MisionLabel)
-        Me.Operaciones2GroupBox.Controls.Add(Me.MisionRichTextBox)
-        Me.Operaciones2GroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.Operaciones2GroupBox.Name = "Operaciones2GroupBox"
-        Me.Operaciones2GroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.Operaciones2GroupBox.TabIndex = 16
-        Me.Operaciones2GroupBox.TabStop = False
+        Me.situacionGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.situacionGroupBox.Controls.Add(Me.atras11LinkLabel)
+        Me.situacionGroupBox.Controls.Add(Me.siguiente2LinkLabel)
+        Me.situacionGroupBox.Controls.Add(Me.segregacionesSituacionTextBox)
+        Me.situacionGroupBox.Controls.Add(segregacionesSituacionLabel)
+        Me.situacionGroupBox.Controls.Add(Me.agregacionesSituacionTextBox)
+        Me.situacionGroupBox.Controls.Add(agregacionesSituacionLabel)
+        Me.situacionGroupBox.Controls.Add(Me.propiasTropasTextBox)
+        Me.situacionGroupBox.Controls.Add(propiasTropasLabel)
+        Me.situacionGroupBox.Controls.Add(Me.enemigoTextBox)
+        Me.situacionGroupBox.Controls.Add(detalleSituacionLabel)
+        Me.situacionGroupBox.Controls.Add(Me.detalleSituacionRichTextBox)
+        Me.situacionGroupBox.Controls.Add(enemigoLabel)
+        Me.situacionGroupBox.ForeColor = System.Drawing.Color.White
+        Me.situacionGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.situacionGroupBox.Name = "situacionGroupBox"
+        Me.situacionGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.situacionGroupBox.TabIndex = 16
+        Me.situacionGroupBox.TabStop = False
+        Me.situacionGroupBox.Text = "Situación"
         '
-        'Propias_tropasRichTextBox
+        'atras11LinkLabel
         '
-        Me.Propias_tropasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Propias_tropasRichTextBox.Location = New System.Drawing.Point(19, 41)
-        Me.Propias_tropasRichTextBox.Name = "Propias_tropasRichTextBox"
-        Me.Propias_tropasRichTextBox.Size = New System.Drawing.Size(531, 409)
-        Me.Propias_tropasRichTextBox.TabIndex = 19
-        Me.Propias_tropasRichTextBox.Text = ""
+        Me.atras11LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras11LinkLabel.AutoSize = True
+        Me.atras11LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras11LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras11LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras11LinkLabel.Name = "atras11LinkLabel"
+        Me.atras11LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras11LinkLabel.TabIndex = 25
+        Me.atras11LinkLabel.TabStop = True
+        Me.atras11LinkLabel.Text = "Atrás"
+        Me.atras11LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'MisionRichTextBox
+        'siguiente2LinkLabel
         '
-        Me.MisionRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.siguiente2LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente2LinkLabel.AutoSize = True
+        Me.siguiente2LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente2LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente2LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente2LinkLabel.Name = "siguiente2LinkLabel"
+        Me.siguiente2LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente2LinkLabel.TabIndex = 10
+        Me.siguiente2LinkLabel.TabStop = True
+        Me.siguiente2LinkLabel.Text = "Siguiente"
+        Me.siguiente2LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'segregacionesSituacionTextBox
+        '
+        Me.segregacionesSituacionTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.segregacionesSituacionTextBox.Location = New System.Drawing.Point(590, 394)
+        Me.segregacionesSituacionTextBox.Multiline = True
+        Me.segregacionesSituacionTextBox.Name = "segregacionesSituacionTextBox"
+        Me.segregacionesSituacionTextBox.Size = New System.Drawing.Size(413, 87)
+        Me.segregacionesSituacionTextBox.TabIndex = 9
+        '
+        'agregacionesSituacionTextBox
+        '
+        Me.agregacionesSituacionTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.agregacionesSituacionTextBox.Location = New System.Drawing.Point(590, 279)
+        Me.agregacionesSituacionTextBox.Multiline = True
+        Me.agregacionesSituacionTextBox.Name = "agregacionesSituacionTextBox"
+        Me.agregacionesSituacionTextBox.Size = New System.Drawing.Size(413, 79)
+        Me.agregacionesSituacionTextBox.TabIndex = 7
+        '
+        'propiasTropasTextBox
+        '
+        Me.propiasTropasTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.propiasTropasTextBox.Location = New System.Drawing.Point(590, 154)
+        Me.propiasTropasTextBox.Multiline = True
+        Me.propiasTropasTextBox.Name = "propiasTropasTextBox"
+        Me.propiasTropasTextBox.Size = New System.Drawing.Size(413, 87)
+        Me.propiasTropasTextBox.TabIndex = 5
+        '
+        'enemigoTextBox
+        '
+        Me.enemigoTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.enemigoTextBox.Location = New System.Drawing.Point(590, 39)
+        Me.enemigoTextBox.Multiline = True
+        Me.enemigoTextBox.Name = "enemigoTextBox"
+        Me.enemigoTextBox.Size = New System.Drawing.Size(413, 79)
+        Me.enemigoTextBox.TabIndex = 3
+        '
+        'detalleSituacionRichTextBox
+        '
+        Me.detalleSituacionRichTextBox.Location = New System.Drawing.Point(19, 41)
+        Me.detalleSituacionRichTextBox.Name = "detalleSituacionRichTextBox"
+        Me.detalleSituacionRichTextBox.Size = New System.Drawing.Size(531, 440)
+        Me.detalleSituacionRichTextBox.TabIndex = 1
+        Me.detalleSituacionRichTextBox.Text = ""
+        '
+        'firmasGroupBox
+        '
+        Me.firmasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MisionRichTextBox.Location = New System.Drawing.Point(577, 41)
-        Me.MisionRichTextBox.Name = "MisionRichTextBox"
-        Me.MisionRichTextBox.Size = New System.Drawing.Size(490, 413)
-        Me.MisionRichTextBox.TabIndex = 21
-        Me.MisionRichTextBox.Text = ""
+        Me.firmasGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.firmasGroupBox.Controls.Add(Me.atras1LinkLabel)
+        Me.firmasGroupBox.Controls.Add(Me.distribucionGroupBox)
+        Me.firmasGroupBox.Controls.Add(Me.recibeTextBox)
+        Me.firmasGroupBox.Controls.Add(Me.autenticaTextBox)
+        Me.firmasGroupBox.Controls.Add(Me.autorizaTextBox)
+        Me.firmasGroupBox.Controls.Add(recibeLabel)
+        Me.firmasGroupBox.Controls.Add(autenticaLabel)
+        Me.firmasGroupBox.Controls.Add(autorizaLabel)
+        Me.firmasGroupBox.ForeColor = System.Drawing.Color.White
+        Me.firmasGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.firmasGroupBox.Name = "firmasGroupBox"
+        Me.firmasGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.firmasGroupBox.TabIndex = 17
+        Me.firmasGroupBox.TabStop = False
+        Me.firmasGroupBox.Text = "Firmas"
         '
-        'FirmasGroupBox
+        'atras1LinkLabel
         '
-        Me.FirmasGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.atras1LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras1LinkLabel.AutoSize = True
+        Me.atras1LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras1LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras1LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras1LinkLabel.Name = "atras1LinkLabel"
+        Me.atras1LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras1LinkLabel.TabIndex = 29
+        Me.atras1LinkLabel.TabStop = True
+        Me.atras1LinkLabel.Text = "Atrás"
+        Me.atras1LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'distribucionGroupBox
+        '
+        Me.distribucionGroupBox.Controls.Add(Me.distribucionTextBox)
+        Me.distribucionGroupBox.ForeColor = System.Drawing.Color.White
+        Me.distribucionGroupBox.Location = New System.Drawing.Point(695, 111)
+        Me.distribucionGroupBox.Name = "distribucionGroupBox"
+        Me.distribucionGroupBox.Size = New System.Drawing.Size(283, 196)
+        Me.distribucionGroupBox.TabIndex = 28
+        Me.distribucionGroupBox.TabStop = False
+        Me.distribucionGroupBox.Text = "Distribución"
+        '
+        'distribucionTextBox
+        '
+        Me.distribucionTextBox.Location = New System.Drawing.Point(6, 18)
+        Me.distribucionTextBox.Multiline = True
+        Me.distribucionTextBox.Name = "distribucionTextBox"
+        Me.distribucionTextBox.Size = New System.Drawing.Size(271, 169)
+        Me.distribucionTextBox.TabIndex = 0
+        '
+        'recibeTextBox
+        '
+        Me.recibeTextBox.Location = New System.Drawing.Point(77, 247)
+        Me.recibeTextBox.Multiline = True
+        Me.recibeTextBox.Name = "recibeTextBox"
+        Me.recibeTextBox.Size = New System.Drawing.Size(420, 60)
+        Me.recibeTextBox.TabIndex = 27
+        '
+        'autenticaTextBox
+        '
+        Me.autenticaTextBox.Location = New System.Drawing.Point(77, 179)
+        Me.autenticaTextBox.Multiline = True
+        Me.autenticaTextBox.Name = "autenticaTextBox"
+        Me.autenticaTextBox.Size = New System.Drawing.Size(420, 60)
+        Me.autenticaTextBox.TabIndex = 26
+        '
+        'autorizaTextBox
+        '
+        Me.autorizaTextBox.Location = New System.Drawing.Point(77, 111)
+        Me.autorizaTextBox.Multiline = True
+        Me.autorizaTextBox.Name = "autorizaTextBox"
+        Me.autorizaTextBox.Size = New System.Drawing.Size(420, 60)
+        Me.autorizaTextBox.TabIndex = 25
+        '
+        'anexosGroupBox
+        '
+        Me.anexosGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.FirmasGroupBox.BackColor = System.Drawing.Color.Transparent
-        Me.FirmasGroupBox.Controls.Add(Me.TableLayoutPanel17)
-        Me.FirmasGroupBox.Controls.Add(Me.RecibeRichTextBox)
-        Me.FirmasGroupBox.Controls.Add(RecibeLabel)
-        Me.FirmasGroupBox.Controls.Add(Me.AutenticaRichTextBox)
-        Me.FirmasGroupBox.Controls.Add(AutenticaLabel)
-        Me.FirmasGroupBox.Controls.Add(Me.AutorizaRichTextBox)
-        Me.FirmasGroupBox.Controls.Add(AutorizaLabel)
-        Me.FirmasGroupBox.ForeColor = System.Drawing.Color.White
-        Me.FirmasGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.FirmasGroupBox.Name = "FirmasGroupBox"
-        Me.FirmasGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.FirmasGroupBox.TabIndex = 17
-        Me.FirmasGroupBox.TabStop = False
-        Me.FirmasGroupBox.Text = "Firmas"
+        Me.anexosGroupBox.BackColor = System.Drawing.Color.Transparent
+        Me.anexosGroupBox.Controls.Add(Me.atras2LinkLabel)
+        Me.anexosGroupBox.Controls.Add(Me.siguiente12LinkLabel)
+        Me.anexosGroupBox.Controls.Add(Me.anexosDataGridView)
+        Me.anexosGroupBox.Controls.Add(Me.quitarButton)
+        Me.anexosGroupBox.Controls.Add(Me.agregarAnexoButton)
+        Me.anexosGroupBox.ForeColor = System.Drawing.Color.White
+        Me.anexosGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.anexosGroupBox.Name = "anexosGroupBox"
+        Me.anexosGroupBox.Size = New System.Drawing.Size(1150, 497)
+        Me.anexosGroupBox.TabIndex = 18
+        Me.anexosGroupBox.TabStop = False
+        Me.anexosGroupBox.Text = "Anexos"
         '
-        'RecibeRichTextBox
+        'atras2LinkLabel
         '
-        Me.RecibeRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RecibeRichTextBox.Location = New System.Drawing.Point(80, 227)
-        Me.RecibeRichTextBox.Name = "RecibeRichTextBox"
-        Me.RecibeRichTextBox.Size = New System.Drawing.Size(956, 96)
-        Me.RecibeRichTextBox.TabIndex = 23
-        Me.RecibeRichTextBox.Text = ""
+        Me.atras2LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras2LinkLabel.AutoSize = True
+        Me.atras2LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras2LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras2LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras2LinkLabel.Name = "atras2LinkLabel"
+        Me.atras2LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras2LinkLabel.TabIndex = 24
+        Me.atras2LinkLabel.TabStop = True
+        Me.atras2LinkLabel.Text = "Atrás"
+        Me.atras2LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'AutenticaRichTextBox
+        'siguiente12LinkLabel
         '
-        Me.AutenticaRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AutenticaRichTextBox.Location = New System.Drawing.Point(80, 124)
-        Me.AutenticaRichTextBox.Name = "AutenticaRichTextBox"
-        Me.AutenticaRichTextBox.Size = New System.Drawing.Size(956, 96)
-        Me.AutenticaRichTextBox.TabIndex = 21
-        Me.AutenticaRichTextBox.Text = ""
+        Me.siguiente12LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente12LinkLabel.AutoSize = True
+        Me.siguiente12LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente12LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente12LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente12LinkLabel.Name = "siguiente12LinkLabel"
+        Me.siguiente12LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente12LinkLabel.TabIndex = 23
+        Me.siguiente12LinkLabel.TabStop = True
+        Me.siguiente12LinkLabel.Text = "Siguiente"
+        Me.siguiente12LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'AutorizaRichTextBox
+        'anexosDataGridView
         '
-        Me.AutorizaRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AutorizaRichTextBox.Location = New System.Drawing.Point(81, 21)
-        Me.AutorizaRichTextBox.Name = "AutorizaRichTextBox"
-        Me.AutorizaRichTextBox.Size = New System.Drawing.Size(956, 96)
-        Me.AutorizaRichTextBox.TabIndex = 19
-        Me.AutorizaRichTextBox.Text = ""
-        '
-        'AnexosGroupBox
-        '
-        Me.AnexosGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.anexosDataGridView.AllowUserToAddRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.anexosDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AnexosGroupBox.BackColor = System.Drawing.Color.Transparent
-        Me.AnexosGroupBox.Controls.Add(Me.TableLayoutPanel16)
-        Me.AnexosGroupBox.Controls.Add(Me.AnexosDataGridView)
-        Me.AnexosGroupBox.Controls.Add(Me.QuitarButton)
-        Me.AnexosGroupBox.Controls.Add(Me.AgregarAnexoButton)
-        Me.AnexosGroupBox.ForeColor = System.Drawing.Color.White
-        Me.AnexosGroupBox.Location = New System.Drawing.Point(5, 12)
-        Me.AnexosGroupBox.Name = "AnexosGroupBox"
-        Me.AnexosGroupBox.Size = New System.Drawing.Size(1150, 476)
-        Me.AnexosGroupBox.TabIndex = 18
-        Me.AnexosGroupBox.TabStop = False
-        Me.AnexosGroupBox.Text = "Anexos"
-        '
-        'AnexosDataGridView
-        '
-        Me.AnexosDataGridView.AllowUserToAddRows = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle4
-        Me.AnexosDataGridView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.AnexosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
-        Me.AnexosDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
-        Me.AnexosDataGridView.BackgroundColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.AnexosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nombreArchivo, Me.ruta})
-        Me.AnexosDataGridView.GridColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.Location = New System.Drawing.Point(19, 71)
-        Me.AnexosDataGridView.Name = "AnexosDataGridView"
-        Me.AnexosDataGridView.ReadOnly = True
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.Transparent
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AnexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle5
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Black
-        Me.AnexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle6
-        Me.AnexosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.AnexosDataGridView.Size = New System.Drawing.Size(1110, 383)
-        Me.AnexosDataGridView.TabIndex = 22
+        Me.anexosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.anexosDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
+        Me.anexosDataGridView.BackgroundColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.anexosDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nombreArchivo, Me.ruta})
+        Me.anexosDataGridView.GridColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.Location = New System.Drawing.Point(19, 71)
+        Me.anexosDataGridView.Name = "anexosDataGridView"
+        Me.anexosDataGridView.ReadOnly = True
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkOliveGreen
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.anexosDataGridView.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black
+        Me.anexosDataGridView.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.anexosDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.anexosDataGridView.Size = New System.Drawing.Size(1110, 404)
+        Me.anexosDataGridView.TabIndex = 22
         '
         'nombreArchivo
         '
@@ -2969,25 +3436,25 @@ Partial Class OperacionForm
         Me.ruta.ReadOnly = True
         Me.ruta.Width = 61
         '
-        'QuitarButton
+        'quitarButton
         '
-        Me.QuitarButton.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.QuitarButton.Location = New System.Drawing.Point(204, 29)
-        Me.QuitarButton.Name = "QuitarButton"
-        Me.QuitarButton.Size = New System.Drawing.Size(184, 29)
-        Me.QuitarButton.TabIndex = 21
-        Me.QuitarButton.Text = "Quitar anexo seleccionado"
-        Me.QuitarButton.UseVisualStyleBackColor = True
+        Me.quitarButton.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.quitarButton.Location = New System.Drawing.Point(204, 29)
+        Me.quitarButton.Name = "quitarButton"
+        Me.quitarButton.Size = New System.Drawing.Size(184, 29)
+        Me.quitarButton.TabIndex = 21
+        Me.quitarButton.Text = "Quitar anexo seleccionado"
+        Me.quitarButton.UseVisualStyleBackColor = True
         '
-        'AgregarAnexoButton
+        'agregarAnexoButton
         '
-        Me.AgregarAnexoButton.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.AgregarAnexoButton.Location = New System.Drawing.Point(19, 29)
-        Me.AgregarAnexoButton.Name = "AgregarAnexoButton"
-        Me.AgregarAnexoButton.Size = New System.Drawing.Size(179, 29)
-        Me.AgregarAnexoButton.TabIndex = 20
-        Me.AgregarAnexoButton.Text = "Agregar archivo anexo"
-        Me.AgregarAnexoButton.UseVisualStyleBackColor = True
+        Me.agregarAnexoButton.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.agregarAnexoButton.Location = New System.Drawing.Point(19, 29)
+        Me.agregarAnexoButton.Name = "agregarAnexoButton"
+        Me.agregarAnexoButton.Size = New System.Drawing.Size(179, 29)
+        Me.agregarAnexoButton.TabIndex = 20
+        Me.agregarAnexoButton.Text = "Agregar archivo anexo"
+        Me.agregarAnexoButton.UseVisualStyleBackColor = True
         '
         'OpenFileDialog1
         '
@@ -2995,558 +3462,63 @@ Partial Class OperacionForm
         Me.OpenFileDialog1.ReadOnlyChecked = True
         Me.OpenFileDialog1.Title = "Seleccionar anexo"
         '
-        'TableLayoutPanel4
-        '
-        Me.TableLayoutPanel4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel4.ColumnCount = 1
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Controls.Add(Me.Operaciones1LinkLabel, 0, 1)
-        Me.TableLayoutPanel4.Controls.Add(Me.toeLinkLabel, 0, 0)
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(1073, 21)
-        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
-        Me.TableLayoutPanel4.RowCount = 2
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel4.TabIndex = 22
-        '
-        'Operaciones1LinkLabel
-        '
-        Me.Operaciones1LinkLabel.AutoSize = True
-        Me.Operaciones1LinkLabel.LinkColor = System.Drawing.Color.Yellow
-        Me.Operaciones1LinkLabel.Location = New System.Drawing.Point(3, 22)
-        Me.Operaciones1LinkLabel.Name = "Operaciones1LinkLabel"
-        Me.Operaciones1LinkLabel.Size = New System.Drawing.Size(39, 16)
-        Me.Operaciones1LinkLabel.TabIndex = 2
-        Me.Operaciones1LinkLabel.TabStop = True
-        Me.Operaciones1LinkLabel.Text = "Atrás"
-        Me.Operaciones1LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'toeLinkLabel
-        '
-        Me.toeLinkLabel.AutoSize = True
-        Me.toeLinkLabel.ForeColor = System.Drawing.Color.Yellow
-        Me.toeLinkLabel.LinkColor = System.Drawing.Color.Yellow
-        Me.toeLinkLabel.Location = New System.Drawing.Point(3, 0)
-        Me.toeLinkLabel.Name = "toeLinkLabel"
-        Me.toeLinkLabel.Size = New System.Drawing.Size(64, 16)
-        Me.toeLinkLabel.TabIndex = 1
-        Me.toeLinkLabel.TabStop = True
-        Me.toeLinkLabel.Text = "Siguiente"
-        Me.toeLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel5
-        '
-        Me.TableLayoutPanel5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel5.ColumnCount = 1
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.LinkLabel1, 0, 1)
-        Me.TableLayoutPanel5.Controls.Add(Me.LinkLabel2, 0, 0)
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(1058, 27)
-        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
-        Me.TableLayoutPanel5.RowCount = 2
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel5.TabIndex = 23
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel1.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel1.TabIndex = 2
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Atrás"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel2.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel2.TabIndex = 1
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Siguiente"
-        Me.LinkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel6
-        '
-        Me.TableLayoutPanel6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel6.ColumnCount = 1
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Controls.Add(Me.LinkLabel3, 0, 1)
-        Me.TableLayoutPanel6.Controls.Add(Me.LinkLabel4, 0, 0)
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(1006, 45)
-        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
-        Me.TableLayoutPanel6.RowCount = 2
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel6.TabIndex = 24
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel3.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel3.TabIndex = 2
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Atrás"
-        Me.LinkLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel4.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel4.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel4.TabIndex = 1
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Siguiente"
-        Me.LinkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel7
-        '
-        Me.TableLayoutPanel7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel7.ColumnCount = 1
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel7.Controls.Add(Me.LinkLabel5, 0, 1)
-        Me.TableLayoutPanel7.Controls.Add(Me.LinkLabel6, 0, 0)
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(1054, 29)
-        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
-        Me.TableLayoutPanel7.RowCount = 2
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel7.TabIndex = 24
-        '
-        'LinkLabel5
-        '
-        Me.LinkLabel5.AutoSize = True
-        Me.LinkLabel5.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel5.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel5.TabIndex = 2
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "Atrás"
-        Me.LinkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel6
-        '
-        Me.LinkLabel6.AutoSize = True
-        Me.LinkLabel6.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel6.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel6.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel6.TabIndex = 1
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "Siguiente"
-        Me.LinkLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel8
-        '
-        Me.TableLayoutPanel8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel8.ColumnCount = 1
-        Me.TableLayoutPanel8.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.Controls.Add(Me.LinkLabel7, 0, 1)
-        Me.TableLayoutPanel8.Controls.Add(Me.LinkLabel8, 0, 0)
-        Me.TableLayoutPanel8.Location = New System.Drawing.Point(1064, 38)
-        Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
-        Me.TableLayoutPanel8.RowCount = 2
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel8.TabIndex = 24
-        '
-        'LinkLabel7
-        '
-        Me.LinkLabel7.AutoSize = True
-        Me.LinkLabel7.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel7.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel7.Name = "LinkLabel7"
-        Me.LinkLabel7.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel7.TabIndex = 2
-        Me.LinkLabel7.TabStop = True
-        Me.LinkLabel7.Text = "Atrás"
-        Me.LinkLabel7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel8
-        '
-        Me.LinkLabel8.AutoSize = True
-        Me.LinkLabel8.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel8.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel8.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel8.Name = "LinkLabel8"
-        Me.LinkLabel8.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel8.TabIndex = 1
-        Me.LinkLabel8.TabStop = True
-        Me.LinkLabel8.Text = "Siguiente"
-        Me.LinkLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel9
-        '
-        Me.TableLayoutPanel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel9.ColumnCount = 1
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel9.Controls.Add(Me.LinkLabel9, 0, 1)
-        Me.TableLayoutPanel9.Controls.Add(Me.LinkLabel10, 0, 0)
-        Me.TableLayoutPanel9.Location = New System.Drawing.Point(1069, 32)
-        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
-        Me.TableLayoutPanel9.RowCount = 2
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel9.TabIndex = 24
-        '
-        'LinkLabel9
-        '
-        Me.LinkLabel9.AutoSize = True
-        Me.LinkLabel9.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel9.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel9.Name = "LinkLabel9"
-        Me.LinkLabel9.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel9.TabIndex = 2
-        Me.LinkLabel9.TabStop = True
-        Me.LinkLabel9.Text = "Atrás"
-        Me.LinkLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel10
-        '
-        Me.LinkLabel10.AutoSize = True
-        Me.LinkLabel10.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel10.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel10.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel10.Name = "LinkLabel10"
-        Me.LinkLabel10.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel10.TabIndex = 1
-        Me.LinkLabel10.TabStop = True
-        Me.LinkLabel10.Text = "Siguiente"
-        Me.LinkLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel10
-        '
-        Me.TableLayoutPanel10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel10.ColumnCount = 1
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.Controls.Add(Me.LinkLabel11, 0, 1)
-        Me.TableLayoutPanel10.Controls.Add(Me.LinkLabel12, 0, 0)
-        Me.TableLayoutPanel10.Location = New System.Drawing.Point(1060, 32)
-        Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
-        Me.TableLayoutPanel10.RowCount = 2
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel10.TabIndex = 24
-        '
-        'LinkLabel11
-        '
-        Me.LinkLabel11.AutoSize = True
-        Me.LinkLabel11.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel11.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel11.Name = "LinkLabel11"
-        Me.LinkLabel11.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel11.TabIndex = 2
-        Me.LinkLabel11.TabStop = True
-        Me.LinkLabel11.Text = "Atrás"
-        Me.LinkLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel12
-        '
-        Me.LinkLabel12.AutoSize = True
-        Me.LinkLabel12.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel12.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel12.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel12.Name = "LinkLabel12"
-        Me.LinkLabel12.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel12.TabIndex = 1
-        Me.LinkLabel12.TabStop = True
-        Me.LinkLabel12.Text = "Siguiente"
-        Me.LinkLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel11
-        '
-        Me.TableLayoutPanel11.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel11.ColumnCount = 1
-        Me.TableLayoutPanel11.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel11.Controls.Add(Me.LinkLabel13, 0, 1)
-        Me.TableLayoutPanel11.Controls.Add(Me.LinkLabel14, 0, 0)
-        Me.TableLayoutPanel11.Location = New System.Drawing.Point(1054, 44)
-        Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
-        Me.TableLayoutPanel11.RowCount = 2
-        Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel11.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel11.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel11.TabIndex = 24
-        '
-        'LinkLabel13
-        '
-        Me.LinkLabel13.AutoSize = True
-        Me.LinkLabel13.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel13.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel13.Name = "LinkLabel13"
-        Me.LinkLabel13.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel13.TabIndex = 2
-        Me.LinkLabel13.TabStop = True
-        Me.LinkLabel13.Text = "Atrás"
-        Me.LinkLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel14
-        '
-        Me.LinkLabel14.AutoSize = True
-        Me.LinkLabel14.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel14.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel14.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel14.Name = "LinkLabel14"
-        Me.LinkLabel14.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel14.TabIndex = 1
-        Me.LinkLabel14.TabStop = True
-        Me.LinkLabel14.Text = "Siguiente"
-        Me.LinkLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel12
-        '
-        Me.TableLayoutPanel12.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel12.ColumnCount = 1
-        Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel12.Controls.Add(Me.LinkLabel15, 0, 1)
-        Me.TableLayoutPanel12.Controls.Add(Me.LinkLabel16, 0, 0)
-        Me.TableLayoutPanel12.Location = New System.Drawing.Point(1056, 38)
-        Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
-        Me.TableLayoutPanel12.RowCount = 2
-        Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel12.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel12.TabIndex = 24
-        '
-        'LinkLabel15
-        '
-        Me.LinkLabel15.AutoSize = True
-        Me.LinkLabel15.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel15.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel15.Name = "LinkLabel15"
-        Me.LinkLabel15.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel15.TabIndex = 2
-        Me.LinkLabel15.TabStop = True
-        Me.LinkLabel15.Text = "Atrás"
-        Me.LinkLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel16
-        '
-        Me.LinkLabel16.AutoSize = True
-        Me.LinkLabel16.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel16.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel16.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel16.Name = "LinkLabel16"
-        Me.LinkLabel16.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel16.TabIndex = 1
-        Me.LinkLabel16.TabStop = True
-        Me.LinkLabel16.Text = "Siguiente"
-        Me.LinkLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel13
-        '
-        Me.TableLayoutPanel13.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel13.ColumnCount = 1
-        Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel13.Controls.Add(Me.LinkLabel17, 0, 1)
-        Me.TableLayoutPanel13.Controls.Add(Me.LinkLabel18, 0, 0)
-        Me.TableLayoutPanel13.Location = New System.Drawing.Point(1040, 38)
-        Me.TableLayoutPanel13.Name = "TableLayoutPanel13"
-        Me.TableLayoutPanel13.RowCount = 2
-        Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel13.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel13.TabIndex = 24
-        '
-        'LinkLabel17
-        '
-        Me.LinkLabel17.AutoSize = True
-        Me.LinkLabel17.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel17.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel17.Name = "LinkLabel17"
-        Me.LinkLabel17.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel17.TabIndex = 2
-        Me.LinkLabel17.TabStop = True
-        Me.LinkLabel17.Text = "Atrás"
-        Me.LinkLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel18
-        '
-        Me.LinkLabel18.AutoSize = True
-        Me.LinkLabel18.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel18.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel18.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel18.Name = "LinkLabel18"
-        Me.LinkLabel18.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel18.TabIndex = 1
-        Me.LinkLabel18.TabStop = True
-        Me.LinkLabel18.Text = "Siguiente"
-        Me.LinkLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel14
-        '
-        Me.TableLayoutPanel14.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel14.ColumnCount = 1
-        Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel14.Controls.Add(Me.LinkLabel19, 0, 1)
-        Me.TableLayoutPanel14.Controls.Add(Me.LinkLabel20, 0, 0)
-        Me.TableLayoutPanel14.Location = New System.Drawing.Point(1058, 44)
-        Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
-        Me.TableLayoutPanel14.RowCount = 2
-        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel14.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel14.TabIndex = 24
-        '
-        'LinkLabel19
-        '
-        Me.LinkLabel19.AutoSize = True
-        Me.LinkLabel19.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel19.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel19.Name = "LinkLabel19"
-        Me.LinkLabel19.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel19.TabIndex = 2
-        Me.LinkLabel19.TabStop = True
-        Me.LinkLabel19.Text = "Atrás"
-        Me.LinkLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel20
-        '
-        Me.LinkLabel20.AutoSize = True
-        Me.LinkLabel20.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel20.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel20.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel20.Name = "LinkLabel20"
-        Me.LinkLabel20.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel20.TabIndex = 1
-        Me.LinkLabel20.TabStop = True
-        Me.LinkLabel20.Text = "Siguiente"
-        Me.LinkLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel15
-        '
-        Me.TableLayoutPanel15.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel15.ColumnCount = 1
-        Me.TableLayoutPanel15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel15.Controls.Add(Me.LinkLabel21, 0, 1)
-        Me.TableLayoutPanel15.Controls.Add(Me.LinkLabel22, 0, 0)
-        Me.TableLayoutPanel15.Location = New System.Drawing.Point(1066, 24)
-        Me.TableLayoutPanel15.Name = "TableLayoutPanel15"
-        Me.TableLayoutPanel15.RowCount = 2
-        Me.TableLayoutPanel15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel15.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel15.TabIndex = 24
-        '
-        'LinkLabel21
-        '
-        Me.LinkLabel21.AutoSize = True
-        Me.LinkLabel21.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel21.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel21.Name = "LinkLabel21"
-        Me.LinkLabel21.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel21.TabIndex = 2
-        Me.LinkLabel21.TabStop = True
-        Me.LinkLabel21.Text = "Atrás"
-        Me.LinkLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel22
-        '
-        Me.LinkLabel22.AutoSize = True
-        Me.LinkLabel22.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel22.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel22.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel22.Name = "LinkLabel22"
-        Me.LinkLabel22.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel22.TabIndex = 1
-        Me.LinkLabel22.TabStop = True
-        Me.LinkLabel22.Text = "Siguiente"
-        Me.LinkLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel16
-        '
-        Me.TableLayoutPanel16.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel16.ColumnCount = 1
-        Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel16.Controls.Add(Me.LinkLabel23, 0, 1)
-        Me.TableLayoutPanel16.Controls.Add(Me.LinkLabel24, 0, 0)
-        Me.TableLayoutPanel16.Location = New System.Drawing.Point(1056, 17)
-        Me.TableLayoutPanel16.Name = "TableLayoutPanel16"
-        Me.TableLayoutPanel16.RowCount = 2
-        Me.TableLayoutPanel16.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel16.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel16.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel16.TabIndex = 24
-        '
-        'LinkLabel23
-        '
-        Me.LinkLabel23.AutoSize = True
-        Me.LinkLabel23.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel23.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel23.Name = "LinkLabel23"
-        Me.LinkLabel23.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel23.TabIndex = 2
-        Me.LinkLabel23.TabStop = True
-        Me.LinkLabel23.Text = "Atrás"
-        Me.LinkLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'LinkLabel24
-        '
-        Me.LinkLabel24.AutoSize = True
-        Me.LinkLabel24.ForeColor = System.Drawing.Color.Yellow
-        Me.LinkLabel24.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel24.Location = New System.Drawing.Point(3, 0)
-        Me.LinkLabel24.Name = "LinkLabel24"
-        Me.LinkLabel24.Size = New System.Drawing.Size(64, 16)
-        Me.LinkLabel24.TabIndex = 1
-        Me.LinkLabel24.TabStop = True
-        Me.LinkLabel24.Text = "Siguiente"
-        Me.LinkLabel24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TableLayoutPanel17
-        '
-        Me.TableLayoutPanel17.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel17.ColumnCount = 1
-        Me.TableLayoutPanel17.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel17.Controls.Add(Me.LinkLabel25, 0, 1)
-        Me.TableLayoutPanel17.Location = New System.Drawing.Point(1073, 21)
-        Me.TableLayoutPanel17.Name = "TableLayoutPanel17"
-        Me.TableLayoutPanel17.RowCount = 2
-        Me.TableLayoutPanel17.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel17.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel17.Size = New System.Drawing.Size(71, 44)
-        Me.TableLayoutPanel17.TabIndex = 24
-        '
-        'LinkLabel25
-        '
-        Me.LinkLabel25.AutoSize = True
-        Me.LinkLabel25.LinkColor = System.Drawing.Color.Yellow
-        Me.LinkLabel25.Location = New System.Drawing.Point(3, 22)
-        Me.LinkLabel25.Name = "LinkLabel25"
-        Me.LinkLabel25.Size = New System.Drawing.Size(39, 16)
-        Me.LinkLabel25.TabIndex = 2
-        Me.LinkLabel25.TabStop = True
-        Me.LinkLabel25.Text = "Atrás"
-        Me.LinkLabel25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        'personalGroupBox
+        '
+        Me.personalGroupBox.Controls.Add(Me.atras3LinkLabel)
+        Me.personalGroupBox.Controls.Add(Me.siguiente11LinkLabel)
+        Me.personalGroupBox.Controls.Add(Me.personalTextBox)
+        Me.personalGroupBox.ForeColor = System.Drawing.Color.White
+        Me.personalGroupBox.Location = New System.Drawing.Point(5, 12)
+        Me.personalGroupBox.Name = "personalGroupBox"
+        Me.personalGroupBox.Size = New System.Drawing.Size(1150, 476)
+        Me.personalGroupBox.TabIndex = 19
+        Me.personalGroupBox.TabStop = False
+        Me.personalGroupBox.Text = "Personal"
+        '
+        'atras3LinkLabel
+        '
+        Me.atras3LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.atras3LinkLabel.AutoSize = True
+        Me.atras3LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.atras3LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.atras3LinkLabel.Location = New System.Drawing.Point(1105, 45)
+        Me.atras3LinkLabel.Name = "atras3LinkLabel"
+        Me.atras3LinkLabel.Size = New System.Drawing.Size(39, 16)
+        Me.atras3LinkLabel.TabIndex = 25
+        Me.atras3LinkLabel.TabStop = True
+        Me.atras3LinkLabel.Text = "Atrás"
+        Me.atras3LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'siguiente11LinkLabel
+        '
+        Me.siguiente11LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.siguiente11LinkLabel.AutoSize = True
+        Me.siguiente11LinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.siguiente11LinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.siguiente11LinkLabel.Location = New System.Drawing.Point(1080, 15)
+        Me.siguiente11LinkLabel.Name = "siguiente11LinkLabel"
+        Me.siguiente11LinkLabel.Size = New System.Drawing.Size(64, 16)
+        Me.siguiente11LinkLabel.TabIndex = 8
+        Me.siguiente11LinkLabel.TabStop = True
+        Me.siguiente11LinkLabel.Text = "Siguiente"
+        Me.siguiente11LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'personalTextBox
+        '
+        Me.personalTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.personalTextBox.Location = New System.Drawing.Point(7, 25)
+        Me.personalTextBox.Multiline = True
+        Me.personalTextBox.Name = "personalTextBox"
+        Me.personalTextBox.Size = New System.Drawing.Size(936, 443)
+        Me.personalTextBox.TabIndex = 0
         '
         'OperacionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
-        Me.ClientSize = New System.Drawing.Size(1184, 595)
+        Me.ClientSize = New System.Drawing.Size(1184, 602)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "OperacionForm"
@@ -3555,63 +3527,61 @@ Partial Class OperacionForm
         Me.Controls.SetChildIndex(Me.TituloLabel, 0)
         Me.Controls.SetChildIndex(Me.Panel1, 0)
         Me.Panel1.ResumeLayout(False)
-        CType(Me.SegundosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SegundosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SegundosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SegundosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.segundosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.segundosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.segundosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.segundosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Operaciones1GroupBox.ResumeLayout(False)
-        Me.Operaciones1GroupBox.PerformLayout()
-        Me.TableLayoutPanel3.ResumeLayout(False)
-        Me.TableLayoutPanel3.PerformLayout()
-        Me.ToeGroupBox.ResumeLayout(False)
-        Me.ToeGroupBox.PerformLayout()
+        Me.operacionGroupBox.ResumeLayout(False)
+        Me.operacionGroupBox.PerformLayout()
+        Me.misionGroupBox.ResumeLayout(False)
+        Me.misionGroupBox.PerformLayout()
+        Me.toeGroupBox.ResumeLayout(False)
+        Me.toeGroupBox.PerformLayout()
+        CType(Me.oficialesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CivilesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SuboficialesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.imrNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.impNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SuboficialesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OficialesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.CoordenadasGroupBox.ResumeLayout(False)
-        Me.CoordenadasGroupBox.PerformLayout()
-        Me.TableLayoutPanel2.ResumeLayout(False)
-        Me.TableLayoutPanel2.PerformLayout()
-        CType(Me.MinutosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GradosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GradosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MinutosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
-        CType(Me.MinutosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GradosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GradosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MinutosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.coordenadasGroupBox.ResumeLayout(False)
+        Me.coordenadasGroupBox.PerformLayout()
+        Me.punto3TableLayoutPanel.ResumeLayout(False)
+        Me.punto3TableLayoutPanel.PerformLayout()
+        CType(Me.minutosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gradosLng3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gradosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.minutosLat3NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.punto1TableLayoutPanel.ResumeLayout(False)
+        Me.punto1TableLayoutPanel.PerformLayout()
+        CType(Me.minutosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gradosLgn1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gradosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.minutosLat1NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Ejecucion1GroupBox.ResumeLayout(False)
         Me.Ejecucion1GroupBox.PerformLayout()
+        Me.conceptoOperacionGroupBox.ResumeLayout(False)
+        Me.conceptoOperacionGroupBox.PerformLayout()
         Me.Ejecucion2GroupBox.ResumeLayout(False)
         Me.Ejecucion2GroupBox.PerformLayout()
-        Me.Ejecucion3GroupBox.ResumeLayout(False)
-        Me.Ejecucion3GroupBox.PerformLayout()
-        Me.Ejecucion4GroupBox.ResumeLayout(False)
-        Me.Ejecucion4GroupBox.PerformLayout()
-        Me.Ejecucion5GroupBox.ResumeLayout(False)
-        Me.Ejecucion5GroupBox.PerformLayout()
-        Me.Ejecucion6GroupBox.ResumeLayout(False)
-        Me.Ejecucion6GroupBox.PerformLayout()
-        Me.AbastecimientosGroupBox.ResumeLayout(False)
-        Me.AbastecimientosGroupBox.PerformLayout()
-        Me.ComunicacionesGroupBox.ResumeLayout(False)
-        Me.ComunicacionesGroupBox.PerformLayout()
-        Me.OtrosComGroupBox.ResumeLayout(False)
-        Me.OtrosComGroupBox.PerformLayout()
+        Me.juridicasGroupBox.ResumeLayout(False)
+        Me.juridicasGroupBox.PerformLayout()
+        Me.serviciosCombateGroupBox.ResumeLayout(False)
+        Me.serviciosCombateGroupBox.PerformLayout()
+        Me.comunicacionesGroupBox.ResumeLayout(False)
+        Me.comunicacionesGroupBox.PerformLayout()
+        Me.indicativosGroupBox.ResumeLayout(False)
+        Me.indicativosGroupBox.PerformLayout()
+        Me.otrosComGroupBox.ResumeLayout(False)
+        Me.otrosComGroupBox.PerformLayout()
         Me.UHFGroupBox.ResumeLayout(False)
         Me.UHFGroupBox.PerformLayout()
         CType(Me.uhfEscanerNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.uhfXTR3000NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.uhfXTS4250NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.HFGroupBox.ResumeLayout(False)
-        Me.HFGroupBox.PerformLayout()
+        Me.hfGroupBox.ResumeLayout(False)
+        Me.hfGroupBox.PerformLayout()
         CType(Me.hfEscanerNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.hf6020NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.VHFGroupBox.ResumeLayout(False)
@@ -3621,76 +3591,56 @@ Partial Class OperacionForm
         CType(Me.vhf930NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.vhf710NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.vhf7330NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ArmamentoGroupBox.ResumeLayout(False)
-        Me.MorterosGroupBox.ResumeLayout(False)
-        Me.MorterosGroupBox.PerformLayout()
+        Me.armamentoGroupBox.ResumeLayout(False)
+        Me.armamentoGroupBox.PerformLayout()
+        Me.morterosGroupBox.ResumeLayout(False)
+        Me.morterosGroupBox.PerformLayout()
         CType(Me.m_brandt_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mc_fms_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mc_c575_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mc_c370_60mmNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LanzagranadasGroupBox.ResumeLayout(False)
-        Me.LanzagranadasGroupBox.PerformLayout()
-        CType(Me.M203NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.M79NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MKNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MGLNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GranadasGroupBox.ResumeLayout(False)
-        Me.GranadasGroupBox.PerformLayout()
-        CType(Me.LacrimogenoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HumoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ManoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FusilesGroupBox.ResumeLayout(False)
-        Me.FusilesGroupBox.PerformLayout()
-        CType(Me.m16NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GalilNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.EquiposEspecialesGroupBox.ResumeLayout(False)
-        Me.EquiposEspecialesGroupBox.PerformLayout()
-        CType(Me.KitOrientacionNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.FlasmersNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CamaraTermicaNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BinocularesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VisorNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.AmetralladorasGroupBox.ResumeLayout(False)
-        Me.AmetralladorasGroupBox.PerformLayout()
-        CType(Me.Punto50NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.lanzagranadasGroupBox.ResumeLayout(False)
+        Me.lanzagranadasGroupBox.PerformLayout()
+        CType(Me.m79NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mkNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mglNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.granadasGroupBox.ResumeLayout(False)
+        Me.granadasGroupBox.PerformLayout()
+        CType(Me.lacrimogenaNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.humoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.manoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.fusilesGroupBox.ResumeLayout(False)
+        Me.fusilesGroupBox.PerformLayout()
+        CType(Me.m16_a203NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.m16_m4NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.m16_a2NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.galil_iceNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.galil_arNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.equiposEspecialesGroupBox.ResumeLayout(False)
+        Me.equiposEspecialesGroupBox.PerformLayout()
+        CType(Me.kitOrientacionNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.flasmersNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.camaraTermicaNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.binocularesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.visorNocturnoNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ametralladorasGroupBox.ResumeLayout(False)
+        Me.ametralladorasGroupBox.PerformLayout()
+        CType(Me.punto50NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ss77NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.M249NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.m60E4NumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.m60EstandarNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Operaciones2GroupBox.ResumeLayout(False)
-        Me.Operaciones2GroupBox.PerformLayout()
-        Me.FirmasGroupBox.ResumeLayout(False)
-        Me.FirmasGroupBox.PerformLayout()
-        Me.AnexosGroupBox.ResumeLayout(False)
-        CType(Me.AnexosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.TableLayoutPanel4.PerformLayout()
-        Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.TableLayoutPanel5.PerformLayout()
-        Me.TableLayoutPanel6.ResumeLayout(False)
-        Me.TableLayoutPanel6.PerformLayout()
-        Me.TableLayoutPanel7.ResumeLayout(False)
-        Me.TableLayoutPanel7.PerformLayout()
-        Me.TableLayoutPanel8.ResumeLayout(False)
-        Me.TableLayoutPanel8.PerformLayout()
-        Me.TableLayoutPanel9.ResumeLayout(False)
-        Me.TableLayoutPanel9.PerformLayout()
-        Me.TableLayoutPanel10.ResumeLayout(False)
-        Me.TableLayoutPanel10.PerformLayout()
-        Me.TableLayoutPanel11.ResumeLayout(False)
-        Me.TableLayoutPanel11.PerformLayout()
-        Me.TableLayoutPanel12.ResumeLayout(False)
-        Me.TableLayoutPanel12.PerformLayout()
-        Me.TableLayoutPanel13.ResumeLayout(False)
-        Me.TableLayoutPanel13.PerformLayout()
-        Me.TableLayoutPanel14.ResumeLayout(False)
-        Me.TableLayoutPanel14.PerformLayout()
-        Me.TableLayoutPanel15.ResumeLayout(False)
-        Me.TableLayoutPanel15.PerformLayout()
-        Me.TableLayoutPanel16.ResumeLayout(False)
-        Me.TableLayoutPanel16.PerformLayout()
-        Me.TableLayoutPanel17.ResumeLayout(False)
-        Me.TableLayoutPanel17.PerformLayout()
+        Me.situacionGroupBox.ResumeLayout(False)
+        Me.situacionGroupBox.PerformLayout()
+        Me.firmasGroupBox.ResumeLayout(False)
+        Me.firmasGroupBox.PerformLayout()
+        Me.distribucionGroupBox.ResumeLayout(False)
+        Me.distribucionGroupBox.PerformLayout()
+        Me.anexosGroupBox.ResumeLayout(False)
+        Me.anexosGroupBox.PerformLayout()
+        CType(Me.anexosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.personalGroupBox.ResumeLayout(False)
+        Me.personalGroupBox.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3701,19 +3651,15 @@ Partial Class OperacionForm
     Friend WithEvents GuardarTodoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CancelarTodoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
-    Friend WithEvents Operaciones1GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents OperacionTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Nombre_operacionTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ProcedimientoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Fecha_operacionDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Autoriza_deTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Comandante_operacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents operacionGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents operacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents nombre_operacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents fecha_operacionDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents deTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents accTextBox As System.Windows.Forms.TextBox
     Friend WithEvents IndicativoTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ReferenciasRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents SituacionRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents ToeGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents AgregacionesRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents AgregacionesLabel As System.Windows.Forms.Label
+    Friend WithEvents referenciasRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents misionGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents CivilesNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents CivilesLabel As System.Windows.Forms.Label
     Friend WithEvents imrNumericUpDown As System.Windows.Forms.NumericUpDown
@@ -3722,78 +3668,53 @@ Partial Class OperacionForm
     Friend WithEvents impLabel As System.Windows.Forms.Label
     Friend WithEvents SuboficialesNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents SuboficialesLabel As System.Windows.Forms.Label
-    Friend WithEvents OficialesNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents OficialesLabel As System.Windows.Forms.Label
-    Friend WithEvents Operaciones1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents TOEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CoordenadasGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents Punto3Label As System.Windows.Forms.Label
-    Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents SegundosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents MinutosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents GradosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Latitud3Label As System.Windows.Forms.Label
-    Friend WithEvents GradosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Grados3Label As System.Windows.Forms.Label
-    Friend WithEvents Minutos3Label As System.Windows.Forms.Label
-    Friend WithEvents Segundos3Label As System.Windows.Forms.Label
-    Friend WithEvents MinutosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents SegundosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Longitud3Label As System.Windows.Forms.Label
-    Friend WithEvents Punto1Label As System.Windows.Forms.Label
-    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents SegundosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents MinutosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents GradosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Latitud1Label As System.Windows.Forms.Label
-    Friend WithEvents GradosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Grados1Label As System.Windows.Forms.Label
-    Friend WithEvents Minutos1Label As System.Windows.Forms.Label
-    Friend WithEvents Segundos1Label As System.Windows.Forms.Label
-    Friend WithEvents MinutosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents SegundosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Longitud1Label As System.Windows.Forms.Label
+    Friend WithEvents oficialesNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents oficialesLabel As System.Windows.Forms.Label
+    Friend WithEvents OperacionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents misionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents coordenadasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents punto3Label As System.Windows.Forms.Label
+    Friend WithEvents punto3TableLayoutPanel As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents segundosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents minutosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents gradosLng3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents latitud3Label As System.Windows.Forms.Label
+    Friend WithEvents gradosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents grados3Label As System.Windows.Forms.Label
+    Friend WithEvents minutos3Label As System.Windows.Forms.Label
+    Friend WithEvents segundos3Label As System.Windows.Forms.Label
+    Friend WithEvents minutosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents segundosLat3NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents longitud3Label As System.Windows.Forms.Label
+    Friend WithEvents punto1Label As System.Windows.Forms.Label
+    Friend WithEvents punto1TableLayoutPanel As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents segundosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents minutosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents gradosLgn1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents latitud1Label As System.Windows.Forms.Label
+    Friend WithEvents gradosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents grados1Label As System.Windows.Forms.Label
+    Friend WithEvents minutos1Label As System.Windows.Forms.Label
+    Friend WithEvents segundos1Label As System.Windows.Forms.Label
+    Friend WithEvents minutosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents segundosLat1NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents longitud1Label As System.Windows.Forms.Label
     Friend WithEvents CoordenadasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Ejecucion1GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents ConceptoRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents IntencionComandanteRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents IntencionComandanteLabel As System.Windows.Forms.Label
+    Friend WithEvents intencionComandanteLabel As System.Windows.Forms.Label
     Friend WithEvents EjecucionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Ejecucion1ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Ejecucion2GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents FuegosRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents FuegosLabel As System.Windows.Forms.Label
-    Friend WithEvents ManiobraRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents maniobraLabel As System.Windows.Forms.Label
+    Friend WithEvents tareasManiobraLabel As System.Windows.Forms.Label
     Friend WithEvents Ejecucion2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Ejecucion3ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Ejecucion4ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Ejecucion5ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Ejecucion6ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Ejecucion3GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents TareasCombateRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents TareasCombateLabel As System.Windows.Forms.Label
-    Friend WithEvents TareasManiobraRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents TareasManiobraLabel As System.Windows.Forms.Label
-    Friend WithEvents Ejecucion4GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents NivelHostilidadRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents NivelHostilidadLabel As System.Windows.Forms.Label
-    Friend WithEvents InstruccionesCoordinacionRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents InstruccionesCoordinacionLabel As System.Windows.Forms.Label
-    Friend WithEvents Ejecucion5GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents PrincipiosRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents PrincipiosLabel As System.Windows.Forms.Label
-    Friend WithEvents MarcoJuridicoRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents MarcoJuridicoLabel As System.Windows.Forms.Label
-    Friend WithEvents Ejecucion6GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents InstruccionesEspecialesRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents InstruccionesEspecialesLabel As System.Windows.Forms.Label
-    Friend WithEvents UsoFuerzaRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents juridicasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents instruccionesJuridicasRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents instruccionesJuridicasLabel As System.Windows.Forms.Label
+    Friend WithEvents usoFuerzaRichTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents UsoFuerzaLabel As System.Windows.Forms.Label
     Friend WithEvents TarjetaAzulRadioButton As System.Windows.Forms.RadioButton
     Friend WithEvents TarjetaRojaRadioButton As System.Windows.Forms.RadioButton
-    Friend WithEvents AbastecimientosGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents serviciosCombateGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents Clase1RichTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents Clase1Label As System.Windows.Forms.Label
     Friend WithEvents Clase6RichTextBox As System.Windows.Forms.RichTextBox
@@ -3806,10 +3727,10 @@ Partial Class OperacionForm
     Friend WithEvents Clase3Label As System.Windows.Forms.Label
     Friend WithEvents Clase2RichTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents Clase2Label As System.Windows.Forms.Label
-    Friend WithEvents EvacuacionesMedicasRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents EvacuacionesMedicasLabel As System.Windows.Forms.Label
-    Friend WithEvents AbastecimientosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ComunicacionesGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents evacuacionesMedicasRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents evacuacionesMedicasLabel As System.Windows.Forms.Label
+    Friend WithEvents serviciosCombateToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents comunicacionesGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents VHFGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents vhfEscanerNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents vhfEscanerLabel As System.Windows.Forms.Label
@@ -3821,7 +3742,7 @@ Partial Class OperacionForm
     Friend WithEvents vhf710Label As System.Windows.Forms.Label
     Friend WithEvents vhf7330NumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents vhf7330Label As System.Windows.Forms.Label
-    Friend WithEvents HFGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents hfGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents hfEscanerNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents hfEscanerLabel As System.Windows.Forms.Label
     Friend WithEvents hf6020NumericUpDown As System.Windows.Forms.NumericUpDown
@@ -3832,37 +3753,37 @@ Partial Class OperacionForm
     Friend WithEvents uhfXTR3000NumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents uhfXTR3000Label As System.Windows.Forms.Label
     Friend WithEvents uhfXTS4250NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents xts4250Label As System.Windows.Forms.Label
-    Friend WithEvents OtrosComGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents uhfXTS4250Label As System.Windows.Forms.Label
+    Friend WithEvents otrosComGroupBox As System.Windows.Forms.GroupBox
     Friend WithEvents ClaveLabel As System.Windows.Forms.Label
-    Friend WithEvents SatelitalLabel As System.Windows.Forms.Label
+    Friend WithEvents satelitalLabel As System.Windows.Forms.Label
     Friend WithEvents CelularLabel As System.Windows.Forms.Label
     Friend WithEvents AvantelLabel As System.Windows.Forms.Label
     Friend WithEvents ClaveComTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents SatelitalTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents satelitalTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CelularTextBox As System.Windows.Forms.TextBox
     Friend WithEvents AvantelTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ComunicacionesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ArmamentoGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents LanzagranadasGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents MKNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents MKLabel As System.Windows.Forms.Label
-    Friend WithEvents MGLNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents MGLLabel As System.Windows.Forms.Label
-    Friend WithEvents GranadasGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents FusilesGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents m16NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents m16Label As System.Windows.Forms.Label
-    Friend WithEvents GalilNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents GalilLabel As System.Windows.Forms.Label
-    Friend WithEvents EquiposEspecialesGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents BinocularesNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents BinocularesLabel As System.Windows.Forms.Label
-    Friend WithEvents VisorNocturnoNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents VisorNocturnoLabel As System.Windows.Forms.Label
-    Friend WithEvents AmetralladorasGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents Punto50NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Punto50Label As System.Windows.Forms.Label
+    Friend WithEvents armamentoGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents lanzagranadasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents mkNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents mkLabel As System.Windows.Forms.Label
+    Friend WithEvents mglNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents mglLabel As System.Windows.Forms.Label
+    Friend WithEvents granadasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents fusilesGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents galil_iceNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents galil_iceLabel As System.Windows.Forms.Label
+    Friend WithEvents galil_arNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents galil_arLabel As System.Windows.Forms.Label
+    Friend WithEvents equiposEspecialesGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents binocularesNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents binocularesLabel As System.Windows.Forms.Label
+    Friend WithEvents visorNocturnoNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents visorNocturnoLabel As System.Windows.Forms.Label
+    Friend WithEvents ametralladorasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents punto50NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents punto50Label As System.Windows.Forms.Label
     Friend WithEvents ss77NumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents ss77Label As System.Windows.Forms.Label
     Friend WithEvents M249NumericUpDown As System.Windows.Forms.NumericUpDown
@@ -3872,52 +3793,45 @@ Partial Class OperacionForm
     Friend WithEvents m60EstandarNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents m60EstandarLabel As System.Windows.Forms.Label
     Friend WithEvents ArmamentoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents KitOrientacionNocturnoNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents KitOrientacionNocturnoLabel As System.Windows.Forms.Label
-    Friend WithEvents FlasmersNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents FlasmersLabel As System.Windows.Forms.Label
-    Friend WithEvents CamaraTermicaNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CamaraTermicaLabel As System.Windows.Forms.Label
-    Friend WithEvents OtrosEquiposTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OtrosEquiposLabel As System.Windows.Forms.Label
-    Friend WithEvents OtrasGranadasTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OtrasGranadasLabel As System.Windows.Forms.Label
-    Friend WithEvents LacrimogenoNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents LacrimogenoLabel As System.Windows.Forms.Label
-    Friend WithEvents HumoNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents HumoLabel As System.Windows.Forms.Label
-    Friend WithEvents ManoNumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents ManoLabel As System.Windows.Forms.Label
-    Friend WithEvents M203NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents M203Label As System.Windows.Forms.Label
-    Friend WithEvents M79NumericUpDown As System.Windows.Forms.NumericUpDown
-    Friend WithEvents M79Label As System.Windows.Forms.Label
-    Friend WithEvents Operaciones2GroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents Propias_tropasRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents MisionRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents Operaciones2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents FirmasGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents RecibeRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents AutenticaRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents AutorizaRichTextBox As System.Windows.Forms.RichTextBox
-    Friend WithEvents AnexosGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents AgregarAnexoButton As System.Windows.Forms.Button
+    Friend WithEvents kitOrientacionNocturnoNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents kitOrientacionNocturnoLabel As System.Windows.Forms.Label
+    Friend WithEvents flasmersNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents flasmersLabel As System.Windows.Forms.Label
+    Friend WithEvents camaraTermicaNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents camaraTermicaLabel As System.Windows.Forms.Label
+    Friend WithEvents otrosEquiposTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrosEquiposLabel As System.Windows.Forms.Label
+    Friend WithEvents otrasGranadasTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrasGranadasLabel As System.Windows.Forms.Label
+    Friend WithEvents lacrimogenaNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents lacrimogenaLabel As System.Windows.Forms.Label
+    Friend WithEvents humoNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents humoLabel As System.Windows.Forms.Label
+    Friend WithEvents manoNumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents manoLabel As System.Windows.Forms.Label
+    Friend WithEvents m79NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents m79Label As System.Windows.Forms.Label
+    Friend WithEvents situacionGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents detalleSituacionRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents situacionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents firmasGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents anexosGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents agregarAnexoButton As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents QuitarButton As System.Windows.Forms.Button
-    Friend WithEvents AnexosDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents quitarButton As System.Windows.Forms.Button
+    Friend WithEvents anexosDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents nombreArchivo As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents ruta As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents AnexosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FirmasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ComplementosTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ComplementosLabel As System.Windows.Forms.Label
-    Friend WithEvents OtrasAmetralladorasTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OtrassAmetralladorasLabel As System.Windows.Forms.Label
-    Friend WithEvents OtrosFusilesTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OtrosFusilesLabel As System.Windows.Forms.Label
-    Friend WithEvents MorterosGroupBox As System.Windows.Forms.GroupBox
-    Friend WithEvents OtrosMorterosTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents OtrosMorterosLabel As System.Windows.Forms.Label
+    Friend WithEvents indicativosTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrasAmetralladorasTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrasAmetralladorasLabel As System.Windows.Forms.Label
+    Friend WithEvents otrosFusilesTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrosFusilesLabel As System.Windows.Forms.Label
+    Friend WithEvents morterosGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents otrosMorterosTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrosMorterosLabel As System.Windows.Forms.Label
     Friend WithEvents mc_c575_60mmNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents mc_c575_60mmLabel As System.Windows.Forms.Label
     Friend WithEvents mc_c370_60mmNumericUpDown As System.Windows.Forms.NumericUpDown
@@ -3926,47 +3840,84 @@ Partial Class OperacionForm
     Friend WithEvents m_brandt_60mmLabel As System.Windows.Forms.Label
     Friend WithEvents mc_fms_60mmNumericUpDown As System.Windows.Forms.NumericUpDown
     Friend WithEvents mc_fms_60mmLabel As System.Windows.Forms.Label
-    Friend WithEvents TableLayoutPanel3 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents Operaciones2LinkLabel As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel4 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents Operaciones1LinkLabel As System.Windows.Forms.LinkLabel
-    Friend WithEvents toeLinkLabel As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel6 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel5 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents siguiente1LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente3LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents procedimientoComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents lugarTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents segregacionesSituacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents agregacionesSituacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents propiasTropasTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents enemigoTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents misionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents misionLabel As System.Windows.Forms.Label
+    Friend WithEvents toeGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents segregacionesToeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents segregacionesToeLabel As System.Windows.Forms.Label
+    Friend WithEvents agregacionesToeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents agregacionesToeLabel As System.Windows.Forms.Label
+    Friend WithEvents conceptoOperacionGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents fuegosTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents fuegosLabel As System.Windows.Forms.Label
+    Friend WithEvents maniobraTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents maniobraLabel As System.Windows.Forms.Label
+    Friend WithEvents conceptoOperacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents intencionComandanteTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents instruccionesCoordinacionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents instruccionesCoordinacionLabel As System.Windows.Forms.Label
+    Friend WithEvents tareasCombateTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents tareasCombateLabel As System.Windows.Forms.Label
+    Friend WithEvents tareasManiobraTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents juridicasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents uhfCantidadLabel As System.Windows.Forms.Label
+    Friend WithEvents uhfXTR3000TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents uhfFrecuenciaLabel As System.Windows.Forms.Label
+    Friend WithEvents uhfXTS4250TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents vhfCantidadLabel As System.Windows.Forms.Label
+    Friend WithEvents vhfAereoTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents vhf930TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents vhf710TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents vhfFrecuenciaLabel As System.Windows.Forms.Label
+    Friend WithEvents vhf7330TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents indicativosGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents hfCantidadLabel As System.Windows.Forms.Label
+    Friend WithEvents hfFrecuenciaLabel As System.Windows.Forms.Label
+    Friend WithEvents hf6020TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrosLanzagranadasTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents otrosLanzagranadasLabel As System.Windows.Forms.Label
+    Friend WithEvents m16_a203Label As System.Windows.Forms.Label
+    Friend WithEvents m16_m4Label As System.Windows.Forms.Label
+    Friend WithEvents m16_a2Label As System.Windows.Forms.Label
+    Friend WithEvents m16_a203NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents m16_m4NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents m16_a2NumericUpDown As System.Windows.Forms.NumericUpDown
+    Friend WithEvents personalGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents personalTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents PersonalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents distribucionGroupBox As System.Windows.Forms.GroupBox
+    Friend WithEvents distribucionTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents recibeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents autenticaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents autorizaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents siguiente2LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente4LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente5LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente6LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente7LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente8LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente9LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente10LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente11LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents siguiente12LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras2LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras4LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras3LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras1LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras10LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras9LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras8LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras7LinkLabel As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel17 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel25 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel16 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel23 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel24 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel15 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel21 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel22 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel14 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel19 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel20 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel13 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel17 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel18 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel12 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel15 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel16 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel11 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel13 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel14 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel10 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel11 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel12 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel9 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel9 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel10 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel8 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel7 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel8 As System.Windows.Forms.LinkLabel
-    Friend WithEvents TableLayoutPanel7 As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel6 As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras6LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras5LinkLabel As System.Windows.Forms.LinkLabel
+    Friend WithEvents atras11LinkLabel As System.Windows.Forms.LinkLabel
 End Class

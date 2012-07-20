@@ -46,16 +46,18 @@ Public Class InteligenciaForm
     Private Sub GuardarInteligenciaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GuardarInteligenciaToolStripMenuItem.Click
         Try
             If Me.Validate Then
-                Dim DS As New bdmarinaDataSet
-                Dim TAInteligencia As New bdmarinaDataSetTableAdapters.inteligenciasTableAdapter
-                TAInteligencia.Insert(CodigoTextBox.Text, _
-                            getLatitud(GradosLatNumericUpDown.Value, MinutosLatNumericUpDown.Value, SegundosLatNumericUpDown.Value), _
-                            getLongitud(GradosLgnNumericUpDown.Value, MinutosLgnNumericUpDown.Value, SegundosLgnNumericUpDown.Value), _
-                            NombreLugarTextBox.Text, _
-                            BlancoComboBox.Text, _
-                            FechaHechosDateTimePicker.Value, _
-                            getActividades, _
-                            AnotacionesRichTextBox.Text)
+                Dim DS As New bdinfanteriaDataSet
+                Dim TAInteligencia As New bdinfanteriaDataSetTableAdapters.inteligenciasTableAdapter
+                TAInteligencia.Insert( _
+                    codigo:=CodigoTextBox.Text, _
+                    latitud:=getLatitud(GradosLatNumericUpDown.Value, MinutosLatNumericUpDown.Value, SegundosLatNumericUpDown.Value), _
+                    longitud:=getLongitud(GradosLgnNumericUpDown.Value, MinutosLgnNumericUpDown.Value, SegundosLgnNumericUpDown.Value), _
+                    nombre_lugar:=NombreLugarTextBox.Text, _
+                    blanco:=BlancoComboBox.Text, _
+                    fecha_hechos:=FechaHechosDateTimePicker.Value, _
+                    actividades:=getActividades(), _
+                    anotaciones:=AnotacionesRichTextBox.Text)
+
                 MsgBox("Registro de inteligencia guardado con éxito", MsgBoxStyle.Information)
                 Me.Close()
             End If

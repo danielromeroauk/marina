@@ -98,13 +98,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="bdmarinaDataSet.Designer.vb">
+    <Compile Include="bdinfanteriaDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>bdmarinaDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bdmarinaDataSet.vb">
-      <DependentUpon>bdmarinaDataSet.xsd</DependentUpon>
+      <DependentUpon>bdinfanteriaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="CambiarClaveForm.Designer.vb">
       <DependentUpon>CambiarClaveForm.vb</DependentUpon>
@@ -217,16 +214,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="bdmarinaDataSet.xsc">
-      <DependentUpon>bdmarinaDataSet.xsd</DependentUpon>
+    <None Include="bdinfanteriaDataSet.xsc">
+      <DependentUpon>bdinfanteriaDataSet.xsd</DependentUpon>
     </None>
-    <None Include="bdmarinaDataSet.xsd">
+    <None Include="bdinfanteriaDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bdmarinaDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>bdinfanteriaDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="bdmarinaDataSet.xss">
-      <DependentUpon>bdmarinaDataSet.xsd</DependentUpon>
+    <None Include="bdinfanteriaDataSet.xss">
+      <DependentUpon>bdinfanteriaDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">

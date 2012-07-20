@@ -36,8 +36,8 @@ Partial Class ListaOperacionesForm
         Me.PropiastropasDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MisionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OperacionesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BdmarinaDataSet = New Marina.bdmarinaDataSet()
-        Me.OperacionesTableAdapter = New Marina.bdmarinaDataSetTableAdapters.operacionesTableAdapter()
+        Me.BdmarinaDataSet = New Marina.bdinfanteriaDataSet()
+        Me.OperacionesTableAdapter = New Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter()
         Me.FiltroTextBox = New System.Windows.Forms.TextBox()
         Me.FiltrarButton = New System.Windows.Forms.Button()
         Me.CancelarButton = New System.Windows.Forms.Button()
@@ -240,9 +240,9 @@ Partial Class ListaOperacionesForm
 
     End Sub
     Friend WithEvents OperacionesDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents BdmarinaDataSet As Marina.bdmarinaDataSet
+    Friend WithEvents BdmarinaDataSet As Marina.bdinfanteriaDataSet
     Friend WithEvents OperacionesBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents OperacionesTableAdapter As Marina.bdmarinaDataSetTableAdapters.operacionesTableAdapter
+    Friend WithEvents OperacionesTableAdapter As Marina.bdinfanteriaDataSetTableAdapters.operacionesTableAdapter
     Friend WithEvents FiltrarButton As System.Windows.Forms.Button
     Friend WithEvents FiltroTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CancelarButton As System.Windows.Forms.Button

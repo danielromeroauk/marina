@@ -20,11 +20,11 @@
 
     Private Sub EntrarButton_Click(sender As System.Object, e As System.EventArgs) Handles EntrarButton.Click
         Try
-            Dim DS As New bdmarinaDataSet
-            Dim TAUsuarios As New bdmarinaDataSetTableAdapters.usuariosTableAdapter
-            TAUsuarios.FillByLogin(DS.usuarios, IdTextBox.Text, ClaveTextBox.Text)
+            Dim DS As New bdinfanteriaDataSet
+            Dim TALogin As New bdinfanteriaDataSetTableAdapters.LoginTableAdapter
+            TALogin.Fill(DS.Login, IdTextBox.Text, ClaveTextBox.Text)
 
-            If DS.usuarios.Rows.Count > 0 Then
+            If DS.Login.Rows.Count > 0 Then
                 Me._login = Windows.Forms.DialogResult.OK
                 userId = IdTextBox.Text
                 userClave = ClaveTextBox.Text

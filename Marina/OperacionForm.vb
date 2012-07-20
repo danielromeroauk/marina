@@ -6,8 +6,10 @@ Imports Microsoft.VisualBasic.FileIO
 Public Class OperacionForm
 
     'TODO: 
-    'Size del group: 950, 476
+    'Size del Group: 1150, 476
     'Location Group: 5, 12
+    'Location siguienteLinkLabel: 1080, 15
+    'Location atrasLinkLabel: 1105, 45
 
     Private Sub GuardarTodoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GuardarTodoToolStripMenuItem.Click
         Try
@@ -15,113 +17,168 @@ Public Class OperacionForm
 
                 If Me.Validate And Me.camposDiligenciados Then
 
-                    Dim TAOperacion As New bdmarinaDataSetTableAdapters.operacionesTableAdapter
-                    TAOperacion.Insert(OperacionTextBox.Text, Nombre_operacionTextBox.Text, ProcedimientoTextBox.Text, Fecha_operacionDateTimePicker.Value, Autoriza_deTextBox.Text, Comandante_operacionTextBox.Text, IndicativoTextBox.Text, ReferenciasRichTextBox.Text, SituacionRichTextBox.Text, Propias_tropasRichTextBox.Text, MisionRichTextBox.Text)
+                    Dim TAOperacion As New bdinfanteriaDataSetTableAdapters.operacionesTableAdapter
+                    TAOperacion.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        nombre:=nombre_operacionTextBox.Text, _
+                        procedimiento:=procedimientoComboBox.Text, _
+                        lugar:=lugarTextBox.Text, _
+                        fecha:=fecha_operacionDateTimePicker.Value, _
+                        de:=deTextBox.Text, _
+                        acc:=accTextBox.Text, _
+                        indicativo:=IndicativoTextBox.Text, _
+                        referencias:=referenciasRichTextBox.Text)
 
-                    Dim TAToe As New bdmarinaDataSetTableAdapters.toeTableAdapter
-                    TAToe.Insert(OperacionTextBox.Text, OficialesNumericUpDown.Value, SuboficialesNumericUpDown.Value, impNumericUpDown.Value, imrNumericUpDown.Value, CivilesNumericUpDown.Value, AgregacionesRichTextBox.Text)
+                    Dim TASituacion As New bdinfanteriaDataSetTableAdapters.situacionTableAdapter
+                    TASituacion.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        detalle:=detalleSituacionRichTextBox.Text, _
+                        enemigo:=enemigoTextBox.Text, _
+                        propias_tropas:=propiasTropasTextBox.Text, _
+                        agregaciones:=agregacionesSituacionTextBox.Text, _
+                        segregaciones:=segregacionesSituacionTextBox.Text)
 
-                    Dim TACoordenadas As New bdmarinaDataSetTableAdapters.coordenadasTableAdapter
-                    TACoordenadas.Insert(OperacionTextBox.Text, _
-                                        getLatitud(GradosLat1NumericUpDown.Value, MinutosLat1NumericUpDown.Value, SegundosLat1NumericUpDown.Value), _
-                                        getLongitud(GradosLgn1NumericUpDown.Value, MinutosLgn1NumericUpDown.Value, SegundosLgn1NumericUpDown.Value), _
-                                        getLatitud(GradosLat3NumericUpDown.Value, MinutosLat3NumericUpDown.Value, SegundosLat3NumericUpDown.Value), _
-                                        getLongitud(GradosLng3NumericUpDown.Value, MinutosLng3NumericUpDown.Value, SegundosLng3NumericUpDown.Value))
+                    Dim TAMision As New bdinfanteriaDataSetTableAdapters.misionTableAdapter
+                    TAMision.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        detalle:=misionTextBox.Text)
 
-                    Dim TAEjecucion As New bdmarinaDataSetTableAdapters.ejecucionTableAdapter
-                    TAEjecucion.Insert(OperacionTextBox.Text, _
-                                       IntencionComandanteRichTextBox.Text, _
-                                       ConceptoRichTextBox.Text, _
-                                       ManiobraRichTextBox.Text, _
-                                       FuegosRichTextBox.Text, _
-                                       TareasManiobraRichTextBox.Text, _
-                                       TareasCombateRichTextBox.Text, _
-                                       InstruccionesCoordinacionRichTextBox.Text, _
-                                       NivelHostilidadRichTextBox.Text, _
-                                       MarcoJuridicoRichTextBox.Text, _
-                                       PrincipiosRichTextBox.Text, _
-                                       UsoFuerzaRichTextBox.Text, _
-                                       InstruccionesEspecialesRichTextBox.Text)
+                    Dim TAToe As New bdinfanteriaDataSetTableAdapters.toeTableAdapter
+                    TAToe.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        oficiales:=oficialesNumericUpDown.Value, _
+                        suboficiales:=SuboficialesNumericUpDown.Value, _
+                        imp:=impNumericUpDown.Value, _
+                        imr:=imrNumericUpDown.Value, _
+                        civiles:=CivilesNumericUpDown.Value, _
+                        agregaciones:=agregacionesToeTextBox.Text, _
+                        segregaciones:=segregacionesToeTextBox.Text)
 
-                    Dim TAAbastecimientos As New bdmarinaDataSetTableAdapters.abastecimientosTableAdapter
-                    TAAbastecimientos.Insert(OperacionTextBox.Text, _
-                                             Clase1RichTextBox.Text, _
-                                             Clase2RichTextBox.Text, _
-                                             Clase3RichTextBox.Text, _
-                                             Clase4RichTextBox.Text, _
-                                             Clase5RichTextBox.Text, _
-                                             Clase6RichTextBox.Text, _
-                                             EvacuacionesMedicasRichTextBox.Text)
+                    Dim TAEjecucion As New bdinfanteriaDataSetTableAdapters.ejecucionTableAdapter
+                    TAEjecucion.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        intencion_comandante:=intencionComandanteTextBox.Text, _
+                        concepto_operacion:=conceptoOperacionTextBox.Text, _
+                        maniobra:=maniobraTextBox.Text, _
+                        fuegos:=fuegosTextBox.Text, _
+                        tareas_maniobra:=tareasManiobraTextBox.Text, _
+                        tareas_combate:=tareasCombateTextBox.Text, _
+                        instrucciones_coordinacion:=instruccionesCoordinacionTextBox.Text, _
+                        instrucciones_juridicas:=instruccionesJuridicasRichTextBox.Text, _
+                        uso_fuerza_autorizada:=usoFuerzaRichTextBox.Text)
 
-                    Dim TAComunicaciones As New bdmarinaDataSetTableAdapters.comunicacionesTableAdapter
-                    TAComunicaciones.Insert(OperacionTextBox.Text, _
-                                            vhf7330NumericUpDown.Value, _
-                                            vhf710NumericUpDown.Value, _
-                                            vhf930NumericUpDown.Value, _
-                                            vhfAereoNumericUpDown.Value, _
-                                            vhfEscanerNumericUpDown.Value, _
-                                            hf6020NumericUpDown.Value, _
-                                            hfEscanerNumericUpDown.Value, _
-                                            uhfXTS4250NumericUpDown.Value, _
-                                            uhfXTR3000NumericUpDown.Value, _
-                                            uhfEscanerNumericUpDown.Value, _
-                                            AvantelTextBox.Text, _
-                                            CelularTextBox.Text, _
-                                            SatelitalTextBox.Text, _
-                                            ClaveComTextBox.Text, _
-                                            ComplementosTextBox.Text)
+                    Dim TAServiciosCombate As New bdinfanteriaDataSetTableAdapters.servicios_combateTableAdapter
+                    TAServiciosCombate.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        clase1:=Clase1RichTextBox.Text, _
+                        clase2:=Clase2RichTextBox.Text, _
+                        clase3:=Clase3RichTextBox.Text, _
+                        clase4:=Clase4RichTextBox.Text, _
+                        clase5:=Clase5RichTextBox.Text, _
+                        clase6:=Clase6RichTextBox.Text, _
+                        evacuaciones_medicas:=evacuacionesMedicasRichTextBox.Text)
 
-                    Dim TAAmetralladoras As New bdmarinaDataSetTableAdapters.ametralladorasTableAdapter
-                    TAAmetralladoras.Insert(OperacionTextBox.Text, _
-                                            m60EstandarNumericUpDown.Value, _
-                                            m60E4NumericUpDown.Value, _
-                                            M249NumericUpDown.Value, _
-                                            ss77NumericUpDown.Value, _
-                                            Punto50NumericUpDown.Value, _
-                                            OtrasAmetralladorasTextBox.Text)
+                    Dim TAComunicaciones As New bdinfanteriaDataSetTableAdapters.comunicacionesTableAdapter
+                    TAComunicaciones.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        vhf_7330_cant:=vhf7330NumericUpDown.Value, _
+                        vhf_7330_frec:=vhf7330TextBox.Text, _
+                        vhf_710_cant:=vhf710NumericUpDown.Value, _
+                        vhf_710_frec:=vhf710TextBox.Text, _
+                        vhf_930_cant:=vhf930NumericUpDown.Value, _
+                        vhf_930_frec:=vhf930TextBox.Text, _
+                        vhf_aereo_cant:=vhfAereoNumericUpDown.Value, _
+                        vhf_aereo_frec:=vhfAereoTextBox.Text, _
+                        vhf_escaner:=vhfEscanerNumericUpDown.Value, _
+                        hf_6020_cant:=hf6020NumericUpDown.Value, _
+                        hf_6020_frec:=hf6020TextBox.Text, _
+                        hf_escaner:=hfEscanerNumericUpDown.Value, _
+                        uhf_xts4250_cant:=uhfXTS4250NumericUpDown.Value, _
+                        uhf_xts4250_frec:=uhfXTS4250TextBox.Text, _
+                        uhf_xtr3000_cant:=uhfXTR3000NumericUpDown.Value, _
+                        uhf_xtr3000_frec:=uhfXTR3000TextBox.Text, _
+                        uhf_escaner:=uhfEscanerNumericUpDown.Value, _
+                        avantel:=AvantelTextBox.Text, _
+                        celular:=CelularTextBox.Text, _
+                        satelital:=satelitalTextBox.Text, _
+                        clave:=ClaveComTextBox.Text, _
+                        indicativos:=indicativosTextBox.Text)
 
-                    Dim TAFusiles As New bdmarinaDataSetTableAdapters.fusilesTableAdapter
-                    TAFusiles.Insert(OperacionTextBox.Text, _
-                                     GalilNumericUpDown.Value, _
-                                     m16NumericUpDown.Value, _
-                                     OtrosFusilesTextBox.Text)
+                    Dim TAAmetralladoras As New bdinfanteriaDataSetTableAdapters.ametralladorasTableAdapter
+                    TAAmetralladoras.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        m60_estandar:=m60EstandarNumericUpDown.Value, _
+                        m60_e4:=m60E4NumericUpDown.Value, _
+                        m249:=M249NumericUpDown.Value, _
+                        ss77:=ss77NumericUpDown.Value, _
+                        punto50:=punto50NumericUpDown.Value, _
+                        otras_ametralladoras:=otrasAmetralladorasTextBox.Text)
 
-                    Dim TAEquiposEspeciales As New bdmarinaDataSetTableAdapters.equipos_especialesTableAdapter
-                    TAEquiposEspeciales.Insert(OperacionTextBox.Text, _
-                                               VisorNocturnoNumericUpDown.Value, _
-                                               BinocularesNumericUpDown.Value, _
-                                               CamaraTermicaNumericUpDown.Value, _
-                                               FlasmersNumericUpDown.Value, _
-                                               KitOrientacionNocturnoNumericUpDown.Value, _
-                                               OtrosEquiposTextBox.Text)
+                    Dim TAFusiles As New bdinfanteriaDataSetTableAdapters.fusilesTableAdapter
+                    TAFusiles.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        galil_ar:=galil_arNumericUpDown.Value, _
+                        galil_ice:=galil_iceNumericUpDown.Value, _
+                        m16_a2:=m16_a2NumericUpDown.Value, _
+                        m16_m4:=m16_m4NumericUpDown.Value, _
+                        m16_a203:=m16_a203NumericUpDown.Value, _
+                        otros_fusiles:=otrosFusilesTextBox.Text)
 
-                    Dim TAGranadas As New bdmarinaDataSetTableAdapters.granadasTableAdapter
-                    TAGranadas.Insert(OperacionTextBox.Text, _
-                                      ManoNumericUpDown.Value, _
-                                      HumoNumericUpDown.Value, _
-                                      LacrimogenoNumericUpDown.Value, _
-                                      OtrasGranadasTextBox.Text)
+                    Dim TAMorteros As New bdinfanteriaDataSetTableAdapters.morterosTableAdapter
+                    TAMorteros.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        mc_c370_60mm:=mc_c370_60mmNumericUpDown.Value, _
+                        mc_575_60mm:=mc_c575_60mmNumericUpDown.Value, _
+                        mc_fms_60mm:=mc_fms_60mmNumericUpDown.Value, _
+                        m_brandt_60mm:=m_brandt_60mmNumericUpDown.Value, _
+                        otros_morteros:=otrosMorterosTextBox.Text)
 
-                    Dim TALanzagranadas As New bdmarinaDataSetTableAdapters.lanzagranadasTableAdapter
-                    TALanzagranadas.Insert(OperacionTextBox.Text, _
-                                           MGLNumericUpDown.Value, _
-                                           MKNumericUpDown.Value, _
-                                           M79NumericUpDown.Value, _
-                                           M203NumericUpDown.Value)
+                    Dim TAEquiposEspeciales As New bdinfanteriaDataSetTableAdapters.equipos_especialesTableAdapter
+                    TAEquiposEspeciales.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        visor_nocturno:=visorNocturnoNumericUpDown.Value, _
+                        binoculares:=binocularesNumericUpDown.Value, _
+                        camara_termica:=camaraTermicaNumericUpDown.Value, _
+                        flasmers:=flasmersNumericUpDown.Value, _
+                        kit_orientacion_nocturno:=kitOrientacionNocturnoNumericUpDown.Value, _
+                        otros_equipos:=otrosEquiposTextBox.Text)
 
-                    Dim TAMorteros As New bdmarinaDataSetTableAdapters.morterosTableAdapter
-                    TAMorteros.Insert(OperacionTextBox.Text, _
-                                      mc_c370_60mmNumericUpDown.Value, _
-                                      mc_c575_60mmNumericUpDown.Value, _
-                                      mc_fms_60mmNumericUpDown.Value, _
-                                      m_brandt_60mmNumericUpDown.Value, _
-                                      OtrosMorterosTextBox.Text)
+                    Dim TAGranadas As New bdinfanteriaDataSetTableAdapters.granadasTableAdapter
+                    TAGranadas.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        mano:=manoNumericUpDown.Value, _
+                        humo:=humoNumericUpDown.Value, _
+                        lacrimogena:=lacrimogenaNumericUpDown.Value, _
+                        otras_granadas:=otrasGranadasTextBox.Text)
 
-                    Dim TAFirmas As New bdmarinaDataSetTableAdapters.firmasTableAdapter
-                    TAFirmas.Insert(OperacionTextBox.Text, _
-                                    AutorizaRichTextBox.Text, _
-                                    AutenticaRichTextBox.Text, _
-                                    RecibeRichTextBox.Text)
+                    Dim TALanzagranadas As New bdinfanteriaDataSetTableAdapters.lanzagranadasTableAdapter
+                    TALanzagranadas.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        mgl:=mglNumericUpDown.Value, _
+                        mk:=mkNumericUpDown.Value, _
+                        m79:=m79NumericUpDown.Value, _
+                        otros_lanzagranadas:=otrosLanzagranadasTextBox.Text)
+
+                    Dim TAPersonal As New bdinfanteriaDataSetTableAdapters.personalTableAdapter
+                    TAPersonal.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        detalle:=personalTextBox.Text)
+
+                    Dim TACoordenadas As New bdinfanteriaDataSetTableAdapters.coordenadasTableAdapter
+                    TACoordenadas.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        latitud1:=getLatitud(gradosLat1NumericUpDown.Value, minutosLat1NumericUpDown.Value, segundosLat1NumericUpDown.Value), _
+                        longitud1:=getLongitud(gradosLgn1NumericUpDown.Value, minutosLgn1NumericUpDown.Value, segundosLgn1NumericUpDown.Value), _
+                        latitud3:=getLatitud(gradosLat3NumericUpDown.Value, minutosLat3NumericUpDown.Value, segundosLat3NumericUpDown.Value), _
+                        longitud3:=getLongitud(gradosLng3NumericUpDown.Value, minutosLng3NumericUpDown.Value, segundosLng3NumericUpDown.Value))
+
+                    Dim TAFirmas As New bdinfanteriaDataSetTableAdapters.firmasTableAdapter
+                    TAFirmas.Insert( _
+                        operacion:=operacionTextBox.Text, _
+                        autoriza:=autorizaTextBox.Text, _
+                        autentica:=autenticaTextBox.Text, _
+                        recibe:=recibeTextBox.Text, _
+                        distribucion:=distribucionTextBox.Text)
 
                     CopiarYRegistrarAnexos()
 
@@ -143,93 +200,21 @@ Public Class OperacionForm
         Me.Close()
     End Sub
 
-    Private Sub OperacionTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If OperacionTextBox.Text.Length = 0 Then
+    Private Sub operacionTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles operacionTextBox.Validating
+        If operacionTextBox.Text.Length = 0 Then
             e.Cancel = True
-            ErrorProvider1.SetError(OperacionTextBox, "Introduzca un código para la operación")
+            ErrorProvider1.SetError(operacionTextBox, "Introduzca un código para la operación")
         Else
-            ErrorProvider1.SetError(OperacionTextBox, Nothing)
+            ErrorProvider1.SetError(operacionTextBox, Nothing)
         End If
     End Sub
 
-    Private Sub Nombre_operacionTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If Nombre_operacionTextBox.Text.Length = 0 Then
+    Private Sub nombre_operacionTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles nombre_operacionTextBox.Validating
+        If nombre_operacionTextBox.Text.Length = 0 Then
             e.Cancel = True
-            ErrorProvider1.SetError(Nombre_operacionTextBox, "Introduzca un nombre para la operación")
+            ErrorProvider1.SetError(nombre_operacionTextBox, "Introduzca un nombre para la operación")
         Else
-            ErrorProvider1.SetError(Nombre_operacionTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub ProcedimientoTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If ProcedimientoTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(ProcedimientoTextBox, "Introduzca el procedimiento de la operación")
-        Else
-            ErrorProvider1.SetError(ProcedimientoTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub Autoriza_deTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If Autoriza_deTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(Autoriza_deTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(Autoriza_deTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub Comandante_operacionTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If Comandante_operacionTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(Comandante_operacionTextBox, "Introduzca el comandante de la operación")
-        Else
-            ErrorProvider1.SetError(Comandante_operacionTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub IndicativoTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If IndicativoTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(IndicativoTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(IndicativoTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub ReferenciasRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If ReferenciasRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(ReferenciasRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(ReferenciasRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub SituacionRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs)
-        If SituacionRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(SituacionRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(SituacionRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub Propias_tropasRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles Propias_tropasRichTextBox.Validating
-        If Propias_tropasRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(Propias_tropasRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(Propias_tropasRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub MisionRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles MisionRichTextBox.Validating
-        If MisionRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(MisionRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(MisionRichTextBox, Nothing)
+            ErrorProvider1.SetError(nombre_operacionTextBox, Nothing)
         End If
     End Sub
 
@@ -238,109 +223,69 @@ Public Class OperacionForm
     ''' </summary>
     ''' <remarks></remarks>
     Private Sub ocultarGrupos()
-        Operaciones1GroupBox.Visible = False
-        Operaciones2GroupBox.Visible = False
-        ToeGroupBox.Visible = False
-        CoordenadasGroupBox.Visible = False
+        operacionGroupBox.Visible = False
+        situacionGroupBox.Visible = False
+        misionGroupBox.Visible = False
+        coordenadasGroupBox.Visible = False
         Ejecucion1GroupBox.Visible = False
         Ejecucion2GroupBox.Visible = False
-        Ejecucion3GroupBox.Visible = False
-        Ejecucion4GroupBox.Visible = False
-        Ejecucion5GroupBox.Visible = False
-        Ejecucion6GroupBox.Visible = False
-        AbastecimientosGroupBox.Visible = False
-        ComunicacionesGroupBox.Visible = False
-        ArmamentoGroupBox.Visible = False
-        AnexosGroupBox.Visible = False
-        FirmasGroupBox.Visible = False
+        juridicasGroupBox.Visible = False
+        serviciosCombateGroupBox.Visible = False
+        comunicacionesGroupBox.Visible = False
+        armamentoGroupBox.Visible = False
+        anexosGroupBox.Visible = False
+        personalGroupBox.Visible = False
+        firmasGroupBox.Visible = False
     End Sub
 
-    Private Sub Operaciones1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones1ToolStripMenuItem.Click, Operaciones1LinkLabel.Click
+    Private Sub operacionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles OperacionesToolStripMenuItem.Click, atras11LinkLabel.Click
         ocultarGrupos()
-        Operaciones1GroupBox.Visible = True
+        operacionGroupBox.Visible = True
     End Sub
 
-    Private Sub Operaciones2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Operaciones2ToolStripMenuItem.Click, Operaciones2LinkLabel.Click, LinkLabel1.Click
+    Private Sub situacionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles situacionToolStripMenuItem.Click, siguiente1LinkLabel.Click, atras10LinkLabel.Click
         ocultarGrupos()
-        Operaciones2GroupBox.Visible = True
+        situacionGroupBox.Visible = True
     End Sub
 
-    Private Sub TOEToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles TOEToolStripMenuItem.Click, toeLinkLabel.Click, LinkLabel3.Click
+    Private Sub misionToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles misionToolStripMenuItem.Click, siguiente2LinkLabel.Click, atras9LinkLabel.Click
         ocultarGrupos()
-        ToeGroupBox.Visible = True
+        misionGroupBox.Visible = True
     End Sub
 
-    Private Sub CoordenadasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CoordenadasToolStripMenuItem.Click, LinkLabel2.Click, LinkLabel5.Click
+    Private Sub CoordenadasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CoordenadasToolStripMenuItem.Click, siguiente3LinkLabel.Click, atras8LinkLabel.Click
         ocultarGrupos()
-        CoordenadasGroupBox.Visible = True
+        coordenadasGroupBox.Visible = True
     End Sub
 
     Private Function camposDiligenciados() As Boolean
-        If OperacionTextBox.Text.Length = 0 Or
-            Nombre_operacionTextBox.Text.Length = 0 Or
-            ProcedimientoTextBox.Text.Length = 0 Or
-            Autoriza_deTextBox.Text.Length = 0 Or
-            Comandante_operacionTextBox.Text.Length = 0 Or
-            IndicativoTextBox.Text.Length = 0 Or
-            ReferenciasRichTextBox.Text.Length = 0 Or
-            SituacionRichTextBox.Text.Length = 0 Or
-            Propias_tropasRichTextBox.Text.Length = 0 Or
-            MisionRichTextBox.Text.Length = 0 Or
-            IntencionComandanteRichTextBox.Text.Length = 0 Or
-            ConceptoRichTextBox.Text.Length = 0 Or
-            ManiobraRichTextBox.Text.Length = 0 Or
-            FuegosRichTextBox.Text.Length = 0 Or
-            TareasManiobraRichTextBox.Text.Length = 0 Or
-            TareasCombateRichTextBox.Text.Length = 0 Or
-            InstruccionesCoordinacionRichTextBox.Text.Length = 0 Or
-            NivelHostilidadRichTextBox.Text.Length = 0 Or
-            MarcoJuridicoRichTextBox.Text.Length = 0 Or
-            PrincipiosRichTextBox.Text.Length = 0 Or
-            UsoFuerzaRichTextBox.Text.Length = 0 Or
-            InstruccionesEspecialesRichTextBox.Text.Length = 0 Or
-            AutorizaRichTextBox.Text.Length = 0 Or
-            AutenticaRichTextBox.Text.Length = 0 Or
-            RecibeRichTextBox.Text.Length = 0 Then
+        If operacionTextBox.Text.Length = 0 Or
+            nombre_operacionTextBox.Text.Length = 0 Then
             Return False
         Else
             Return True
         End If
     End Function
 
-    Private Sub Ejecucion1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion1ToolStripMenuItem.Click, LinkLabel4.Click, LinkLabel7.Click
+    Private Sub Ejecucion1ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion1ToolStripMenuItem.Click, siguiente4LinkLabel.Click, atras7LinkLabel.Click
         ocultarGrupos()
         Ejecucion1GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion2ToolStripMenuItem.Click, LinkLabel9.Click, LinkLabel6.Click
+    Private Sub Ejecucion2ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion2ToolStripMenuItem.Click, siguiente5LinkLabel.Click, LinkLabel1.Click
         ocultarGrupos()
         Ejecucion2GroupBox.Visible = True
     End Sub
 
-    Private Sub Ejecucion3ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion3ToolStripMenuItem.Click, LinkLabel8.Click, LinkLabel11.Click
+    Private Sub juridicasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles juridicasToolStripMenuItem.Click, siguiente6LinkLabel.Click, atras6LinkLabel.Click
         ocultarGrupos()
-        Ejecucion3GroupBox.Visible = True
-    End Sub
-
-    Private Sub Ejecucion4ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion4ToolStripMenuItem.Click, LinkLabel13.Click, LinkLabel10.Click
-        ocultarGrupos()
-        Ejecucion4GroupBox.Visible = True
-    End Sub
-
-    Private Sub Ejecucion5ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion5ToolStripMenuItem.Click, LinkLabel15.Click, LinkLabel12.Click
-        ocultarGrupos()
-        Ejecucion5GroupBox.Visible = True
-    End Sub
-
-    Private Sub Ejecucion6ToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles Ejecucion6ToolStripMenuItem.Click, LinkLabel17.Click, LinkLabel14.Click
-        ocultarGrupos()
-        Ejecucion6GroupBox.Visible = True
+        juridicasGroupBox.Visible = True
     End Sub
 
     Private Sub TarjetaRojaRadioButton_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TarjetaRojaRadioButton.CheckedChanged
         If TarjetaRojaRadioButton.Checked Then
             TarjetaAzulRadioButton.Checked = False
-            UsoFuerzaRichTextBox.Text = "1. Podrá hacer uso de la fuerza contra un objetivo militar o blanco lícito, siempre y cuando:" & vbCrLf & _
+            usoFuerzaRichTextBox.Text = "1. Podrá hacer uso de la fuerza contra un objetivo militar o blanco lícito, siempre y cuando:" & vbCrLf & _
 "- Esté enmarcado en una orden de operaciones; y" & vbCrLf & _
 "- Lo identifique como el objetivo militar o blanco lícito, al momento de hacer uso de las armas." & vbCrLf & vbCrLf & _
 "2. Cuando las circunstancias lo permitan, favorezca las desmovilizaciones y las capturas sobre las muertes en combate." & vbCrLf & vbCrLf & _
@@ -352,7 +297,7 @@ Public Class OperacionForm
     Private Sub TarjetaAzulRadioButton_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TarjetaAzulRadioButton.CheckedChanged
         If TarjetaAzulRadioButton.Checked Then
             TarjetaRojaRadioButton.Checked = False
-            UsoFuerzaRichTextBox.Text = "1. Haga uso de la fuerza como última opción." & vbCrLf & vbCrLf & _
+            usoFuerzaRichTextBox.Text = "1. Haga uso de la fuerza como última opción." & vbCrLf & vbCrLf & _
 "2. Identifíquese como miembro de las FFMM." & vbCrLf & vbCrLf & _
 "3. De una clara advertencia de su intención de emplear armas de fuego." & vbCrLf & vbCrLf & _
 "4. Haga uso de su arma de manera proporcional a la amenaza que está enfrentando." & vbCrLf & vbCrLf & _
@@ -360,173 +305,38 @@ Public Class OperacionForm
         End If
     End Sub
 
-    Private Sub IntencionComandanteRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles IntencionComandanteRichTextBox.Validating
-        If IntencionComandanteRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(IntencionComandanteRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(IntencionComandanteRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub ConceptoRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles ConceptoRichTextBox.Validating
-        If ConceptoRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(ConceptoRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(ConceptoRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub ManiobraRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles ManiobraRichTextBox.Validating
-        If ManiobraRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(ManiobraRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(ManiobraRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub FuegosRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles FuegosRichTextBox.Validating
-        If FuegosRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(FuegosRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(FuegosRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub TareasManiobraRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles TareasManiobraRichTextBox.Validating
-        If TareasManiobraRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(TareasManiobraRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(TareasManiobraRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub TareasCombateRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles TareasCombateRichTextBox.Validating
-        If TareasCombateRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(TareasCombateRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(TareasCombateRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub InstruccionesCoordinacionRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles InstruccionesCoordinacionRichTextBox.Validating
-        If InstruccionesCoordinacionRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(InstruccionesCoordinacionRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(InstruccionesCoordinacionRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub NivelHostilidadRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles NivelHostilidadRichTextBox.Validating
-        If NivelHostilidadRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(NivelHostilidadRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(NivelHostilidadRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub MarcoJuridicoRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles MarcoJuridicoRichTextBox.Validating
-        If MarcoJuridicoRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(MarcoJuridicoRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(MarcoJuridicoRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub PrincipiosRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles PrincipiosRichTextBox.Validating
-        If PrincipiosRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(PrincipiosRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(PrincipiosRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub UsoFuerzaRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles UsoFuerzaRichTextBox.Validating
-        If UsoFuerzaRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(UsoFuerzaRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(UsoFuerzaRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub InstruccionesEspecialesRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles InstruccionesEspecialesRichTextBox.Validating
-        If InstruccionesEspecialesRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(InstruccionesEspecialesRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(InstruccionesEspecialesRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub AbastecimientosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AbastecimientosToolStripMenuItem.Click, LinkLabel19.Click, LinkLabel16.Click
+    Private Sub ServiciosCombateToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles serviciosCombateToolStripMenuItem.Click, siguiente7LinkLabel.Click, DatosToolStripMenuItem.Click
         ocultarGrupos()
-        AbastecimientosGroupBox.Visible = True
+        serviciosCombateGroupBox.Visible = True
     End Sub
 
-    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click, LinkLabel21.Click, LinkLabel18.Click
+    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click, siguiente8LinkLabel.Click, atras4LinkLabel.Click
         ocultarGrupos()
-        ComunicacionesGroupBox.Visible = True
+        comunicacionesGroupBox.Visible = True
     End Sub
 
-    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, LinkLabel23.Click, LinkLabel20.Click
+    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, siguiente9LinkLabel.Click, atras3LinkLabel.Click
         ocultarGrupos()
-        ArmamentoGroupBox.Visible = True
+        armamentoGroupBox.Visible = True
     End Sub
 
-    Private Sub AutorizaRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles AutorizaRichTextBox.Validating
-        If AutorizaRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(AutorizaRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(AutorizaRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub AutenticaRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles AutenticaRichTextBox.Validating
-        If AutenticaRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(AutenticaRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(AutenticaRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub RecibeRichTextBox_Validating(sender As System.Object, e As System.ComponentModel.CancelEventArgs) Handles RecibeRichTextBox.Validating
-        If RecibeRichTextBox.Text.Length = 0 Then
-            e.Cancel = True
-            ErrorProvider1.SetError(RecibeRichTextBox, "Este campo no puede estar vacío")
-        Else
-            ErrorProvider1.SetError(RecibeRichTextBox, Nothing)
-        End If
-    End Sub
-
-    Private Sub AgregarAnexoButton_Click(sender As System.Object, e As System.EventArgs) Handles AgregarAnexoButton.Click
+    Private Sub AgregarAnexoButton_Click(sender As System.Object, e As System.EventArgs) Handles agregarAnexoButton.Click
         Try
             OpenFileDialog1.ShowDialog()
             If YaSeEncuentra(OpenFileDialog1.SafeFileNames(0)) Then
                 MsgBox("Ya existe el archivo " & OpenFileDialog1.SafeFileNames(0) & " en la lista de anexos.", MsgBoxStyle.Information)
             Else
-                AnexosDataGridView.Rows.Add(OpenFileDialog1.SafeFileNames(0), OpenFileDialog1.FileName)
+                anexosDataGridView.Rows.Add(OpenFileDialog1.SafeFileNames(0), OpenFileDialog1.FileName)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
     End Sub
 
-    Private Sub QuitarButton_Click(sender As System.Object, e As System.EventArgs) Handles QuitarButton.Click
+    Private Sub QuitarButton_Click(sender As System.Object, e As System.EventArgs) Handles quitarButton.Click
         Try
-            If AnexosDataGridView.SelectedRows.Count > 0 Then
-                AnexosDataGridView.Rows.Remove(AnexosDataGridView.SelectedRows(0))
+            If anexosDataGridView.SelectedRows.Count > 0 Then
+                anexosDataGridView.Rows.Remove(anexosDataGridView.SelectedRows(0))
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -540,7 +350,7 @@ Public Class OperacionForm
     ''' <returns></returns>
     ''' <remarks></remarks>
     Private Function YaSeEncuentra(nombreArchivo As String) As Boolean
-        For Each fila As DataGridViewRow In AnexosDataGridView.Rows
+        For Each fila As DataGridViewRow In anexosDataGridView.Rows
             If fila.Cells("nombreArchivo").Value = nombreArchivo Then
                 Return True
             End If
@@ -554,35 +364,41 @@ Public Class OperacionForm
     ''' </summary>
     ''' <remarks></remarks>
     Private Sub CopiarYRegistrarAnexos()
-        Dim carpetaAnexos As String = My.Application.Info.DirectoryPath & "\anexos\" & OperacionTextBox.Text & "\"
+        Dim carpetaAnexos As String = My.Application.Info.DirectoryPath & "\anexos\" & operacionTextBox.Text & "\"
         If Not Directory.Exists(carpetaAnexos) Then
             Directory.CreateDirectory(carpetaAnexos)
         End If
 
-        For Each fila As DataGridViewRow In AnexosDataGridView.Rows
+        For Each fila As DataGridViewRow In anexosDataGridView.Rows
             My.Computer.FileSystem.CopyFile(fila.Cells("ruta").Value, carpetaAnexos & fila.Cells("nombreArchivo").Value, UIOption.AllDialogs, UICancelOption.ThrowException)
 
-            Dim TAAnexos As New bdmarinaDataSetTableAdapters.anexosTableAdapter
-            TAAnexos.Insert(operacion:=OperacionTextBox.Text, _
-                            nombre:=fila.Cells("nombreArchivo").Value, _
-                            ruta:=carpetaAnexos & fila.Cells("nombreArchivo").Value)
+            Dim TAAnexos As New bdinfanteriaDataSetTableAdapters.anexosTableAdapter
+            TAAnexos.Insert( _
+                operacion:=operacionTextBox.Text, _
+                nombre:=fila.Cells("nombreArchivo").Value, _
+                ruta:=carpetaAnexos & fila.Cells("nombreArchivo").Value)
         Next
     End Sub
 
-    Private Sub AnexosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnexosToolStripMenuItem.Click, LinkLabel25.Click, LinkLabel22.Click
+    Private Sub AnexosToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AnexosToolStripMenuItem.Click, siguiente11LinkLabel.Click, atras1LinkLabel.Click
         ocultarGrupos()
-        AnexosGroupBox.Visible = True
+        anexosGroupBox.Visible = True
     End Sub
 
-    Private Sub FirmasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FirmasToolStripMenuItem.Click, LinkLabel24.Click
+    Private Sub FirmasToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles FirmasToolStripMenuItem.Click, siguiente12LinkLabel.Click
         ocultarGrupos()
-        FirmasGroupBox.Visible = True
+        firmasGroupBox.Visible = True
     End Sub
 
     Private Sub OperacionForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         ocultarGrupos()
-        Operaciones1GroupBox.Visible = True
-        Fecha_operacionDateTimePicker.Value = Now
+        operacionGroupBox.Visible = True
+        fecha_operacionDateTimePicker.Value = Now
+        procedimientoComboBox.SelectedIndex = 0
     End Sub
 
+    Private Sub PersonalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PersonalToolStripMenuItem.Click, siguiente10LinkLabel.Click, atras2LinkLabel.Click
+        ocultarGrupos()
+        personalGroupBox.Visible = True
+    End Sub
 End Class

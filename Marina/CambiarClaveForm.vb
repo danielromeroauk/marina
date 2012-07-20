@@ -10,8 +10,8 @@ Public Class CambiarClaveForm
             ElseIf NuevaClaveTextBox.Text <> ConfirmarClaveTextBox.Text Then
                 MsgBox("Las claves no coinciden.", MsgBoxStyle.Information)
             Else
-                Dim TAUsuarios As New bdmarinaDataSetTableAdapters.usuariosTableAdapter
-                TAUsuarios.CambiarClave(NuevaClaveTextBox.Text, userId, userClave)
+                Dim TAConsultas As New bdinfanteriaDataSetTableAdapters.ConsultasTableAdapter
+                TAConsultas.CambiarClave(NuevaClaveTextBox.Text, userId, userClave)
                 MsgBox("Clave cambiada", MsgBoxStyle.Information)
                 Me.Close()
             End If
