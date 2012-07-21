@@ -55,6 +55,7 @@ Partial Class InformeForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(296, 314)
+        Me.ControlBox = False
         Me.Name = "InformeForm"
         Me.Text = "InformeForm"
         Me.Panel1.ResumeLayout(False)

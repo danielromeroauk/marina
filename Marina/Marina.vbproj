@@ -103,6 +103,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bdinfanteriaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="bdinfanteriaDataSet.vb">
+      <DependentUpon>bdinfanteriaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CambiarClaveForm.Designer.vb">
       <DependentUpon>CambiarClaveForm.vb</DependentUpon>
     </Compile>
@@ -238,6 +241,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="IconoArmada.ico" />
+    <None Include="Resources\button_cancel.png" />
+    <None Include="Resources\data_management.png" />
+    <None Include="Resources\document-save-as.png" />
+    <None Include="Resources\filesaveas.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\Folder25.png" />
+    <None Include="Resources\Help_Circle_Blue.png" />
+    <None Include="Resources\Statistics.png" />
+    <None Include="Resources\stop.png" />
     <Content Include="terminator.ico" />
   </ItemGroup>
   <ItemGroup>

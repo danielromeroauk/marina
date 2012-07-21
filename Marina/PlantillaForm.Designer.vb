@@ -60,6 +60,7 @@ Partial Class PlantillaForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(296, 270)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TituloLabel)

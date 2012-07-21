@@ -285,7 +285,8 @@ Public Class OperacionForm
     Private Sub TarjetaRojaRadioButton_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TarjetaRojaRadioButton.CheckedChanged
         If TarjetaRojaRadioButton.Checked Then
             TarjetaAzulRadioButton.Checked = False
-            usoFuerzaRichTextBox.Text = "1. Podrá hacer uso de la fuerza contra un objetivo militar o blanco lícito, siempre y cuando:" & vbCrLf & _
+            usoFuerzaRichTextBox.Text = "TARJETA ROJA" & vbCr & _
+                "1. Podrá hacer uso de la fuerza contra un objetivo militar o blanco lícito, siempre y cuando:" & vbCrLf & _
 "- Esté enmarcado en una orden de operaciones; y" & vbCrLf & _
 "- Lo identifique como el objetivo militar o blanco lícito, al momento de hacer uso de las armas." & vbCrLf & vbCrLf & _
 "2. Cuando las circunstancias lo permitan, favorezca las desmovilizaciones y las capturas sobre las muertes en combate." & vbCrLf & vbCrLf & _
@@ -297,7 +298,8 @@ Public Class OperacionForm
     Private Sub TarjetaAzulRadioButton_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles TarjetaAzulRadioButton.CheckedChanged
         If TarjetaAzulRadioButton.Checked Then
             TarjetaRojaRadioButton.Checked = False
-            usoFuerzaRichTextBox.Text = "1. Haga uso de la fuerza como última opción." & vbCrLf & vbCrLf & _
+            usoFuerzaRichTextBox.Text = "TARJETA AZUL" & vbCr & _
+                "1. Haga uso de la fuerza como última opción." & vbCrLf & vbCrLf & _
 "2. Identifíquese como miembro de las FFMM." & vbCrLf & vbCrLf & _
 "3. De una clara advertencia de su intención de emplear armas de fuego." & vbCrLf & vbCrLf & _
 "4. Haga uso de su arma de manera proporcional a la amenaza que está enfrentando." & vbCrLf & vbCrLf & _
@@ -315,7 +317,7 @@ Public Class OperacionForm
         comunicacionesGroupBox.Visible = True
     End Sub
 
-    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, siguiente9LinkLabel.Click, atras3LinkLabel.Click
+    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, siguiente9LinkLabel.Click, atras3LinkLabel.Click, armamentoLinkLabel.Click
         ocultarGrupos()
         armamentoGroupBox.Visible = True
     End Sub

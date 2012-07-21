@@ -363,22 +363,28 @@ Partial Class InteligenciaForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GuardarInteligenciaToolStripMenuItem, Me.CancelarToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(673, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(673, 87)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'GuardarInteligenciaToolStripMenuItem
         '
+        Me.GuardarInteligenciaToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.filesaveas
+        Me.GuardarInteligenciaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.GuardarInteligenciaToolStripMenuItem.Name = "GuardarInteligenciaToolStripMenuItem"
         Me.GuardarInteligenciaToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G), System.Windows.Forms.Keys)
-        Me.GuardarInteligenciaToolStripMenuItem.Size = New System.Drawing.Size(125, 20)
+        Me.GuardarInteligenciaToolStripMenuItem.Size = New System.Drawing.Size(125, 83)
         Me.GuardarInteligenciaToolStripMenuItem.Text = "&Guardar inteligencia"
+        Me.GuardarInteligenciaToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'CancelarToolStripMenuItem
         '
+        Me.CancelarToolStripMenuItem.Image = Global.Marina.My.Resources.Resources._stop
+        Me.CancelarToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CancelarToolStripMenuItem.Name = "CancelarToolStripMenuItem"
-        Me.CancelarToolStripMenuItem.Size = New System.Drawing.Size(129, 20)
+        Me.CancelarToolStripMenuItem.Size = New System.Drawing.Size(129, 83)
         Me.CancelarToolStripMenuItem.Text = "&Cancelar inteligencia"
+        Me.CancelarToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'InteligenciaForm
         '
@@ -386,6 +392,7 @@ Partial Class InteligenciaForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.ClientSize = New System.Drawing.Size(673, 496)
+        Me.ControlBox = False
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "InteligenciaForm"

@@ -80,6 +80,8 @@ Partial Class OperacionForm
         Me.IndicativoTextBox = New System.Windows.Forms.TextBox()
         Me.referenciasRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.misionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.detalleMisionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.misionRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.atras10LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente3LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.toeGroupBox = New System.Windows.Forms.GroupBox()
@@ -123,13 +125,20 @@ Partial Class OperacionForm
         Me.minutosLat1NumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.longitud1Label = New System.Windows.Forms.Label()
         Me.Ejecucion1GroupBox = New System.Windows.Forms.GroupBox()
+        Me.intencionComandanteRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.atras8LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente5LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.conceptoOperacionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.fuegosRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.maniobraRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.conceptoOperacionRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.fuegosLabel = New System.Windows.Forms.Label()
         Me.maniobraLabel = New System.Windows.Forms.Label()
         Me.intencionComandanteLabel = New System.Windows.Forms.Label()
         Me.Ejecucion2GroupBox = New System.Windows.Forms.GroupBox()
+        Me.instruccionesCoordinacionRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.tareasCombateRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.tareasManiobraRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.atras7LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente6LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.instruccionesCoordinacionLabel = New System.Windows.Forms.Label()
@@ -145,6 +154,7 @@ Partial Class OperacionForm
         Me.usoFuerzaRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.UsoFuerzaLabel = New System.Windows.Forms.Label()
         Me.serviciosCombateGroupBox = New System.Windows.Forms.GroupBox()
+        Me.armamentoLinkLabel = New System.Windows.Forms.LinkLabel()
         Me.atras6LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente8LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.evacuacionesMedicasRichTextBox = New System.Windows.Forms.RichTextBox()
@@ -165,6 +175,7 @@ Partial Class OperacionForm
         Me.atras5LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente9LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.indicativosGroupBox = New System.Windows.Forms.GroupBox()
+        Me.indicativosRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.otrosComGroupBox = New System.Windows.Forms.GroupBox()
         Me.ClaveComTextBox = New System.Windows.Forms.TextBox()
         Me.satelitalTextBox = New System.Windows.Forms.TextBox()
@@ -282,12 +293,17 @@ Partial Class OperacionForm
         Me.m60EstandarNumericUpDown = New System.Windows.Forms.NumericUpDown()
         Me.m60EstandarLabel = New System.Windows.Forms.Label()
         Me.situacionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.segregacionesSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.agregacionesSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.propiasTropasRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.enemigoRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.atras11LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente2LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.detalleSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.firmasGroupBox = New System.Windows.Forms.GroupBox()
         Me.atras1LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.distribucionGroupBox = New System.Windows.Forms.GroupBox()
+        Me.distribucionRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.recibeTextBox = New System.Windows.Forms.TextBox()
         Me.autenticaTextBox = New System.Windows.Forms.TextBox()
         Me.autorizaTextBox = New System.Windows.Forms.TextBox()
@@ -301,24 +317,9 @@ Partial Class OperacionForm
         Me.agregarAnexoButton = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.personalGroupBox = New System.Windows.Forms.GroupBox()
+        Me.personalRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.atras3LinkLabel = New System.Windows.Forms.LinkLabel()
         Me.siguiente11LinkLabel = New System.Windows.Forms.LinkLabel()
-        Me.personalRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.indicativosRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.enemigoRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.propiasTropasRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.agregacionesSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.segregacionesSituacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.detalleMisionGroupBox = New System.Windows.Forms.GroupBox()
-        Me.misionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.intencionComandanteRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.conceptoOperacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.maniobraRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.fuegosRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.tareasManiobraRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.tareasCombateRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.instruccionesCoordinacionRichTextBox = New System.Windows.Forms.RichTextBox()
-        Me.distribucionRichTextBox = New System.Windows.Forms.RichTextBox()
         operacionLabel = New System.Windows.Forms.Label()
         nombre_operacionLabel = New System.Windows.Forms.Label()
         procedimientoLabel = New System.Windows.Forms.Label()
@@ -345,6 +346,7 @@ Partial Class OperacionForm
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.operacionGroupBox.SuspendLayout()
         Me.misionGroupBox.SuspendLayout()
+        Me.detalleMisionGroupBox.SuspendLayout()
         Me.toeGroupBox.SuspendLayout()
         CType(Me.oficialesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CivilesNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -421,7 +423,6 @@ Partial Class OperacionForm
         Me.anexosGroupBox.SuspendLayout()
         CType(Me.anexosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.personalGroupBox.SuspendLayout()
-        Me.detalleMisionGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'TituloLabel
@@ -432,10 +433,10 @@ Partial Class OperacionForm
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.firmasGroupBox)
-        Me.Panel1.Controls.Add(Me.armamentoGroupBox)
         Me.Panel1.Controls.Add(Me.serviciosCombateGroupBox)
         Me.Panel1.Controls.Add(Me.juridicasGroupBox)
+        Me.Panel1.Controls.Add(Me.firmasGroupBox)
+        Me.Panel1.Controls.Add(Me.armamentoGroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion2GroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion1GroupBox)
         Me.Panel1.Controls.Add(Me.misionGroupBox)
@@ -683,16 +684,19 @@ Partial Class OperacionForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DatosToolStripMenuItem, Me.GuardarTodoToolStripMenuItem, Me.CancelarTodoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1184, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1184, 87)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'DatosToolStripMenuItem
         '
         Me.DatosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OperacionesToolStripMenuItem, Me.situacionToolStripMenuItem, Me.misionToolStripMenuItem, Me.CoordenadasToolStripMenuItem, Me.EjecucionToolStripMenuItem, Me.juridicasToolStripMenuItem, Me.serviciosCombateToolStripMenuItem, Me.ComunicacionesToolStripMenuItem, Me.ArmamentoToolStripMenuItem, Me.PersonalToolStripMenuItem, Me.AnexosToolStripMenuItem, Me.FirmasToolStripMenuItem})
+        Me.DatosToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.Folder25
+        Me.DatosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.DatosToolStripMenuItem.Name = "DatosToolStripMenuItem"
-        Me.DatosToolStripMenuItem.Size = New System.Drawing.Size(49, 20)
+        Me.DatosToolStripMenuItem.Size = New System.Drawing.Size(76, 83)
         Me.DatosToolStripMenuItem.Text = "&Datos"
+        Me.DatosToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'OperacionesToolStripMenuItem
         '
@@ -782,16 +786,23 @@ Partial Class OperacionForm
         '
         'GuardarTodoToolStripMenuItem
         '
+        Me.GuardarTodoToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.document_save_as
+        Me.GuardarTodoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.GuardarTodoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.GuardarTodoToolStripMenuItem.Name = "GuardarTodoToolStripMenuItem"
-        Me.GuardarTodoToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
+        Me.GuardarTodoToolStripMenuItem.Size = New System.Drawing.Size(89, 83)
         Me.GuardarTodoToolStripMenuItem.Text = "&Guardar todo"
+        Me.GuardarTodoToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.GuardarTodoToolStripMenuItem.ToolTipText = "Guarda todos los datos de la operación en la base de datos."
         '
         'CancelarTodoToolStripMenuItem
         '
+        Me.CancelarTodoToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.button_cancel
+        Me.CancelarTodoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CancelarTodoToolStripMenuItem.Name = "CancelarTodoToolStripMenuItem"
-        Me.CancelarTodoToolStripMenuItem.Size = New System.Drawing.Size(93, 20)
+        Me.CancelarTodoToolStripMenuItem.Size = New System.Drawing.Size(93, 83)
         Me.CancelarTodoToolStripMenuItem.Text = "&Cancelar todo"
+        Me.CancelarTodoToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.CancelarTodoToolStripMenuItem.ToolTipText = "Cancela todos los datos ingresados, sin guardar nada en la base de datos."
         '
         'ErrorProvider1
@@ -911,6 +922,26 @@ Partial Class OperacionForm
         Me.misionGroupBox.Size = New System.Drawing.Size(1150, 497)
         Me.misionGroupBox.TabIndex = 3
         Me.misionGroupBox.TabStop = False
+        '
+        'detalleMisionGroupBox
+        '
+        Me.detalleMisionGroupBox.Controls.Add(Me.misionRichTextBox)
+        Me.detalleMisionGroupBox.ForeColor = System.Drawing.Color.White
+        Me.detalleMisionGroupBox.Location = New System.Drawing.Point(43, 27)
+        Me.detalleMisionGroupBox.Name = "detalleMisionGroupBox"
+        Me.detalleMisionGroupBox.Size = New System.Drawing.Size(596, 413)
+        Me.detalleMisionGroupBox.TabIndex = 26
+        Me.detalleMisionGroupBox.TabStop = False
+        Me.detalleMisionGroupBox.Text = "MISIÓN"
+        '
+        'misionRichTextBox
+        '
+        Me.misionRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.misionRichTextBox.Location = New System.Drawing.Point(3, 18)
+        Me.misionRichTextBox.Name = "misionRichTextBox"
+        Me.misionRichTextBox.Size = New System.Drawing.Size(590, 392)
+        Me.misionRichTextBox.TabIndex = 0
+        Me.misionRichTextBox.Text = ""
         '
         'atras10LinkLabel
         '
@@ -1406,6 +1437,15 @@ Partial Class OperacionForm
         Me.Ejecucion1GroupBox.TabStop = False
         Me.Ejecucion1GroupBox.Text = "Ejecución"
         '
+        'intencionComandanteRichTextBox
+        '
+        Me.intencionComandanteRichTextBox.Location = New System.Drawing.Point(37, 55)
+        Me.intencionComandanteRichTextBox.MaxLength = 32767
+        Me.intencionComandanteRichTextBox.Name = "intencionComandanteRichTextBox"
+        Me.intencionComandanteRichTextBox.Size = New System.Drawing.Size(398, 400)
+        Me.intencionComandanteRichTextBox.TabIndex = 26
+        Me.intencionComandanteRichTextBox.Text = ""
+        '
         'atras8LinkLabel
         '
         Me.atras8LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -1448,6 +1488,39 @@ Partial Class OperacionForm
         Me.conceptoOperacionGroupBox.TabIndex = 2
         Me.conceptoOperacionGroupBox.TabStop = False
         Me.conceptoOperacionGroupBox.Text = "Concepto de la operación"
+        '
+        'fuegosRichTextBox
+        '
+        Me.fuegosRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.fuegosRichTextBox.Location = New System.Drawing.Point(15, 295)
+        Me.fuegosRichTextBox.MaxLength = 32767
+        Me.fuegosRichTextBox.Name = "fuegosRichTextBox"
+        Me.fuegosRichTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.fuegosRichTextBox.TabIndex = 7
+        Me.fuegosRichTextBox.Text = ""
+        '
+        'maniobraRichTextBox
+        '
+        Me.maniobraRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.maniobraRichTextBox.Location = New System.Drawing.Point(15, 162)
+        Me.maniobraRichTextBox.MaxLength = 32767
+        Me.maniobraRichTextBox.Name = "maniobraRichTextBox"
+        Me.maniobraRichTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.maniobraRichTextBox.TabIndex = 6
+        Me.maniobraRichTextBox.Text = ""
+        '
+        'conceptoOperacionRichTextBox
+        '
+        Me.conceptoOperacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.conceptoOperacionRichTextBox.Location = New System.Drawing.Point(16, 20)
+        Me.conceptoOperacionRichTextBox.MaxLength = 32767
+        Me.conceptoOperacionRichTextBox.Name = "conceptoOperacionRichTextBox"
+        Me.conceptoOperacionRichTextBox.Size = New System.Drawing.Size(474, 106)
+        Me.conceptoOperacionRichTextBox.TabIndex = 5
+        Me.conceptoOperacionRichTextBox.Text = ""
         '
         'fuegosLabel
         '
@@ -1496,6 +1569,33 @@ Partial Class OperacionForm
         Me.Ejecucion2GroupBox.TabIndex = 8
         Me.Ejecucion2GroupBox.TabStop = False
         Me.Ejecucion2GroupBox.Text = "Ejecución"
+        '
+        'instruccionesCoordinacionRichTextBox
+        '
+        Me.instruccionesCoordinacionRichTextBox.Location = New System.Drawing.Point(559, 57)
+        Me.instruccionesCoordinacionRichTextBox.MaxLength = 32767
+        Me.instruccionesCoordinacionRichTextBox.Name = "instruccionesCoordinacionRichTextBox"
+        Me.instruccionesCoordinacionRichTextBox.Size = New System.Drawing.Size(489, 374)
+        Me.instruccionesCoordinacionRichTextBox.TabIndex = 28
+        Me.instruccionesCoordinacionRichTextBox.Text = ""
+        '
+        'tareasCombateRichTextBox
+        '
+        Me.tareasCombateRichTextBox.Location = New System.Drawing.Point(19, 268)
+        Me.tareasCombateRichTextBox.MaxLength = 32767
+        Me.tareasCombateRichTextBox.Name = "tareasCombateRichTextBox"
+        Me.tareasCombateRichTextBox.Size = New System.Drawing.Size(489, 163)
+        Me.tareasCombateRichTextBox.TabIndex = 27
+        Me.tareasCombateRichTextBox.Text = ""
+        '
+        'tareasManiobraRichTextBox
+        '
+        Me.tareasManiobraRichTextBox.Location = New System.Drawing.Point(19, 57)
+        Me.tareasManiobraRichTextBox.MaxLength = 32767
+        Me.tareasManiobraRichTextBox.Name = "tareasManiobraRichTextBox"
+        Me.tareasManiobraRichTextBox.Size = New System.Drawing.Size(489, 163)
+        Me.tareasManiobraRichTextBox.TabIndex = 26
+        Me.tareasManiobraRichTextBox.Text = ""
         '
         'atras7LinkLabel
         '
@@ -1606,7 +1706,7 @@ Partial Class OperacionForm
         Me.TarjetaAzulRadioButton.Checked = True
         Me.TarjetaAzulRadioButton.Location = New System.Drawing.Point(264, 39)
         Me.TarjetaAzulRadioButton.Name = "TarjetaAzulRadioButton"
-        Me.TarjetaAzulRadioButton.Size = New System.Drawing.Size(94, 20)
+        Me.TarjetaAzulRadioButton.Size = New System.Drawing.Size(78, 17)
         Me.TarjetaAzulRadioButton.TabIndex = 2
         Me.TarjetaAzulRadioButton.TabStop = True
         Me.TarjetaAzulRadioButton.Text = "TarjetaAzul"
@@ -1617,7 +1717,7 @@ Partial Class OperacionForm
         Me.TarjetaRojaRadioButton.AutoSize = True
         Me.TarjetaRojaRadioButton.Location = New System.Drawing.Point(152, 39)
         Me.TarjetaRojaRadioButton.Name = "TarjetaRojaRadioButton"
-        Me.TarjetaRojaRadioButton.Size = New System.Drawing.Size(98, 20)
+        Me.TarjetaRojaRadioButton.Size = New System.Drawing.Size(80, 17)
         Me.TarjetaRojaRadioButton.TabIndex = 1
         Me.TarjetaRojaRadioButton.Text = "TarjetaRoja"
         Me.TarjetaRojaRadioButton.UseVisualStyleBackColor = True
@@ -1665,6 +1765,7 @@ Partial Class OperacionForm
         Me.serviciosCombateGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.serviciosCombateGroupBox.Controls.Add(Me.armamentoLinkLabel)
         Me.serviciosCombateGroupBox.Controls.Add(Me.atras6LinkLabel)
         Me.serviciosCombateGroupBox.Controls.Add(Me.siguiente8LinkLabel)
         Me.serviciosCombateGroupBox.Controls.Add(Me.evacuacionesMedicasRichTextBox)
@@ -1688,6 +1789,19 @@ Partial Class OperacionForm
         Me.serviciosCombateGroupBox.TabIndex = 13
         Me.serviciosCombateGroupBox.TabStop = False
         Me.serviciosCombateGroupBox.Text = "Apoyo de servicios para el combate"
+        '
+        'armamentoLinkLabel
+        '
+        Me.armamentoLinkLabel.AutoSize = True
+        Me.armamentoLinkLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.armamentoLinkLabel.LinkColor = System.Drawing.Color.Yellow
+        Me.armamentoLinkLabel.Location = New System.Drawing.Point(500, 64)
+        Me.armamentoLinkLabel.Name = "armamentoLinkLabel"
+        Me.armamentoLinkLabel.Size = New System.Drawing.Size(98, 16)
+        Me.armamentoLinkLabel.TabIndex = 26
+        Me.armamentoLinkLabel.TabStop = True
+        Me.armamentoLinkLabel.Text = "Ir a Armamento"
+        Me.armamentoLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'atras6LinkLabel
         '
@@ -1896,6 +2010,18 @@ Partial Class OperacionForm
         Me.indicativosGroupBox.TabIndex = 4
         Me.indicativosGroupBox.TabStop = False
         Me.indicativosGroupBox.Text = "Indicativos"
+        '
+        'indicativosRichTextBox
+        '
+        Me.indicativosRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.indicativosRichTextBox.Location = New System.Drawing.Point(7, 25)
+        Me.indicativosRichTextBox.MaxLength = 32767
+        Me.indicativosRichTextBox.Name = "indicativosRichTextBox"
+        Me.indicativosRichTextBox.Size = New System.Drawing.Size(344, 113)
+        Me.indicativosRichTextBox.TabIndex = 0
+        Me.indicativosRichTextBox.Text = ""
         '
         'otrosComGroupBox
         '
@@ -3096,6 +3222,50 @@ Partial Class OperacionForm
         Me.situacionGroupBox.TabStop = False
         Me.situacionGroupBox.Text = "Situación"
         '
+        'segregacionesSituacionRichTextBox
+        '
+        Me.segregacionesSituacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.segregacionesSituacionRichTextBox.Location = New System.Drawing.Point(590, 394)
+        Me.segregacionesSituacionRichTextBox.MaxLength = 32767
+        Me.segregacionesSituacionRichTextBox.Name = "segregacionesSituacionRichTextBox"
+        Me.segregacionesSituacionRichTextBox.Size = New System.Drawing.Size(413, 80)
+        Me.segregacionesSituacionRichTextBox.TabIndex = 29
+        Me.segregacionesSituacionRichTextBox.Text = ""
+        '
+        'agregacionesSituacionRichTextBox
+        '
+        Me.agregacionesSituacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.agregacionesSituacionRichTextBox.Location = New System.Drawing.Point(590, 279)
+        Me.agregacionesSituacionRichTextBox.MaxLength = 32767
+        Me.agregacionesSituacionRichTextBox.Name = "agregacionesSituacionRichTextBox"
+        Me.agregacionesSituacionRichTextBox.Size = New System.Drawing.Size(413, 80)
+        Me.agregacionesSituacionRichTextBox.TabIndex = 28
+        Me.agregacionesSituacionRichTextBox.Text = ""
+        '
+        'propiasTropasRichTextBox
+        '
+        Me.propiasTropasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.propiasTropasRichTextBox.Location = New System.Drawing.Point(590, 154)
+        Me.propiasTropasRichTextBox.MaxLength = 32767
+        Me.propiasTropasRichTextBox.Name = "propiasTropasRichTextBox"
+        Me.propiasTropasRichTextBox.Size = New System.Drawing.Size(413, 80)
+        Me.propiasTropasRichTextBox.TabIndex = 27
+        Me.propiasTropasRichTextBox.Text = ""
+        '
+        'enemigoRichTextBox
+        '
+        Me.enemigoRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.enemigoRichTextBox.Location = New System.Drawing.Point(590, 39)
+        Me.enemigoRichTextBox.MaxLength = 32767
+        Me.enemigoRichTextBox.Name = "enemigoRichTextBox"
+        Me.enemigoRichTextBox.Size = New System.Drawing.Size(413, 80)
+        Me.enemigoRichTextBox.TabIndex = 26
+        Me.enemigoRichTextBox.Text = ""
+        '
         'atras11LinkLabel
         '
         Me.atras11LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -3174,10 +3344,19 @@ Partial Class OperacionForm
         Me.distribucionGroupBox.ForeColor = System.Drawing.Color.White
         Me.distribucionGroupBox.Location = New System.Drawing.Point(695, 111)
         Me.distribucionGroupBox.Name = "distribucionGroupBox"
-        Me.distribucionGroupBox.Size = New System.Drawing.Size(283, 196)
+        Me.distribucionGroupBox.Size = New System.Drawing.Size(283, 364)
         Me.distribucionGroupBox.TabIndex = 28
         Me.distribucionGroupBox.TabStop = False
         Me.distribucionGroupBox.Text = "Distribución"
+        '
+        'distribucionRichTextBox
+        '
+        Me.distribucionRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.distribucionRichTextBox.Location = New System.Drawing.Point(3, 18)
+        Me.distribucionRichTextBox.Name = "distribucionRichTextBox"
+        Me.distribucionRichTextBox.Size = New System.Drawing.Size(277, 343)
+        Me.distribucionRichTextBox.TabIndex = 0
+        Me.distribucionRichTextBox.Text = ""
         '
         'recibeTextBox
         '
@@ -3337,6 +3516,16 @@ Partial Class OperacionForm
         Me.personalGroupBox.TabStop = False
         Me.personalGroupBox.Text = "Personal"
         '
+        'personalRichTextBox
+        '
+        Me.personalRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.personalRichTextBox.Location = New System.Drawing.Point(7, 25)
+        Me.personalRichTextBox.Name = "personalRichTextBox"
+        Me.personalRichTextBox.Size = New System.Drawing.Size(936, 464)
+        Me.personalRichTextBox.TabIndex = 26
+        Me.personalRichTextBox.Text = ""
+        '
         'atras3LinkLabel
         '
         Me.atras3LinkLabel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -3365,176 +3554,13 @@ Partial Class OperacionForm
         Me.siguiente11LinkLabel.Text = "Siguiente"
         Me.siguiente11LinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'personalRichTextBox
-        '
-        Me.personalRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.personalRichTextBox.Location = New System.Drawing.Point(7, 25)
-        Me.personalRichTextBox.Name = "personalRichTextBox"
-        Me.personalRichTextBox.Size = New System.Drawing.Size(936, 464)
-        Me.personalRichTextBox.TabIndex = 26
-        Me.personalRichTextBox.Text = ""
-        '
-        'indicativosRichTextBox
-        '
-        Me.indicativosRichTextBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.indicativosRichTextBox.Location = New System.Drawing.Point(7, 25)
-        Me.indicativosRichTextBox.MaxLength = 32767
-        Me.indicativosRichTextBox.Name = "indicativosRichTextBox"
-        Me.indicativosRichTextBox.Size = New System.Drawing.Size(344, 113)
-        Me.indicativosRichTextBox.TabIndex = 0
-        Me.indicativosRichTextBox.Text = ""
-        '
-        'enemigoRichTextBox
-        '
-        Me.enemigoRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.enemigoRichTextBox.Location = New System.Drawing.Point(590, 39)
-        Me.enemigoRichTextBox.MaxLength = 32767
-        Me.enemigoRichTextBox.Name = "enemigoRichTextBox"
-        Me.enemigoRichTextBox.Size = New System.Drawing.Size(413, 80)
-        Me.enemigoRichTextBox.TabIndex = 26
-        Me.enemigoRichTextBox.Text = ""
-        '
-        'propiasTropasRichTextBox
-        '
-        Me.propiasTropasRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.propiasTropasRichTextBox.Location = New System.Drawing.Point(590, 154)
-        Me.propiasTropasRichTextBox.MaxLength = 32767
-        Me.propiasTropasRichTextBox.Name = "propiasTropasRichTextBox"
-        Me.propiasTropasRichTextBox.Size = New System.Drawing.Size(413, 80)
-        Me.propiasTropasRichTextBox.TabIndex = 27
-        Me.propiasTropasRichTextBox.Text = ""
-        '
-        'agregacionesSituacionRichTextBox
-        '
-        Me.agregacionesSituacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.agregacionesSituacionRichTextBox.Location = New System.Drawing.Point(590, 279)
-        Me.agregacionesSituacionRichTextBox.MaxLength = 32767
-        Me.agregacionesSituacionRichTextBox.Name = "agregacionesSituacionRichTextBox"
-        Me.agregacionesSituacionRichTextBox.Size = New System.Drawing.Size(413, 80)
-        Me.agregacionesSituacionRichTextBox.TabIndex = 28
-        Me.agregacionesSituacionRichTextBox.Text = ""
-        '
-        'segregacionesSituacionRichTextBox
-        '
-        Me.segregacionesSituacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.segregacionesSituacionRichTextBox.Location = New System.Drawing.Point(590, 394)
-        Me.segregacionesSituacionRichTextBox.MaxLength = 32767
-        Me.segregacionesSituacionRichTextBox.Name = "segregacionesSituacionRichTextBox"
-        Me.segregacionesSituacionRichTextBox.Size = New System.Drawing.Size(413, 80)
-        Me.segregacionesSituacionRichTextBox.TabIndex = 29
-        Me.segregacionesSituacionRichTextBox.Text = ""
-        '
-        'detalleMisionGroupBox
-        '
-        Me.detalleMisionGroupBox.Controls.Add(Me.misionRichTextBox)
-        Me.detalleMisionGroupBox.ForeColor = System.Drawing.Color.White
-        Me.detalleMisionGroupBox.Location = New System.Drawing.Point(43, 27)
-        Me.detalleMisionGroupBox.Name = "detalleMisionGroupBox"
-        Me.detalleMisionGroupBox.Size = New System.Drawing.Size(596, 413)
-        Me.detalleMisionGroupBox.TabIndex = 26
-        Me.detalleMisionGroupBox.TabStop = False
-        Me.detalleMisionGroupBox.Text = "MISIÓN"
-        '
-        'misionRichTextBox
-        '
-        Me.misionRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.misionRichTextBox.Location = New System.Drawing.Point(3, 18)
-        Me.misionRichTextBox.Name = "misionRichTextBox"
-        Me.misionRichTextBox.Size = New System.Drawing.Size(590, 392)
-        Me.misionRichTextBox.TabIndex = 0
-        Me.misionRichTextBox.Text = ""
-        '
-        'intencionComandanteRichTextBox
-        '
-        Me.intencionComandanteRichTextBox.Location = New System.Drawing.Point(37, 55)
-        Me.intencionComandanteRichTextBox.MaxLength = 32767
-        Me.intencionComandanteRichTextBox.Name = "intencionComandanteRichTextBox"
-        Me.intencionComandanteRichTextBox.Size = New System.Drawing.Size(398, 400)
-        Me.intencionComandanteRichTextBox.TabIndex = 26
-        Me.intencionComandanteRichTextBox.Text = ""
-        '
-        'conceptoOperacionRichTextBox
-        '
-        Me.conceptoOperacionRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.conceptoOperacionRichTextBox.Location = New System.Drawing.Point(16, 20)
-        Me.conceptoOperacionRichTextBox.MaxLength = 32767
-        Me.conceptoOperacionRichTextBox.Name = "conceptoOperacionRichTextBox"
-        Me.conceptoOperacionRichTextBox.Size = New System.Drawing.Size(474, 106)
-        Me.conceptoOperacionRichTextBox.TabIndex = 5
-        Me.conceptoOperacionRichTextBox.Text = ""
-        '
-        'maniobraRichTextBox
-        '
-        Me.maniobraRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.maniobraRichTextBox.Location = New System.Drawing.Point(15, 162)
-        Me.maniobraRichTextBox.MaxLength = 32767
-        Me.maniobraRichTextBox.Name = "maniobraRichTextBox"
-        Me.maniobraRichTextBox.Size = New System.Drawing.Size(474, 106)
-        Me.maniobraRichTextBox.TabIndex = 6
-        Me.maniobraRichTextBox.Text = ""
-        '
-        'fuegosRichTextBox
-        '
-        Me.fuegosRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.fuegosRichTextBox.Location = New System.Drawing.Point(15, 295)
-        Me.fuegosRichTextBox.MaxLength = 32767
-        Me.fuegosRichTextBox.Name = "fuegosRichTextBox"
-        Me.fuegosRichTextBox.Size = New System.Drawing.Size(474, 106)
-        Me.fuegosRichTextBox.TabIndex = 7
-        Me.fuegosRichTextBox.Text = ""
-        '
-        'tareasManiobraRichTextBox
-        '
-        Me.tareasManiobraRichTextBox.Location = New System.Drawing.Point(19, 57)
-        Me.tareasManiobraRichTextBox.MaxLength = 32767
-        Me.tareasManiobraRichTextBox.Name = "tareasManiobraRichTextBox"
-        Me.tareasManiobraRichTextBox.Size = New System.Drawing.Size(489, 163)
-        Me.tareasManiobraRichTextBox.TabIndex = 26
-        Me.tareasManiobraRichTextBox.Text = ""
-        '
-        'tareasCombateRichTextBox
-        '
-        Me.tareasCombateRichTextBox.Location = New System.Drawing.Point(19, 268)
-        Me.tareasCombateRichTextBox.MaxLength = 32767
-        Me.tareasCombateRichTextBox.Name = "tareasCombateRichTextBox"
-        Me.tareasCombateRichTextBox.Size = New System.Drawing.Size(489, 163)
-        Me.tareasCombateRichTextBox.TabIndex = 27
-        Me.tareasCombateRichTextBox.Text = ""
-        '
-        'instruccionesCoordinacionRichTextBox
-        '
-        Me.instruccionesCoordinacionRichTextBox.Location = New System.Drawing.Point(559, 57)
-        Me.instruccionesCoordinacionRichTextBox.MaxLength = 32767
-        Me.instruccionesCoordinacionRichTextBox.Name = "instruccionesCoordinacionRichTextBox"
-        Me.instruccionesCoordinacionRichTextBox.Size = New System.Drawing.Size(489, 374)
-        Me.instruccionesCoordinacionRichTextBox.TabIndex = 28
-        Me.instruccionesCoordinacionRichTextBox.Text = ""
-        '
-        'distribucionRichTextBox
-        '
-        Me.distribucionRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.distribucionRichTextBox.Location = New System.Drawing.Point(3, 18)
-        Me.distribucionRichTextBox.Name = "distribucionRichTextBox"
-        Me.distribucionRichTextBox.Size = New System.Drawing.Size(277, 175)
-        Me.distribucionRichTextBox.TabIndex = 0
-        Me.distribucionRichTextBox.Text = ""
-        '
         'OperacionForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange
         Me.ClientSize = New System.Drawing.Size(1184, 602)
+        Me.ControlBox = False
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "OperacionForm"
@@ -3554,6 +3580,7 @@ Partial Class OperacionForm
         Me.operacionGroupBox.PerformLayout()
         Me.misionGroupBox.ResumeLayout(False)
         Me.misionGroupBox.PerformLayout()
+        Me.detalleMisionGroupBox.ResumeLayout(False)
         Me.toeGroupBox.ResumeLayout(False)
         Me.toeGroupBox.PerformLayout()
         CType(Me.oficialesNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3655,7 +3682,6 @@ Partial Class OperacionForm
         CType(Me.anexosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.personalGroupBox.ResumeLayout(False)
         Me.personalGroupBox.PerformLayout()
-        Me.detalleMisionGroupBox.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3935,4 +3961,5 @@ Partial Class OperacionForm
     Friend WithEvents tareasCombateRichTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents tareasManiobraRichTextBox As System.Windows.Forms.RichTextBox
     Friend WithEvents distribucionRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents armamentoLinkLabel As System.Windows.Forms.LinkLabel
 End Class

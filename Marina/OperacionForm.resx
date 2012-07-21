@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="usoFuerzaRichTextBox.Text" xml:space="preserve">
+    <value>TARJETA AZUL
+1. Haga uso de la fuerza como última opción.
+2. Identifíquese como miembro de las FFMM.
+3. De una clara advertencia de su intención de emplear armas de fuego.
+4. Haga uso de su arma de manera proporcional a la amenaza que está enfrentando.
+5. Siempre podrá hacer uso de su arma en legítima defensa cuando esté en peligro su vida o la de terceros.</value>
+  </data>
   <metadata name="recibeLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
@@ -126,13 +134,6 @@
   <metadata name="autorizaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="usoFuerzaRichTextBox.Text" xml:space="preserve">
-    <value>1. Haga uso de la fuerza como última opción.
-2. Identifíquese como miembro de las FFMM.
-3. De una clara advertencia de su intención de emplear armas de fuego.
-4. Haga uso de su arma de manera proporcional a la amenaza que está enfrentando.
-5. Siempre podrá hacer uso de su arma en legítima defensa cuando esté en peligro su vida o la de terceros.</value>
-  </data>
   <metadata name="segregacionesSituacionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>

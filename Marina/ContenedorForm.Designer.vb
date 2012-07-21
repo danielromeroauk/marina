@@ -38,28 +38,40 @@ Partial Class ContenedorForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrarInteligenciaToolStripMenuItem, Me.RegistarOperacionToolStripMenuItem, Me.AyudaToolStripMenuItem, Me.InformesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(984, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(984, 87)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'RegistrarInteligenciaToolStripMenuItem
         '
+        Me.RegistrarInteligenciaToolStripMenuItem.Image = CType(resources.GetObject("RegistrarInteligenciaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.RegistrarInteligenciaToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.RegistrarInteligenciaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RegistrarInteligenciaToolStripMenuItem.Name = "RegistrarInteligenciaToolStripMenuItem"
-        Me.RegistrarInteligenciaToolStripMenuItem.Size = New System.Drawing.Size(129, 20)
+        Me.RegistrarInteligenciaToolStripMenuItem.Size = New System.Drawing.Size(129, 83)
         Me.RegistrarInteligenciaToolStripMenuItem.Text = "Registrar &Inteligencia"
+        Me.RegistrarInteligenciaToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.RegistrarInteligenciaToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal
+        Me.RegistrarInteligenciaToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'RegistarOperacionToolStripMenuItem
         '
+        Me.RegistarOperacionToolStripMenuItem.Image = CType(resources.GetObject("RegistarOperacionToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.RegistarOperacionToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RegistarOperacionToolStripMenuItem.Name = "RegistarOperacionToolStripMenuItem"
-        Me.RegistarOperacionToolStripMenuItem.Size = New System.Drawing.Size(119, 20)
+        Me.RegistarOperacionToolStripMenuItem.Size = New System.Drawing.Size(119, 83)
         Me.RegistarOperacionToolStripMenuItem.Text = "Registar &Operación"
+        Me.RegistarOperacionToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'AyudaToolStripMenuItem
         '
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CambiarClaveToolStripMenuItem})
+        Me.AyudaToolStripMenuItem.Image = CType(resources.GetObject("AyudaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.AyudaToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
-        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(76, 83)
         Me.AyudaToolStripMenuItem.Text = "A&yuda"
+        Me.AyudaToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'CambiarClaveToolStripMenuItem
         '
@@ -70,9 +82,12 @@ Partial Class ContenedorForm
         'InformesToolStripMenuItem
         '
         Me.InformesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenFragmentariaToolStripMenuItem})
+        Me.InformesToolStripMenuItem.Image = CType(resources.GetObject("InformesToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.InformesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.InformesToolStripMenuItem.Name = "InformesToolStripMenuItem"
-        Me.InformesToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.InformesToolStripMenuItem.Size = New System.Drawing.Size(76, 83)
         Me.InformesToolStripMenuItem.Text = "Infor&mes"
+        Me.InformesToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'OrdenFragmentariaToolStripMenuItem
         '
@@ -86,6 +101,7 @@ Partial Class ContenedorForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(984, 662)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
