@@ -433,17 +433,17 @@ Partial Class OperacionForm
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.personalGroupBox)
+        Me.Panel1.Controls.Add(Me.comunicacionesGroupBox)
+        Me.Panel1.Controls.Add(Me.armamentoGroupBox)
         Me.Panel1.Controls.Add(Me.serviciosCombateGroupBox)
         Me.Panel1.Controls.Add(Me.juridicasGroupBox)
         Me.Panel1.Controls.Add(Me.firmasGroupBox)
-        Me.Panel1.Controls.Add(Me.armamentoGroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion2GroupBox)
         Me.Panel1.Controls.Add(Me.Ejecucion1GroupBox)
         Me.Panel1.Controls.Add(Me.misionGroupBox)
         Me.Panel1.Controls.Add(Me.situacionGroupBox)
-        Me.Panel1.Controls.Add(Me.comunicacionesGroupBox)
         Me.Panel1.Controls.Add(Me.operacionGroupBox)
-        Me.Panel1.Controls.Add(Me.personalGroupBox)
         Me.Panel1.Controls.Add(Me.coordenadasGroupBox)
         Me.Panel1.Controls.Add(Me.anexosGroupBox)
         Me.Panel1.Location = New System.Drawing.Point(12, 69)
@@ -694,8 +694,8 @@ Partial Class OperacionForm
         Me.DatosToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.Folder25
         Me.DatosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.DatosToolStripMenuItem.Name = "DatosToolStripMenuItem"
-        Me.DatosToolStripMenuItem.Size = New System.Drawing.Size(76, 83)
-        Me.DatosToolStripMenuItem.Text = "&Datos"
+        Me.DatosToolStripMenuItem.Size = New System.Drawing.Size(121, 83)
+        Me.DatosToolStripMenuItem.Text = "&Datos de operación"
         Me.DatosToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
         'OperacionesToolStripMenuItem
@@ -790,8 +790,8 @@ Partial Class OperacionForm
         Me.GuardarTodoToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.GuardarTodoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.GuardarTodoToolStripMenuItem.Name = "GuardarTodoToolStripMenuItem"
-        Me.GuardarTodoToolStripMenuItem.Size = New System.Drawing.Size(89, 83)
-        Me.GuardarTodoToolStripMenuItem.Text = "&Guardar todo"
+        Me.GuardarTodoToolStripMenuItem.Size = New System.Drawing.Size(117, 83)
+        Me.GuardarTodoToolStripMenuItem.Text = "&Guardar operación"
         Me.GuardarTodoToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.GuardarTodoToolStripMenuItem.ToolTipText = "Guarda todos los datos de la operación en la base de datos."
         '
@@ -800,8 +800,8 @@ Partial Class OperacionForm
         Me.CancelarTodoToolStripMenuItem.Image = Global.Marina.My.Resources.Resources.button_cancel
         Me.CancelarTodoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CancelarTodoToolStripMenuItem.Name = "CancelarTodoToolStripMenuItem"
-        Me.CancelarTodoToolStripMenuItem.Size = New System.Drawing.Size(93, 83)
-        Me.CancelarTodoToolStripMenuItem.Text = "&Cancelar todo"
+        Me.CancelarTodoToolStripMenuItem.Size = New System.Drawing.Size(121, 83)
+        Me.CancelarTodoToolStripMenuItem.Text = "&Cancelar operación"
         Me.CancelarTodoToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         Me.CancelarTodoToolStripMenuItem.ToolTipText = "Cancela todos los datos ingresados, sin guardar nada en la base de datos."
         '
@@ -3505,6 +3505,9 @@ Partial Class OperacionForm
         '
         'personalGroupBox
         '
+        Me.personalGroupBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.personalGroupBox.Controls.Add(Me.personalRichTextBox)
         Me.personalGroupBox.Controls.Add(Me.atras3LinkLabel)
         Me.personalGroupBox.Controls.Add(Me.siguiente11LinkLabel)

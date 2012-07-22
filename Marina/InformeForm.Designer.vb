@@ -29,14 +29,15 @@ Partial Class InformeForm
         'TituloLabel
         '
         Me.TituloLabel.Location = New System.Drawing.Point(13, 35)
+        Me.TituloLabel.Size = New System.Drawing.Size(271, 93)
         Me.TituloLabel.Text = "Orden Fragmentaria"
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.okButton)
         Me.Panel1.ForeColor = System.Drawing.Color.Black
-        Me.Panel1.Location = New System.Drawing.Point(12, 76)
-        Me.Panel1.Size = New System.Drawing.Size(272, 226)
+        Me.Panel1.Location = New System.Drawing.Point(12, 152)
+        Me.Panel1.Size = New System.Drawing.Size(272, 52)
         '
         'okButton
         '
@@ -54,7 +55,7 @@ Partial Class InformeForm
         Me.AcceptButton = Me.okButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(296, 314)
+        Me.ClientSize = New System.Drawing.Size(296, 216)
         Me.ControlBox = False
         Me.Name = "InformeForm"
         Me.Text = "InformeForm"

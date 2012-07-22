@@ -75,4 +75,11 @@ Public Class InteligenciaForm
         Return retornar
     End Function
 
+    Private Sub InteligenciaForm_FormClosed(sender As System.Object, e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
+        ContenedorForm.RegistrarInteligenciaToolStripMenuItem.Enabled = True
+    End Sub
+
+    Private Sub InteligenciaForm_Activated(sender As System.Object, e As System.EventArgs) Handles MyBase.Activated
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
 End Class

@@ -76,9 +76,9 @@ Public Class InformeForm
     ''' </summary>
     ''' <param name="codOperacion"></param>
     ''' <remarks></remarks>
-    Public Overloads Sub Show(codOperacion As String)
+    Public Overloads Sub ShowDialog(codOperacion As String)
         Me._codOperacion = codOperacion
-        MyBase.Show()
+        MyBase.ShowDialog()
     End Sub
 
     ''' <summary>

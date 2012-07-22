@@ -307,17 +307,17 @@ Public Class OperacionForm
         End If
     End Sub
 
-    Private Sub ServiciosCombateToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles serviciosCombateToolStripMenuItem.Click, siguiente7LinkLabel.Click, atras5LinkLabel.Click
+    Private Sub ServiciosCombateToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles serviciosCombateToolStripMenuItem.Click, siguiente7LinkLabel.Click, atras4LinkLabel.Click
         ocultarGrupos()
         serviciosCombateGroupBox.Visible = True
     End Sub
 
-    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click, siguiente8LinkLabel.Click, atras4LinkLabel.Click
+    Private Sub ComunicacionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ComunicacionesToolStripMenuItem.Click, siguiente10LinkLabel.Click, atras3LinkLabel.Click
         ocultarGrupos()
         comunicacionesGroupBox.Visible = True
     End Sub
 
-    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, siguiente9LinkLabel.Click, atras3LinkLabel.Click, armamentoLinkLabel.Click
+    Private Sub ArmamentoToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ArmamentoToolStripMenuItem.Click, armamentoLinkLabel.Click, siguiente8LinkLabel.Click, atras5LinkLabel.Click
         ocultarGrupos()
         armamentoGroupBox.Visible = True
     End Sub
@@ -399,8 +399,16 @@ Public Class OperacionForm
         procedimientoComboBox.SelectedIndex = 0
     End Sub
 
-    Private Sub PersonalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PersonalToolStripMenuItem.Click, siguiente10LinkLabel.Click, atras2LinkLabel.Click
+    Private Sub PersonalToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PersonalToolStripMenuItem.Click, atras2LinkLabel.Click, siguiente9LinkLabel.Click
         ocultarGrupos()
         personalGroupBox.Visible = True
+    End Sub
+
+    Private Sub OperacionForm_FormClosed(sender As System.Object, e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
+        ContenedorForm.RegistarOperacionToolStripMenuItem.Enabled = True
+    End Sub
+
+    Private Sub OperacionForm_Activated(sender As System.Object, e As System.EventArgs) Handles MyBase.Activated
+        Me.WindowState = FormWindowState.Maximized
     End Sub
 End Class

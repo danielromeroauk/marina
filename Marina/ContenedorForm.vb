@@ -12,6 +12,7 @@
         operacionF.MdiParent = Me
         operacionF.WindowState = FormWindowState.Maximized
         operacionF.Show()
+        RegistarOperacionToolStripMenuItem.Enabled = False
     End Sub
 
     Private Sub RegistrarInteligenciaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles RegistrarInteligenciaToolStripMenuItem.Click
@@ -19,6 +20,7 @@
         inteligenciaF.MdiParent = Me
         inteligenciaF.WindowState = FormWindowState.Maximized
         inteligenciaF.Show()
+        RegistrarInteligenciaToolStripMenuItem.Enabled = False
     End Sub
 
     Private Sub CambiarClaveToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles CambiarClaveToolStripMenuItem.Click
@@ -28,16 +30,11 @@
 
     Private Sub OrdenFragmentariaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles OrdenFragmentariaToolStripMenuItem.Click
         Dim listaOperacionesF As New ListaOperacionesForm
-        'listaOperacionesF.MdiParent = Me
-        'listaOperacionesF.WindowState = FormWindowState.Maximized
-
         Dim codOperacion As String = listaOperacionesF.ShowDialog(getCodOperacion:=True)
 
         If Not IsNothing(codOperacion) Then
             Dim informeF As New InformeForm
-            informeF.MdiParent = Me
-            informeF.WindowState = FormWindowState.Maximized
-            informeF.Show(codOperacion:=codOperacion)
+            informeF.ShowDialog(codOperacion:=codOperacion)
         End If
 
     End Sub
