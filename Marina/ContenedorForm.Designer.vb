@@ -30,6 +30,7 @@ Partial Class ContenedorForm
         Me.CambiarClaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InformesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OrdenFragmentariaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListaDeInteligeniasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,7 +82,7 @@ Partial Class ContenedorForm
         '
         'InformesToolStripMenuItem
         '
-        Me.InformesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenFragmentariaToolStripMenuItem})
+        Me.InformesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OrdenFragmentariaToolStripMenuItem, Me.ListaDeInteligeniasToolStripMenuItem})
         Me.InformesToolStripMenuItem.Image = CType(resources.GetObject("InformesToolStripMenuItem.Image"), System.Drawing.Image)
         Me.InformesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.InformesToolStripMenuItem.Name = "InformesToolStripMenuItem"
@@ -94,6 +95,12 @@ Partial Class ContenedorForm
         Me.OrdenFragmentariaToolStripMenuItem.Name = "OrdenFragmentariaToolStripMenuItem"
         Me.OrdenFragmentariaToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.OrdenFragmentariaToolStripMenuItem.Text = "&Orden fragmentaria"
+        '
+        'ListaDeInteligeniasToolStripMenuItem
+        '
+        Me.ListaDeInteligeniasToolStripMenuItem.Name = "ListaDeInteligeniasToolStripMenuItem"
+        Me.ListaDeInteligeniasToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.ListaDeInteligeniasToolStripMenuItem.Text = "&Lista de inteligenias"
         '
         'ContenedorForm
         '
@@ -125,5 +132,6 @@ Partial Class ContenedorForm
     Friend WithEvents CambiarClaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents InformesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OrdenFragmentariaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ListaDeInteligeniasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

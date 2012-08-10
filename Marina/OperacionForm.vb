@@ -17,6 +17,8 @@ Public Class OperacionForm
 
                 If Me.Validate And Me.camposDiligenciados Then
 
+                    GuardarTodoToolStripMenuItem.Enabled = False
+
                     Dim TAOperacion As New bdinfanteriaDataSetTableAdapters.operacionesTableAdapter
                     TAOperacion.Insert( _
                         operacion:=operacionTextBox.Text, _
@@ -192,6 +194,7 @@ Public Class OperacionForm
             End Using
         Catch ex As Exception
             MsgBox(ex.Message)
+            GuardarTodoToolStripMenuItem.Enabled = True
         End Try
     End Sub
 

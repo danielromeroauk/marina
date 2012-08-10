@@ -46,6 +46,7 @@ Public Class InteligenciaForm
     Private Sub GuardarInteligenciaToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GuardarInteligenciaToolStripMenuItem.Click
         Try
             If Me.Validate Then
+                Me.GuardarInteligenciaToolStripMenuItem.Enabled = False
                 Dim DS As New bdinfanteriaDataSet
                 Dim TAInteligencia As New bdinfanteriaDataSetTableAdapters.inteligenciasTableAdapter
                 TAInteligencia.Insert( _
@@ -63,6 +64,7 @@ Public Class InteligenciaForm
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
+            Me.GuardarInteligenciaToolStripMenuItem.Enabled = True
         End Try
     End Sub
 

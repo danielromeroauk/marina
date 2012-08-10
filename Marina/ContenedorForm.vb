@@ -38,4 +38,11 @@
         End If
 
     End Sub
+
+    Private Sub ListaDeInteligeniasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListaDeInteligeniasToolStripMenuItem.Click
+        Dim listaInteligenciasF As New ListaInteligenciasForm
+        listaInteligenciasF.MdiParent = Me
+        listaInteligenciasF.WindowState = FormWindowState.Maximized
+        listaInteligenciasF.Show()
+    End Sub
 End Class

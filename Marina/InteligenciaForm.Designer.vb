@@ -161,7 +161,7 @@ Partial Class InteligenciaForm
         'LatitudLabel
         '
         Me.LatitudLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LatitudLabel.AutoSize = True
         Me.LatitudLabel.Location = New System.Drawing.Point(15, 16)
         Me.LatitudLabel.Name = "LatitudLabel"
@@ -225,7 +225,7 @@ Partial Class InteligenciaForm
         'GradosLabel
         '
         Me.GradosLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GradosLabel.AutoSize = True
         Me.GradosLabel.Location = New System.Drawing.Point(71, 0)
         Me.GradosLabel.Name = "GradosLabel"
@@ -237,7 +237,7 @@ Partial Class InteligenciaForm
         'MinutosLabel
         '
         Me.MinutosLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.MinutosLabel.AutoSize = True
         Me.MinutosLabel.Location = New System.Drawing.Point(130, 0)
         Me.MinutosLabel.Name = "MinutosLabel"
@@ -249,7 +249,7 @@ Partial Class InteligenciaForm
         'SegundosLabel
         '
         Me.SegundosLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SegundosLabel.AutoSize = True
         Me.SegundosLabel.Location = New System.Drawing.Point(190, 0)
         Me.SegundosLabel.Name = "SegundosLabel"
@@ -269,7 +269,7 @@ Partial Class InteligenciaForm
         'LongitudLabel
         '
         Me.LongitudLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LongitudLabel.AutoSize = True
         Me.LongitudLabel.Location = New System.Drawing.Point(3, 44)
         Me.LongitudLabel.Name = "LongitudLabel"
@@ -315,7 +315,7 @@ Partial Class InteligenciaForm
         'ActividadesGroupBox
         '
         Me.ActividadesGroupBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ActividadesGroupBox.Controls.Add(Me.ActividadesCheckedListBox)
         Me.ActividadesGroupBox.ForeColor = System.Drawing.Color.White
         Me.ActividadesGroupBox.Location = New System.Drawing.Point(342, 48)
@@ -328,12 +328,12 @@ Partial Class InteligenciaForm
         'ActividadesCheckedListBox
         '
         Me.ActividadesCheckedListBox.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left) _
+                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ActividadesCheckedListBox.BackColor = System.Drawing.Color.Black
         Me.ActividadesCheckedListBox.ForeColor = System.Drawing.Color.White
         Me.ActividadesCheckedListBox.FormattingEnabled = True
-        Me.ActividadesCheckedListBox.Items.AddRange(New Object() {"Abastecimiento", "Abigeato", "Artefacto explosivo", "Asesinato", "Baja enemigo", "Caleta", "Campamento", "Campo minado", "Captura", "Contacto armado", "Desplazamiento forzado", "Emboscada", "Entrega terrorista", "Extorsión", "Hostigamiento", "Indicio enemigo", "Información de inteligencia", "Inteligencia externa", "Laboratorio", "Liberación secuestrado", "Material decomizado", "Narcotráfico", "Presencia de bandoleros", "Reclutamiento forzoso", "Retén ilegal", "Secuestro", "Terrorismo"})
+        Me.ActividadesCheckedListBox.Items.AddRange(New Object() {"Abastecimiento", "Abigeato", "Artefacto explosivo", "Asesinato", "Baja enemigo", "Caleta", "Campamento", "Campo minado", "Captura", "Contacto armado", "Contrabando", "Desplazamiento forzado", "Emboscada", "Entrega terrorista", "Extorsión", "Hostigamiento", "Indicio enemigo", "Información de inteligencia", "Inteligencia externa", "Laboratorio", "Liberación secuestrado", "Material decomizado", "Narcotráfico", "Presencia de bandoleros", "Reclutamiento forzoso", "Retén ilegal", "Secuestro", "Terrorismo"})
         Me.ActividadesCheckedListBox.Location = New System.Drawing.Point(6, 26)
         Me.ActividadesCheckedListBox.Name = "ActividadesCheckedListBox"
         Me.ActividadesCheckedListBox.Size = New System.Drawing.Size(251, 310)
@@ -342,7 +342,7 @@ Partial Class InteligenciaForm
         'AnotacionesRichTextBox
         '
         Me.AnotacionesRichTextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+                    Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.AnotacionesRichTextBox.Location = New System.Drawing.Point(41, 332)
         Me.AnotacionesRichTextBox.Name = "AnotacionesRichTextBox"
         Me.AnotacionesRichTextBox.Size = New System.Drawing.Size(281, 78)
